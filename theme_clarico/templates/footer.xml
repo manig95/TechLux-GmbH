@@ -4,118 +4,20 @@
     <template id="customize_footer_style_1" inherit_id="website.footer_custom"
               active="True">
         <xpath expr="//div[@id='footer']" position="replace">
-            <div id="footer" class="oe_structure oe_structure_solo">
+            <div id="footer" class="oe_structure oe_structure_solo" style="height: 35px; text-align: center;background: #38544d;">
                 <!--<xpath expr="//div[@id='footer']" position="before">-->
-                <section class="s_text_block pt32">
-                    <div class="container">
-                        <div class="row">
-                            <div class="te_footer_add_tel_email col-lg-3">
-                                <!-- Website Logo -->
-                                <div class="d-block mb16">
-                                    <a href="/" class="te_footer_logo logo">
-                                        <span t-field="website.logo" class="te_footer_logo_img"
-                                              t-options="{'widget': 'image'}" role="img"
-                                              t-att-aria-label="'Logo of %s' % website.name"
-                                              t-att-title="website.name"/>
-                                    </a>
-                                </div>
-                                <!-- Company Address -->
-                                <ul class="te_footer_info_text">
-                                    <li t-if="res_company.street or res_company.street2 or res_company.city or res_company.state_id or res_company.zip or res_company.country_id">
-                                        <span class="te_footer_add_tel_email_text_ept">
-                                            <span class="fa fa-map-marker"></span>
-                                        </span>
-                                        <span class="te_ftr_text_style d-inline-block pl-sm-2">
-                                            <span t-field="res_company.street"/>
-                                            <span t-field="res_company.street2"/>
-                                            <span t-field="res_company.city"/>
-                                            <span t-field="res_company.state_id"/>
-                                            <span t-field="res_company.zip"/>
-                                            <span t-field="res_company.country_id"/>
-                                        </span>
-                                    </li>
-                                    <li t-if="res_company.phone">
-                                        <span class="te_footer_add_tel_email_text_ept">
-                                            <span class="fa fa-phone"></span>
-                                        </span>
-                                        <a t-att-href="'tel: %s' %res_company.phone">
-                                            <span t-field="res_company.phone"
-                                                  class="te_ftr_text_style d-inline-block pl-sm-2"/>
-                                        </a>
-                                    </li>
-                                    <li t-if="res_company.email">
-                                        <span class="te_footer_add_tel_email_text_ept">
-                                            <span class="fa fa-envelope"></span>
-                                        </span>
-                                        <a t-att-href="'mailto: %s' %res_company.email">
-                                            <span t-field="res_company.email"
-                                                  class="te_ftr_text_style d-inline-block pl-sm-2"/>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <!-- Social Icon -->
-                                <div class="te_footer_social_icon">
-
-                                    <a t-if="website.social_facebook" t-att-href="website.social_facebook"
-                                       class="btn btn-sm btn-link">
-                                        <span class="fa fa-facebook-square"/>
-                                    </a>
-                                    <a t-if="website.social_twitter" t-att-href="website.social_twitter"
-                                       class="btn btn-sm btn-link">
-                                        <span class="fa fa-twitter"/>
-                                    </a>
-                                    <a t-if="website.social_linkedin" t-att-href="website.social_linkedin"
-                                       class="btn btn-sm btn-link">
-                                        <span class="fa fa-linkedin"/>
-                                    </a>
-                                    <a t-if="website.social_youtube" t-att-href="website.social_youtube"
-                                       class="btn btn-sm btn-link">
-                                        <span class="fa fa-youtube-play"/>
-                                    </a>
-                                    <a t-if="website.social_github" t-att-href="website.social_github"
-                                       class="btn btn-sm btn-link">
-                                        <span class="fa fa-github"/>
-                                    </a>
-                                    <a t-if="website.social_instagram" t-att-href="website.social_instagram"
-                                       class="btn btn-sm btn-link">
-                                        <span class="fa fa-instagram"/>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <!-- static Menu -->
-                            <p></p>
-                            <section class="col-lg-6" t-field="website.footer_style_1_content_ept"/>
-                            <!-- Payment Methods -->
-                            <div class="col-lg-3 te_language">
-                                <section class="te_footer_text_img">
-                                    <section>
-                                        <h2>Payment Methods</h2>
-                                    </section>
-                                    <section>
-                                        <img src="/theme_clarico/static/src/img/customise_option/payment2.png"></img>
-                                    </section>
-                                </section>
-                                <!-- Multiple Language Selected-->
-                                <t t-call="website.language_selector"></t>
-                                <section class="mt-3">
-                                    <p></p>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <p style="text-align:center;color:#fff;padding:6px;"> <a style="color:#fff" href="/impressum-page">IMPRESSUM</a> | <a style="color:#fff" href="/impressum-page">DATENSCHUTZ</a></p>
             </div>
-            <div class="te_body_bg">
+            <!--<div class="te_body_bg">
                 <div class="container">
                     <section t-field="website.website_footer_extra_links"/>
-                    <!-- Copyright Text-->
+                    &lt;!&ndash; Copyright Text&ndash;&gt;
                     <section class="te_copyright_add_language">
                         <span>Copyright &amp;copy;</span>
                         <span t-field="res_company.name" itemprop="name">Company name</span>
                     </section>
                 </div>
-            </div>
+            </div>-->
             <!-- Scroll Up Icon -->
             <div class="scrollup-div text-center">
                 <a href="#" class="scrollup-a">
@@ -457,7 +359,7 @@
                 </ul>
             </div>
             <!-- static Menu -->
-            <div class="col-lg-4 col-md-4 col-6">
+            <!--<div class="col-lg-4 col-md-4 col-6">
                 <ul class="te_footer_info_ept">
                     <section>
                         <li>
@@ -485,7 +387,7 @@
                         </li>
                     </section>
                 </ul>
-            </div>
+            </div>-->
             <!-- static Menu -->
             <div class="col-lg-4 col-md-4 col-6">
                 <ul class="te_footer_info_ept">

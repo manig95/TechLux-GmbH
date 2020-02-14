@@ -2,17 +2,22 @@
     # Theme information
 
     'name': 'Website Customization',
-    'category': 'Theme',
+    'category': 'Web Theme',
     'summary': 'Fully Responsive Odoo Theme suitable for eCommerce Businesses',
     'depends': [
-       'website'
+       'website','theme_clarico'
     ],
 
     'data': [
-        'views/website_template.xml'
+        'views/home_page_template.xml',
+        'views/allgemeine_page_template.xml',
+        'views/bestellung_page_template.xml',
+        'views/faq_page_template.xml',
+        'views/versand_page_template.xml',
+        'views/imperssum_page_template.xml',
+        # 'views/footer_template.xml',
     ],
 
-    # Author
     'author': 'PPTS India Pvt. Ltd.',
     'website': 'https://www.pptssolutions.com',
     # Technical

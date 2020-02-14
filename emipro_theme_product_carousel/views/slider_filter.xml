@@ -16,7 +16,7 @@
                         <field name="name"/>
                         <field name="sequence"/>
                         <field name="filter_id" domain="[('model_id','=','product.template')]"
-                               options="{'no_quick_create': True, 'no_create_edit' : True}"/>
+                               />
                     </group>
                 </sheet>
             </form>

@@ -178,13 +178,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="container te_header_style_2_inner">
-					<div class="row py-3 align-items-center">
+				<div class="container te_header_style_2_inner" style="background: #38544d; width: 100% !important; max-width: 1600px;">
+					<div class="row py-3 align-items-center" style="max-width: 1400px;">
 						<div class="col-lg-6">
 							<t t-set="logo_show" t-value="request.website.viewref('website.layout_logo_show').active"/>
 							<t t-if="logo_show">
 							<a href="/" class="navbar-brand logo te_header_before_logo">
-							<span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+							<span style="padding: 65px;" t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
 							</a>
 							</t>
 							<t t-else="">
@@ -205,14 +205,14 @@
 							</div>
 							<t t-set="website_vertical_menu" t-value="request.website.viewref('theme_clarico.menu_vertical').active"/>
 							<div class="te_bar_icon" t-if="website_vertical_menu">
-								<a href="#" class="">
+								<a href="#" class="" style="color: #fff;">
 									<i class="fa fa-sliders" />
 								</a>
 							</div>
-							<div class="te_cart_icon_head">
+							<div class="te_cart_icon_head" style="color: #fff;">
 								<t t-call="theme_clarico.header_cart"></t>
 							</div>
-							<div class="te_wish_icon_head" t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active">
+							<div class="te_wish_icon_head" t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active" style="color: #fff;">
 								<t t-call="theme_clarico.header_wishlist"></t>
 							</div>
 						</div>

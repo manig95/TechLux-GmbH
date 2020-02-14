@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="0">
+
+		<template id="theme_assets_frontend" inherit_id="website.assets_frontend">
+			<xpath expr="link[last()]" position="after">
+				<link rel="stylesheet" type="text/scss" href="/website_template/static/css/website_style.css"/>
+			</xpath>
+		</template>
+		<template id="new_custom_home_page" inherit_id="website.homepage">
+			<xpath expr="//div[@id='wrap']" position="replace">
+				<div id="wrap" class="oe_structure">
+					<div id="wrap" class="oe_structure oe_empty">
+						<section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" data-name="cover" style="background-image: none;">
+							<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+								  style="background-image: url(/website_template/static/img/nachher_ergebnis.png); background-size: cover; background-position: 50% 0px;background-attachment: inherit;"/>
+							<div class="container">
+								<div class="row s_nb_column_fixed">
+									<div class="col-lg-12 s_title pb0" data-name="title">
+										<h1 class="s_title_thin" style="text-align: center;">
+											<font style="">
+												<span style="font-size: 72px;font-weight:bold;">ENTDECKE KLIXX</span>
+											</font>
+										</h1>
+									</div>
+									<div class="col-lg-12 s_text pb16 pt0" data-name="text">
+										<p class="lead" style="text-align: center;">
+											<font style="">
+												<span style="text-align: left; font-size: 40px;">DAS ORGINAL AUS DER SCHWEIZ</span>
+											</font>
+										</p>
+										<div class="s_btn pb16 pt208 aos-init text-center" data-name="button" data-aos="text-center">
+											<a href="/shop" class="te_theme_button btn btn-delta" style="background: #000; border: none;color: #fff; font-size: 30px;" data-original-title="" title="" aria-describedby="tooltip14318">
+												<font style="vertical-align: inherit;" data-original-title="" title="" aria-describedby="tooltip342494">BESTELLEN</font>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="container te_max_width_4_column pt32 pb0" data-name="style 1" style="padding-top:0 !important">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="col-lg-4" style="float:left;padding-top:30px">
+										<div style="display:flex;">
+											<span style="font-size:78px;float:left;">
+												S
+											</span>
+											<blockquote style="border-left: 5px solid #000; margin: 1.5em 10px; padding: 0.5em 10px; height: 115px; position: absolute;left: 41px;background: #fff;">
+												<span style="font-size:20px;">
+													<b>SOLID CONSTRUCTION</b>
+												</span>
+												<br/>
+												<span style="line-height:30px;">Unsere Designer setzten sowohl aug höchste Design- als auch Funktionsansprüche.</span>
+											</blockquote>
+										</div>
+										<br/>
+										<div style="margin-top:30px;display:flex;">
+											<span style="font-size:78px;">
+												B
+											</span>
+											<blockquote style="border-left: 5px solid #000; margin: 1.5em 10px; padding: 0.5em 10px; height: 115px; position: absolute;left: 41px;background: #fff;">
+												<span style="font-size:20px;">
+													<b>BEST RESOURCES</b>
+												</span>
+												<br/>
+												<span style="line-height:30px;">Der verwendete Werkstoff ist ein wichtiger Faktor für die Qualität und Langlebigkeit unserer Produkte.</span>
+											</blockquote>
+										</div>
+										<br/>
+										<div style="margin-top:30px;display:flex;">
+											<span style="font-size:78px">
+												T
+											</span>
+											<blockquote style="border-left: 5px solid #000; margin: 1.5em 10px; padding: 0.5em 10px; height: 115px; position: absolute;left: 41px;background: #fff;">
+												<span style="font-size:20px;">
+													<b>TESTED FOR CARWASH</b>
+												</span>
+												<br/>
+												<span style="line-height:30px;">Das Produkt ist Waschstrassentauglich.</span>
+											</blockquote>
+										</div>
+									</div>
+									<div class="col-lg-8" style="float:right;max-height: 600px;">
+										<img class="img img-responsive img-fluid d-block mx-auto" alt="clarico-offer style 5" src="/website_template/static/img/TL5-LRM09711-WEB.png"/>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section data-name="title">
+							<div class="container">
+								<div class="row s_nb_column_fixed">
+									<div class="col-lg-12 s_title" style="text-align: center;margin-top:20px">
+										<h4 class="te_s_title_default">
+											<font style="font-size: 24px;">TECHNISCHE DATEN</font>
+										</h4>
+										<hr style="border-top: 2px solid;"/>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="oe_structure oe_empty" data-name="style 5" data-editor-message="ziehen sie bausteine hierher"/>
+						<section class="d-inline-block w-100 offer_5_bg" data-name="style 5">
+							<div class="container">
+								<style>
+									.fa-ul li:hover {color: #ef0000};
+								</style>
+								<div class="row align-items-center te_left_to_right pt32 pb32">
+									<section class="col-lg-6 col-md-6 te_offer_5_text_left te_left_side">
+										<h2 class="elementor-heading-title elementor-size-default">
+											<b>SCHLICHT &amp; SCHÖN</b>
+											<br/>
+										</h2>
+										<ul class="fa-ul" style="line-height: 30px; font-size: 15px;">
+											<li><i class="fa-li fa fa-paint-brush"></i>Zeitlose Optik
+											</li>
+											<li><i class="fa-li fa fa-car"></i>Entspricht den ELE und ASA Richtlinie
+											</li>
+											<li><i class="fa-li fa fa-tachometer"></i>Getestet bei Höchstgeschwindigkeit
+											</li>
+										</ul>
+									</section>
+									<div class="col-lg-6 col-md-6 te_text_middle p-0 py-2 te_offer_img_center">
+										<div class="t_img_hover_1">
+											<img class="img img-responsive img-fluid d-block mx-auto" alt="clarico-offer style 5" src="/website_template/static/img/2020_02.png" data-original-title="" title=""
+												 aria-describedby="tooltip837877"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--<section class="s_text_image pt32 pb32" data-name="image - text">
+							<div class="container">
+								<style>
+									.fa-ul li:hover {color: #ef0000};
+								</style>
+								<div class="row align-items-center aos-init" data-aos="align-items-center">
+									<div class="col-lg-6">
+										<div class="t_img_hover_1">
+											<img src="/website_template/static/img/swiss-made.png" class="img img-fluid mx-auto" alt="clarico-image-text" data-original-title="" title="" aria-describedby="tooltip155496"/>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<h2 class="text-capitalize te_s_it_heading">
+											<b>
+												<font style="font-size: 36px;">SWISS MADE</font>
+											</b>
+										</h2>
+										<ul class="fa-ul" style="line-height: 30px; font-size: 15px;">
+											<li><i class="fa-li fa fa-plus-circle"></i>Entwickelt in den schweizer Alpen
+											</li>
+											<li><i class="fa-li fa fa-fire"></i>Resistent gegen Hitze bis 60 Grad
+											</li>
+											<li><i class="fa-li fa fa-anchor"></i>Hält ein Leben lang am Fahrzeug!
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" data-name="cover" style="background-image: none;margin-bottom:200px;">
+							<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+								  style="background-image: url(/website_template/static/img/julian-hochgesang.jpg); background-size: cover; background-position: 50% 0px;height: 350px;"/>
+							<div class="container">
+								<div class="col-lg-4 row s_nb_column_fixed" style="float:right;background: #fff;height: 165px; width: 370px; margin-top: 70px;padding: 20px;margin-bottom: -30px;margin-right: 35px;">
+									<div class=" s_title pb0" data-name="title">
+										<h3 class="s_title_thin" style="text-align: center;">
+											<font style="z-index: 9;font-family:Baloo Bhai; visibility: visible; text-align: left; line-height: 25px; letter-spacing: 0px;
+											font-weight: 400;  font-size: 28px; border-color: rgb(119, 119, 119);border-style: none;margin: 0px;
+											border-radius: 0px;padding: 0px;color: rgb(112, 112, 112); text-decoration: none; white-space: normal; width: 210px;height: auto; min-height: 0px;
+											min-width: 0px;  max-height: none; max-width: none;  opacity: 1; transform-origin: 50% 50% 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+												<span style="">Nie wieder ohne</span>
+											</font>
+										</h3>
+
+										<h3 style="font-family: Raleway; visibility: visible; text-align: left; line-height: 24px;color: #000;font-weight: bold;">
+											Techlux
+										</h3>
+
+										<a href="/shop" class="te_theme_button btn btn-delta" style="font-family: Raleway;padding: 0; margin-top: 10px;font-size: 18px; background: none;text-decoration: underline;border: none; color: #000;"
+										   data-original-title="" title="" aria-describedby="tooltip14318">
+											<font style="vertical-align: inherit;" data-original-title="" title="" aria-describedby="tooltip342494">Jetzt shoppen</font>
+										</a>
+									</div>
+								</div>
+							</div>
+						</section>-->
+
+						<section class="">
+							<div class="container">
+								<style>
+									.title-text p {
+									padding: 80px 15px 0px 15px;
+									width: 220px;
+									}
+
+									.title-text span {
+									opacity: 0;
+									}
+
+									.title-text {
+									height: 350px;
+									background-color: #fff;
+									border: 1px solid #c5eae7;
+									}
+
+									.title-text:hover {
+									animation-name: example;
+									animation-duration: 0.5s;
+									background-color: #f27397;
+									}
+
+									.title-text:hover p {
+									transition: padding 0.5s;
+									transition-timing-function: ease-in-out;
+									padding-top: 20px;
+									}
+
+									.title-text:hover span {
+									transition: opacity 0.5s;
+									transition-delay: 0.5s;
+									transition-timing-function: ease-in-out;
+									opacity: 1;
+									}
+
+									.title-text2 p {
+									padding: 80px 15px 0px 15px;
+									width: 220px;
+									}
+
+									.title-text2 span {
+									opacity: 0;
+									}
+
+									.title-text2 {
+									height: 350px;
+									background-color: #fff;
+									border: 1px solid #c5eae7;
+									}
+
+									.title-text2:hover {
+									animation-name: example;
+									animation-duration: 0.5s;
+									background-color: #56be8e;
+									}
+
+									.title-text2:hover p {
+									transition: padding 0.5s;
+									transition-timing-function: ease-in-out;
+									padding-top: 20px;
+									}
+
+									.title-text2:hover span {
+									transition: opacity 0.5s;
+									transition-delay: 0.5s;
+									transition-timing-function: ease-in-out;
+									opacity: 1;
+									}
+
+									.title-text3 p {
+									padding: 80px 15px 0px 15px;
+									width: 220px;
+									}
+
+									.title-text3 span {
+									opacity: 0;
+									}
+
+									.title-text3 {
+									height: 350px;
+									background-color: #fff;
+									border: 1px solid #c5eae7;
+									}
+
+									.title-text3:hover {
+									animation-name: example;
+									animation-duration: 0.5s;
+									background-color: #3ea9f5;
+									}
+
+									.title-text3:hover p {
+									transition: padding 0.5s;
+									transition-timing-function: ease-in-out;
+									padding-top:20px;
+									}
+
+									.title-text3:hover span {
+									transition: opacity 0.5s;
+									transition-delay: 0.5s;
+									transition-timing-function: ease-in-out;
+									opacity: 1;
+									}
+								</style>
+								<div class="col-lg-12" style="float:left;margin-top:30px;margin-bottom:30px;">
+									<div class="title-text col-lg-4" style="float:left;border-radius: 7px 0px 0px 7px;">
+										<i style="color:#f27397;font-size: 50px;padding:40px;" class="fa fa-truck"></i>
+										<p style="font-size: 28px;">
+											Schnelle Lieferung
+										</p>
+										<!--<span style="padding-left: 50px; padding-right: 50px; font-size: 20px;">
+											Schnelle Lieferung
+										</span>-->
+									</div>
+									<div class="title-text2 col-lg-4" style="float:left;">
+										<i style="color:#56be8e;font-size: 50px;padding:40px;" class="fa fa-undo"></i>
+										<p style="font-size: 28px;">
+											30 Tage Rückgaberecht
+										</p>
+										<!--<span  style="padding-left: 50px; padding-right: 50px; font-size: 20px;">
+											30 Tage Rückgaberecht
+										</span>-->
+									</div>
+									<div class="title-text3 col-lg-4" style="float:left;border-radius: 0px 7px 7px 0px;">
+										<i style="color:#3ea9f5;font-size: 50px;padding:40px;" class="fa fa-usd"></i>
+										<p style="font-size: 28px;">
+											Sichere Bezahlung
+										</p>
+										<!--<span  style="padding-left: 50px; padding-right: 50px; font-size: 20px;">
+											Sichere Bezahlung
+										</span>-->
+									</div>
+								</div>
+							</div>
+						</section>
+						<section data-name="title">
+							<div class="container">
+								<div class="row s_nb_column_fixed">
+									<div class="col-lg-12 s_title" style="text-align: center;">
+										<h4 class="te_s_title_default">SHOP</h4>
+										<hr style="border-top: 2px solid;"/>
+									</div>
+								</div>
+								<div class="input-group js_slider_snippet hidden" data-isemipro="true" data-name="Product Carousel" data-slider-id="1"/>
+							</div>
+						</section>
+
+						<section data-name="title">
+							<div class="container">
+								<div class="row s_nb_column_fixed">
+									<div class="col-lg-12 s_title" style="text-align: center;">
+										<h4 class="te_s_title_default">GALLERIE</h4>
+										<hr style="border-top: 2px solid;"/>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="o_gallery s_image_gallery o_fake_not_editable aos-init pt0 o_slideshow o_spc-medium" data-columns="3" style="overflow: hidden;" data-name="image gallery" data-aos="o_spc-medium">
+							<div class="container">
+								<div class="col-lg-12">
+									<div class="col-lg-3" style="float:left;"></div>
+									<div id="slideshow_1581330327137" class="carousel slide pointer-event col-lg-6" data-ride="carousel" data-interval="0" style="margin: 0 12px;float:left;">
+										<div class="carousel-inner" style="padding: 0;">
+											<div class="carousel-item active" style="">
+												<img class="img img-fluid d-block" style="color:#f27397;" src="/website_template/static/img/G2A4450-2.jpg" alt="folien bild" data-index="0"/>
+											</div>
+											<div class="carousel-item" style="">
+												<img class="img img-fluid d-block" src="/website_template/static/img/G2A4475-2.jpg" alt="folien bild" data-index="1"/>
+											</div>
+											<div class="carousel-item" style="">
+												<img class="img img-fluid d-block" src="/website_template/static/img/G2A4487_nachher-2.jpg" alt="folien bild" data-index="2"/>
+											</div>
+										</div>
+										<a class="carousel-control-prev text-black" href="#slideshow_1581330327137" data-slide="prev" aria-label="previous" title="vorherige">
+											<span class="fa fa-chevron-left"/>
+										</a>
+										<a class="carousel-control-next text-black" href="#slideshow_1581330327137" data-slide="next" aria-label="next" title="weiter">
+											<span class="fa fa-chevron-right"/>
+										</a>
+									</div>
+									<div class="col-lg-3"></div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</xpath>
+		</template>
+	</data>
+</odoo>
