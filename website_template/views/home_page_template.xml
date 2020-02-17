@@ -39,56 +39,85 @@
 							</div>
 						</section>
 
-						<section class="container te_max_width_4_column pt32 pb0" data-name="style 1" style="padding-top:0 !important">
+						<section class="container-fluid pt32 pb0" data-name="style 1" style="padding-top:0 !important">
 							<div class="row">
-								<div class="col-lg-12">
-									<div class="col-lg-4" style="float:left;padding-top:30px">
-										<div style="display:flex;">
-											<span style="font-size:78px;float:left;">
-												S
-											</span>
-											<blockquote style="border-left: 5px solid #000; margin: 1.5em 10px; padding: 0.5em 10px; height: 115px; position: absolute;left: 41px;background: #fff;">
-												<span style="font-size:20px;">
-													<b>SOLID CONSTRUCTION</b>
+								<div class="col-lg-12" style="padding: 0;">
+									<div class="col-lg-5" style="float:left;padding-top:30px">
+										<div class="col-lg-12">
+											<div style="display:flex;padding-left: 20px;">
+												<span style="font-size:78px;float:left; margin-right: -10px;">
+													S
 												</span>
-												<br/>
-												<span style="line-height:30px;">Unsere Designer setzten sowohl aug höchste Design- als auch Funktionsansprüche.</span>
-											</blockquote>
-										</div>
-										<br/>
-										<div style="margin-top:30px;display:flex;">
-											<span style="font-size:78px;">
-												B
-											</span>
-											<blockquote style="border-left: 5px solid #000; margin: 1.5em 10px; padding: 0.5em 10px; height: 115px; position: absolute;left: 41px;background: #fff;">
-												<span style="font-size:20px;">
-													<b>BEST RESOURCES</b>
+												<blockquote style="border-left: 4px solid #000; padding: 0.5em 10px; height: 95px; margin: 1.5em 10px 0 0;background: #fff;">
+													<span style="font-size:20px;">
+														<b>SOLID CONSTRUCTION</b>
+													</span>
+													<br/>
+													<span style="line-height:30px;">Unsere Designer setzten sowohl aug höchste Design- als auch Funktionsansprüche.</span>
+												</blockquote>
+											</div>
+											<br/>
+											<div style="padding-left: 30%;;display:flex;">
+												<span style="font-size:78px;margin-right: -10px;">
+													B
 												</span>
-												<br/>
-												<span style="line-height:30px;">Der verwendete Werkstoff ist ein wichtiger Faktor für die Qualität und Langlebigkeit unserer Produkte.</span>
-											</blockquote>
-										</div>
-										<br/>
-										<div style="margin-top:30px;display:flex;">
-											<span style="font-size:78px">
-												T
-											</span>
-											<blockquote style="border-left: 5px solid #000; margin: 1.5em 10px; padding: 0.5em 10px; height: 115px; position: absolute;left: 41px;background: #fff;">
-												<span style="font-size:20px;">
-													<b>TESTED FOR CARWASH</b>
+												<blockquote style="border-left: 4px solid #000; padding: 0.5em 10px; height: 95px; margin: 1.5em 10px 0 -2px;background: #fff;">
+													<span style="font-size:20px;">
+														<b>BEST RESOURCES</b>
+													</span>
+													<br/>
+													<span style="line-height:30px;">Der verwendete Werkstoff ist ein wichtiger Faktor für die Qualität und Langlebigkeit unserer Produkte.</span>
+												</blockquote>
+											</div>
+											<br/>
+											<div style="margin-top:30px;display:flex;">
+												<span style="font-size:78px">
+													T
 												</span>
-												<br/>
-												<span style="line-height:30px;">Das Produkt ist Waschstrassentauglich.</span>
-											</blockquote>
+												<blockquote style="border-left: 4px solid #000; padding: 0.5em 10px; height: 95px; margin: 1.5em 10px 0 -10px;;background: #fff;">
+													<span style="font-size:20px;">
+														<b>TESTED FOR CARWASH</b>
+													</span>
+													<br/>
+													<span style="line-height:30px;">Das Produkt ist Waschstrassentauglich.</span>
+												</blockquote>
+											</div>
+
+											<div style="padding-left: 30%;;display:flex;">
+												<span style="font-size:78px;margin-right: -10px;">
+													A
+												</span>
+												<blockquote style="border-left: 4px solid #000; padding: 0.5em 10px; height: 95px; margin: 1.5em 10px 0 -10px;;background: #fff;">
+													<span style="font-size:20px;">
+														<b>APPROVED FOR TOP SPEED</b>
+													</span>
+													<br/>
+													<span style="line-height:30px;">Entwickelt für Höchstgeschwindigketien.</span>
+												</blockquote>
+											</div>
+
+											<div style="margin-top:30px;display:flex;">
+												<span style="font-size:78px">
+													A
+												</span>
+												<blockquote style="border-left: 4px solid #000; padding: 0.5em 10px; height: 95px; margin: 1.5em 10px 0 -20px;;background: #fff;">
+													<span style="font-size:20px;">
+														<b>APPROVED FOR ECE AND ASA</b>
+													</span>
+													<br/>
+													<span style="line-height:30px;">Übereinstimmend mit den geltenden Richtlinien des ECE und ASA.</span>
+												</blockquote>
+											</div>
+
 										</div>
 									</div>
-									<div class="col-lg-8" style="float:right;max-height: 600px;">
-										<img class="img img-responsive img-fluid d-block mx-auto" alt="clarico-offer style 5" src="/website_template/static/img/TL5-LRM09711-WEB.png"/>
+									<div class="col-lg-7" style="float:right;max-height: 600px;padding: 0;">
+										<img class="img img-responsive img-fluid d-block mx-auto" src="/website_template/static/img/TL5-LRM09711-WEB.png"/>
 									</div>
 								</div>
 							</div>
 						</section>
-						<section data-name="title">
+						<!--<section data-name="title">
 							<div class="container">
 								<div class="row s_nb_column_fixed">
 									<div class="col-lg-12 s_title" style="text-align: center;margin-top:20px">
@@ -129,7 +158,7 @@
 									</div>
 								</div>
 							</div>
-						</section>
+						</section>-->
 						<!--<section class="s_text_image pt32 pb32" data-name="image - text">
 							<div class="container">
 								<style>
@@ -191,7 +220,7 @@
 							<div class="container">
 								<style>
 									.title-text p {
-									padding: 80px 15px 0px 15px;
+									padding: 50px 15px 0px 15px;
 									width: 220px;
 									}
 
@@ -214,7 +243,7 @@
 									.title-text:hover p {
 									transition: padding 0.5s;
 									transition-timing-function: ease-in-out;
-									padding-top: 20px;
+									padding-top: 0px;
 									}
 
 									.title-text:hover span {
@@ -225,7 +254,7 @@
 									}
 
 									.title-text2 p {
-									padding: 80px 15px 0px 15px;
+									padding: 50px 15px 0px 15px;
 									width: 220px;
 									}
 
@@ -248,7 +277,7 @@
 									.title-text2:hover p {
 									transition: padding 0.5s;
 									transition-timing-function: ease-in-out;
-									padding-top: 20px;
+									padding-top: 0px;
 									}
 
 									.title-text2:hover span {
@@ -259,7 +288,7 @@
 									}
 
 									.title-text3 p {
-									padding: 80px 15px 0px 15px;
+									padding: 50px 15px 0px 15px;
 									width: 220px;
 									}
 
@@ -293,27 +322,27 @@
 									}
 								</style>
 								<div class="col-lg-12" style="float:left;margin-top:30px;margin-bottom:30px;">
-									<div class="title-text col-lg-4" style="float:left;border-radius: 7px 0px 0px 7px;">
-										<i style="color:#f27397;font-size: 50px;padding:40px;" class="fa fa-truck"></i>
-										<p style="font-size: 28px;">
+									<div class="title-text col-lg-4" style="float:left;border-radius: 7px 0px 0px 7px; text-align: center;">
+										<i style="color:#f27397;font-size: 150px;padding-top: 20px;" class="fa fa-truck"></i>
+										<p style="font-size: 32px;">
 											Schnelle Lieferung
 										</p>
 										<!--<span style="padding-left: 50px; padding-right: 50px; font-size: 20px;">
 											Schnelle Lieferung
 										</span>-->
 									</div>
-									<div class="title-text2 col-lg-4" style="float:left;">
-										<i style="color:#56be8e;font-size: 50px;padding:40px;" class="fa fa-undo"></i>
-										<p style="font-size: 28px;">
+									<div class="title-text2 col-lg-4" style="float:left;text-align: center;">
+										<i style="color:#56be8e;font-size: 150px;padding-top: 20px;" class="fa fa-undo"></i>
+										<p style="font-size: 32px;">
 											30 Tage Rückgaberecht
 										</p>
 										<!--<span  style="padding-left: 50px; padding-right: 50px; font-size: 20px;">
 											30 Tage Rückgaberecht
 										</span>-->
 									</div>
-									<div class="title-text3 col-lg-4" style="float:left;border-radius: 0px 7px 7px 0px;">
-										<i style="color:#3ea9f5;font-size: 50px;padding:40px;" class="fa fa-usd"></i>
-										<p style="font-size: 28px;">
+									<div class="title-text3 col-lg-4" style="float:left;border-radius: 0px 7px 7px 0px;text-align: center;">
+										<i style="color:#3ea9f5;font-size: 150px;padding-top: 20px;" class="fa fa-usd"></i>
+										<p style="font-size: 32px;">
 											Sichere Bezahlung
 										</p>
 										<!--<span  style="padding-left: 50px; padding-right: 50px; font-size: 20px;">
