@@ -257,8 +257,8 @@
 									</a>
 								</div>
 							</div>
-							<div groups="base.group_public" class="te_signin" t-if="request.website.viewref('portal.portal_show_sign_in').active">
-								<a t-attf-href="/web/login" class="btn btn-link">
+							<div groups="base.group_public" class="te_signin" t-if="request.website.viewref('portal.portal_show_sign_in').active" style="display: inline;">
+								<a t-attf-href="/web/login" class="btn btn-link" style="color:#fff;">
 									<span class="te_user_account_name">Sign in</span>
 									<span class="te_user_account_icon">
 										<i class="fa fa-user" aria-hidden="true"></i>
