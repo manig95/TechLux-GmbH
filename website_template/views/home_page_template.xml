@@ -13,10 +13,10 @@
 					<div id="wrap" class="oe_structure oe_empty">
 						<section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" data-name="cover" style="background-image: none;">
 							<span class="s_parallax_bg oe_img_bg oe_custom_bg"
-								  style="background-image: url(/website_template/static/img/nachher_ergebnis.png); background-size: cover; background-position: 50% 0px;background-attachment: inherit;"/>
+								  style="background-image: url(/website_template/static/img/nachher_ergebnis.png); background-size: cover; background-position: 50% -110px;background-attachment: inherit;"/>
 							<div class="container">
 								<div class="row s_nb_column_fixed">
-									<div class="col-lg-12 s_title pb0" data-name="title">
+									<div class="col-lg-12 s_title pb0" data-name="title" style="margin-top: -55px;">
 										<h1 class="s_title_thin" style="text-align: center;">
 											<font style="">
 												<span style="font-size: 72px;font-weight:bold;">ENTDECKE KLIXX</span>
@@ -30,7 +30,7 @@
 											</font>
 										</p>
 										<div class="s_btn pb16 pt208 aos-init text-center" data-name="button" data-aos="text-center">
-											<a href="/shop" class="te_theme_button btn btn-delta" style="background: #000; border: none;color: #fff; font-size: 30px;" data-original-title="" title="" aria-describedby="tooltip14318">
+											<a href="/shop" class="te_theme_button btn btn-delta" style="background: #000; border: none;color: #fff; font-size: 30px; margin-top: 100px;" data-original-title="" title="" aria-describedby="tooltip14318">
 												<font style="vertical-align: inherit;" data-original-title="" title="" aria-describedby="tooltip342494">BESTELLEN</font>
 											</a>
 										</div>
