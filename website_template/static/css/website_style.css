@@ -1,3 +1,16 @@
+/*.menu {
+    position:fixed;
+    top:0;
+    width:100%;
+}
+.fixed {
+    top:0;
+}*/
+
+.nv a{
+color:#fff !important;
+}
+
 .container-box{
   position: relative;
   width: 50%;
@@ -39,8 +52,10 @@
 
 
 .te_header_before_logo img, .navbar-brand.logo img {
-height: 50px;
+height: 40px;
 }
+
+.te_header_navbar{display:none;}
 
 .te_header_navbar #top_menu_collapse #top_menu > li > a.nav-link.active {
     color: #000 !important;
@@ -66,3 +81,45 @@ height: 50px;
     border: 1px solid rgb(56, 84, 77);
 }
 
+.searchbar{
+       margin-bottom: auto;
+    margin-top: auto;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    }
+
+    .search_input{
+    color: #000;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
