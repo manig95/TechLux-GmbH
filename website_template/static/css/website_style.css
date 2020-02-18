@@ -36,3 +36,33 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+.te_header_before_logo img, .navbar-brand.logo img {
+height: 75px;
+}
+
+.te_header_navbar #top_menu_collapse #top_menu > li > a.nav-link.active {
+    color: #000 !important;
+}
+
+.badge-primary {
+    color: #FFFFFF;
+    background-color: #000 !important;
+}
+
+.te_user_account > .dropdown-menu a.dropdown-item > span.fa {
+    font-size: 0.8125rem;
+    color: #38544d !important;
+    margin-right: 1rem;
+}
+
+.scrollup-div:hover {
+    background: #38544d;
+}
+
+.o_wsale_apply_layout .active {
+    color: #38544d;
+    border: 1px solid rgb(56, 84, 77);
+}
+
