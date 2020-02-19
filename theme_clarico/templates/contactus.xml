@@ -6,8 +6,7 @@
         </xpath>
         <xpath expr="//div[hasclass('oe_structure')]" position="replace">
             <div class="oe_structure">
-                <section class="te_contactus_banner_section oe_img_bg"
-                         style="background-image: url(&quot;/theme_clarico/static/src/img/shop/1920_110.jpg&quot;);">
+                <section class="te_contactus_banner_section oe_img_bg">
                     <div class="s_title text-center">
                         <h2>Contact Us</h2>
                     </div>

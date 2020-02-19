@@ -6,7 +6,8 @@
 .fixed {
     top:0;
 }*/
-
+#wrap{
+    margin-top: 65px;}
 .nv a{
     color:#fff !important;
     padding-right: 30px;
