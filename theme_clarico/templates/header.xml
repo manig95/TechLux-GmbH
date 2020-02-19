@@ -925,7 +925,7 @@
 				<span class="lang_btn_code" style="display:none" t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][1]"/>
 				<span class="caret ml4"/>
 			</button>
-			<div class="dropdown-menu" role="menu">
+			<div class="dropdown-menu" role="menu" style="height: fit-content;">
 				<t t-foreach="languages" t-as="lg">
 					<a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
 					   class="dropdown-item js_change_lang"
