@@ -237,7 +237,7 @@
 									.title-text {
 									height: 350px;
 									background-color: #fff;
-									border: 1px solid #c5eae7;
+									border: 1px solid #38544d;
 									}
 
 									.title-text:hover {
@@ -272,7 +272,7 @@
 									.title-text2 {
 									height: 350px;
 									background-color: #fff;
-									border: 1px solid #c5eae7;
+									border: 1px solid #38544d;
 									}
 
 									.title-text2:hover {
@@ -307,7 +307,7 @@
 									.title-text3 {
 									height: 350px;
 									background-color: #fff;
-									border: 1px solid #c5eae7;
+									border: 1px solid #38544d;
 									}
 
 									.title-text3:hover {
