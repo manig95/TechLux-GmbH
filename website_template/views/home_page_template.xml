@@ -250,6 +250,7 @@
 									transition: padding 0.5s;
 									transition-timing-function: ease-in-out;
 									padding-top: 0px;
+									color:#fff;
 									}
 
 									.title-text:hover span {
@@ -284,6 +285,7 @@
 									transition: padding 0.5s;
 									transition-timing-function: ease-in-out;
 									padding-top: 0px;
+									color:#fff;
 									}
 
 									.title-text2:hover span {
@@ -318,6 +320,7 @@
 									transition: padding 0.5s;
 									transition-timing-function: ease-in-out;
 									padding-top:20px;
+									color:#fff;
 									}
 
 									.title-text3:hover span {
