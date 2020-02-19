@@ -157,7 +157,7 @@
 							</t>
 						</div>
 						<div  class="col-lg-1"></div>
-						<div class="col-lg-4 te_header_style_2_right" style="text-align: right;">
+						<div class="col-lg-4 te_header_style_2_right" style="text-align: right;padding-top: 6px;">
 							<!--<t t-set="website_vertical_menu" t-value="request.website.viewref('theme_clarico.menu_vertical').active"/>
 							<div class="te_bar_icon" t-if="website_vertical_menu">
 								<a href="#" class="" style="color: #fff;">
