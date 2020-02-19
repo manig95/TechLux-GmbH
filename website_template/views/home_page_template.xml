@@ -243,7 +243,7 @@
 									.title-text:hover {
 									animation-name: example;
 									animation-duration: 0.5s;
-									background-color: #C5545C;
+									background-color: #1D423C;
 									}
 
 									.title-text:hover p {
@@ -278,7 +278,7 @@
 									.title-text2:hover {
 									animation-name: example;
 									animation-duration: 0.5s;
-									background-color: #38544d;
+									background-color: #C9C9C9;
 									}
 
 									.title-text2:hover p {
@@ -332,7 +332,7 @@
 								</style>
 								<div class="col-lg-12" style="float:left;margin-top:30px;margin-bottom:30px;">
 									<div class="title-text col-lg-4" style="float:left;border-radius: 7px 0px 0px 7px; text-align: center;">
-										<i style="color:#C5545C;font-size: 150px;padding-top: 20px;" class="fa fa-truck"></i>
+										<i style="color:#1D423C;font-size: 150px;padding-top: 20px;" class="fa fa-truck"></i>
 										<p style="font-size: 32px;">
 											Schnelle Lieferung
 										</p>
@@ -341,7 +341,7 @@
 										</span>-->
 									</div>
 									<div class="title-text2 col-lg-4" style="float:left;text-align: center;">
-										<i style="color:#38544d;font-size: 150px;padding-top: 20px;" class="fa fa-undo"></i>
+										<i style="color:#C9C9C9;font-size: 150px;padding-top: 20px;" class="fa fa-undo"></i>
 										<p style="font-size: 32px;">
 											30 Tage Rückgaberecht
 										</p>
