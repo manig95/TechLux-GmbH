@@ -135,28 +135,29 @@
 		<xpath expr="//header" position="before">
 			<div class="te_header_before_overlay">
 
-				<div class="container te_header_style_2_inner menu" style="background: #38544d; width: 100% !important; max-width: 1600px;padding: 0; height: 75px;">
-					<div class="row py-3 align-items-center">
-						<div class="col-lg-3" style="max-width: 300px;">
-							<div class="navbar nv">
+				<div class="navbar" style="background: #38544d; width: 100% !important;display:inline-block;position: fixed; z-index: 9999;">
+					<div class="row">
+						<div class="col-lg-3" style="padding-top: 10px;">
+							<div class="navbar nv" style="justify-content: inherit;">
 								<a href="/shop">SHOP</a>
 								<a href="/blog">BLOGS</a>
 								<a href="/contactus">CONTACT US</a>
 							</div>
 						</div>
 
-						<div class="col-lg-5" style="text-align: center;right: -60px;">
+						<div class="col-lg-4" style="text-align: right;">
 							<t t-set="logo_show" t-value="request.website.viewref('website.layout_logo_show').active"/>
 							<t t-if="logo_show">
 								<a href="/" class="navbar-brand logo te_header_before_logo">
-									<span style="padding: 65px;height: 75px;" t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name"/>
+									<span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name"/>
 								</a>
 							</t>
 							<t t-else="">
 								<a class="te_header_before_logo navbar-brand" href="/" t-if="website" t-field="website.name">My Website</a>
 							</t>
 						</div>
-						<div class="col-lg-4 te_header_style_2_right">
+						<div  class="col-lg-1"></div>
+						<div class="col-lg-4 te_header_style_2_right" style="text-align: right;">
 							<!--<t t-set="website_vertical_menu" t-value="request.website.viewref('theme_clarico.menu_vertical').active"/>
 							<div class="te_bar_icon" t-if="website_vertical_menu">
 								<a href="#" class="" style="color: #fff;">
@@ -207,17 +208,6 @@
 							</div>
 						</div>
 					</div>
-					<script>
-						var num = 0; //number of pixels before modifying styles
-						$(window).bind('scroll', function () {
-						if ($(window).scrollTop() > num) {
-						$('.menu').addClass('static');
-						} else {
-						$('.menu').removeClass('static');
-						}
-						});
-
-					</script>
 				</div>
 			</div>
 		</xpath>
