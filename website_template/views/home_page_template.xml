@@ -243,7 +243,7 @@
 									.title-text:hover {
 									animation-name: example;
 									animation-duration: 0.5s;
-									background-color: #f27397;
+									background-color: #C5545C;
 									}
 
 									.title-text:hover p {
@@ -311,7 +311,7 @@
 									.title-text3:hover {
 									animation-name: example;
 									animation-duration: 0.5s;
-									background-color: #3ea9f5;
+									background-color: #1D4753;
 									}
 
 									.title-text3:hover p {
@@ -329,7 +329,7 @@
 								</style>
 								<div class="col-lg-12" style="float:left;margin-top:30px;margin-bottom:30px;">
 									<div class="title-text col-lg-4" style="float:left;border-radius: 7px 0px 0px 7px; text-align: center;">
-										<i style="color:#f27397;font-size: 150px;padding-top: 20px;" class="fa fa-truck"></i>
+										<i style="color:#C5545C;font-size: 150px;padding-top: 20px;" class="fa fa-truck"></i>
 										<p style="font-size: 32px;">
 											Schnelle Lieferung
 										</p>
@@ -347,7 +347,7 @@
 										</span>-->
 									</div>
 									<div class="title-text3 col-lg-4" style="float:left;border-radius: 0px 7px 7px 0px;text-align: center;">
-										<i style="color:#3ea9f5;font-size: 150px;padding-top: 20px;" class="fa fa-usd"></i>
+										<i style="color:#1D4753;font-size: 150px;padding-top: 20px;" class="fa fa-usd"></i>
 										<p style="font-size: 32px;">
 											Sichere Bezahlung
 										</p>
