@@ -358,7 +358,25 @@
 								</div>
 							</div>
 						</section>
-						<section data-name="title">
+
+						<section class="">
+							<div>
+								<div class="t_img_hover_1 col-lg-5" style="padding:0;display: inherit;">
+									<img src="/website_template/static/img/G2A4487_nachher-2.jpg" class="img img-fluid mx-auto" aria-describedby="tooltip155496"/>
+								</div>
+
+								<div style="background-color: #38544d; padding: 30px;color: #fff;">
+									<div class="row">
+										<p style="font-size: 33px; font-weight: bold;background: #185a17;">WIR VERBINDEN PRAKTISCHE ASPEKTE UND ÄSTHETIK</p>
+									</div>
+								</div>
+								<div class="t_img_hover_1 col-lg-5" style="padding:0;float:right;">
+									<img src="/website_template/static/img/G2A4487_nachher-2.jpg" class="img img-fluid mx-auto" aria-describedby="tooltip155496"/>
+								</div>
+							</div>
+						</section>
+
+						<section data-name="title"  style="width:100%;float:left;padding-top: 20px;">
 							<div class="container">
 								<div class="row s_nb_column_fixed">
 									<div class="col-lg-12 s_title" style="text-align: center;">
@@ -370,7 +388,7 @@
 							</div>
 						</section>
 
-						<section data-name="title">
+						<section data-name="title" style="width:100%;float:left;">
 							<div class="container">
 								<div class="row s_nb_column_fixed">
 									<div class="col-lg-12 s_title" style="text-align: center;">
@@ -380,7 +398,7 @@
 								</div>
 							</div>
 						</section>
-						<section class="o_gallery s_image_gallery o_fake_not_editable aos-init pt0 o_slideshow o_spc-medium" data-columns="3" style="overflow: hidden;" data-name="image gallery" data-aos="o_spc-medium">
+						<section class="o_gallery s_image_gallery o_fake_not_editable aos-init pt0 o_slideshow o_spc-medium" data-columns="3" data-name="image gallery" data-aos="o_spc-medium">
 							<div class="container">
 								<div class="col-lg-12">
 									<div class="col-lg-3" style="float:left;"></div>
@@ -408,7 +426,7 @@
 							</div>
 						</section>
 
-						<section class="s_newsletter_block pt64 pb64 oe_img_bg oe_custom_bg" data-name="Newsletter block" style="background: #38544d;">
+						<section class="s_newsletter_block pt64 pb64 oe_img_bg oe_custom_bg" data-name="Newsletter block" style="background: #38544d;width: 100%;float: left;">
 							<div class="container">
 								<div class="row">
 									<div class="col-lg-6 offset-lg-3 pb32 bg-white-75">

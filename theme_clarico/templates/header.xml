@@ -134,8 +134,7 @@
 		</xpath>
 		<xpath expr="//header" position="before">
 			<div class="te_header_before_overlay">
-
-				<div class="" style="background: #38544d; width: 100% !important;display:inline-block;position: fixed; z-index: 10;">
+				<div class="navbar" style="background: #38544d; width: 100% !important;display:inline-block;position: fixed; z-index: 10;">
 					<div class="row">
 						<div class="col-lg-3" style="padding-top: 10px;">
 							<div class="navbar nv" style="justify-content: inherit;">
@@ -145,7 +144,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-4" style="text-align: right;">
+						<div class="col-lg-6" style="text-align: center;">
 							<t t-set="logo_show" t-value="request.website.viewref('website.layout_logo_show').active"/>
 							<t t-if="logo_show">
 								<a href="/" class="navbar-brand logo te_header_before_logo">
@@ -156,8 +155,7 @@
 								<a class="te_header_before_logo navbar-brand" href="/" t-if="website" t-field="website.name">My Website</a>
 							</t>
 						</div>
-						<div  class="col-lg-1"></div>
-						<div class="col-lg-4 te_header_style_2_right" style="text-align: right;padding-top: 6px;">
+						<div class="col-lg-3 te_header_style_2_right" style="text-align: center;padding: 6px 0px 0px 0px">
 							<!--<t t-set="website_vertical_menu" t-value="request.website.viewref('theme_clarico.menu_vertical').active"/>
 							<div class="te_bar_icon" t-if="website_vertical_menu">
 								<a href="#" class="" style="color: #fff;">
