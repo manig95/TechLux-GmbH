@@ -361,7 +361,7 @@
 
 						<section class="">
 							<div>
-								<div class="t_img_hover_1 col-lg-5" style="padding:0;display: inherit;">
+								<div class="t_img_hover_1 col-lg-4" style="padding:0;display: inherit;">
 									<img src="/website_template/static/img/G2A4487_nachher-2.jpg" class="img img-fluid mx-auto" aria-describedby="tooltip155496"/>
 								</div>
 
@@ -370,7 +370,7 @@
 										<p style="font-size: 33px; font-weight: bold;background: #185a17;">WIR VERBINDEN PRAKTISCHE ASPEKTE UND ÄSTHETIK</p>
 									</div>
 								</div>
-								<div class="t_img_hover_1 col-lg-5" style="padding:0;float:right;">
+								<div class="t_img_hover_1 col-lg-4" style="padding:0;float:right;">
 									<img src="/website_template/static/img/G2A4487_nachher-2.jpg" class="img img-fluid mx-auto" aria-describedby="tooltip155496"/>
 								</div>
 							</div>
