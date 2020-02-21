@@ -361,6 +361,11 @@
 
 						<section class="">
 							<div>
+								<div style="background-color: #38544d; padding: 40px;color: #fff;float: left; width: 100%;">
+									<!--<div class="row">
+										<p style="font-size: 33px; font-weight: bold;">WIR VERBINDEN PRAKTISCHE ASPEKTE UND ÄSTHETIK</p>
+									</div>-->
+								</div>
 								<div style="display: inline-grid; grid-template-columns: auto 30px auto; background: #38544d;">
 									<div class="t_img_hover_1">
 										<img src="/website_template/static/img/G2A4487_nachher-2.jpg" alt="" style="max-width: 96%;"/>
