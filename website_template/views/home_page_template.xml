@@ -361,22 +361,27 @@
 
 						<section class="">
 							<div>
-								<div class="t_img_hover_1 col-lg-4" style="padding:0;display: inherit;">
-									<img src="/website_template/static/img/G2A4487_nachher-2.jpg" class="img img-fluid mx-auto" aria-describedby="tooltip155496"/>
-								</div>
-
-								<div style="background-color: #38544d; padding: 30px;color: #fff;">
-									<div class="row">
-										<p style="font-size: 33px; font-weight: bold;background: #185a17;">WIR VERBINDEN PRAKTISCHE ASPEKTE UND ÄSTHETIK</p>
+								<div style="display: inline-grid; grid-template-columns: auto 30px auto; background: #38544d;">
+									<div>
+										<img src="/website_template/static/img/G2A4487_nachher-2.jpg" alt="" style="max-width: 96%;"/>
+									</div>
+									<div style="color: #fff;display: grid; align-items: center; position: relative; justify-content: center;">
+										<span style="transform: rotate(-90deg); display: block; font-size: 33px; width: 366px; transform-origin: center center;">FEEL THE DIFFERENCE</span>
+									</div>
+									<div>
+										<img src="/website_template/static/img/G2A4487_nachher-2.jpg" alt="" style=" max-width:96%;float: right;"/>
 									</div>
 								</div>
-								<div class="t_img_hover_1 col-lg-4" style="padding:0;float:right;">
-									<img src="/website_template/static/img/G2A4487_nachher-2.jpg" class="img img-fluid mx-auto" aria-describedby="tooltip155496"/>
+								<div style="background-color: #38544d; padding: 30px;color: #fff;float: left; width: 100%;">
+									<div class="row">
+										<p style="font-size: 33px; font-weight: bold;">WIR VERBINDEN PRAKTISCHE ASPEKTE UND ÄSTHETIK</p>
+									</div>
 								</div>
+
 							</div>
 						</section>
 
-						<section data-name="title"  style="width:100%;float:left;padding-top: 20px;">
+						<section data-name="title" style="width:100%;float:left;padding-top: 20px;">
 							<div class="container">
 								<div class="row s_nb_column_fixed">
 									<div class="col-lg-12 s_title" style="text-align: center;">
@@ -429,7 +434,7 @@
 						<section class="s_newsletter_block pt64 pb64 oe_img_bg oe_custom_bg" data-name="Newsletter block" style="background: #38544d;width: 100%;float: left;">
 							<div class="container">
 								<div class="row">
-									<div class="col-lg-6 offset-lg-3 pb32 bg-white-75">
+									<div class="col-lg-6 offset-lg-3 pb32" style="color: #fff;">
 										<div class="text-center">
 											<h1 class="text-uppercase font-weight-bold o_default_snippet_text">Let's keep in touch!</h1>
 											<p class="o_default_snippet_text">Be the first to find out all the latest news, products and trends.</p>
