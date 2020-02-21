@@ -368,13 +368,13 @@
 								</div>
 								<div style="display: inline-grid; grid-template-columns: auto 30px auto; background: #38544d;">
 									<div class="t_img_hover_1">
-										<img src="/website_template/static/img/G2A4490_vorher_ergebnis(thick).png" alt="" style="max-width: 96%;min-height: 365px;"/>
+										<img src="/website_template/static/img/G2A4490_vorher_ergebnis(thick).png" alt="" style="max-width: 96%;min-height: 405px;"/>
 									</div>
 									<div style="color: #fff;display: grid; align-items: center; position: relative; justify-content: center;">
-										<span style="transform: rotate(-90deg); display: block; font-size: 35px; width: 375px; transform-origin: center center;text-align: center;">FEEL THE DIFFERENCE</span>
+										<span style="transform: rotate(-90deg); display: block; font-size: 38px; width: 405px; transform-origin: center center;text-align: center;">FEEL THE DIFFERENCE</span>
 									</div>
 									<div class="t_img_hover_1">
-										<img src="/website_template/static/img/G2A4487_nachher-2.jpg" alt="" style=" max-width:96%;float: right;min-height: 365px;"/>
+										<img src="/website_template/static/img/G2A4487_nachher-2.jpg" alt="" style=" max-width:96%;float: right;min-height: 405px;"/>
 									</div>
 								</div>
 								<div style="background-color: #38544d; padding: 45px;color: #fff;float: left; width: 100%;margin-top: -6px;">
