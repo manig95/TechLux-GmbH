@@ -173,7 +173,7 @@
 	</record>
 
 	<record id="impressum-page" model="website.page">
-		<field name="is_published">False</field>
+		<field name="is_published">True</field>
 		<field name="url">/impressum-page</field>
 		<field name="view_id" ref="impressum-page"/>
 		<field name="track">True</field>

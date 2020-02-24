@@ -73,7 +73,7 @@
 													<a href="https://klixx.info/impressum/">Impressum</a>
 												</p>
 												<p>
-													<a href="https://klixx.info/datenschutzrichtlinien/">Datenschutzrichtlinien</a>
+													<a href="/datenschutz-page">Datenschutzrichtlinien</a>
 												</p>
 												<p>
 													<a href="https://klixx.info/b2b/">B2B</a>
@@ -242,7 +242,7 @@
 	</record>
 
 	<record id="faq-page" model="website.page">
-		<field name="is_published">False</field>
+		<field name="is_published">True</field>
 		<field name="url">/faq-page</field>
 		<field name="view_id" ref="faq-page"/>
 		<field name="track">True</field>

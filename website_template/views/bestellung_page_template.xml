@@ -72,7 +72,7 @@
 													<a href="/mpressum-page">Impressum</a>
 												</p>
 												<p>
-													<a href="https://klixx.info/datenschutzrichtlinien/">Datenschutzrichtlinien</a>
+													<a href="datenschutz-page/">Datenschutzrichtlinien</a>
 												</p>
 												<p>
 													<a href="https://klixx.info/b2b/">B2B</a>
@@ -279,7 +279,7 @@
 	</record>
 
 	<record id="bestellung-und-bezahlung-page-action" model="website.page">
-		<field name="is_published">False</field>
+		<field name="is_published">True</field>
 		<field name="url">/bestellung-und-bezahlung-page</field>
 		<field name="view_id" ref="bestellung-und-bezahlung-page"/>
 		<field name="track">True</field>

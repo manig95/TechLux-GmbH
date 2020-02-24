@@ -5,7 +5,7 @@
     'category': 'Web Theme',
     'summary': 'Fully Responsive Odoo Theme suitable for eCommerce Businesses',
     'depends': [
-       'website','theme_clarico'
+       'website','theme_clarico','website_form'
     ],
 
     'data': [
@@ -15,7 +15,7 @@
         'views/faq_page_template.xml',
         'views/versand_page_template.xml',
         'views/imperssum_page_template.xml',
-        # 'views/footer_template.xml',
+        'views/datenschutz_template.xml',
     ],
 
     'author': 'PPTS India Pvt. Ltd.',
