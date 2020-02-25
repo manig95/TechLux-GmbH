@@ -6,51 +6,61 @@
 		<xpath expr="//div[@id='footer']" position="replace">
 			<div id="footer" class="oe_structure oe_structure_solo" style="background: #38544d;">
 				<!--<xpath expr="//div[@id='footer']" position="before">-->
-				<div>
-					<p style="text-align:center;color:#fff;padding:6px;">
-						<a style="color:#fff" href="/impressum-page">IMPRESSUM</a>
-						|
-						<a style="color:#fff" href="/datenschutz-page">DATENSCHUTZ</a>
-					</p>
+
+				<div class="col-lg-12" style="min-height:40px">
+					<div class="col-lg-5" style="float:left;padding-top: 25px;">
+						<p style="color:#fff;">
+							<span>&amp;copy;</span>
+							<span t-field="res_company.name" itemprop="name">Company name</span>
+						</p>
+					</div>
+
+					<div class="col-lg-7" style="float:left;padding: 0;top: 5px;">
+						<ul class="te_footer_info_text" style="list-style-type:none;padding: 0;">
+							<li class="te_ftr_add_info">
+								<div style="background: white; float: left;padding-left: 10px;">
+									<a t-if="website.social_facebook" t-att-href="website.social_facebook" style="color: #000; font-size:15px;"
+									   class="btn btn-sm btn-link">
+										<span style="display: inline-block;border-radius: 35px;padding: 0.5em 0.7em; border: 2px solid;" class="fa fa-facebook"/>
+									</a>
+									<a t-if="website.social_twitter" t-att-href="website.social_twitter" style="color: #000; font-size: 14px;"
+									   class="btn btn-sm btn-link">
+										<span style="display: inline-block;border-radius: 35px;padding: 0.6em 0.6em; border: 2px solid;" class="fa fa-twitter"/>
+									</a>
+									<a t-if="website.social_linkedin" t-att-href="website.social_linkedin" style="color: #000; font-size: 15px"
+									   class="btn btn-sm btn-link">
+										<span style="display: inline-block;border-radius: 35px;padding: 0.5em 0.6em; border: 2px solid;" class="fa fa-linkedin"/>
+									</a>
+									<a t-if="website.social_youtube" t-att-href="website.social_youtube" style="color: #000; font-size: 15px;"
+									   class="btn btn-sm btn-link">
+										<span style="display: inline-block;border-radius: 35px;padding: 0.5em 0.6em; border: 2px solid;" class="fa fa-youtube"/>
+									</a>
+									<a t-if="website.social_github" t-att-href="website.social_github" style="color: #000; font-size: 15px;"
+									   class="btn btn-sm btn-link">
+										<span style="display: inline-block;border-radius: 35px;padding: 0.5em 0.6em; border: 2px solid;" class="fa fa-github"/>
+									</a>
+									<a t-if="website.social_instagram" t-att-href="website.social_instagram" style="color: #000; font-size: 15px;"
+									   class="btn btn-sm btn-link">
+										<span style="display: inline-block;border-radius: 35px;padding: 0.5em 0.6em; border: 2px solid;" class="fa fa-instagram"/>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<!--<div>
-					<p style="float: left; padding-left: 20px;color:#fff;">
-						<span>&amp;copy;</span>
-						<span t-field="res_company.name" itemprop="name">Company name</span>
-					</p>
-				</div>
 				<div>
-					<ul class="te_footer_info_text" style="list-style-type:none">
-						<li class="te_ftr_add_info">
-							<div class="te_footer_social_icon py-2">
-								<a t-if="website.social_facebook" t-att-href="website.social_facebook"
-								   class="btn btn-sm btn-link">
-									<span class="fa fa-facebook-square"/>
-								</a>
-								<a t-if="website.social_twitter" t-att-href="website.social_twitter"
-								   class="btn btn-sm btn-link">
-									<span class="fa fa-twitter"/>
-								</a>
-								<a t-if="website.social_linkedin" t-att-href="website.social_linkedin"
-								   class="btn btn-sm btn-link">
-									<span class="fa fa-linkedin"/>
-								</a>
-								<a t-if="website.social_youtube" t-att-href="website.social_youtube"
-								   class="btn btn-sm btn-link">
-									<span class="fa fa-youtube-play"/>
-								</a>
-								<a t-if="website.social_github" t-att-href="website.social_github"
-								   class="btn btn-sm btn-link">
-									<span class="fa fa-github"/>
-								</a>
-								<a t-if="website.social_instagram" t-att-href="website.social_instagram"
-								   class="btn btn-sm btn-link">
-									<span class="fa fa-instagram"/>
-								</a>
-							</div>
-						</li>
-					</ul>
-				</div>-->
+					<div class="col-lg-12" style="">
+						<ul class="te_footer_info_text" style="list-style-type:none;padding: 0;">
+							<li class="te_ftr_add_info">
+								<img style="max-width:3%;" src="/website_template/static/img/apple-pay.png"/>
+								<img style="max-width:3%;" src="/website_template/static/img/master.png"/>
+								<img style="max-width:3%;" src="/website_template/static/img/visa-card-png-5.png"/>
+								<img style="max-width:4%;" src="/website_template/static/img/paypal-logo.png"/>
+								<img style="max-width:4%;" src="/website_template/static/img/ebill.jpg"/>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<!-- Scroll Up Icon -->
 			<div class="scrollup-div text-center">
