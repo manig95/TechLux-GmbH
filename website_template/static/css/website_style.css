@@ -13,6 +13,22 @@
     padding-right: 30px;
 }
 
+.social a{
+    font-size: 20px;
+}
+
+.fa-stack        .fa { color: white; }
+.fa-stack        .fa.fa-circle-thin { color: white; }
+.fa-stack        .fa.fa-circle { opacity:0.0; color:white; }
+
+.fa-stack:hover  .fa.fa-facebook { color: white; }
+.fa-stack:hover  .fa.fa-circle-thin { color: black; background: black; border-radius:35px; }
+.fa-stack:hover  .fa.fa-circle { color: black; }
+.fa-stack:hover  .fa.fa-twitter { color: white; }
+.fa-stack:hover  .fa.fa-linkedin { color: white; }
+.fa-stack:hover  .fa.fa-youtube { color: white; }
+.fa-stack:hover  .fa.fa-instagram { color: white; }
+.fa-stack:hover  .fa.fa-github { color: white; }
 .rounded {
   border-radius: 0 0 50% 50%;
   display: block;
