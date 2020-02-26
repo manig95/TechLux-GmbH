@@ -92,13 +92,13 @@
 							</ul>
 						</div>
 						<div class="col-lg-3" style="float:right;">
-							<ul class="te_footer_info_text" style="list-style-type:none;padding: 0;">
+							<ul class="te_footer_info_text" style="list-style-type:none;padding: 0;margin:0">
 								<li class="te_ftr_add_info">
 									<img style="height: 26px;" src="/website_template/static/img/ApplePay.png"/>
-									<img style="" src="/website_template/static/img/MasterCard.png"/>
-									<img style="height: 25px" src="/website_template/static/img/Visa.png"/>
+									<img style="height:60px;" src="/website_template/static/img/MasterCard.png"/>
+									<img style="height: 22px" src="/website_template/static/img/Visa.png"/>
 									<img style="height: 31px;" src="/website_template/static/img/PayPal.png"/>
-									<img style="height: 21px;" src="/website_template/static/img/EBill.png"/>
+									<img style="height: 20px;" src="/website_template/static/img/EBill.png"/>
 								</li>
 							</ul>
 						</div>
