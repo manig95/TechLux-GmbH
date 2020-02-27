@@ -12,6 +12,16 @@
     color:#fff !important;
     padding-right: 30px;
 }
+/*
+.rounded {
+    border-radius: 0 0 50% 50%;
+    display: block;
+    background: #669999;
+    width: 100%;
+    height: 70px;
+    margin-top: 0;
+}
+*/
 
 .social a{
     font-size: 20px;
@@ -29,7 +39,8 @@
 .fa-stack:hover  .fa.fa-youtube { color: white; }
 .fa-stack:hover  .fa.fa-instagram { color: white; }
 .fa-stack:hover  .fa.fa-github { color: white; }
-.rounded {
+
+/*.rounded {
   border-radius: 0 0 50% 50%;
   display: block;
   background: #669999;
@@ -43,7 +54,7 @@
   width: inherit;
   height: 35px;
   background: white;
-}
+}*/
 
 
 
