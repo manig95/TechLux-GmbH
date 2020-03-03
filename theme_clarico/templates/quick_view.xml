@@ -172,7 +172,7 @@
                                     </a>
                                 </t>
                                 <div class="availability_messages o_not_editable"/>
-                                <div id="product_option_block"/>
+                                <div id="product_option_block" style="display:none;"/>
                             </div>
                         </form>
                         <p t-elif="not product.active" class="alert alert-warning">This product is no longer

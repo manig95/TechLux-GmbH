@@ -95,13 +95,13 @@ odoo.define('website_slider.front_js', function (require) {
                         items: 1,
                     },
                     576: {
-                        items: 2,
+                        items: 1,
                     },
                     991: {
-                        items: 3,
+                        items: 1,
                     },
                     1200: {
-                        items: 4,
+                        items: 1,
                     },
                 },
             });

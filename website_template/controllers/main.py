@@ -1,6 +1,20 @@
-import odoo.http as http
+from odoo import http
+from odoo.http import request
+from odoo.addons.sale.controllers.variant import VariantController
 
-class HomePage(http.Controller):
-     @http.route('/new_home_page', type='http', auth='user', website=True)
-     def show_custom_homepage(self, **kw):
-          return http.request.render('website_template.new_home_page', {})
+# class WebsiteSaleVariantController(VariantController):
+#     @http.route(['/sale/get_combination_info_website'], type='json', auth="public", methods=['POST'], website=True)
+#     def get_combination_info_website(self, product_template_id, product_id, combination, add_qty, **kw):
+#         """Special route to use website logic in get_combination_info override.
+#         This route is called in JS by appending _website to the base route.
+#         """
+#         kw.pop('pricelist_id')
+#         res = self.get_combination_info(product_template_id, product_id, combination, add_qty, request.website.get_current_pricelist(), **kw)
+#
+#         carousel_view = request.env['ir.ui.view'].render_template('website_sale.shop_product_carousel',
+#             values={
+#                 'product': request.env['product.template'].browse(res['product_template_id']),
+#                 'product_variant': request.env['product.product'].browse(res['product_id']),
+#             })
+#         res['carousel'] = carousel_view
+#         return res
