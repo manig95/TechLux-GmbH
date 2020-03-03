@@ -396,7 +396,7 @@
 								</div>-->
 								<div class="input-group js_slider_snippet hidden" data-isemipro="true" data-name="Product Carousel" data-slider-id="1"/>
 							</div>
-							<div style="background: #38544d;min-height: 120px;margin-bottom: 30px;">
+							<div style="background: #38544d;min-height:70px;">
 							</div>
 						</section>
 
