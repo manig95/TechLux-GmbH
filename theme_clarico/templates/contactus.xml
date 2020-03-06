@@ -8,24 +8,21 @@
 				<form style="width: 70%;float:right;" action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
 					<div class="form-group row form-field o_website_form_required_custom">
 						<div class="col-lg-7 col-md-8" style="text-align:center">
-							<label class="col-lg-3 col-md-4 col-form-label"  for="contact_name">Your Name</label>
-							<input type="text" class="form-control o_website_form_input" name="contact_name" t-att-value="request.params.get('contact_name', '')" required=""/>
+							<input type="text" class="form-control o_website_form_input" placeholder="Your Name*" name="contact_name" t-att-value="request.params.get('contact_name', '')" required=""/>
 						</div>
 					</div>
 					<div class="form-group row form-field" style="text-align:center">
 						<div class="col-lg-7 col-md-8">
-							<label class="col-lg-3 col-md-4 col-form-label" style="text-align:center" for="phone">Phone Number</label>
-							<input type="text" class="form-control o_website_form_input" name="phone" t-att-value="request.params.get('phone', '')"/>
+							<input type="text" class="form-control o_website_form_input" name="phone" placeholder="Phone Number*" required="" t-att-value="request.params.get('phone', '')"/>
 						</div>
 					</div>
 					<div class="form-group row form-field o_website_form_required_custom">
 
 						<div class="col-lg-7 col-md-8" style="text-align:center">
-							<label class="col-lg-3 col-md-4 col-form-label" style="text-align:center" for="email_from">Email</label>
-							<input type="text" class="form-control o_website_form_input" name="email_from" required="" t-att-value="request.params.get('email_from', '')"/>
+							<input type="text" class="form-control o_website_form_input" name="email_from" placeholder="Email*" required="" t-att-value="request.params.get('email_from', '')"/>
 						</div>
 					</div>
-					<div class="form-group row form-field">
+					<!--<div class="form-group row form-field">
 
 						<div class="col-lg-7 col-md-8" style="text-align:center">
 							<label class="col-lg-3 col-md-4 col-form-label" style="text-align:center" for="partner_name">Your Company</label>
@@ -47,7 +44,7 @@
 								<t t-esc="request.params.get('description', '')"/>
 							</textarea>
 						</div>
-					</div>
+					</div>-->
 					<div class="form-group row">
 						<div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
 							<a href="#" role="button" class="btn btn-primary btn-lg o_website_form_send" style="text-align:center">Send</a>
@@ -71,9 +68,9 @@
 				<section class="te_contactus_banner_section oe_img_bg">
 					<div class="s_title text-center">
 						<h2>Contact Us</h2>
-						<p style="max-width: 500px;">Wenn Du Fragen hast, weitere Infromationen benötigst oder wir etwas anddres für Dich tun können, melde Dich bitte bei uns.</p>
+						<!--<p style="max-width: 500px;">Wenn Du Fragen hast, weitere Infromationen benötigst oder wir etwas anddres für Dich tun können, melde Dich bitte bei uns.</p>
 						<hr style="border-bottom: 3px solid #ce3030; border-top: navajowhite; max-width: 300px;"/>
-						<p>Wir sind gerne für Dich da</p>
+						<p>Wir sind gerne für Dich da</p>-->
 					</div>
 				</section>
 			</div>
@@ -83,11 +80,11 @@
 		</xpath>
 		<xpath expr="//div[hasclass('col-lg-4')]" position="replace">
 		</xpath>
-		<xpath expr="//div[hasclass('col-lg-8')]" position="after">
+		<!--<xpath expr="//div[hasclass('col-lg-8')]" position="after">
 			<div class="col-lg-12 te_company_details pt48 pb48">
 				<t t-call="theme_clarico.company_description_ept"/>
 			</div>
-		</xpath>
+		</xpath>-->
 		<xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
 			<attribute name="class">col-lg-12</attribute>
 		</xpath>

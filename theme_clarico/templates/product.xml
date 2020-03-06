@@ -98,15 +98,15 @@
             <div class="container tabs_container_main">
                 <div class="row">
                     <ul id="te_product_tabs">
-                        <!--<li groups="base.group_public" t-if="product.website_description">
-                            <a id="tab1">Description</a>
+                        <li groups="base.group_public" t-if="product.website_description">
+                            <a id="tab1" style="text-transform:uppercase;">Product Features</a>
                         </li>
                         <li groups="base.group_portal" t-if="product.website_description">
-                            <a id="tab1">Description</a>
+                            <a id="tab1" style="text-transform:uppercase;">Product Features</a>
                         </li>
                         <li groups="base.group_user">
-                            <a id="tab1">Description</a>
-                        </li>-->
+                            <a id="tab1" style="text-transform:uppercase;">>Product Features</a>
+                        </li>
                         <t t-set="categories"
                            t-value="product.valid_product_template_attribute_line_ids._prepare_categories_for_display()"/>
                         <t t-if="categories">

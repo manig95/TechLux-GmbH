@@ -1,11 +1,61 @@
-/*.menu {
-    position:fixed;
-    top:0;
-    width:100%;
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  display:none;
+  opacity: 1;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+
 }
-.fixed {
-    top:0;
-}*/
+.modalDialog > div {
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+ /* border-radius: 10px;*/
+  background: #fff;
+  background: #38544d;
+}
+.close-popup {
+   color: #ffffff;
+    position: absolute;
+    right: 8px;
+    text-align: center;
+    top: 3px;
+    font-size: 14px;
+}
+
+.close-popup:hover {
+  color: #ae4a51;
+}
+
+
+#products_grid .o_wsale_product_grid_wrapper:hover {
+     -webkit-box-shadow: inherit;
+    -moz-box-shadow: inherit;
+    -ms-box-shadow: inherit;
+    -o-box-shadow: inherit;
+     box-shadow: inherit;
+}
+
+@media (min-width: 768px){
+.oe_website_sale .row > .te_cart_wizard_main > .wizard .progress-wizard .progress-wizard-step.complete {
+    background:#ae4a51;
+}
+}
+
+
+@media (min-width: 768px){
+.oe_website_sale .row > .te_cart_wizard_main > .wizard .progress-wizard .progress-wizard-step.complete > .progress-wizard-bar:before {
+    border-left: 10px solid #ae4a51;
+}
+}
+
 #wrap{
     margin-top: 65px;}
 .nv a{

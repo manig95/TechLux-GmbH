@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <!-- Quick view in shop -->
-    <template id="quickview_icon_shop_product_item" inherit_id="website_sale.products_item">
+    <!--<template id="quickview_icon_shop_product_item" inherit_id="website_sale.products_item">
         <xpath expr="//div[hasclass('o_wsale_product_btn')]" position="inside">
             <a title="Quick View" class="btn btn-secondary quick-view-a te_quick_view"
                t-att-data-id="'%s' % product.id">
                 <span class="fa fa-eye"/>
             </a>
         </xpath>
-    </template>
+    </template>-->
     <!-- <template id="quickview_popup" inherit_id="web.frontend_layout">
          <xpath expr="//div[@id='wrapwrap']/main" position="before">
              <t t-call="theme_clarico.quickview_popup_ept"/>
          </xpath>
      </template>-->
+
+
     <template id="quickview_popup_ept">
         <div class="modal fade" id="quick_view_model" tabindex='-1'>
             <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -31,6 +34,8 @@
             </div>
         </div>
     </template>
+
+
     <template id="products_quick_view" inherit_id="website_sale.products">
         <xpath expr="//div[hasclass('oe_website_sale')]" position="inside">
             <div class="modal fade" id="quick_view_model_shop" tabindex='-1'>

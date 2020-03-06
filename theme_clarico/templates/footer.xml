@@ -17,7 +17,7 @@
 										<input type="email" name="email" class="js_subscribe_email form-control" placeholder="ENTER YOUR EMAIL"/>
 										<span class="input-group-append">
 											<a role="button" href="#" class="btn btn-primary js_subscribe_btn o_default_snippet_text" style="background: #AE4A51;">Subscribe</a>
-											<a role="button" href="#" class="btn btn-success js_subscribed_btn d-none o_default_snippet_text" disabled="disabled">Thanks</a>
+											<a role="button" href="#" class="btn js_subscribed_btn d-none o_default_snippet_text" disabled="disabled" style="background: #ae4a51;color: #fff;">Thanks</a>
 										</span>
 									</div>
 								</div>
@@ -37,7 +37,7 @@
 						<div class="col-lg-3" style="float:left;padding-top: 15px;">
 							<p style="color:#fff;">
 								<span>&amp;copy;</span>
-								<span>TechLux</span>
+								<span style="text-transform:upppercase">TECHLUX</span>
 							</p>
 						</div>
 
