@@ -58,14 +58,19 @@
 												<div class="col-lg-6" style="float:left;">
 													<section class="te_slider_img dd_slider_prod_bg">
 														<a t-att-href="product.website_url">
-															<img class="o_carousel_product_card_img_top card-img-top"
+
+															<img src="/website_template/static/img/np-1.png"
+																 onmouseover="this.src='/website_template/static/img/np-2.png'"
+																 onmouseout="this.src='/website_template/static/img/np-1.png'"
+																 border="0" alt=""/>
+															<!--<img class="o_carousel_product_card_img_top card-img-top"
 																 t-attf-src="/web/image/product.template/#{product.id}/image_512"
-																 t-att-alt="product.display_name"/>
+																 t-att-alt="product.display_name"/>-->
 														</a>
 													</section>
 												</div>
 
-												<div class="col-lg-6" style="float:left;">
+												<div class="col-lg-6" style="float:left;margin-top: 65px;">
 													<section class="">
 														<a t-att-href="product.website_url"
 														   class="text-decoration-none">
@@ -102,7 +107,7 @@
 															<t t-call="theme_clarico.product_slider_btn"/>
 														</section>
 														<section style="margin-top: 25px;">
-															<a style="text-decoration: underline;font-size:13px;" t-att-href="product.website_url"> View product details</a>
+															<a style="text-decoration: underline;font-size:13px;" t-att-href="product.website_url">View product details</a>
 														</section>
 													</section>
 												</div>
