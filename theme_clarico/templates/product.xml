@@ -105,7 +105,7 @@
                             <a id="tab1" style="text-transform:uppercase;">Product Features</a>
                         </li>
                         <li groups="base.group_user">
-                            <a id="tab1" style="text-transform:uppercase;">>Product Features</a>
+                            <a id="tab1" style="text-transform:uppercase;">Product Features</a>
                         </li>
                         <t t-set="categories"
                            t-value="product.valid_product_template_attribute_line_ids._prepare_categories_for_display()"/>

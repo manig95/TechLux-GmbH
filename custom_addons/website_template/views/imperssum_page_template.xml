@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<record id="impressum-page" model="ir.ui.view">
+		<field name="name">Impressum</field>
+		<field name="type">qweb</field>
+		<field name="key">website.impressum-page</field>
+		<field name="arch" type="xml">
+			<t name="Impressum" t-name="website.impressum-page">
+				<t t-call="website.layout">
+					<style>
+						.links p {line-height: 40px};
+					</style>
+					<div id="wrap" class="oe_structure">
+						<!--<section class="s_cover parallax s_parallax_is_fixed pt96 pb96 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
+							<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+								  style="background-image: url(/website_template/static/img/georgie-cobbs.jpg); background-position: 50% -388px;background-attachment: inherit;"/>
+							<div class="container">
+								<div class="row s_nb_column_fixed">
+									<div class="col-lg-12 s_title" data-name="Title">
+										<h1 class="s_title_thin" style="text-align: center;color:#fff;">Hilfecenter</h1>
+									</div>
+								</div>
+							</div>
+						</section>-->
+						<section data-name="Title">
+							<div class="container">
+								<div class="row s_nb_column_fixed">
+									<div class="col-lg-12 s_title" style="text-align: center;padding-top:50px">
+										<h4 class="te_s_title_default">
+											<font style="font-size: 36px;">Impressum</font>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section>
+							<!--<div class="col-lg-4" style="float:left;line-height: 40px !important; width: 260px; background: #f3f3f3; margin-left: 70px;margin-bottom: 20px">
+								<div class="elementor-text-editor elementor-clearfix links">
+									<p style="font-weight:bold">Kundenservice</p>
+									<p>
+										<a href="/faq-page">FAQ</a>
+									</p>
+									<p>
+										<a href="/bestellung-und-bezahlung-page">Bestellung und Bezahlung</a>
+									</p>
+									<p>
+										<a href="/versand-und-ruckgabe">Versand und Rückgabe</a>
+									</p>
+									<p>
+										<a href="/allgemeine-gescha-ftsbedingungen-page">Allgemeine Geschäftsbedingungen</a>
+									</p>
+									<p>
+										<a href="https://klixx.info/rueckgabe-und-umtausch/">Rückgabe und Umtausch</a>
+									</p>
+									<p>
+										<a href="https://klixx.info/rueckgabeformular/">Rückgabeformular</a>
+									</p>
+									<br/>
+									<br/>
+									<p style="font-weight:bold">Weitere Informationen</p>
+									<p>
+										<a href="https://klixx.info/about-techlux/">About Techlux</a>
+									</p>
+									<p>
+										<a href="/impressum-page">Impressum</a>
+									</p>
+									<p>
+										<a href="https://klixx.info/datenschutzrichtlinien/">Datenschutzrichtlinien</a>
+									</p>
+									<p>
+										<a href="https://klixx.info/b2b/">B2B</a>
+									</p>
+								</div>
+							</div>-->
+							<div  style="padding: 50px 25% 60px 30%;text-align: justify;">
+								<div>
+									<p style="font-size: 19px;">
+										<b>Kontakt-Adresse</b>
+									</p>
+
+									<p>Techlux GmbH</p>
+
+									<p>Hochdorfstrasse 5</p>
+
+									<p>6275 Ballwil</p>
+
+									<p>Schweiz</p>
+								</div>
+
+								<div style="margin-top:15px;">
+									<p style="font-size: 19px;">
+										<b>E-Mail: info@techlux.ch</b>
+									</p>
+								</div>
+
+
+								<div style="margin-top:15px;">
+									<p>
+										<b>Vertretungsberechtigte Person(en)</b>
+									</p>
+
+									<p>Marco Niggli; Geschäftsführer</p>
+								</div>
+
+								<div style="margin-top:15px;">
+									<p>
+										<b>Handelsregister-Eintrag</b>
+									</p>
+
+									<p>Eingetragener Firmenname:</p>
+
+									<p>Techlux GmbH</p>
+
+									<p>Handelsregister Nr: CHE-268.606.949</p>
+								</div>
+								<div style="margin-top:15px;">
+									<p>
+										<b>Mehrwertsteuer-Nummer</b>
+									</p>
+									<p>CH10048079027</p>
+								</div>
+
+								<div style="margin-top:15px;">
+									<p>
+										<b>Haftungsausschluss</b>
+									</p>
+
+									<p>Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit,</p>
+
+									<p>Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen.</p>
+
+									<p>Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der
+										Verbindung oder
+									</p>
+
+									<p>durch technische Störungen entstanden sind, werden ausgeschlossen.</p>
+
+									<p>Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne besondere Ankündigung zu verändern, zu ergänzen, zu löschen oder die
+										Veröffentlichung zeitweise oder endgültig einzustellen.
+									</p>
+								</div>
+								<div style="margin-top:15px;">
+									<p>
+										<b>Haftungsausschluss für Links</b>
+									</p>
+
+									<p>Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten
+										erfolgen auf eigene Gefahr des jeweiligen Nutzers.
+									</p>
+								</div>
+
+
+								<div style="margin-top:15px;">
+									<p>
+										<b>Urheberrechte</b>
+									</p>
+
+									<p>Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich <b>der Firma Techlux GmbH</b> oder den speziell genannten Rechteinhabern. Für
+										die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.
+									</p>
+
+								</div>
+							</div>
+						</section>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+
+	<record id="impressum-page" model="website.page">
+		<field name="is_published">True</field>
+		<field name="url">/impressum-page</field>
+		<field name="view_id" ref="impressum-page"/>
+		<field name="track">True</field>
+	</record>
+</odoo>
