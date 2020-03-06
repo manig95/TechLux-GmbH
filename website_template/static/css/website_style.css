@@ -13,13 +13,12 @@
 
 }
 .modalDialog > div {
-  width: 500px;
-  position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
- /* border-radius: 10px;*/
-  background: #fff;
-  background: #38544d;
+    position: relative;
+    margin: 10% auto;
+    padding: 19px 22px 20px 33px;
+    background: #fff;
+    background: #38544d;
+    border: 3px solid #fff;
 }
 .close-popup {
    color: #ffffff;
@@ -55,6 +54,21 @@
     border-left: 10px solid #ae4a51;
 }
 }
+
+
+@media (min-width: 992px){
+#product_detail #o-carousel-product > .carousel-outer {
+    width: 85%;
+    display: block;
+    position: relative;
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* height: unset; */
+    max-height: unset;
+}
+}
+
 
 #wrap{
     margin-top: 65px;}

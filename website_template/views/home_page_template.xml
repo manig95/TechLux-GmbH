@@ -413,13 +413,12 @@
 
 				</div>
 				<div id="openModal" class="modalDialog">
-					<div>
+					<div class="col-lg-4">
 						<div class="row">
-							<div class="" style="color: #fff;">
-								<div class="text-center" style="padding: 30px; width: 450px; text-align: center;">
+							<div class="" style="color: #fff;padding:7%;">
+								<div class="text-center" style="padding: 30px; text-align: center;">
 									<a href="#close" title="Close" class="close-popup">X</a>
 									<h1 class="text-uppercase font-weight-bold o_default_snippet_text">Join our community!</h1>
-									<!--<p class="o_default_snippet_text">Be the first to find out all the latest news, products and trends.</p>-->
 									<div class="input-group js_subscribe d-none" data-list-id="1">
 										<input type="email" name="email" class="js_subscribe_email form-control" placeholder="ENTER YOUR EMAIL"/>
 										<span class="input-group-append">

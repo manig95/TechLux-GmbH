@@ -35,6 +35,21 @@
 	</template>
 
 
+	<template id="shop_product_inherit" name="Shop Product Intherit" inherit_id="website_sale.product">
+		<xpath expr="//a[@class='btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block']" position="replace">
+			<a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block" href="#" style="text-transform:uppercase; background: #ae4a51;"> Add to Cart</a>
+		</xpath>
+		<xpath expr="//div[@id='product_details']//p[3][@class='text-muted']" position="replace">
+			<p class="text-muted">
+				<span style="text-transform:uppercase;color: #000; font-weight: bold;font-size: 15px;">Free Shipping</span>
+				<br/>
+				<!--30-day money-back guarantee
+				<br/>
+				Buy now, get in 2 days-->
+			</p>
+		</xpath>
+	</template>
+
 	<template id="shop_form__product_inherit" name="Shop Inherit Product" inherit_id="website_sale.products_item">
 		<xpath expr="//form[@action='/shop/cart/update']" position="attributes">
 			<attribute name="style">border:none !important;</attribute>

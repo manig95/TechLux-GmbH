@@ -225,7 +225,7 @@
     <!--=================== Vertical Multi Image Carousel =====================-->
 
 
-    <template id="shop_product_carousel_ept" inherit_id="website_sale.shop_product_carousel">
+    <!--<template id="shop_product_carousel_ept" inherit_id="website_sale.shop_product_carousel">
         <xpath expr="//div[@id='o-carousel-product']" position="replace">
             <div id="mainSlider" class="position-relative">
                 <div class="owl-carousel carousel-inner">
@@ -258,7 +258,8 @@
                 </ol>
             </div>
         </xpath>
-    </template>
+    </template>-->
+
     <template id="produc_cart_ept" inherit_id="website_sale.product"
               name="product" priority="25">
         <xpath expr="//a[@id='add_to_cart']" position="before">
