@@ -1201,6 +1201,7 @@ h1.te_product_name
 	@include media-breakpoint-down(md)
 	{
 		font-size:nth($f_sizes,8);
+		text-transform:uppercase;
 	}
 }
 .te_prod_desc

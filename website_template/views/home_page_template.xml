@@ -16,71 +16,72 @@
 							<div class="col-lg-12" style="padding: 0;margin-bottom: 50px;">
 								<div class="col-lg-5" style="float:left; margin-top: 50px;">
 									<div class="col-lg-12">
-										<div style="display:flex;padding-left: 20px;">
-											<span style="font-size:78px;float:left; margin-right: -10px;">
-												S
-											</span>
-											<blockquote style="border-left: 4px solid #000; padding: 0.5em 10px; height: 95px; margin: 1.5em 10px 0 0;background: #fff;">
-												<span style="font-size:20px;">
-													<b>SOLID CONSTRUCTION</b>
-												</span>
-												<br/>
-												<span style="line-height:30px;">Unsere Designer setzten sowohl aug höchste Design- als auch Funktionsansprüche.</span>
-											</blockquote>
-										</div>
-										<br/>
-										<div style="padding-left: 30%;;display:flex;">
-											<span style="font-size:78px;margin-right: -10px;">
-												B
-											</span>
-											<blockquote style="border-left: 4px solid #000; padding: 0.5em 10px; height: 95px; margin: 1.5em 10px 0 -2px;background: #fff;">
-												<span style="font-size:20px;">
-													<b>BEST RESOURCES</b>
-												</span>
-												<br/>
-												<span style="line-height:30px;">Der verwendete Werkstoff ist ein wichtiger Faktor für die Qualität und Langlebigkeit unserer Produkte.</span>
-											</blockquote>
-										</div>
-										<br/>
-										<div style="margin-top:30px;display:flex;">
-											<span style="font-size:78px">
-												T
-											</span>
-											<blockquote style="border-left: 4px solid #000; padding: 0.5em 10px; height: 95px; margin: 1.5em 10px 0 -10px;;background: #fff;">
-												<span style="font-size:20px;">
-													<b>TESTED FOR CARWASH</b>
-												</span>
-												<br/>
-												<span style="line-height:30px;">Das Produkt ist Waschstrassentauglich.</span>
-											</blockquote>
+
+										<div class="const-container">
+											<div class="content-area">
+												<span class="box-char">S</span>
+												<blockquote>
+													<span class="box-title">
+														<b>SOLID CONSTRUCTION</b>
+													</span>
+													<br/>
+													<span class="box-paragraph">Unsere Designer setzten sowohl aug höchste Design- als auch Funktionsansprüche.</span>
+												</blockquote>
+											</div>
 										</div>
 
-										<div style="padding-left: 30%;;display:flex;">
-											<span style="font-size:78px;margin-right: -10px;">
-												A
-											</span>
-											<blockquote style="border-left: 4px solid #000; padding: 0.5em 10px; height: 95px; margin: 1.5em 10px 0 -10px;;background: #fff;">
-												<span style="font-size:20px;">
-													<b>APPROVED FOR TOP SPEED</b>
-												</span>
-												<br/>
-												<span style="line-height:30px;">Entwickelt für Höchstgeschwindigketien.</span>
-											</blockquote>
+										<div class="const-container">
+											<div class="content-area right-align">
+												<span class="box-char">B</span>
+												<blockquote>
+													<span class="box-title">
+														<b>BEST RESOURCES</b>
+													</span>
+													<br/>
+													<span class="box-paragraph">Der verwendete Werkstoff ist ein wichtiger Faktor für die Qualität und Langlebigkeit unserer Produkte.</span>
+												</blockquote>
+											</div>
 										</div>
 
-										<div style="margin-top:30px;display:flex;">
-											<span style="font-size:78px">
-												A
-											</span>
-											<blockquote style="border-left: 4px solid #000; padding: 0.5em 10px; height: 95px; margin: 1.5em 10px 0 -20px;;background: #fff;">
-												<span style="font-size:20px;">
-													<b>APPROVED FOR ECE AND ASA</b>
-												</span>
-												<br/>
-												<span style="line-height:30px;">Übereinstimmend mit den geltenden Richtlinien des ECE und ASA.</span>
-											</blockquote>
+
+										<div class="const-container">
+											<div class="content-area">
+												<span class="box-char">T</span>
+												<blockquote>
+													<span class="box-title">
+														<b>TESTED FOR CARWASH</b>
+													</span>
+													<br/>
+													<span class="box-paragraph">Das Produkt ist Waschstrassentauglich.</span>
+												</blockquote>
+											</div>
 										</div>
 
+										<div class="const-container">
+											<div class="content-area right-align">
+												<span class="box-char">A</span>
+												<blockquote>
+													<span class="box-title">
+														<b>APPROVED FOR TOP SPEED</b>
+													</span>
+													<br/>
+													<span class="box-paragraph">Entwickelt für Höchstgeschwindigketien.</span>
+												</blockquote>
+											</div>
+										</div>
+
+										<div class="const-container">
+											<div class="content-area">
+												<span class="box-char">A</span>
+												<blockquote>
+													<span class="box-title">
+														<b>APPROVED FOR ECE AND ASA</b>
+													</span>
+													<br/>
+													<span class="box-paragraph">Übereinstimmend mit den geltenden Richtlinien des ECE und ASA.</span>
+												</blockquote>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="col-lg-7" style="float:right;max-height: 600px;padding: 0;">
