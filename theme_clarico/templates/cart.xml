@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!--===================== Cart Page Banner =======================-->
-    <template id="cart_ept" inherit_id="website_sale.cart">
+    <!--<template id="cart_ept" inherit_id="website_sale.cart">
         <xpath expr="//div[@id='wrap']/div[hasclass('container')]"
 			position="before">
             <div class="oe_structure">
@@ -9,7 +9,7 @@
                 </section>
             </div>
         </xpath>
-    </template>
+    </template>-->
     <!--==================== Cart Lines =====================-->
     <template id="cart_lines_ept" inherit_id="website_sale.cart_lines">
         <xpath expr="//div[hasclass('js_cart_lines')]" position="replace">
