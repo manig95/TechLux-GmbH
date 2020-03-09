@@ -5,7 +5,7 @@
 		<template id="theme_assets_frontend" inherit_id="website.assets_frontend">
 			<xpath expr="link[last()]" position="after">
 				<link rel="stylesheet" type="text/scss" href="/website_template/static/css/website_style.css"/>
-				<!--<script type="text/javascript" src="/website_template/static/js/website.js"></script>-->
+				<script type="text/javascript" src="/website_template/static/js/website.js"></script>
 				<link href="https://fonts.googleapis.com/css?family=Montserrat:800&amp;display=swap" rel="stylesheet"/>
 			</xpath>
 		</template>
