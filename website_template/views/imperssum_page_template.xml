@@ -7,72 +7,20 @@
 		<field name="arch" type="xml">
 			<t name="Impressum" t-name="website.impressum-page">
 				<t t-call="website.layout">
-					<style>
-						.links p {line-height: 40px};
-					</style>
 					<div id="wrap" class="oe_structure">
-						<!--<section class="s_cover parallax s_parallax_is_fixed pt96 pb96 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
-							<span class="s_parallax_bg oe_img_bg oe_custom_bg"
-								  style="background-image: url(/website_template/static/img/georgie-cobbs.jpg); background-position: 50% -388px;background-attachment: inherit;"/>
-							<div class="container">
-								<div class="row s_nb_column_fixed">
-									<div class="col-lg-12 s_title" data-name="Title">
-										<h1 class="s_title_thin" style="text-align: center;color:#fff;">Hilfecenter</h1>
-									</div>
-								</div>
-							</div>
-						</section>-->
 						<section data-name="Title">
 							<div class="container">
 								<div class="row s_nb_column_fixed">
 									<div class="col-lg-12 s_title" style="text-align: center;padding-top:50px">
 										<h4 class="te_s_title_default">
-											<font style="font-size: 36px;">Impressum</font>
+											<font style="font-size: 36px;font-family: 'Montserrat', sans-serif;font-weight:600;">Impressum</font>
 										</h4>
 									</div>
 								</div>
 							</div>
 						</section>
 						<section>
-							<!--<div class="col-lg-4" style="float:left;line-height: 40px !important; width: 260px; background: #f3f3f3; margin-left: 70px;margin-bottom: 20px">
-								<div class="elementor-text-editor elementor-clearfix links">
-									<p style="font-weight:bold">Kundenservice</p>
-									<p>
-										<a href="/faq-page">FAQ</a>
-									</p>
-									<p>
-										<a href="/bestellung-und-bezahlung-page">Bestellung und Bezahlung</a>
-									</p>
-									<p>
-										<a href="/versand-und-ruckgabe">Versand und Rückgabe</a>
-									</p>
-									<p>
-										<a href="/allgemeine-gescha-ftsbedingungen-page">Allgemeine Geschäftsbedingungen</a>
-									</p>
-									<p>
-										<a href="https://klixx.info/rueckgabe-und-umtausch/">Rückgabe und Umtausch</a>
-									</p>
-									<p>
-										<a href="https://klixx.info/rueckgabeformular/">Rückgabeformular</a>
-									</p>
-									<br/>
-									<br/>
-									<p style="font-weight:bold">Weitere Informationen</p>
-									<p>
-										<a href="https://klixx.info/about-techlux/">About Techlux</a>
-									</p>
-									<p>
-										<a href="/impressum-page">Impressum</a>
-									</p>
-									<p>
-										<a href="https://klixx.info/datenschutzrichtlinien/">Datenschutzrichtlinien</a>
-									</p>
-									<p>
-										<a href="https://klixx.info/b2b/">B2B</a>
-									</p>
-								</div>
-							</div>-->
-							<div  style="padding: 50px 25% 60px 30%;text-align: justify;">
+							<div  class="impr" style="padding: 50px 25% 60px 30%;text-align: justify;">
 								<div>
 									<p style="font-size: 19px;">
 										<b>Kontakt-Adresse</b>

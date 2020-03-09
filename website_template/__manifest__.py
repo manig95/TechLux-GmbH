@@ -10,10 +10,10 @@
 
     'data': [
         'views/home_page_template.xml',
-        'views/allgemeine_page_template.xml',
-        'views/bestellung_page_template.xml',
-        'views/faq_page_template.xml',
-        'views/versand_page_template.xml',
+        # 'views/allgemeine_page_template.xml',
+        # 'views/bestellung_page_template.xml',
+        # 'views/faq_page_template.xml',
+        # 'views/versand_page_template.xml',
         'views/imperssum_page_template.xml',
         'views/datenschutz_template.xml',
         'views/aboutus_template.xml',

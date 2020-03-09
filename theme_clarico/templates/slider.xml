@@ -63,9 +63,6 @@
 																 onmouseover="this.src='/website_template/static/img/np-2.png'"
 																 onmouseout="this.src='/website_template/static/img/np-1.png'"
 																 border="0" alt=""/>
-															<!--<img class="o_carousel_product_card_img_top card-img-top"
-																 t-attf-src="/web/image/product.template/#{product.id}/image_512"
-																 t-att-alt="product.display_name"/>-->
 														</a>
 													</section>
 												</div>

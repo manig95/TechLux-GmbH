@@ -1,16 +1,24 @@
+body {
+font-family: 'Montserrat', sans-serif;
+}
+
 .const-container {
     border: 1px solid transparent;
 }
+
 .const-container .content-area{
 border:1px solid transparent;
 width: 85%;
 }
+
 .content-area.right-align {
 margin-left: auto;
 }
+
 .const-container .content-area span.box-char {
 font-size:78px;float:left;
 }
+
 .const-container .content-area blockquote {
 border-left: 4px solid #000;
 padding: 0.5em 10px;
@@ -20,14 +28,116 @@ background: #fff;
 margin-left: 2.7em;
 position: relative;
 }
+
 .const-container .content-area span.box-title {
 font-size: 20px;
 }
+
 .const-container .content-area span.box-paragraph {
 line-height:30px;
 }
 
+@media only screen and (min-width: 320px) and (max-width:991px) {
+  .content-all {
+  		margin-top: 183px !important;
+  	}
+  	.const-container .content-area {
+        width: 100%;
+    }
+    .char-box-content {
+margin-bottom: 70px;
+}
+}
 
+
+
+@media only screen and (min-width: 320px) and (max-width:600px) {
+
+.diff-img {
+padding: 6em 0;
+display: inline-grid;
+grid-template-columns: auto 30px auto;
+background: #38544d;
+}
+
+.txt-feel-diff {
+width: auto !important;
+font-size: 13px !important;
+white-space: normal !important;
+}
+
+
+.navbar.nv.nav-overwrite {
+    justify-content: normal !important;
+    text-align: center;
+    padding: 0.2rem !important;
+}
+
+.nav-overwrite a {
+    padding-right: 8px !important;
+}
+
+.te_header_style_2_right {
+    text-align: center !important;
+}
+.copy-right {
+text-align: center;
+}
+
+}
+
+
+@media only screen and (min-width: 601px) and (max-width:768px) {
+.txt-feel-diff {
+    white-space: nowrap !important;
+    font-size: 17px !important;
+    width: auto !important;
+}
+}
+
+@media only screen and (min-width: 769px) and (max-width:991px) {
+.txt-feel-diff {
+white-space: nowrap;
+font-size: 25px;
+}
+}
+
+
+.diff-img .t_img_hover_1 img {
+max-width: 95%;
+}
+.diff-img {
+padding: 6em 0;
+display: inline-grid;
+grid-template-columns: auto 30px auto;
+background: #38544d;
+}
+.txt-feel-diff {
+white-space: nowrap;
+transform: rotate(-90deg);
+display: block;
+font-size: 35px;
+width: 420px;
+transform-origin: center center;
+text-align: center;
+}
+
+
+@media only screen and (max-width:991px){
+.txt-feel-diff {
+white-space: nowrap;
+font-size:25px;
+}
+}
+
+.te_ftr_add_info img {
+    height: 50px;
+    text-align:center;
+}
+
+li.te_ftr_add_info {
+    text-align: center;
+}
 
 .modalDialog {
   position: fixed;
@@ -117,6 +227,32 @@ line-height:30px;
     margin-top: 0;
 }
 */
+.impr div p{
+line-height:30px;
+letter-spacing: 1px;
+}
+
+.daten p{
+line-height:30px;
+letter-spacing: 1px;
+}
+
+.daten h5{
+line-height:30px;
+letter-spacing: 1px;
+}
+
+.daten ul li{
+line-height:30px;
+letter-spacing: 1px;
+}
+
+.shop-title{
+text-align:center;
+}
+.shop-title p{
+    line-height: 45px
+}
 
 .social a{
     font-size: 20px;

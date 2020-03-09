@@ -5,18 +5,19 @@
 		<template id="theme_assets_frontend" inherit_id="website.assets_frontend">
 			<xpath expr="link[last()]" position="after">
 				<link rel="stylesheet" type="text/scss" href="/website_template/static/css/website_style.css"/>
-				<script type="text/javascript" src="/website_template/static/js/website.js"></script>
+				<!--<script type="text/javascript" src="/website_template/static/js/website.js"></script>-->
+				<link href="https://fonts.googleapis.com/css?family=Montserrat:800&amp;display=swap" rel="stylesheet"/>
+
 			</xpath>
 		</template>
 		<template id="new_custom_home_page" inherit_id="website.homepage">
 			<xpath expr="//div[@id='wrap']" position="replace">
-				<div id="wrap" class="oe_structure">
+				<div id="wrap" class="oe_structure content-all" style="">
 					<section class="container-fluid pb0" data-name="style 1">
 						<div class="row">
 							<div class="col-lg-12" style="padding: 0;margin-bottom: 50px;">
-								<div class="col-lg-5" style="float:left; margin-top: 50px;">
+								<div class="col-lg-5" style="float:left;margin-bottom: 50px;margin-top:30px;">
 									<div class="col-lg-12">
-
 										<div class="const-container">
 											<div class="content-area">
 												<span class="box-char">S</span>
@@ -25,7 +26,7 @@
 														<b>SOLID CONSTRUCTION</b>
 													</span>
 													<br/>
-													<span class="box-paragraph">Unsere Designer setzten sowohl aug höchste Design- als auch Funktionsansprüche.</span>
+													<span class="box-paragraph">Our designers focus on the highest design and functional requirements.</span>
 												</blockquote>
 											</div>
 										</div>
@@ -38,7 +39,7 @@
 														<b>BEST RESOURCES</b>
 													</span>
 													<br/>
-													<span class="box-paragraph">Der verwendete Werkstoff ist ein wichtiger Faktor für die Qualität und Langlebigkeit unserer Produkte.</span>
+													<span class="box-paragraph">The material used is an important factor for the quality and durability of our products.</span>
 												</blockquote>
 											</div>
 										</div>
@@ -52,7 +53,7 @@
 														<b>TESTED FOR CARWASH</b>
 													</span>
 													<br/>
-													<span class="box-paragraph">Das Produkt ist Waschstrassentauglich.</span>
+													<span class="box-paragraph">The product is washable</span>
 												</blockquote>
 											</div>
 										</div>
@@ -65,7 +66,7 @@
 														<b>APPROVED FOR TOP SPEED</b>
 													</span>
 													<br/>
-													<span class="box-paragraph">Entwickelt für Höchstgeschwindigketien.</span>
+													<span class="box-paragraph">Developed for maximum speed.</span>
 												</blockquote>
 											</div>
 										</div>
@@ -78,7 +79,7 @@
 														<b>APPROVED FOR ECE AND ASA</b>
 													</span>
 													<br/>
-													<span class="box-paragraph">Übereinstimmend mit den geltenden Richtlinien des ECE und ASA.</span>
+													<span class="box-paragraph">In accordance with the applicable guidelines of the ECE and ASA.</span>
 												</blockquote>
 											</div>
 										</div>
@@ -90,109 +91,9 @@
 							</div>
 						</div>
 					</section>
-					<!--<section data-name="title">
-						<div class="container">
-							<div class="row s_nb_column_fixed">
-								<div class="col-lg-12 s_title" style="text-align: center;margin-top:20px">
-									<h4 class="te_s_title_default">
-										<font style="font-size: 24px;">TECHNISCHE DATEN</font>
-									</h4>
-									<hr style="border-top: 2px solid;"/>
-								</div>
-							</div>
-						</div>
-					</section>
-					<div class="oe_structure oe_empty" data-name="style 5" data-editor-message="ziehen sie bausteine hierher"/>
-					<section class="d-inline-block w-100 offer_5_bg" data-name="style 5">
-						<div class="container">
-							<style>
-								.fa-ul li:hover {color: #ef0000};
-							</style>
-							<div class="row align-items-center te_left_to_right pt32 pb32">
-								<section class="col-lg-6 col-md-6 te_offer_5_text_left te_left_side">
-									<h2 class="elementor-heading-title elementor-size-default">
-										<b>SCHLICHT &amp; SCHÖN</b>
-										<br/>
-									</h2>
-									<ul class="fa-ul" style="line-height: 30px; font-size: 15px;">
-										<li><i class="fa-li fa fa-paint-brush"></i>Zeitlose Optik
-										</li>
-										<li><i class="fa-li fa fa-car"></i>Entspricht den ELE und ASA Richtlinie
-										</li>
-										<li><i class="fa-li fa fa-tachometer"></i>Getestet bei Höchstgeschwindigkeit
-										</li>
-									</ul>
-								</section>
-								<div class="col-lg-6 col-md-6 te_text_middle p-0 py-2 te_offer_img_center">
-									<div class="t_img_hover_1">
-										<img class="img img-responsive img-fluid d-block mx-auto" alt="clarico-offer style 5" src="/website_template/static/img/2020_02.png" data-original-title="" title=""
-											 aria-describedby="tooltip837877"/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>-->
-					<!--<section class="s_text_image pt32 pb32" data-name="image - text">
-						<div class="container">
-							<style>
-								.fa-ul li:hover {color: #ef0000};
-							</style>
-							<div class="row align-items-center aos-init" data-aos="align-items-center">
-								<div class="col-lg-6">
-									<div class="t_img_hover_1">
-										<img src="/website_template/static/img/swiss-made.png" class="img img-fluid mx-auto" alt="clarico-image-text" data-original-title="" title="" aria-describedby="tooltip155496"/>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<h2 class="text-capitalize te_s_it_heading">
-										<b>
-											<font style="font-size: 36px;">SWISS MADE</font>
-										</b>
-									</h2>
-									<ul class="fa-ul" style="line-height: 30px; font-size: 15px;">
-										<li><i class="fa-li fa fa-plus-circle"></i>Entwickelt in den schweizer Alpen
-										</li>
-										<li><i class="fa-li fa fa-fire"></i>Resistent gegen Hitze bis 60 Grad
-										</li>
-										<li><i class="fa-li fa fa-anchor"></i>Hält ein Leben lang am Fahrzeug!
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" data-name="cover" style="background-image: none;margin-bottom:200px;">
-						<span class="s_parallax_bg oe_img_bg oe_custom_bg"
-							  style="background-image: url(/website_template/static/img/julian-hochgesang.jpg); background-size: cover; background-position: 50% 0px;height: 350px;"/>
-						<div class="container">
-							<div class="col-lg-4 row s_nb_column_fixed" style="float:right;background: #fff;height: 165px; width: 370px; margin-top: 70px;padding: 20px;margin-bottom: -30px;margin-right: 35px;">
-								<div class=" s_title pb0" data-name="title">
-									<h3 class="s_title_thin" style="text-align: center;">
-										<font style="z-index: 9;font-family:Baloo Bhai; visibility: visible; text-align: left; line-height: 25px; letter-spacing: 0px;
-										font-weight: 400;  font-size: 28px; border-color: rgb(119, 119, 119);border-style: none;margin: 0px;
-										border-radius: 0px;padding: 0px;color: rgb(112, 112, 112); text-decoration: none; white-space: normal; width: 210px;height: auto; min-height: 0px;
-										min-width: 0px;  max-height: none; max-width: none;  opacity: 1; transform-origin: 50% 50% 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
-											<span style="">Nie wieder ohne</span>
-										</font>
-									</h3>
-
-									<h3 style="font-family: Raleway; visibility: visible; text-align: left; line-height: 24px;color: #000;font-weight: bold;">
-										Techlux
-									</h3>
-
-									<a href="/shop" class="te_theme_button btn btn-delta" style="font-family: Raleway;padding: 0; margin-top: 10px;font-size: 18px; background: none;text-decoration: underline;border: none; color: #000;"
-									   data-original-title="" title="" aria-describedby="tooltip14318">
-										<font style="vertical-align: inherit;" data-original-title="" title="" aria-describedby="tooltip342494">Jetzt shoppen</font>
-									</a>
-								</div>
-							</div>
-						</div>
-					</section>-->
 					<section class="">
-						<div style="background-color: #38544d; padding: 200px;color: #fff;">
-							<div class="row">
-								<p style="font-size: 33px; font-weight: bold;">MAXIMUM PERFORMANCE</p>
-							</div>
+						<div style="background-color: #38544d; padding: 10em 0;color: #fff;text-align:center">
+							<p style="font-size: 33px; font-weight: bold;">MAXIMUM PERFORMANCE</p>
 						</div>
 					</section>
 					<section class="">
@@ -304,29 +205,20 @@
 								<div class="title-text col-lg-4" style="float:left;text-align: center;">
 									<i style="color:#C5545C;font-size: 150px;padding-top: 20px;" class="fa fa-truck"></i>
 									<p style="font-size: 32px;">
-										Schnelle Lieferung
+										Fast delivery
 									</p>
-									<!--<span style="padding-left: 50px; padding-right: 50px; font-size: 20px;">
-										Schnelle Lieferung
-									</span>-->
 								</div>
 								<div class="title-text2 col-lg-4" style="float:left;text-align: center;">
 									<i style="color:#38544d;font-size: 150px;padding-top: 20px;" class="fa fa-undo"></i>
 									<p style="font-size: 32px;">
-										30 Tage Rückgaberecht
+										30 days return policy
 									</p>
-									<!--<span  style="padding-left: 50px; padding-right: 50px; font-size: 20px;">
-										30 Tage Rückgaberecht
-									</span>-->
 								</div>
 								<div class="title-text3 col-lg-4" style="float:left;text-align: center;">
 									<i style="color:#1D4753;font-size: 150px;padding-top: 20px;" class="fa fa-usd"></i>
 									<p style="font-size: 32px;">
-										Sichere Bezahlung
+										Secure payment
 									</p>
-									<!--<span  style="padding-left: 50px; padding-right: 50px; font-size: 20px;">
-										Sichere Bezahlung
-									</span>-->
 								</div>
 							</div>
 						</div>
@@ -334,28 +226,17 @@
 
 					<section class="">
 						<div>
-							<div style="background-color: #38544d; padding: 45px;color: #fff;float: left; width: 100%;">
-								<!--<div class="row">
-									<p style="font-size: 33px; font-weight: bold;">WIR VERBINDEN PRAKTISCHE ASPEKTE UND ÄSTHETIK</p>
-								</div>-->
-							</div>
-							<div style="display: inline-grid; grid-template-columns: auto 30px auto; background: #38544d;">
+							<div class="diff-img">
 								<div class="t_img_hover_1">
-									<img src="/website_template/static/img/G2A4490_vorher_ergebnis(thick).png" alt="" style="max-width: 96%;min-height: 405px;"/>
+									<img src="/website_template/static/img/G2A4490_vorher_ergebnis(thick).png" alt=""/>
 								</div>
 								<div style="color: #fff;display: grid; align-items: center; position: relative; justify-content: center;">
-									<span style="transform: rotate(-90deg); display: block; font-size: 38px; width: 420px; transform-origin: center center;text-align: center;">FEEL THE DIFFERENCE</span>
+									<span class="txt-feel-diff">FEEL THE DIFFERENCE</span>
 								</div>
-								<div class="t_img_hover_1">
-									<img src="/website_template/static/img/G2A4487_nachher-2.jpg" alt="" style=" max-width:96%;float: right;min-height: 405px;"/>
+								<div class="t_img_hover_1 text-right">
+									<img src="/website_template/static/img/G2A4487_nachher-2.jpg" alt=""/>
 								</div>
 							</div>
-							<div style="background-color: #38544d; padding: 45px;color: #fff;float: left; width: 100%;margin-top: -6px;">
-								<!--<div class="row">
-									<p style="font-size: 33px; font-weight: bold;">WIR VERBINDEN PRAKTISCHE ASPEKTE UND ÄSTHETIK</p>
-								</div>-->
-							</div>
-
 						</div>
 					</section>
 
@@ -414,7 +295,7 @@
 
 				</div>
 				<div id="openModal" class="modalDialog">
-					<div class="col-lg-4">
+					<!--<div class="col-lg-4">
 						<div class="row">
 							<div class="" style="color: #fff;padding:7%;">
 								<div class="text-center" style="padding: 30px; text-align: center;">
@@ -430,7 +311,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</xpath>
 		</template>

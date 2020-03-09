@@ -67,7 +67,7 @@
 				</div>
 				<section class="te_contactus_banner_section oe_img_bg">
 					<div class="s_title text-center">
-						<h2 style="text-transform:uppercase;">Contact Us</h2>
+						<h2 style="text-transform:uppercase;font-family: 'Montserrat', sans-serif;font-size: 33px;font-weight: 600;">Contact Us</h2>
 						<!--<p style="max-width: 500px;">Wenn Du Fragen hast, weitere Infromationen benötigst oder wir etwas anddres für Dich tun können, melde Dich bitte bei uns.</p>
 						<hr style="border-bottom: 3px solid #ce3030; border-top: navajowhite; max-width: 300px;"/>
 						<p>Wir sind gerne für Dich da</p>-->

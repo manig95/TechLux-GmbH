@@ -5,6 +5,10 @@
 	<template id="shop_form_inherit" name="Shop Inherit" inherit_id="website_sale.products">
 		<xpath expr="//div[@class='o_wsale_products_grid_table_wrapper']" position="replace">
 			<div t-if="bins" class="o_wsale_products_grid_table_wrapper" style="">
+				<div class="shop-title">
+					<p style="font-weight: 600;font-size: 19px;">SHOP</p>
+					<p style="font-size: 15px;">OUR PATENTED SWISS TECHNOLOGIES</p>
+				</div>
 				<table class="table table-borderless m-0" t-att-data-ppg="ppg" t-att-data-ppr="ppr" style="table-layout: auto !important;">
 					<colgroup t-ignore="true">
 						<!-- Force the number of columns (useful when only one row of (x < ppr) products) -->
@@ -43,6 +47,7 @@
 			<p class="text-muted">
 				<span style="text-transform:uppercase;color: #000; font-weight: bold;font-size: 15px;">Free Shipping</span>
 				<br/>
+				<span style="text-transform:uppercase;color: #000; font-weight: bold;font-size: 15px;">SWISS MADE</span>
 				<!--30-day money-back guarantee
 				<br/>
 				Buy now, get in 2 days-->
@@ -56,15 +61,15 @@
 		</xpath>
 
 		<xpath expr="//div[@class='p-2 o_wsale_product_information_text']" position="replace">
-			<div class="p-2 o_wsale_product_information_text" style="font-size:15px;text-align:center;">
+			<div class="p-2 o_wsale_product_information_text" style="font-size:15px;text-align:center; letter-spacing: 2px;">
 				<h3 class="o_wsale_products_item_title">
-					<a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" style="color: #000;text-transform:uppercase;"/>
+					<a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" style="color: #000;text-transform:uppercase;font-weight:bold;"/>
 					<a role="button" t-if="not product.website_published" t-att-href="product_href" class="btn btn-sm btn-danger" title="This product is unpublished.">Unpublished</a>
 				</h3>
-				<div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer">
-					<del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']"
-						 t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
-					<span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+				<div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" style="letter-spacing: 2px;font-size: 18px;">
+					<b><del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']"
+						 t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/></b>
+					<b><span t-esc="website.currency_id.name" style="padding:10px;"/><span t-if="combination_info['price']" t-esc="combination_info['price']"/></b>
 					<span itemprop="price" style="display:none;" t-esc="combination_info['price']"/>
 					<span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
 				</div>

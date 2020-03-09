@@ -9,14 +9,14 @@
 						<div class="row s_nb_column_fixed">
 							<div class="col-lg-12 s_title" style="text-align: center;padding-top:50px">
 								<h4 class="te_s_title_default">
-									<font style="font-size: 30px;">ÜBER UNS</font>
+									<font style="font-size: 30px;font-family: 'Montserrat', sans-serif;">ÜBER UNS</font>
 								</h4>
 							</div>
 						</div>
 					</div>
 				</section>
 				<section>
-					<div style="padding: 28px 19% 60px 25%; font-size: 15px; text-align: justify;">
+					<div style="padding: 28px 19% 60px 25%; font-size: 15px; text-align: justify;line-height: 35px; letter-spacing: 1px;">
 						Techlux steht für Qualität made in Switzerland. Unsere vielschichtigen Produkte sind der Inbegriff
 						für formvollendetes Design und Fahrspass pur, sie stellen die gelungene Kombination aus exklusiver
 						Ästhetik und dynamischer Funktionalität dar. Nicht nur eingeschworene Autofans kommen bei dem
