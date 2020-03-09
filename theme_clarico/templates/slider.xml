@@ -110,7 +110,7 @@
 															<t t-call="theme_clarico.product_slider_btn"/>
 														</section>
 														<section style="margin-top: 25px;">
-															<a style="text-decoration: underline;font-size:13px;" t-att-href="product.website_url">View product details</a>
+															<a style="text-decoration: underline;font-size:13px;" t-att-href="product.website_url">More Information</a>
 														</section>
 													</section>
 												</div>
@@ -544,7 +544,7 @@
 	<template id="product_slider_btn">
 		<a role="button" class="btn btn-secondary btn-sm a-submit px-3 py-2" href="#" title="Shopping cart"
 		   style="background-color: #ae4a51; border-color: #ae4a51; width: 250px;text-transform: uppercase;font-size: 14px;">
-			Add to Cart
+			BUY
 		</a>
 		<t t-set="show_wishlist" t-value="request.website.viewref('website_sale_wishlist.add_to_wishlist').active"/>
 		<t t-set="in_wish" t-value="product._is_in_wishlist()"/>
