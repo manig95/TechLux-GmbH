@@ -34,7 +34,7 @@
 		</xpath>
 		<xpath expr="//div[@id='product_details']/h1" position="attributes">
 			<attribute name="class">te_product_name</attribute>
-			<attribute name="style">text-transform:uppercase !important;font-family: 'Montserrat', sans-serif;</attribute>
+			<attribute name="style">text-transform:uppercase !important;font-family: 'Montserrat', sans-serif;font-weight:600</attribute>
 		</xpath>
 		<xpath expr="//div[@id='product_details']/h1" position="after">
 			<span id="te_rect_cnt" class="d-none" t-esc="website.number_of_product_line"/>
@@ -101,7 +101,7 @@
 					<li t-if="product.website_description">-->
 				<div id="myCollapse" class="accordion" role="tablist" style="width:100%;">
 					<div class="card bg-100" style="">
-						<a href="#" style="color: #000;text-transform:uppercase;" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-target="#myCollapseTab1581336318358" data-original-title=""
+						<a href="#" style="color: #000;text-transform:uppercase;font-weight:600;" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-target="#myCollapseTab1581336318358" data-original-title=""
 						   title="" aria-describedby="tooltip574330">Product Specification
 						</a>
 						<div class="collapse" role="tabpanel" id="myCollapseTab1581336318358" style="">
