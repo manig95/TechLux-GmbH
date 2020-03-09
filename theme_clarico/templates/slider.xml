@@ -84,9 +84,15 @@
 																	  t-esc="combination_info['list_price']"
 																	  t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"
 																/>
-																<b class="oe_price" style="white-space: nowrap;"
+																<!--<b class="oe_price" style="white-space: nowrap;"
 																   t-esc="combination_info['price']"
-																   t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+																   t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>-->
+
+																<b>
+																	<span t-esc="website.currency_id.name" style="padding:10px;"/>
+																	<span t-if="combination_info['price']" t-esc="combination_info['price']"/>
+																</b>
+
 																<span itemprop="price" style="display:none;"
 																	  t-esc="combination_info['price']"/>
 																<span itemprop="priceCurrency" style="display:none;"

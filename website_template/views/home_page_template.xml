@@ -5,9 +5,8 @@
 		<template id="theme_assets_frontend" inherit_id="website.assets_frontend">
 			<xpath expr="link[last()]" position="after">
 				<link rel="stylesheet" type="text/scss" href="/website_template/static/css/website_style.css"/>
-				<!--<script type="text/javascript" src="/website_template/static/js/website.js"></script>-->
+				<script type="text/javascript" src="/website_template/static/js/website.js"></script>
 				<link href="https://fonts.googleapis.com/css?family=Montserrat:800&amp;display=swap" rel="stylesheet"/>
-
 			</xpath>
 		</template>
 		<template id="new_custom_home_page" inherit_id="website.homepage">
@@ -295,7 +294,7 @@
 
 				</div>
 				<div id="openModal" class="modalDialog">
-					<!--<div class="col-lg-4">
+					<div class="col-lg-4">
 						<div class="row">
 							<div class="" style="color: #fff;padding:7%;">
 								<div class="text-center" style="padding: 30px; text-align: center;">
@@ -311,7 +310,7 @@
 								</div>
 							</div>
 						</div>
-					</div>-->
+					</div>
 				</div>
 			</xpath>
 		</template>
