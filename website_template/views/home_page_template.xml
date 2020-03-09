@@ -135,7 +135,7 @@
 
 								.title-text2 p {
 								padding: 50px 15px 0px 15px;
-								width: 220px;
+								width: 235px;
 								}
 
 								.title-text2 span {
@@ -205,19 +205,19 @@
 								<div class="title-text col-lg-4" style="float:left;text-align: center;">
 									<i style="color:#C5545C;font-size: 150px;padding-top: 20px;" class="fa fa-truck"></i>
 									<p style="font-size: 32px;">
-										Fast delivery
+										Fast Delivery
 									</p>
 								</div>
 								<div class="title-text2 col-lg-4" style="float:left;text-align: center;">
 									<i style="color:#38544d;font-size: 150px;padding-top: 20px;" class="fa fa-undo"></i>
 									<p style="font-size: 32px;">
-										30 days return policy
+										30 Days Return Policy
 									</p>
 								</div>
 								<div class="title-text3 col-lg-4" style="float:left;text-align: center;">
 									<i style="color:#1D4753;font-size: 150px;padding-top: 20px;" class="fa fa-usd"></i>
 									<p style="font-size: 32px;">
-										Secure payment
+										Secure Payment
 									</p>
 								</div>
 							</div>
