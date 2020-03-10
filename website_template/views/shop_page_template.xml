@@ -10,7 +10,7 @@
 					<!--<b class="oe_price" style="white-space: nowrap;" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>-->
 					<b>
 						<span t-esc="website.currency_id.name"/>
-						<span t-if="combination_info['price']" t-esc="combination_info['price']"/>
+						<span t-if="combination_info['price']" t-esc="'%.f' % (combination_info['price'])"/>
 					</b>
 					<span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
 				</h4>
@@ -32,7 +32,7 @@
 		<xpath expr="//div[@class='o_wsale_products_grid_table_wrapper']" position="replace">
 			<div t-if="bins" class="o_wsale_products_grid_table_wrapper" style="">
 				<div class="shop-title">
-					<p style="font-weight: 600;font-size: 35px;margin-top:20px">SHOP</p>
+					<p style="font-weight: 600;font-size: 35px;margin-top:30px">SHOP</p>
 					<p style="font-size: 15px;">OUR PATENTED SWISS TECHNOLOGIES</p>
 				</div>
 				<table class="table table-borderless m-0" t-att-data-ppg="ppg" t-att-data-ppr="ppr" style="table-layout: auto !important;">
@@ -105,7 +105,8 @@
 					</b>
 					<b>
 						<span t-esc="website.currency_id.name"/>
-						<span t-if="combination_info['price']" t-esc="combination_info['price']"/>
+						<!--<t t-esc="'%.2f' % (combination_info['price'])"/>-->
+						<span t-if="combination_info['price']" t-esc="'%.f' % (combination_info['price'])"/>
 					</b>
 					<span itemprop="price" style="display:none;" t-esc="combination_info['price']"/>
 					<span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
