@@ -73,7 +73,7 @@
 														   class="text-decoration-none">
 															<h4
 																	t-attf-class="my-2 mb-0 product_name #{'te_2_line' if (website.number_of_product_line == '2') else 'te_3_line' if (website.number_of_product_line == '3') else ''}"
-																	t-raw="product.name" style="text-transform: uppercase; font-weight: bold; color: #38544d;"/>
+																	t-raw="product.name" style="text-transform: uppercase; font-weight: bold; color: #000;font-family: 'Montserrat', sans-serif;"/>
 														</a>
 														<div itemprop="offers" itemscope="itemscope"
 															 itemtype="http://schema.org/Offer"
@@ -87,11 +87,10 @@
 																<!--<b class="oe_price" style="white-space: nowrap;"
 																   t-esc="combination_info['price']"
 																   t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>-->
-
-																<b>
+																<div style="font-size:16px;font-weight: 600; font-family: 'Montserrat', sans-serif;">
 																	<span t-esc="website.currency_id.name"/>
 																	<span t-if="combination_info['price']" t-esc="'%.f' % (combination_info['price'])"/>
-																</b>
+																</div>
 
 																<span itemprop="price" style="display:none;"
 																	  t-esc="combination_info['price']"/>

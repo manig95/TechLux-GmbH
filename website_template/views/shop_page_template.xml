@@ -8,10 +8,10 @@
 						  t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"
 					/>
 					<!--<b class="oe_price" style="white-space: nowrap;" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>-->
-					<b>
+					<div style="font-size:16px;font-weight: 600; font-family: 'Montserrat', sans-serif;">
 						<span t-esc="website.currency_id.name"/>
 						<span t-if="combination_info['price']" t-esc="'%.f' % (combination_info['price'])"/>
-					</b>
+					</div>
 					<span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
 				</h4>
 				<h4 class="css_non_editable_mode_hidden decimal_precision" t-att-data-precision="str(website.currency_id.decimal_places)">
@@ -95,19 +95,16 @@
 		<xpath expr="//div[@class='p-2 o_wsale_product_information_text']" position="replace">
 			<div class="p-2 o_wsale_product_information_text" style="font-size:15px;text-align:center; letter-spacing: 1px;">
 				<h3 class="o_wsale_products_item_title">
-					<a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" style="color: #000;text-transform:uppercase;font-weight:bold;font-size:17px;"/>
+					<a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" style="color: #000;text-transform:uppercase;font-weight:bold;font-size:18px;font-family: 'Montserrat', sans-serif;"/>
 					<a role="button" t-if="not product.website_published" t-att-href="product_href" class="btn btn-sm btn-danger" title="This product is unpublished.">Unpublished</a>
 				</h3>
-				<div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" style="letter-spacing: 2px;font-size: 17px;">
-					<b>
+				<div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" style="letter-spacing: 1px;font-size: 16px;">
 						<del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']"
 							 t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
-					</b>
-					<b>
+					<div style="font-size:16px;font-weight: 600; font-family: 'Montserrat', sans-serif;">
 						<span t-esc="website.currency_id.name"/>
-						<!--<t t-esc="'%.2f' % (combination_info['price'])"/>-->
 						<span t-if="combination_info['price']" t-esc="'%.f' % (combination_info['price'])"/>
-					</b>
+					</div>
 					<span itemprop="price" style="display:none;" t-esc="combination_info['price']"/>
 					<span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
 				</div>
