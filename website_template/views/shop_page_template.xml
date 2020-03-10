@@ -32,7 +32,7 @@
 		<xpath expr="//div[@class='o_wsale_products_grid_table_wrapper']" position="replace">
 			<div t-if="bins" class="o_wsale_products_grid_table_wrapper" style="">
 				<div class="shop-title">
-					<p style="font-weight: 600;font-size: 35px;margin-top:30px">SHOP</p>
+					<p style="font-weight: 600;font-size: 35px;margin-top:20px">SHOP</p>
 					<p style="font-size: 15px;">OUR PATENTED SWISS TECHNOLOGIES</p>
 				</div>
 				<table class="table table-borderless m-0" t-att-data-ppg="ppg" t-att-data-ppr="ppr" style="table-layout: auto !important;">
