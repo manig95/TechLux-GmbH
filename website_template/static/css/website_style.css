@@ -139,6 +139,28 @@ li.te_ftr_add_info {
     text-align: center;
 }
 
+.te_contactus_banner_section {
+    padding-top: 45px;
+    padding-bottom: 12px;
+    background-position: center;
+    background-color: #fff;
+}
+
+
+#o-carousel-product .carousel-indicators li.active {
+    opacity: 1;
+       border: 0 !important;
+}
+
+#o-carousel-product .carousel-indicators li {
+    width: 64px;
+    height: 64px;
+    text-indent: unset;
+    border: 0 !important;
+    opacity: 0.5;
+    position: relative;
+}
+
 .modalDialog {
   position: fixed;
   top: 0;

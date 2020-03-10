@@ -6,7 +6,7 @@
 		<xpath expr="//form" position="replace">
 			<div t-ignore="true">
 				<form style="width: 70%;float:right;" action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
-					<div class="form-group row form-field o_website_form_required_custom">
+					<!--<div class="form-group row form-field o_website_form_required_custom">
 						<div class="col-lg-7 col-md-8" style="text-align:center">
 							<input type="text" class="form-control o_website_form_input" placeholder="Your Name*" name="contact_name" t-att-value="request.params.get('contact_name', '')" required=""/>
 						</div>
@@ -15,13 +15,26 @@
 						<div class="col-lg-7 col-md-8">
 							<input type="text" class="form-control o_website_form_input" name="phone" placeholder="Phone Number*" required="" t-att-value="request.params.get('phone', '')"/>
 						</div>
+					</div>-->
+					<div class="form-group row form-field o_website_form_required_custom">
+
+						<div class="col-lg-7 col-md-8" style="text-align:center">
+							<input type="text" class="form-control o_website_form_input" name="email_from" placeholder="Email*" required="1" t-att-value="request.params.get('email_from', '')"/>
+						</div>
+					</div>
+					<div class="form-group row form-field o_website_form_required">
+
+						<div class="col-lg-7 col-md-8" style="text-align:center">
+							<input type="text" class="form-control o_website_form_input" name="name"  placeholder="Subject*" required="1" t-att-value="request.params.get('name', '')"/>
+						</div>
 					</div>
 					<div class="form-group row form-field o_website_form_required_custom">
 
 						<div class="col-lg-7 col-md-8" style="text-align:center">
-							<input type="text" class="form-control o_website_form_input" name="email_from" placeholder="Email*" required="" t-att-value="request.params.get('email_from', '')"/>
+							<textarea class="form-control o_website_form_input" name="description" placeholder="Description*"  required="1"><t t-esc="request.params.get('description', '')" placeholder="Description*"/></textarea>
 						</div>
 					</div>
+
 					<!--<div class="form-group row form-field">
 
 						<div class="col-lg-7 col-md-8" style="text-align:center">
@@ -29,13 +42,7 @@
 							<input type="text" class="form-control o_website_form_input" name="partner_name" t-att-value="request.params.get('partner_name', '')"/>
 						</div>
 					</div>
-					<div class="form-group row form-field o_website_form_required">
 
-						<div class="col-lg-7 col-md-8" style="text-align:center">
-							<label class="col-lg-3 col-md-4 col-form-label" style="text-align:center" for="name">Subject</label>
-							<input type="text" class="form-control o_website_form_input" name="name" required="" t-att-value="request.params.get('name', '')"/>
-						</div>
-					</div>
 					<div class="form-group row form-field o_website_form_required_custom">
 
 						<div class="col-lg-7 col-md-8" style="text-align:center">
@@ -62,15 +69,9 @@
 		</xpath>
 		<xpath expr="//div[hasclass('oe_structure')]" position="replace">
 			<div class="oe_structure">
-				<div>
-					<img src="/website_template/static/img/contact-us-new.jpg" class="img img-fluid mx-auto" alt="clarico-image-text" data-original-title="" title="" aria-describedby="tooltip155496"/>
-				</div>
 				<section class="te_contactus_banner_section oe_img_bg">
 					<div class="s_title text-center">
 						<h2 style="text-transform:uppercase;font-family: 'Montserrat', sans-serif;font-size: 33px;font-weight: 600;">Contact Us</h2>
-						<!--<p style="max-width: 500px;">Wenn Du Fragen hast, weitere Infromationen benötigst oder wir etwas anddres für Dich tun können, melde Dich bitte bei uns.</p>
-						<hr style="border-bottom: 3px solid #ce3030; border-top: navajowhite; max-width: 300px;"/>
-						<p>Wir sind gerne für Dich da</p>-->
 					</div>
 				</section>
 			</div>

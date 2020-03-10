@@ -67,7 +67,7 @@
 													</section>
 												</div>
 
-												<div class="col-lg-6" style="float:left;margin-top: 10px;">
+												<div class="col-lg-6" style="float:left;margin-top: 22px;">
 													<section class="">
 														<a t-att-href="product.website_url"
 														   class="text-decoration-none">
@@ -89,7 +89,7 @@
 																   t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>-->
 
 																<b>
-																	<span t-esc="website.currency_id.name" style="padding:10px;"/>
+																	<span t-esc="website.currency_id.name"/>
 																	<span t-if="combination_info['price']" t-esc="combination_info['price']"/>
 																</b>
 
@@ -109,7 +109,7 @@
 														<section class="te_prod_cart_wish">
 															<t t-call="theme_clarico.product_slider_btn"/>
 														</section>
-														<section style="margin-top: 25px;">
+														<section style="margin-top: 17px;">
 															<a style="text-decoration: underline;font-size:13px;" t-att-href="product.website_url">More Information</a>
 														</section>
 													</section>
@@ -543,7 +543,7 @@
 	<!--============= 'Add to cart',Wishlist,Quick view icons ===================-->
 	<template id="product_slider_btn">
 		<a role="button" class="btn btn-secondary btn-sm a-submit px-3 py-2" href="#" title="Shopping cart"
-		   style="background-color: #ae4a51; border-color: #ae4a51; width: 250px;text-transform: uppercase;font-size: 14px;">
+		   style="background-color: #ae4a51; border-color: #ae4a51; width: 175px;text-transform: uppercase;font-size: 14px;">
 			BUY
 		</a>
 		<t t-set="show_wishlist" t-value="request.website.viewref('website_sale_wishlist.add_to_wishlist').active"/>

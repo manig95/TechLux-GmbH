@@ -241,57 +241,11 @@
 
 					<section data-name="title" style="width:100%;float:left;padding-top: 20px;">
 						<div class="container">
-							<!--<div class="row s_nb_column_fixed">
-								<div class="col-lg-12 s_title" style="text-align: center;">
-									<h4 class="te_s_title_default">SHOP</h4>
-									<hr style="border-top: 2px solid;"/>
-								</div>
-							</div>-->
 							<div class="input-group js_slider_snippet hidden" data-isemipro="true" data-name="Product Carousel" data-slider-id="1"/>
 						</div>
 						<div style="background: #38544d;min-height:70px;">
 						</div>
 					</section>
-
-					<!--<section data-name="title" style="width:100%;float:left;">
-						<div class="container">
-							<div class="row s_nb_column_fixed">
-								<div class="col-lg-12 s_title" style="text-align: center;">
-									<h4 class="te_s_title_default">GALLERIE</h4>
-									<hr style="border-top: 2px solid;"/>
-								</div>
-							</div>
-						</div>
-					</section>-->
-					<!--<section class="o_gallery s_image_gallery o_fake_not_editable aos-init pt0 o_slideshow o_spc-medium" data-columns="3" data-name="image gallery" data-aos="o_spc-medium">
-						<div class="container">
-							<div class="col-lg-12">
-								<div class="col-lg-3" style="float:left;"></div>
-								<div id="slideshow_1581330327137" class="carousel slide pointer-event col-lg-6" data-ride="carousel" data-interval="0" style="margin: 0 12px;float:left;">
-									<div class="carousel-inner" style="padding: 0;">
-										<div class="carousel-item active" style="">
-											<img class="img img-fluid d-block" style="color:#f27397;" src="/website_template/static/img/G2A4450-2.jpg" alt="folien bild" data-index="0"/>
-										</div>
-										<div class="carousel-item" style="">
-											<img class="img img-fluid d-block" src="/website_template/static/img/G2A4475-2.jpg" alt="folien bild" data-index="1"/>
-										</div>
-										<div class="carousel-item" style="">
-											<img class="img img-fluid d-block" src="/website_template/static/img/G2A4487_nachher-2.jpg" alt="folien bild" data-index="2"/>
-										</div>
-									</div>
-									<a class="carousel-control-prev text-black" href="#slideshow_1581330327137" data-slide="prev" aria-label="previous" title="vorherige">
-										<span class="fa fa-chevron-left"/>
-									</a>
-									<a class="carousel-control-next text-black" href="#slideshow_1581330327137" data-slide="next" aria-label="next" title="weiter">
-										<span class="fa fa-chevron-right"/>
-									</a>
-								</div>
-								<div class="col-lg-3"></div>
-							</div>
-						</div>
-					</section>-->
-
-
 				</div>
 				<div id="openModal" class="modalDialog">
 					<div class="col-lg-4">
