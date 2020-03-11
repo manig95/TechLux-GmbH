@@ -1380,7 +1380,7 @@ $menu-link-padding: 1em;
         }
         .dropdown-menu,
         .dropdown-menu.show {
-            transform: translate3d(0px, 22px, 0px) !important;
+            transform: translate3d(0px, 22px, 0px);
             background-clip:unset;
         }
         li.list-inline-item {
