@@ -67,7 +67,7 @@
 													</section>
 												</div>
 
-												<div class="col-lg-6" style="float:left;margin-top: 22px;">
+												<div class="col-lg-6 cart-txt" style="float:left;margin-top: 22px;">
 													<section class="">
 														<a t-att-href="product.website_url"
 														   class="text-decoration-none">

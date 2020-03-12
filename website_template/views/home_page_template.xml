@@ -13,80 +13,78 @@
 			<xpath expr="//div[@id='wrap']" position="replace">
 				<div id="wrap" class="oe_structure content-all" style="">
 					<section class="container-fluid pb0" data-name="style 1">
-						<div class="row">
-							<div class="col-lg-12" style="padding: 0;margin-bottom: 50px;">
-								<div class="col-lg-5" style="float:left;margin-bottom: 50px;margin-top:30px;">
-									<div class="col-lg-12">
-										<div class="const-container">
-											<div class="content-area">
-												<span class="box-char">S</span>
-												<blockquote>
-													<span class="box-title">
-														<b>SOLID CONSTRUCTION</b>
-													</span>
-													<br/>
-													<span class="box-paragraph">Our designers focus on the highest design and functional requirements.</span>
-												</blockquote>
-											</div>
+						<div class="row mbl-display" style="margin-bottom: 50px;">
+							<div class="col-lg-5 mb-view" style="float:left;margin-bottom: 50px;margin-top:30px;">
+								<div class="col-lg-12">
+									<div class="const-container">
+										<div class="content-area">
+											<span class="box-char">S</span>
+											<blockquote>
+												<span class="box-title">
+													<b>SOLID CONSTRUCTION</b>
+												</span>
+												<br/>
+												<span class="box-paragraph">Our designers focus on the highest design and functional requirements.</span>
+											</blockquote>
 										</div>
+									</div>
 
-										<div class="const-container">
-											<div class="content-area right-align">
-												<span class="box-char">B</span>
-												<blockquote>
-													<span class="box-title">
-														<b>BEST RESOURCES</b>
-													</span>
-													<br/>
-													<span class="box-paragraph">The material used is an important factor for the quality and durability of our products.</span>
-												</blockquote>
-											</div>
+									<div class="const-container">
+										<div class="content-area right-align">
+											<span class="box-char">B</span>
+											<blockquote>
+												<span class="box-title">
+													<b>BEST RESOURCES</b>
+												</span>
+												<br/>
+												<span class="box-paragraph">The material used is an important factor for the quality and durability of our products.</span>
+											</blockquote>
 										</div>
+									</div>
 
 
-										<div class="const-container">
-											<div class="content-area">
-												<span class="box-char">T</span>
-												<blockquote>
-													<span class="box-title">
-														<b>TESTED FOR CARWASH</b>
-													</span>
-													<br/>
-													<span class="box-paragraph">The product is washable</span>
-												</blockquote>
-											</div>
+									<div class="const-container">
+										<div class="content-area">
+											<span class="box-char">T</span>
+											<blockquote>
+												<span class="box-title">
+													<b>TESTED FOR CARWASH</b>
+												</span>
+												<br/>
+												<span class="box-paragraph">The product is washable</span>
+											</blockquote>
 										</div>
+									</div>
 
-										<div class="const-container">
-											<div class="content-area right-align">
-												<span class="box-char">A</span>
-												<blockquote>
-													<span class="box-title">
-														<b>APPROVED FOR TOP SPEED</b>
-													</span>
-													<br/>
-													<span class="box-paragraph">Developed for maximum speed.</span>
-												</blockquote>
-											</div>
+									<div class="const-container">
+										<div class="content-area right-align">
+											<span class="box-char">A</span>
+											<blockquote>
+												<span class="box-title">
+													<b>APPROVED FOR TOP SPEED</b>
+												</span>
+												<br/>
+												<span class="box-paragraph">Developed for maximum speed.</span>
+											</blockquote>
 										</div>
+									</div>
 
-										<div class="const-container">
-											<div class="content-area">
-												<span class="box-char">A</span>
-												<blockquote>
-													<span class="box-title">
-														<b>APPROVED FOR ECE AND ASA</b>
-													</span>
-													<br/>
-													<span class="box-paragraph">In accordance with the applicable guidelines of the ECE and ASA.</span>
-												</blockquote>
-											</div>
+									<div class="const-container">
+										<div class="content-area">
+											<span class="box-char">A</span>
+											<blockquote>
+												<span class="box-title">
+													<b>APPROVED FOR ECE AND ASA</b>
+												</span>
+												<br/>
+												<span class="box-paragraph">In accordance with the applicable guidelines of the ECE and ASA.</span>
+											</blockquote>
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-7" style="float:right;max-height: 600px;padding: 0;">
-									<img class="img img-responsive img-fluid d-block mx-auto" src="/website_template/static/img/TL5-LRM09711-WEB.png"/>
-								</div>
+							</div>
+							<div class="col-lg-7" style="float:right;max-height: 600px;padding: 0;">
+								<img class="img img-responsive img-fluid d-block mx-auto" src="/website_template/static/img/TL5-LRM09711-WEB.png"/>
 							</div>
 						</div>
 					</section>

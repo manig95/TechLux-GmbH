@@ -45,12 +45,18 @@
 								<a class="te_header_before_logo navbar-brand" href="/" t-if="website" t-field="website.name">My Website</a>
 							</t>
 							<span class="icon-cart">
-								<span class="cart-bag-icon"> <i class="fa fa-shopping-bag"/></span><span class="cart-value"><t t-call="theme_clarico.header_cart"></t></span>
+
+								<span class="cart-bag-icon">
+									<a href="/shop/cart" class="nav-link o_wsale_my_cart ">
+										<i class="fa fa-shopping-bag"/>
+									</a>
+								</span>
 							</span>
 						</div>
 						<div class="col-lg-4 te_header_style_2_right desktp-menu" style="text-align: right;padding: 6px 10px 0px 0px;">
 							<div class="te_cart_icon_head" style="color: #fff;">
-								CART<t t-call="theme_clarico.header_cart"></t>
+								CART
+								<t t-call="theme_clarico.header_cart"></t>
 							</div>
 							<div t-att-style="'text-align:right' if website_sale_pricelists and len(website_sale_pricelists)&gt;1 else 'text-align:left'" class="te_wish_icon_head">
 								<div class="px-2">
