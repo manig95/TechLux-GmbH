@@ -237,7 +237,7 @@ text-align:center;
 .txt-feel-diff {
     transform: none !important;
     display: block;
-    font-size: 29px !important;
+    font-size: 26px !important;
 }
 .mbl-display{
 flex-direction:column-reverse;
@@ -246,6 +246,48 @@ flex-direction:column-reverse;
 {
 margin-top:-50px !important;
 }
+
+.title-text {
+    background-color: #fff;
+}
+.title-text{
+height:150px !important
+}
+.title-text2{
+height:150px !important
+}
+.title-text3{
+height:150px !important
+}
+
+.title-text i{
+   font-size:50px !important;
+}
+.title-text2 i{
+   font-size:50px !important;
+}
+.title-text3 i{
+   font-size:50px !important;
+}
+
+.title-text p{
+   font-size:13px !important;
+   padding: 20px 15px 0px 15px !important;
+    width: 100% !important;
+}
+.title-text2 p{
+   font-size:13px !important;
+   padding: 10px 15px 0px 15px !important;
+    width: 100% !important;
+}
+
+.title-text3 p{
+   font-size:13px !important;
+   padding: 20px 15px 0px 15px !important;
+    width: 100% !important;
+}
+
+
 }
 
 

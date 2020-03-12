@@ -198,20 +198,20 @@
 								opacity: 1;
 								}
 							</style>
-							<div class="col-lg-12" style="float:left;padding:0;">
-								<div class="title-text col-lg-4" style="float:left;text-align: center;">
+							<div class="col-lg-12" style="float:left;padding:0; display: grid; grid-template-columns: 33% 33% 33%;">
+								<div class="title-text" style="float:left;text-align: center;">
 									<i style="color:#C5545C;font-size: 150px;padding-top: 20px;" class="fa fa-truck"></i>
 									<p style="font-size: 32px;">
 										Fast Delivery
 									</p>
 								</div>
-								<div class="title-text2 col-lg-4" style="float:left;text-align: center;">
+								<div class="title-text2" style="float:left;text-align: center;">
 									<i style="color:#38544d;font-size: 150px;padding-top: 20px;" class="fa fa-undo"></i>
 									<p style="font-size: 32px;">
 										30 Days Return Policy
 									</p>
 								</div>
-								<div class="title-text3 col-lg-4" style="float:left;text-align: center;">
+								<div class="title-text3" style="float:left;text-align: center;">
 									<i style="color:#1D4753;font-size: 150px;padding-top: 20px;" class="fa fa-usd"></i>
 									<p style="font-size: 32px;">
 										Secure Payment
