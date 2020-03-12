@@ -89,7 +89,7 @@
 						</div>
 					</section>
 					<section class="">
-						<div style="background-color: #38544d; padding: 2em 0;color: #fff;text-align:center">
+						<div class="mx-part" style="background-color: #38544d; padding: 10em 0;color: #fff;text-align:center">
 							<p style="font-size: 33px; font-weight: bold;">MAXIMUM PERFORMANCE</p>
 						</div>
 					</section>

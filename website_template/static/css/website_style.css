@@ -237,7 +237,7 @@ text-align:center;
 .txt-feel-diff {
     transform: none !important;
     display: block;
-    font-size: 26px !important;
+    font-size: 29px !important;
 }
 .mbl-display{
 flex-direction:column-reverse;
@@ -287,6 +287,9 @@ height:150px !important
     width: 100% !important;
 }
 
+mx-part {
+padding: padding: 2em 0 !important;
+}
 
 }
 
