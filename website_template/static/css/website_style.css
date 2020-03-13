@@ -283,27 +283,34 @@ body {
 	}
 
 	.sh-txt {
-        display:block !important;
-        font-size: 13px;
+        display: block !important;
+        font-size: 21px;
         text-align: center;
         font-weight: 600;
         padding-bottom: 15px;
+        letter-spacing: 2px;
     }
+
     .ab-txt{
         padding: 10% 7% 40px 7% !important;
     }
     .impr{
         padding: 10% 7% 40px 7% !important;
     }
-    .s_title{
+    .s_title h2{
+        font-size:29px !important;
+    }
+    .s_title-t{
         font-size:29px !important;
     }
     .contact-form {
         width: 100% !important;
+        margin-top: 10px !important;
     }
     .cnt-btn{
         text-align:center !important;
     }
+
     .daten{
         padding: 10% 7% 40px 7% !important;
     }
@@ -312,7 +319,7 @@ body {
         text-align:center !important;
     }
     .mbl-spinner{
-        padding: 0px 20% 0px 32% !important;
+        padding: 0px 25% 0px 30% !important;
         max-width: 350px !important;
     }
     #o-carousel-product .carousel-outer {
@@ -320,6 +327,13 @@ body {
     }
     .mbl-pr-name{
         margin-top: 0 !important;
+    }
+    .shop-title p {
+        margin-top: 0 !important;
+    }
+    .sp-p-1 {
+        font-size: 29px !important;
+        padding-bottom: 25px !important;
     }
 
 }
@@ -516,7 +530,7 @@ li.te_ftr_add_info {
 }
 
 .shop-title p {
-	line-height: 45px
+	line-height: 45px;
 }
 
 .social a {
