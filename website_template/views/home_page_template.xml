@@ -224,13 +224,13 @@
 					<section class="">
 						<div>
 							<div class="diff-img">
-								<div class="t_img_hover_1">
+								<div class="t_img_hover_1 img-1">
 									<img src="/website_template/static/img/G2A4490_vorher_ergebnis(thick).png" alt=""/>
 								</div>
 								<div style="color: #fff;display: grid; align-items: center; position: relative; justify-content: center;">
 									<span class="txt-feel-diff">FEEL THE DIFFERENCE</span>
 								</div>
-								<div class="t_img_hover_1 text-right">
+								<div class="t_img_hover_1 text-right img-2">
 									<img src="/website_template/static/img/G2A4487_nachher-2.jpg" alt=""/>
 								</div>
 							</div>

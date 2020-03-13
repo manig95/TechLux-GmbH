@@ -55,6 +55,7 @@
 												</t>
 											</div>
 											<div class="col-lg-12">
+												<p class="sh-txt">OUR PATENTED SWISS TECHNOLOGIES</p>
 												<div class="col-lg-6" style="float:left;">
 													<section class="te_slider_img dd_slider_prod_bg">
 														<a t-att-href="product.website_url">

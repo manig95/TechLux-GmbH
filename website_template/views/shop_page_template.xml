@@ -74,7 +74,7 @@
 				<img src="/website_template/static/img/swiss-icon.png"
 					 onmouseover="this.src='/website_template/static/img/swiss-2.png'"
 					 onmouseout="this.src='/website_template/static/img/swiss-icon.png'"
-					 border="0" alt="" style="float:left;margin-top: 4px;padding-right: 10px;"/>
+					 border="0" alt="" style="padding-right: 10px;"/>
 				<span style="text-transform:uppercase;color: #000; font-weight: bold;font-size: 15px;">SWISS MADE</span>
 			</p>
 		</xpath>

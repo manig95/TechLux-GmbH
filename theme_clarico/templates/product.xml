@@ -30,10 +30,10 @@
 			<attribute name="class">col-lg-6</attribute>
 		</xpath>
 		<xpath expr="//div[@id='product_details']" position="attributes">
-			<attribute name="class">col-lg-6 offset-xl-0</attribute>
+			<attribute name="class">col-lg-6 offset-xl-0 pro-mbl</attribute>
 		</xpath>
 		<xpath expr="//div[@id='product_details']/h1" position="attributes">
-			<attribute name="class">te_product_name</attribute>
+			<attribute name="class">te_product_name mbl-pr-name</attribute>
 			<attribute name="style">text-transform:uppercase !important;font-family: 'Montserrat', sans-serif;font-weight:600;margin-top:25px;</attribute>
 		</xpath>
 		<xpath expr="//div[@id='product_details']/h1" position="after">
@@ -293,7 +293,7 @@
 	<template id="product_quantity_ept" inherit_id="website_sale.product_quantity">
 		<xpath expr="//div[hasclass('css_quantity')]" position="attributes">
 			<attribute name="class">css_quantity input-group oe_website_spinner
-				te_product_quantity
+				te_product_quantity mbl-spinner
 			</attribute>
 		</xpath>
 	</template>
