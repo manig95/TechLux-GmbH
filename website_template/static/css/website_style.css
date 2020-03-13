@@ -228,12 +228,13 @@ body {
 		padding-bottom: 50px;
 	}
 	.txt-feel-diff {
-	    width: auto !important;
-		white-space: normal !important;
-		transform: none !important;
-		display: block;
-		font-size: 30px !important;
-		word-spacing: 3px;
+	    white-space: normal !important;
+        transform: none !important;
+        display: block;
+        font-size: 29px !important;
+        font-weight: 600 !important;
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
 	}
 	.mbl-display {
 		flex-direction: column-reverse;
