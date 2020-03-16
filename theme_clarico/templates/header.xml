@@ -20,8 +20,96 @@
 		</xpath>
 		<xpath expr="//header" position="before">
 			<div class="te_header_before_overlay">
-				<div class="navbar" style="background: #38544d; width: 100% !important;display:inline-block;position: fixed; z-index: 10;">
-					<div class="row">
+				<div class="navbar" style="background: #38544d; width: 100% !important;position: fixed; z-index: 10;">
+					<ul class="left-side">
+						<li>
+							<a href="/">KLIXX</a>
+						</li>
+						<li>
+							<a href="/shop">SHOP</a>
+						</li>
+						<li>
+							<a href="/aboutus">ABOUT US</a>
+						</li>
+						<li>
+							<a href="/contactus">CONTACT US</a>
+						</li>
+					</ul>
+					<span id="mb-menu-btn" class="toggle-btn" onclick="openSideMenu()">
+						<i class="fa fa-bars"></i>
+					</span>
+					<div id="mbl-menu-close" class="side-menu-close" onclick="closeSideMenu()">
+						<i class="fa fa-times"></i>
+					</div>
+					<ul class="center-side" style="">
+						<li>
+							<a href="/en_GB/" class="navbar-brand logo te_header_before_logo">
+								<span role="img" aria-label="Logo of TechLux GmbH" title="TechLux GmbH">
+									<span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name"/>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="right-side">
+						<li>
+							<a id="my_cart" href="/en_GB/shop/cart" class="nav-link o_wsale_my_cart " data-original-title="" title="">
+								CART (<span>0</span>)
+							</a>
+						</li>
+						<li>
+							<div class="select-lang">
+								<div class="dropup">
+									<div t-att-style="'text-align:right' if website_sale_pricelists and len(website_sale_pricelists)&gt;1 else 'text-align:left'" class="te_wish_icon_head">
+										<div class="px-2">
+											<t t-call="theme_clarico.header_language_ept"></t>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown te_user_account" t-ignore="true" style="display: inline;color: #fff;"
+								 t-if="not user_id._is_public()">
+								<a href="#" class="dropdown-toggle btn btn-link" data-toggle="dropdown" style="color: #fff;text-transform: uppercase;">
+									<span class="te_user_account_name" t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+									<span class="te_user_account_icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right js_usermenu" role="menu" style="color: #fff;">
+									<a href="/my/home" role="menuitem" class="dropdown-item" style="text-transform: uppercase;"><span class="fa fa-user"/>My Account
+									</a>
+									<a href="/shop/cart" role="menuitem" class="dropdown-item" style="text-transform: uppercase;"><span class="fa fa-check-circle"/>Checkout
+									</a>
+									<a href="/my/orders" role="menuitem" class="dropdown-item" style="text-transform: uppercase;"><span class="fa fa-pie-chart"/>My orders
+									</a>
+									<a href="/shop/wishlist" role="menuitem" class="dropdown-item" style="text-transform: uppercase;" t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active"><span class="fa fa-heart"/>My
+										Wishlist
+									</a>
+									<a id="o_logout" class="dropdown-item" t-attf-href="/web/session/logout?redirect=/"
+									   role="menuitem" style="text-transform: uppercase;"><span class="fa fa-sign-out"/>Logout
+									</a>
+								</div>
+							</div>
+							<div groups="base.group_public" class="te_signin" t-if="request.website.viewref('portal.portal_show_sign_in').active" style="display: inline;">
+								<a t-attf-href="/web/login" class="btn btn-link" style="color:#fff;text-transform: uppercase;">
+									<span class="te_user_account_name">Sign in</span>
+									<span class="te_user_account_icon">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</span>
+								</a>
+							</div>
+						</li>
+
+					</ul>
+					<span class="icon-cart">
+						<span class="cart-bag-icon">
+							<a href="/en_GB/shop/cart" class="nav-link o_wsale_my_cart ">
+								<i class="fa fa-shopping-bag"></i>
+							</a>
+						</span>
+					</span>
+					<div class="row" style="display:none;">
 						<div class="col-lg-4 desktp-menu" style="padding-top: 10px;">
 							<div class="navbar nv nav-overwrite" style="justify-content: inherit;">
 								<a href="/">KLIXX</a>
@@ -32,9 +120,12 @@
 						</div>
 
 						<div class="col-lg-4" style="text-align: center;">
-							<span class="toggle-btn" onclick="openSideMenu()">
+							<span id="mb-menu-btn" class="toggle-btn" onclick="openSideMenu()">
 								<i class="fa fa-bars"></i>
 							</span>
+							<div id="mbl-menu-close" class="side-menu-close" onclick="closeSideMenu()">
+								<i class="fa fa-times"></i>
+							</div>
 							<t t-set="logo_show" t-value="request.website.viewref('website.layout_logo_show').active"/>
 							<t t-if="logo_show">
 								<a href="/" class="navbar-brand logo te_header_before_logo">
@@ -96,59 +187,58 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="navbar nv nav-overwrite mbl-menu" id="mbl-menu-open">
-					<div class="side-menu-close" onclick="closeSideMenu()">
-						<i class="fa fa-times"></i>
-					</div>
-					<div class="drawe-content">
-						<a href="/en_GB/">KLIXX</a>
-						<a href="/en_GB/shop">SHOP</a>
-						<a href="/en_GB/aboutus">ABOUT US</a>
-						<a href="/en_GB/contactus">CONTACT US</a>
-					</div>
-					<div class="mbl-menu-footer">
-						<div class="select-lang">
-							<div class="dropup">
-								<div t-att-style="'text-align:right' if website_sale_pricelists and len(website_sale_pricelists)&gt;1 else 'text-align:left'" class="te_wish_icon_head">
-									<div class="px-2">
-										<t t-call="theme_clarico.header_language_ept"></t>
+
+
+					<div class="navbar nv nav-overwrite mbl-menu" id="mbl-menu-open">
+						<div class="drawe-content">
+							<a href="/">KLIXX</a>
+							<a href="/shop">SHOP</a>
+							<a href="/aboutus">ABOUT US</a>
+							<a href="/contactus">CONTACT US</a>
+						</div>
+						<div class="mbl-menu-footer">
+							<div class="select-lang">
+								<div class="dropup">
+									<div t-att-style="'text-align:right' if website_sale_pricelists and len(website_sale_pricelists)&gt;1 else 'text-align:left'" class="te_wish_icon_head">
+										<div class="px-2">
+											<t t-call="theme_clarico.header_language_ept"></t>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="te_signin" style="">
-							<div class="dropdown te_user_account" t-ignore="true" style="display: inline;color: #fff;"
-								 t-if="not user_id._is_public()">
-								<a href="#" class="dropdown-toggle btn btn-link" data-toggle="dropdown" style="color: #fff;text-transform: uppercase;">
-									<span class="te_user_account_name" t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
-									<span class="te_user_account_icon">
-										<i class="fa fa-user" aria-hidden="true"></i>
-									</span>
-								</a>
-								<div class="dropdown-menu dropdown-menu-right js_usermenu" role="menu" style="color: #fff;">
-									<a href="/my/home" role="menuitem" class="dropdown-item" style="text-transform: uppercase;"><span class="fa fa-user"/>My Account
+							<div class="te_signin" style="">
+								<div class="dropdown te_user_account" t-ignore="true" style="display: inline;color: #fff;"
+									 t-if="not user_id._is_public()">
+									<a href="#" class="dropdown-toggle btn btn-link" data-toggle="dropdown" style="color: #fff;text-transform: uppercase;">
+										<span class="te_user_account_name" t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+										<span class="te_user_account_icon">
+											<i class="fa fa-user" aria-hidden="true"></i>
+										</span>
 									</a>
-									<a href="/shop/cart" role="menuitem" class="dropdown-item" style="text-transform: uppercase;"><span class="fa fa-check-circle"/>Checkout
-									</a>
-									<a href="/my/orders" role="menuitem" class="dropdown-item" style="text-transform: uppercase;"><span class="fa fa-pie-chart"/>My orders
-									</a>
-									<a href="/shop/wishlist" role="menuitem" class="dropdown-item" style="text-transform: uppercase;" t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active"><span class="fa fa-heart"/>My
-										Wishlist
-									</a>
-									<a id="o_logout" class="dropdown-item" t-attf-href="/web/session/logout?redirect=/"
-									   role="menuitem" style="text-transform: uppercase;"><span class="fa fa-sign-out"/>Logout
+									<div class="dropdown-menu dropdown-menu-right js_usermenu" role="menu" style="color: #fff;">
+										<a href="/my/home" role="menuitem" class="dropdown-item" style="text-transform: uppercase;"><span class="fa fa-user"/>My Account
+										</a>
+										<a href="/shop/cart" role="menuitem" class="dropdown-item" style="text-transform: uppercase;"><span class="fa fa-check-circle"/>Checkout
+										</a>
+										<a href="/my/orders" role="menuitem" class="dropdown-item" style="text-transform: uppercase;"><span class="fa fa-pie-chart"/>My orders
+										</a>
+										<a href="/shop/wishlist" role="menuitem" class="dropdown-item" style="text-transform: uppercase;" t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active"><span class="fa fa-heart"/>My
+											Wishlist
+										</a>
+										<a id="o_logout" class="dropdown-item" t-attf-href="/web/session/logout?redirect=/"
+										   role="menuitem" style="text-transform: uppercase;"><span class="fa fa-sign-out"/>Logout
+										</a>
+									</div>
+								</div>
+								<div groups="base.group_public" class="te_signin" t-if="request.website.viewref('portal.portal_show_sign_in').active" style="display: inline;">
+									<a t-attf-href="/web/login" class="btn btn-link" style="color:#fff;text-transform: uppercase;">
+										<span class="te_user_account_name">Sign in</span>
+										<span class="te_user_account_icon">
+											<i class="fa fa-user" aria-hidden="true"></i>
+										</span>
 									</a>
 								</div>
-							</div>
-							<div groups="base.group_public" class="te_signin" t-if="request.website.viewref('portal.portal_show_sign_in').active" style="display: inline;">
-								<a t-attf-href="/web/login" class="btn btn-link" style="color:#fff;text-transform: uppercase;">
-									<span class="te_user_account_name">Sign in</span>
-									<span class="te_user_account_icon">
-										<i class="fa fa-user" aria-hidden="true"></i>
-									</span>
-								</a>
 							</div>
 						</div>
 					</div>

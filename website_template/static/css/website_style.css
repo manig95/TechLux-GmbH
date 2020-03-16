@@ -64,7 +64,7 @@ body {
 	}
 }
 
-@media only screen and (min-width: 320px) and (max-width:600px) {
+@media only screen and (min-width: 320px) and (max-width:970px) {
 	.diff-img {
 		padding: 6em 0;
 		display: inline-grid;
@@ -86,7 +86,6 @@ body {
 		text-align: center;
 	}
 	.mbl-menu {
-		position: fixed;
 		background: #38544d;
 		height: 100%;
 		width: 88%;
@@ -127,15 +126,8 @@ body {
 	}
 	.side-menu-close i {
 		color: #fff;
-		font-size: 30px;
-		font-weight: 200;
-	}
-	.side-menu-close {
-		text-align: left;
-		padding: 0 15px;
-		font-size: 22px !important;
-		color: #fff;
-		margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 200;
 	}
 	.mbl-menu-footer {
 		position: fixed;
@@ -231,16 +223,11 @@ body {
 	    white-space: normal !important;
         transform: none !important;
         display: block;
-        font-size: 29px !important;
+        font-size: 27px !important;
         font-weight: 600 !important;
         padding-top: 25px !important;
         padding-bottom: 25px !important;
-	}
-	.mbl-display {
-		flex-direction: column-reverse;
-	}
-	.mb-view {
-		margin-top: -50px !important;
+        width:auto !important;
 	}
 	.title-text {
 		background-color: #fff;
@@ -335,7 +322,9 @@ body {
         font-size: 29px !important;
         padding-bottom: 25px !important;
     }
-
+    .const-container .content-area span.box-paragraph {
+        line-height: 1.5px;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width:768px) {
@@ -436,12 +425,12 @@ li.te_ftr_add_info {
 
 .close-popup {
 	color: #ffffff;
-	position: absolute;
-	right: 8px;
-	text-align: center;
-	top: 3px;
-	font-size: 14px;
-}
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 5px;
+    font-size: 12px
+    }
 
 .close-popup:hover {
 	color: #ae4a51;
@@ -758,4 +747,148 @@ span.toggle-btn {
 .contact-form {
     width: 70%;
     float:right;
+}
+
+.left-side li, .right-side li {
+display: inline-block;
+}
+
+ul li {
+list-style: none;
+}
+
+ul.left-side li a, ul.right-side li a {
+color: #fff;
+padding-right: 25px;
+margin: 0 !important;
+}
+
+ul {
+margin: 0;
+padding: 0;
+}
+
+@media (max-width: 970px){
+ul.left-side, ul.right-side{
+display:none;
+transition: 0.5s;
+}
+}
+
+
+ul.left-side, ul.right-side {
+transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 320px)
+{
+.mbl-display {
+    flex-direction: column-reverse;
+    }
+.mb-view {
+		margin-top: -50px !important;
+	}
+	.content-draw {
+        /*max-width: 350px;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modalDialog > div {
+        height: 100vh;
+        border: 0;
+        margin: 0 auto;
+        padding:25px;
+    }
+
+    .js_subscribe_email {
+        margin-bottom: 10px !important;
+        border: none;
+    }
+
+    .js_subscribe_btn {
+        width:100%;
+        border: 1px solid;
+    }
+    .input-group.js_subscribe .js_subscribe_email {
+       width: 100%;
+    }
+        .input-group.js_subscribe {
+        display: block;
+    }
+    .pop-up-box {
+        position: relative;
+    }
+     p.txt-thanks {
+        display:block;
+    }
+
+    .close-popup {
+        right: 17px;
+        top: -15px;
+    }
+}
+
+
+.content-draw {
+    max-width: 500px;
+}
+
+ p.txt-thanks {
+    display:none;
+        font-size: 11px;
+        margin-top: 3em;
+        color: #d3d3d3;
+    }
+
+.promo-code-box {
+display: block;
+width: 100%;
+}
+
+.promo-code-box .js_subscribe_email {
+width: 100%;
+margin-bottom: 20px;
+}
+
+p.txt-click-to-copy {
+margin-bottom: 20px;
+}
+
+.coupon-code h4.o_default_snippet_text {
+margin-bottom: 20px;
+}
+
+.promo-code-box {
+display: block;
+}
+.promo-code-box span.input-group-append {
+    display: block;
+    margin: 0;
+}
+.btn-shoping {
+   background: #fff;
+    color: #595858 !important;
+    margin: 0 !important;
+}
+
+.btn-shoping:hover{
+   background: #fff;
+}
+
+.promo-code-box .js_subscribe_btn {
+    margin-bottom: 15px;
+    display: block !important;
+}
+
+#coupon-code-view-show {
+    display: none;
+}
+
+.side-menu-close {
+		display: none;
+	}
+
+	.dropdown-menu.show a {
+color: #000;
 }
