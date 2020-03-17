@@ -100,7 +100,7 @@
 				<!--<ul id="te_product_tabs">
 					<li t-if="product.website_description">-->
 				<div id="myCollapse" class="accordion" role="tablist" style="width:100%;">
-					<div class="card bg-100" style="">
+					<div class="card bg-100 text-sm-center-x" style="">
 						<a href="#" style="color: #000;text-transform:uppercase;font-weight:600;" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-target="#myCollapseTab1581336318358" data-original-title=""
 						   title="" aria-describedby="tooltip574330">Product Specification
 						</a>

@@ -36,13 +36,13 @@
             <content id="theme_customize_content_header" string="Headers" title="Choose your Header styles">
                 <more data-depends="">
                     <list>
-                        <opt data-xmlid="theme_clarico.option_header_01_assets,theme_clarico.customize_header_style_1"
+                        <!--<opt data-xmlid="theme_clarico.option_header_01_assets,theme_clarico.customize_header_style_1"
                                 data-icon="/theme_clarico/static/src/img/customise_option/h_style-1.jpg" data-reload="/"
-                                string=" "/>
+                                string=" "/>-->
                         <opt data-xmlid="theme_clarico.option_header_02_assets,theme_clarico.customize_header_style_2"
                                 data-icon="/theme_clarico/static/src/img/customise_option/h_style-2.jpg" data-reload="/"
                                 string=" "/>
-                        <opt data-xmlid="theme_clarico.option_header_03_assets,theme_clarico.customize_header_style_3"
+                        <!--<opt data-xmlid="theme_clarico.option_header_03_assets,theme_clarico.customize_header_style_3"
                                 data-icon="/theme_clarico/static/src/img/customise_option/h_style-3.jpg" data-reload="/"
                                 string=" "/>
                         <opt data-xmlid="theme_clarico.option_header_04_assets,theme_clarico.customize_header_style_4"
@@ -56,7 +56,7 @@
                                 string=" "/>
                         <opt data-xmlid="theme_clarico.option_header_07_assets,theme_clarico.customize_header_style_7"
                                 data-icon="/theme_clarico/static/src/img/customise_option/h_style-7.jpg" data-reload="/"
-                                string=" "/>
+                                string=" "/>-->
                     </list>
                 </more>
             </content>

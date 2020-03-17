@@ -2,6 +2,7 @@ from odoo import http
 from odoo.http import request
 from odoo import SUPERUSER_ID
 from odoo.addons.mass_mailing.controllers.main import MassMailController
+import random
 
 class MassMailController(MassMailController):
 
@@ -30,22 +31,18 @@ class MassMailController(MassMailController):
 
 class WebsiteCoupon(http.Controller):
 
-    @http.route(['/generate_promo_code'], type='http', auth="public", csrf=False, website=True)
+    @http.route(['/generate_signup_coupon'], type='http', auth="public", csrf=False, website=True)
     def send_category_enquiry(self, **post):
-        user = request.env['res.users'].browse(SUPERUSER_ID)
-        if post.get('name') and post.get('email_id') and post.get('comment'):
-            values = {
-                'record_name': post.get('name'),
-                'model': 'mail.message',
-                'message_type': 'email',
-                'reply_to': post.get('mail_id')
-            }
-            rec_id = request.env['mail.message'].sudo().create(values)
-            template_id = request.env.ref('website_product_category.website_enquiry_mail_template')
-            print
-            post, '========================='
-            if template_id:
-                template_id.sudo().with_context({'mail_id': post.get('email_id'), 'name': post.get('name'), 'comments': post.get('comment'), 'search_string': post.get("search_string")}).send_mail(rec_id.id, force_send=True)
-            return 'mail_sent'
-        else:
-            return 'mail_not_sent'
+        # sale_search = request.env["sale.order"].sudo().search([('partner_id.email','=',post.get('email_id'),('state','!=','cancel'))])
+        # if sale_search:
+        #     return "You already availed this offer!"
+        # else:
+        program = request.env["sale.coupon.program"].sudo().search([('signup_coupon','=',True)],limit=1)
+        if program:
+            if program.signup_coupon:
+                code = "SIGNUP" + str(random.getrandbits(16))
+            else:
+                code = str(random.getrandbits(64))
+            vals = {'program_id': program.id, 'code': code}
+            coupon = request.env['sale.coupon'].sudo().create(vals)
+            return coupon.code
