@@ -6,25 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-09 12:32+0000\n"
-"PO-Revision-Date: 2020-03-09 12:32+0000\n"
+"POT-Creation-Date: 2020-03-18 12:51+0000\n"
+"PO-Revision-Date: 2020-03-18 12:51+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
-
-#. module: theme_clarico
-#: model_terms:theme.ir.ui.view,arch:theme_clarico.customize_header_style_2
-msgid "CONTACT US"
-msgstr "KONTAKTIERE UNS"
-
-#. module: theme_clarico
-#: model_terms:theme.ir.ui.view,arch:theme_clarico.customize_header_style_2
-msgid "ABOUT US"
-msgstr "ÜBER UNS"
-
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -149,57 +138,123 @@ msgstr ""
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "<b>E-Mail: info@techlux.ch</b>"
+msgid "<b>Authorized Representative</b>"
 msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "<b>Haftungsausschluss für Links</b>"
+msgid "<b>Commercial Registration</b>"
 msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "<b>Haftungsausschluss</b>"
+msgid "<b>Contact Address</b>"
 msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "<b>Handelsregister-Eintrag</b>"
+msgid "<b>Copyrights</b>"
 msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "<b>Kontakt-Adresse</b>"
+msgid "<b>Disclaimer for links</b>"
 msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "<b>Mehrwertsteuer-Nummer</b>"
+msgid "<b>Disclaimer</b>"
 msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "<b>Urheberrechte</b>"
-msgstr ""
-
-#. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "<b>Vertretungsberechtigte Person(en)</b>"
+msgid "<b>Email: info@techlux.ch</b>"
 msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.about_us_ept_new
 msgid ""
-"<font style=\"font-size: 30px;font-family: 'Montserrat', sans-serif;\">ÜBER "
-"UNS</font>"
+"<b>Techlux</b>\n"
+"\t\t\t\t\t\tstands for quality made in Switzerland. Our multi-layered products are the epitome\n"
+"\t\t\t\t\t\tfor perfect design and pure driving pleasure, they represent the successful combination of exclusive\n"
+"\t\t\t\t\t\t<b>aesthetics</b>\n"
+"\t\t\t\t\t\tand\n"
+"\t\t\t\t\t\t<b>dynamic functionality.</b>\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\tNot only committed car fans come to the\n"
+"\t\t\t\t\t\tstrong assortment rave about. Techlux is also a permanent point of contact for business customers\n"
+"\t\t\t\t\t\tfrom Switzerland, who make no compromises when it comes to vehicle equipment. Through our\n"
+"\t\t\t\t\t\tComprehensive equipment as well as <b>technological know-how</b> allow us to do it\n"
+"\t\t\t\t\t\tThe full potential of professional body design. We make it clear that luxury and attractive\n"
+"\t\t\t\t\t\tConditions do not conflict.\n"
+"\t\t\t\t\t\tService puts capital on <b>Techlux</b>.\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\tOur company is located in the heart of Lucerne, more precisely\n"
+"\t\t\t\t\t\tsaid in Ballwil. We have the experience to innovate every vehicle\n"
+"\t\t\t\t\t\thelp. Clear lines and imaginative forms cause <b>a sensation.</b> We are known for the love of perfection and distinctive details. Techlux develops contemporary de-luxe bodies,\n"
+"\t\t\t\t\t\twhereby modern production processes and <b>selected materials</b> go hand in hand.\n"
+"\t\t\t\t\t\tOrder processing is uncomplicated and therefore quick - with quick response times\n"
+"\t\t\t\t\t\tour customers can count.\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\tYou have a dedicated contact person at your side at any time, who\n"
+"\t\t\t\t\t\thelp with all matters."
 msgstr ""
+"<b>Techlux</b> steht für Qualität made in Switzerland. Unsere "
+"vielschichtigen Produkte sind der Inbegriff für perfektes Design und puren "
+"Fahrspaß. Sie stehen für die erfolgreiche Kombination von exklusiver<b> "
+"Ästhetik</b> und <b>dynamischer "
+"Funktionalität</b>.<div><br/></div><div>Nicht nur engagierte Autofans kommen"
+" zu der starken Reichweite, von der sie schwärmen. Techlux ist auch ein "
+"ständiger Ansprechpartner für Geschäftskunden aus der Schweiz, die bei der "
+"Fahrzeugausstattung keine Kompromisse eingehen. Dank unserer umfangreichen "
+"Ausstattung und unseres <b>technologischen Know-hows</b> können wir das "
+"volle Potenzial professioneller Karosseriedesigns nutzen. Wir machen "
+"deutlich, dass Luxus und attraktive Bedingungen nicht in Konflikt stehen. "
+"Der Service basiert auf "
+"<b>Techlux</b>.<br/></div><div><br/></div><div>Unsere Firma befindet sich im"
+" Herzen von Luzern, genauer gesagt in Ballwil. Wir haben die Erfahrung, jede"
+" Fahrzeughilfe zu innovieren. Klare Linien und einfallsreiche Formen sorgen "
+"für<b> Aufsehen</b>. Wir sind bekannt für die Liebe zur Perfektion und zu "
+"unverwechselbaren Details. Techlux entwickelt zeitgemäße Luxus-Karosserien, "
+"bei denen moderne Produktionsverfahren und <b>ausgewählte Materialien</b> "
+"Hand in Hand gehen. Die Auftragsabwicklung ist unkompliziert und daher "
+"schnell - mit schnellen Reaktionszeiten können unsere Kunden "
+"zählen.</div><div><br/></div><div><div>Sie haben immer einen engagierten "
+"Ansprechpartner an Ihrer Seite, der Ihnen bei Fragen hilft.</div></div>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "<b>VAT number</b>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid ""
+"<font class=\"s_title s_title-t\" style=\"font-size: 36px;font-family: "
+"'Montserrat', sans-serif;font-weight:600;\">TERMS &amp; CONDITIONS</font>"
+msgstr ""
+"<div><font face=\"Montserrat, sans-serif\"><span style=\"font-size: "
+"36px;\">IMPRESSUM</span></font></div>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.about_us_ept_new
+msgid ""
+"<font style=\"font-size: 29px;font-family: 'Montserrat', sans-serif;\">ABOUT"
+" US</font>"
+msgstr ""
+"<font style=\"font-size: 29px;font-family: 'Montserrat', sans-serif;\">ÜBER "
+"UNS</font>"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -207,14 +262,6 @@ msgstr ""
 msgid ""
 "<font style=\"font-size: 36px;font-family: 'Montserrat', sans-serif;font-"
 "weight:600;\">Datenschutz</font>"
-msgstr ""
-
-#. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid ""
-"<font style=\"font-size: 36px;font-family: 'Montserrat', sans-serif;font-"
-"weight:600;\">Impressum</font>"
 msgstr ""
 
 #. module: website_template
@@ -243,70 +290,75 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
 msgid ""
 "<span class=\"box-title\">\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>APPROVED FOR ECE AND ASA</b>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">In accordance with the applicable guidelines of the ECE and ASA.</span>"
-msgstr "<span class="box-title"><b>GENEHMIGT FÜR ECE UND ASA</b>&amp;nbsp;</span><br/>
-													<span class="box-paragraph">In Übereinstimmung mit den geltenden Richtlinien der ECE und der ASA.</span>"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<b>APPROVED FOR ECE AND ASA</b>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">In accordance with the applicable guidelines of the ECE and ASA.</span>"
+msgstr ""
+"<span style=\"font-size: 20px;\"><b>GENEHMIGT FÜR ECE UND ASA</b></span><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">In Übereinstimmung mit den geltenden Richtlinien der ECE und der ASA.</span>"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
 msgid ""
 "<span class=\"box-title\">\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>APPROVED FOR TOP SPEED</b>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Developed for maximum speed.</span>"
-msgstr "<span class="box-title"><b>GENEHMIGT FÜR ECE UND ASA</b>&amp;nbsp;</span><br/>
-													<span class="box-paragraph">In Übereinstimmung mit den geltenden Richtlinien der ECE und der ASA.</span>"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<b>APPROVED FOR TOP SPEED</b>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Developed for maximum speed.</span>"
+msgstr ""
+"<span class=\"box-title\"><b>GENEHMIGT FÜR TOP SPEED</b>&amp;nbsp;</span><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Entwickelt für maximale Geschwindigkeit.</span>"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
 msgid ""
 "<span class=\"box-title\">\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>BEST RESOURCES</b>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">The material used is an important factor for the quality and durability of our products.</span>"
-msgstr "<span class="box-title"><b>BESTE RESSOURCEN</b>&amp;nbsp;</span><br/>
-													<span class="box-paragraph">Das verwendete Material ist ein wichtiger Faktor für die Qualität und Langlebigkeit unserer Produkte.</span>"
-
-
-#. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
-msgid ""
-"<span class=\"box-title\">\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>SOLID CONSTRUCTION</b>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Our designers focus on the highest design and functional requirements.</span>"
-msgstr "<span class="box-title"><b>FESTE KONSTRUKTION</b>&amp;nbsp;</span><br/>
-													<span class="box-paragraph">Unsere Designer konzentrieren sich auf höchste Design- und Funktionsanforderungen.</span>"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<b>BEST RESOURCES</b>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">The material used is an important factor for the quality and durability of our products.</span>"
+msgstr ""
+"<span class=\"box-title\"><b>BESTE RESSOURCEN</b>&amp;nbsp;</span><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">The materiDas verwendete Material ist ein wichtiger Faktor für die Qualität und Langlebigkeit unserer Produkte.</span>"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
 msgid ""
 "<span class=\"box-title\">\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>TESTED FOR CARWASH</b>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">The product is washable</span>"
-msgstr "<span class="box-title"><b>AUF CARWASH GETESTET</b>&amp;nbsp;</span><br/>
-													<span class="box-paragraph">Das Produkt ist waschbar</span>"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<b>SOLID CONSTRUCTION</b>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Our designers focus on the highest design and functional requirements.</span>"
+msgstr ""
+"<span class=\"box-title\"><b>FESTE KONSTRUKTION</b>&amp;nbsp;</span><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Unsere Designer konzentrieren sich auf höchste Design- und Funktionsanforderungen.</span>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid ""
+"<span class=\"box-title\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<b>TESTED FOR CARWASH</b>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">The product is washable</span>"
+msgstr ""
+"<span class=\"box-title\"><b>AUF CARWASH GETESTET</b>&amp;nbsp;</span><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Das Produkt ist waschbar</span>"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
 msgid "<span class=\"txt-feel-diff\">FEEL THE DIFFERENCE</span>"
-msgstr ""
+msgstr "<span class=\"txt-feel-diff\">FÜHLE DEN UNTERSCHIED</span>"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_product_inherit
 msgid ""
-"<span style=\"text-transform:uppercase;color: #000; font-weight: bold;font-size: 15px;\">Free Shipping</span>\n"
-"\t\t\t\t<br/>\n"
-"\t\t\t\t<span style=\"text-transform:uppercase;color: #000; font-weight: bold;font-size: 15px;\">SWISS MADE</span>"
+"<span style=\"text-transform:uppercase;color: #000; font-weight: bold;font-"
+"size: 15px;\">SWISS MADE</span>"
 msgstr ""
+"<font color=\"#000000\"><span style=\"font-size: 15px; text-transform: "
+"uppercase;\"><b>IN DER SCHWEIZ HERGESTELLT</b></span></font>"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
@@ -371,9 +423,17 @@ msgid "<strong>Widerspruchsrecht</strong>"
 msgstr ""
 
 #. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Accuracy, timeliness, reliability and completeness of the information."
+msgstr ""
+"Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der "
+"Informationen."
+
+#. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_product_inherit
 msgid "Add to Cart"
-msgstr "In den Warenkorb"
+msgstr "IN DEN WARENKORB LEGEN"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -385,8 +445,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.impressum-page
 msgid ""
-"Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne besondere Ankündigung zu verändern, zu ergänzen, zu löschen oder die\n"
-"\t\t\t\t\t\t\t\t\t\tVeröffentlichung zeitweise oder endgültig einzustellen."
+"All offers are non-binding. The author expressly reserves the right to change, add to, or delete parts of the pages or the entire offer or the\n"
+"\t\t\t\t\t\t\t\t\t\tDiscontinue publication temporarily or permanently."
 msgstr ""
 
 #. module: website_template
@@ -591,14 +651,25 @@ msgid "CH10048079027"
 msgstr ""
 
 #. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "CONTINUE SHOPPING"
+msgstr "MIT DEM EINKAUFEN FORTFAHREN"
+
+#. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
 msgid "City"
-msgstr "Stadt"
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
 msgid "Close"
-msgstr "Abschliessen"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Commercial register number: CHE-268.606.949"
+msgstr "Handelsregisternummer: CHE-268.606.949"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -614,12 +685,12 @@ msgstr ""
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
 msgid "Country"
-msgstr "Land"
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
 msgid "Country..."
-msgstr "Bitte Land auswählen..."
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -840,14 +911,6 @@ msgid ""
 msgstr ""
 
 #. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid ""
-"Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen "
-"Richtigkeit,"
-msgstr ""
-
-#. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.datenschutz-page
 msgid ""
@@ -977,14 +1040,6 @@ msgid ""
 "\t\t\t\t\t\t\t\t\t\tTätigkeit, Familienstand, Allgemeine Angaben zum Haushalt, Haushalts-\n"
 "\t\t\t\t\t\t\t\t\t\tEinkommen, Wohnort, Internetnutzung, Online-Interessen, Nutzungsort,\n"
 "\t\t\t\t\t\t\t\t\t\tNutzertyp."
-msgstr ""
-
-#. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid ""
-"Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich <b>der Firma Techlux GmbH</b> oder den speziell genannten Rechteinhabern. Für\n"
-"\t\t\t\t\t\t\t\t\t\tdie Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen."
 msgstr ""
 
 #. module: website_template
@@ -1476,12 +1531,6 @@ msgid ""
 msgstr ""
 
 #. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "Eingetragener Firmenname:"
-msgstr ""
-
-#. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.datenschutz-page
 msgid ""
@@ -1492,12 +1541,12 @@ msgstr ""
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
 msgid "Email"
-msgstr "E-Mail"
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
 msgid "Fast Delivery"
-msgstr "Fast delivery"
+msgstr "Schnelle Lieferung"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -1550,14 +1599,6 @@ msgid ""
 "\t\t\t\t\t\t\t\t\tauch Angaben zum Zeitpunkt der Erstellung des Kommentars, Ihre E-Mail-\n"
 "\t\t\t\t\t\t\t\t\tAdresse und, wenn Sie nicht anonym posten, der von Ihnen gewählte\n"
 "\t\t\t\t\t\t\t\t\tNutzername gespeichert."
-msgstr ""
-
-#. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid ""
-"Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der "
-"Informationen."
 msgstr ""
 
 #. module: website_template
@@ -1630,17 +1671,8 @@ msgid ""
 msgstr ""
 
 #. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid ""
-"Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der\n"
-"\t\t\t\t\t\t\t\t\t\tVerbindung oder"
-msgstr ""
-
-#. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "Handelsregister Nr: CHE-268.606.949"
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "HERE'S A 10% OFF COUPON CODE:"
 msgstr ""
 
 #. module: website_template
@@ -1719,11 +1751,6 @@ msgid ""
 msgstr ""
 
 #. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
-msgid "Join our community!"
-msgstr ""
-
-#. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.datenschutz-page
 msgid ""
@@ -1738,9 +1765,17 @@ msgid "Kostenpflichtige Leistungen"
 msgstr ""
 
 #. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid ""
+"Liability claims against the author for material or immaterial damage resulting from access, use or non-use of the published information through misuse of the\n"
+"\t\t\t\t\t\t\t\t\t\tConnection or"
+msgstr ""
+
+#. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
 msgid "MAXIMUM PERFORMANCE"
-msgstr ""
+msgstr "MAXIMALE PERFORMANCE"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -1754,7 +1789,7 @@ msgstr ""
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "Marco Niggli; Geschäftsführer"
+msgid "Marco Niggli - CEO"
 msgstr ""
 
 #. module: website_template
@@ -1776,6 +1811,11 @@ msgid ""
 "\t\t\t\t\t\t\t\t\tCookies generell deaktiviert oder Ihren Browser so einstellen, dass Cookies\n"
 "\t\t\t\t\t\t\t\t\tvon der Domain „googleleadservices.com“ blockiert werden."
 msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "NOT FOR ME, THANKS"
+msgstr "NICHT FÜR MICH, DANKE"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -1836,7 +1876,7 @@ msgstr ""
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_form_inherit
 msgid "OUR PATENTED SWISS TECHNOLOGIES"
-msgstr ""
+msgstr "UNSERE PATENTIERTEN SCHWEIZER TECHNOLOGIEN"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -1910,6 +1950,14 @@ msgid ""
 msgstr ""
 
 #. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid ""
+"References and links to third party websites are outside our area of ​​responsibility. It rejected any responsibility for such websites. Access and use of such websites\n"
+"\t\t\t\t\t\t\t\t\t\tare at the user's own risk."
+msgstr ""
+
+#. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.datenschutz-page
 msgid ""
@@ -1918,20 +1966,25 @@ msgid ""
 msgstr ""
 
 #. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Registered Company Name:"
+msgstr "Eingetragener Firmenname:"
+
+#. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_form_inherit
 msgid "SHOP"
 msgstr ""
 
 #. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "Schweiz"
-msgstr ""
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "SIGN UP AND SAVE 10% ON YOUR FIRST ORDER!"
+msgstr "REGISTRIEREN SIE SICH UND SPAREN SIE 10% AUF IHRE ERSTE BESTELLUNG!"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
 msgid "Secure Payment"
-msgstr "Secure payment"
+msgstr "Sichere Bezahlung"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
@@ -2003,12 +2056,12 @@ msgstr ""
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
 msgid "State / Province"
-msgstr "Bundesland / Region"
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
 msgid "State / Province..."
-msgstr "Bundesland / Region..."
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
@@ -2020,12 +2073,18 @@ msgstr ""
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
 msgid "Street 2"
-msgstr "Straße 2"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Switzerland"
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
-msgid "Subscribe"
-msgstr "Abonnieren"
+msgid "THANKS!"
+msgstr "VIELEN DANK!"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
@@ -2034,34 +2093,23 @@ msgid "Techlux GmbH"
 msgstr ""
 
 #. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.about_us_ept_new
-msgid ""
-"Techlux steht für Qualität made in Switzerland. Unsere vielschichtigen Produkte sind der Inbegriff\n"
-"\t\t\t\t\t\tfür formvollendetes Design und Fahrspass pur, sie stellen die gelungene Kombination aus exklusiver\n"
-"\t\t\t\t\t\tÄsthetik und dynamischer Funktionalität dar. Nicht nur eingeschworene Autofans kommen bei dem\n"
-"\t\t\t\t\t\tstarken Sortiment ins Schwärmen. Techlux ist ebenfalls eine feste Anlaufstelle für Geschäftskunden\n"
-"\t\t\t\t\t\taus der Schweiz, die bei der Fahrzeugausstattung keine Kompromisse eingehen. Durch unser\n"
-"\t\t\t\t\t\tumfangreiches Equipment wie auch durch das technologische Know-how schöpfen wir das\n"
-"\t\t\t\t\t\tPotenzial der professionellen Karosseriegestaltung voll aus. Wir stellen klar, dass Luxus und attraktive\n"
-"\t\t\t\t\t\tKonditionen nicht im Widerspruch stehen.\n"
-"\t\t\t\t\t\tService schreibt Techlux gross. Unser Unternehmen ist im Herzen von Luzern ansässig, genauer\n"
-"\t\t\t\t\t\tgesagt in Ballwil. Wir haben die nötige Erfahrung, um jedem Fahrzeug innovativ auf die Sprünge zu\n"
-"\t\t\t\t\t\thelfen. Klare Linien und ideenreiche Formen sorgen für Furore. Für die Liebe zur Perfektion sowie zuunverwechselbaren Details sind wir bekannt. Techlux entwickelt zeitgemässe de-Luxe-Karosserien,\n"
-"\t\t\t\t\t\twobei moderne Produktionsverfahren und ausgesuchte Werkstoffe Hand in Hand gehen.\n"
-"\t\t\t\t\t\tAuftragsabwicklungen laufen unkompliziert und somit zugig ab – auf schnelle Reaktionszeiten\n"
-"\t\t\t\t\t\tdürfen unsere Kunden zählen. Ihnen steht jederzeit ein engagierter Ansprechpartner zur Seite, der\n"
-"\t\t\t\t\t\tbei sämtlichen Angelegenheiten weiterhilft."
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "The author assumes no liability for the correctness of the content,"
 msgstr ""
 
 #. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
-msgid "Thanks"
-msgstr "Dankeschön"
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid ""
+"The copyrights and all other rights to content, images, photos or other files on this website belong exclusively to <b>Techlux GmbH</b> or the specifically named rights holders. For\n"
+"\t\t\t\t\t\t\t\t\t\tReproduction of any elements requires the prior written consent of the copyright holder."
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_form__product_inherit
 msgid "This product is unpublished."
-msgstr "Dieses Produkt ist unveröffentlicht."
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -2098,7 +2146,7 @@ msgstr ""
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_form__product_inherit
 msgid "Unpublished"
-msgstr "Unveröffentlicht"
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -2120,6 +2168,11 @@ msgid ""
 msgstr ""
 
 #. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "VIEW CODE"
+msgstr "CODE ANZEIGEN"
+
+#. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.datenschutz-page
 msgid "Vendor-ID"
@@ -2132,14 +2185,6 @@ msgid ""
 "Verantwortliche Stelle im Sinne der\n"
 "\t\t\t\t\t\t\t\t\tDatenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung\n"
 "\t\t\t\t\t\t\t\t\t(DSGVO), ist:"
-msgstr ""
-
-#. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid ""
-"Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten\n"
-"\t\t\t\t\t\t\t\t\t\terfolgen auf eigene Gefahr des jeweiligen Nutzers."
 msgstr ""
 
 #. module: website_template
@@ -2340,7 +2385,7 @@ msgstr ""
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
 msgid "Zip Code"
-msgstr "PLZ Code"
+msgstr ""
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -2397,6 +2442,12 @@ msgid "besuchen."
 msgstr ""
 
 #. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "caused by technical faults are excluded."
+msgstr ""
+
+#. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
 #: model_terms:website.page,arch_db:website_template.datenschutz-page
 msgid "chartbeat.com/about/"
@@ -2407,6 +2458,11 @@ msgstr ""
 #: model_terms:website.page,arch_db:website_template.datenschutz-page
 msgid "chartbeat.com/privacy"
 msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "click to copy"
+msgstr "Klicken Sie zum Kopieren"
 
 #. module: website_template
 #: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
@@ -2457,12 +2513,6 @@ msgid ""
 "durch eine entsprechende Einstellung Ihrer Browser-\n"
 "\t\t\t\t\t\t\t\t\t\tSoftware, insbesondere führt die Unterdrückung von Drittcookies dazu, dass\n"
 "\t\t\t\t\t\t\t\t\t\tSie keine Anzeigen von Drittanbietern erhalten;"
-msgstr ""
-
-#. module: website_template
-#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
-#: model_terms:website.page,arch_db:website_template.impressum-page
-msgid "durch technische Störungen entstanden sind, werden ausgeschlossen."
 msgstr ""
 
 #. module: website_template

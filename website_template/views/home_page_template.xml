@@ -264,7 +264,7 @@
 							<div id="coupon-code-view-show" class="text-center coupon-code" style="padding: 15px;">
 								<a href="#close" title="Close" class="close-popup">X</a>
 								<h4 class="text-uppercase font-weight-bold o_default_snippet_text" style="font-family: 'Montserrat', sans-serif; ">THANKS!</h4>
-								<p>HERE'S A 10% OFF COUPON CODE:</p>
+								<p>HIER IST EIN 10% RABATT AUF DEN COUPON CODE:</p>
 								<p class="txt-click-to-copy">click to copy</p>
 								<div class="input-group js_subscribe promo-code-box" data-list-id="1">
 									<span class="input-group-append">
