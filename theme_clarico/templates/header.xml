@@ -43,7 +43,7 @@
 					</div>
 					<ul class="center-side" style="">
 						<li>
-							<a href="/en_GB/" class="navbar-brand logo te_header_before_logo">
+							<a href="/" class="navbar-brand logo te_header_before_logo">
 								<span role="img" aria-label="Logo of TechLux GmbH" title="TechLux GmbH">
 									<span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name"/>
 								</span>
@@ -51,9 +51,10 @@
 						</li>
 					</ul>
 					<ul class="right-side">
-						<li>
-							<a id="my_cart" href="/en_GB/shop/cart" class="nav-link o_wsale_my_cart " data-original-title="" title="">
-								CART (<span>0</span>)
+						<li style="display: inline-flex;">
+							<a id="my_cart" href="/shop/cart" class="nav-link o_wsale_my_cart " data-original-title="" title="">
+								CART
+								<t t-call="theme_clarico.header_cart"></t>
 							</a>
 						</li>
 						<li>
