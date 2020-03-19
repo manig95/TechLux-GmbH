@@ -374,6 +374,10 @@ body {
 	text-align: center;
 }
 
+.txt-feel-diff-de {
+    font-size: 29px;
+}
+
 @media only screen and (max-width:991px) {
 	.txt-feel-diff {
 		white-space: nowrap;

@@ -11,6 +11,13 @@ $(document).ready(function () {
 		$('#wrap').css('opacity', 'unset')
 	});
 
+	$('.txt-thanks').on('click', function (event) {
+		event.preventDefault();
+		/* Act on the event */
+		$('.modalDialog').fadeOut(600);
+		$('#wrap').css('opacity', 'unset')
+	});
+
 
 	$('#view-code-btn').bind('click', function () {
 		if ($('.js_subscribe_email').val() == '') {

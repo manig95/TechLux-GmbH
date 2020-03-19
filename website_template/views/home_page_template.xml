@@ -228,8 +228,14 @@
 									<img src="/website_template/static/img/G2A4490_vorher_ergebnis(thick).png" alt=""/>
 								</div>
 								<div style="color: #fff;display: grid; align-items: center; position: relative; justify-content: center;">
-									<span class="txt-feel-diff">FEEL THE DIFFERENCE</span>
+									<div t-if="request.env.lang == 'de_DE'">
+										<span class="txt-feel-diff txt-feel-diff-de">FEEL THE DIFFERENCE</span>
+									</div>
+									<div t-else="">
+										<span class="txt-feel-diff">FEEL THE DIFFERENCE</span>
+									</div>
 								</div>
+
 								<div class="t_img_hover_1 text-right img-2">
 									<img src="/website_template/static/img/G2A4487_nachher-2.jpg" alt=""/>
 								</div>
