@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<!--============ Contactus Info ===============-->
-
-	<template id="contactus_form_inherit" name="Contact Form (Opportunity)" inherit_id="website_crm.contactus_form" >
+	<template id="contactus_form_inherit" name="Contact Form (Opportunity)" inherit_id="website_crm.contactus_form">
 		<xpath expr="//form" position="replace">
 			<div t-ignore="true">
-				<form style="" action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32 contact-form" enctype="multipart/form-data" data-editable-form="false">
+				<form style="" action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32 contact-form" enctype="multipart/form-data"
+					  data-editable-form="false">
 					<div class="form-group row form-field o_website_form_required_custom">
 
 						<div class="col-lg-7 col-md-8" style="text-align:center">
@@ -15,13 +14,15 @@
 					<div class="form-group row form-field o_website_form_required">
 
 						<div class="col-lg-7 col-md-8" style="text-align:center">
-							<input type="text" class="form-control o_website_form_input" name="name"  placeholder="Subject*" required="1" t-att-value="request.params.get('name', '')"/>
+							<input type="text" class="form-control o_website_form_input" name="name" placeholder="Subject*" required="1" t-att-value="request.params.get('name', '')"/>
 						</div>
 					</div>
 					<div class="form-group row form-field o_website_form_required_custom">
 
 						<div class="col-lg-7 col-md-8" style="text-align:center">
-							<textarea class="form-control o_website_form_input" name="description" placeholder="Description*"  required="1"><t t-esc="request.params.get('description', '')" placeholder="Description*"/></textarea>
+							<textarea class="form-control o_website_form_input" name="description" placeholder="Description*" required="1">
+								<t t-esc="request.params.get('description', '')" placeholder="Description*"/>
+							</textarea>
 						</div>
 					</div>
 					<div class="form-group row">
@@ -35,7 +36,6 @@
 		</xpath>
 	</template>
 
-
 	<template id="contact_us_ept" inherit_id="website.contactus" name="Contact Us">
 		<xpath expr="//section[hasclass('s_text_block')]" position="replace">
 		</xpath>
@@ -48,27 +48,25 @@
 				</section>
 			</div>
 		</xpath>
+
 		<xpath expr="//div[@id='wrap']/div[hasclass('container')]" position="attributes">
 			<attribute name="class">container mt-2 mb32</attribute>
 		</xpath>
 		<xpath expr="//div[hasclass('col-lg-4')]" position="replace">
 		</xpath>
-		<!--<xpath expr="//div[hasclass('col-lg-8')]" position="after">
-			<div class="col-lg-12 te_company_details pt48 pb48">
-				<t t-call="theme_clarico.company_description_ept"/>
-			</div>
-		</xpath>-->
 		<xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
 			<attribute name="class">col-lg-12</attribute>
 		</xpath>
 	</template>
-	<!--============ About us default page ===============-->
+
+
 	<template id="about_us_ept" inherit_id="website.aboutus" name="About Us">
 		<xpath expr="//section[hasclass('s_text_image')]//div[hasclass('col-lg-6')][2]" position="attributes">
 			<attribute name="class">col-lg-6 pt16 pb16 te_aboutus_img</attribute>
 		</xpath>
 	</template>
-	<!--============== Default Contact Us (replace address section) ============= -->
+
+
 	<template id="company_description_ept" name="Company Description Ept">
 		<address itemscope="itemscope" itemtype="http://schema.org/Organization">
 			<!-- TODO widget contact must add itemprop attributes -->
@@ -146,4 +144,43 @@
 			</a>
 		</t>
 	</template>
+
+
+	<record id="website_form.contactus_thanks" model="website.page">
+		<field name="name">Thanks (Contact us)</field>
+		<field name="type">qweb</field>
+		<field name="url">/contactus-thank-you</field>
+		<field name="website_indexed" eval="False"/>
+		<field name="is_published">True</field>
+		<field name="key">website_form.contactus_thanks</field>
+		<field name="arch" type="xml">
+			<t name="Thanks (Contact us)" t-name="website_form.contactus_thanks">
+				<t t-call="website.layout">
+					<div id="wrap">
+						<div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_1"/>
+						<div class="container pt-3" style="padding: 53px 19% 40px 22%;text-align: center;">
+							<h1 style="font-family: 'Montserrat', sans-serif;">Thanks!</h1>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="alert alert-success" role="status">
+										Your message has been sent successfully.
+										<button type="button" class="close" data-dismiss="alert">&amp;times;</button>
+									</div>
+									<p>
+										We will get back to you shortly.
+									</p>
+								</div>
+								<div class="" style="display:none;">
+									<t t-call="website.company_description"/>
+								</div>
+							</div>
+						</div>
+						<div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_2"/>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+
+
 </odoo>

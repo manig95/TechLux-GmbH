@@ -9,6 +9,24 @@
 				<link href="https://fonts.googleapis.com/css?family=Montserrat:800&amp;display=swap" rel="stylesheet"/>
 			</xpath>
 		</template>
+
+		 <template id="login_template_inherit" inherit_id="web.login" name="Sign In Inherit">
+            <xpath expr="//div[@class='form-group field-login']" position="replace">
+                <div class="form-group field-login">
+                    <label for="login">Email</label>
+                    <input type="text" name="login" t-att-value="login" id="login" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autofocus="autofocus" autocapitalize="off"/>
+                </div>
+            </xpath>
+
+			 <xpath expr="//div[@class='form-group field-password']" position="replace">
+                <div class="form-group field-password">
+                    <label for="password">Password</label>
+                    <input type="password"  name="password" id="password" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="current-password" t-att-autofocus="'autofocus' if login else None" maxlength="4096"/>
+                </div>
+            </xpath>
+
+        </template>
+
 		<template id="new_custom_home_page" inherit_id="website.homepage">
 			<xpath expr="//div[@id='wrap']" position="replace">
 				<div id="wrap" class="oe_structure content-all" style="">
