@@ -11,7 +11,7 @@
 						<div class="row">
 							<div class="col-lg-6 offset-lg-3 pb32" style="color: #fff;">
 								<div class="text-center" style="border: 2px solid #fff;padding: 30px;">
-									<h1 class="text-uppercase font-weight-bold o_default_snippet_text">Let's keep in touch!</h1>
+									<h1 class="text-uppercase font-weight-bold o_default_snippet_text;" style="font-family: 'Montserrat', sans-serif;">Let's keep in touch!</h1>
 									<p class="o_default_snippet_text">Be the first to find out all the latest news, products and trends.</p>
 									<div class="input-group js_subscribe d-none" data-list-id="1">
 										<input type="email" name="email" class="js_subscribe_email form-control" placeholder="ENTER YOUR EMAIL"/>
