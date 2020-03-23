@@ -533,6 +533,13 @@ li.te_ftr_add_info {
 	font-size: 15px !important;
 }
 
+.daten ol li {
+	margin-top: 18px;
+	letter-spacing: 1px;
+	font-size: 15px !important;
+}
+
+
 .shop-title {
 	text-align: center;
 }
