@@ -9,11 +9,11 @@
                       class="new_span dd_shop_prod_bg d-flex h-100 justify-content-center align-items-center"/>
             </a>
         </xpath>
-        <xpath expr="//h6[hasclass('o_wsale_products_item_title')]/a" position="attributes">
+        <!--<xpath expr="//h6[hasclass('o_wsale_products_item_title')]/a" position="attributes">
             <attribute name="t-attf-class">
                 product_name #{'te_2_line' if (website.number_of_product_line == '2') else 'te_3_line' if (website.number_of_product_line == '3') else ''}
             </attribute>
-        </xpath>
+        </xpath>-->
         <xpath expr="//div[hasclass('o_wsale_product_information')]" position="attributes">
             <attribute name="class">card-body p-0 te_product_info o_wsale_product_information</attribute>
         </xpath>
