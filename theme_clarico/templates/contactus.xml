@@ -60,11 +60,11 @@
 	</template>
 
 
-	<template id="about_us_ept" inherit_id="website.aboutus" name="About Us">
+	<!--<template id="about_us_ept" inherit_id="website.aboutus" name="About Us">
 		<xpath expr="//section[hasclass('s_text_image')]//div[hasclass('col-lg-6')][2]" position="attributes">
 			<attribute name="class">col-lg-6 pt16 pb16 te_aboutus_img</attribute>
 		</xpath>
-	</template>
+	</template>-->
 
 
 	<template id="company_description_ept" name="Company Description Ept">
