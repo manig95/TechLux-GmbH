@@ -461,13 +461,13 @@ li.te_ftr_add_info {
 
 @media (min-width: 768px) {
 	.oe_website_sale .row>.te_cart_wizard_main>.wizard .progress-wizard .progress-wizard-step.complete {
-		background: #ae4a51;
+		background: #ae4a51 !important;
 	}
 }
 
 @media (min-width: 768px) {
 	.oe_website_sale .row>.te_cart_wizard_main>.wizard .progress-wizard .progress-wizard-step.complete>.progress-wizard-bar:before {
-		border-left: 10px solid #ae4a51;
+		border-left: 10px solid #ae4a51 !important;
 	}
 }
 

@@ -48,7 +48,7 @@ $(document).ready(function () {
 //mobile menu toggle
 function openSideMenu() {
 	document.getElementById("mbl-menu-open").style.display = "block";
-	document.getElementById("mbl-menu-open").style.width = "88%";
+	document.getElementById("mbl-menu-open").style.width = "100%";
 	$('#mb-menu-btn').attr('style', 'display: none !important');
 	document.getElementById("mbl-menu-close").style.display = "block";
 }
