@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-	<template id="customize_footer_style_1_inherit" inherit_id="theme_clarico.customize_footer_style_1" active="True">
-		<xpath expr="//div[@id='footer']" position="replace">
-			<h1>HEllo</h1>
-		</xpath>
-	</template>
-</odoo>

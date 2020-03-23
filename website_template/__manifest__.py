@@ -5,7 +5,7 @@
     'category': 'Web Theme',
     'summary': 'Fully Responsive Odoo Theme suitable for eCommerce Businesses',
     'depends': [
-      'website','emipro_theme_base','theme_clarico','website_form','website_sale','product',
+      'website','emipro_theme_base','website_form','website_sale','product',
     ],
 
     'data': [
