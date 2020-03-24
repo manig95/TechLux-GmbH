@@ -937,5 +937,5 @@ color: #000;
 padding-top: 55px;
 }
 .mx-auto {
-    margin-right: inherit;
+    margin-right: inherit !important;
 }
