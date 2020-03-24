@@ -936,3 +936,6 @@ color: #000;
 .oe_website_login_container{
 padding-top: 55px;
 }
+.mx-auto {
+    margin-right: inherit;
+}
