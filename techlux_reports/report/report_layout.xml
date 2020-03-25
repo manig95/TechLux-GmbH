@@ -35,7 +35,7 @@
 					<img style="width: 50%; float:left;" src="/techlux_reports/static/img/header-seal.png"/>
 				</div>
 				<div class="col-7" style="padding-top:-30px !important;">
-					<img style="float: right;height:160px;top:-30px !important" src="/techlux_reports/static/img/report-icong.png"/>
+					<img style="float: right;height:160px;" src="/techlux_reports/static/img/report-icong.png"/>
 				</div>
 			</div>
 		</div>

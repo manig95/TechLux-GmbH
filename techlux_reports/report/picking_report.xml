@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<template id="report_picking_inherit" inherit_id="stock.report_picking">
+			<xpath expr="//div[@name='right_box']" position="attributes">
+				<attribute name="style">padding-top:50px;</attribute>
+			</xpath>
+<!--
+
+			<xpath expr="//div[@class='row mt48 mb32']" position="replace">
+				<div class="row mt48 mb32">
+					<div t-if="o.origin" class="col-auto">
+						<span><strong>Order:</strong></span>
+						<p t-field="o.origin"/>
+					</div>
+					&lt;!&ndash;<div class="col-auto">
+						<span style="border-top:1px solid #908e8e;border-bottom:1px solid #908e8e;" ><strong>Status:</strong></span>
+						<p t-field="o.state"/>
+					</div>&ndash;&gt;
+					<div class="col-auto" name="div_sched_date">
+						<span><strong>Date:</strong></span>
+						<p t-field="o.scheduled_date"/>
+					</div>
+				</div>
+			</xpath>
+-->
+
+		</template>
+	</data>
+</odoo>

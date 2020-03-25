@@ -3,69 +3,68 @@
 	<template id="sale.report_saleorder_document">
 		<t t-call="web.external_layout">
 			<t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)"/>
+			<t t-set="information_block">
+				<div style="padding-top:60px;">
+					<table style="width:300px;">
+						<tr>
+							<td>
+								<span t-if="doc.date_order and doc.state not in ['draft','sent']">
+									<strong>Order Date</strong>
+								</span>
+								<span t-if="doc.date_order and doc.state in ['draft','sent']">
+									<strong>Quote Date</strong>
+								</span>
+							</td>
+							<td>
+								<span t-field="doc.date_order" t-options='{"widget": "date"}'/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span t-if="doc.state not in ['draft','sent']">
+									<strong>Order Number</strong>
+								</span>
+								<span t-if="doc.state in ['draft','sent']">
+									<strong>Quote Number</strong>
+								</span>
+							</td>
+							<td>
+								<span t-field="doc.name"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span t-if="doc.client_order_ref">
+									<strong>Your Reference</strong>
+								</span>
+							</td>
+							<td>
+								<span t-if="doc.client_order_ref" t-field="doc.client_order_ref"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span t-if="doc.validity_date and doc.state in ['draft', 'sent']">
+									<strong>Expiration:</strong>
+								</span>
+							</td>
+							<td>
+								<span t-if="doc.validity_date and doc.state in ['draft', 'sent']" t-field="doc.validity_date"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span t-if="doc.user_id.name">
+									<strong>Salesperson</strong>
+								</span>
 
-			<t t-set="information_block" style="padding-top:30px;">
-
-				<table style="width:300px;">
-					<tr>
-						<td>
-							<span t-if="doc.date_order and doc.state not in ['draft','sent']">
-								<strong>Order Date</strong>
-							</span>
-							<span t-if="doc.date_order and doc.state in ['draft','sent']">
-								<strong>Quote Date</strong>
-							</span>
-						</td>
-						<td>
-							<span t-field="doc.date_order" t-options='{"widget": "date"}'/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span t-if="doc.state not in ['draft','sent']">
-								<strong>Order Number</strong>
-							</span>
-							<span t-if="doc.state in ['draft','sent']">
-								<strong>Quote Number</strong>
-							</span>
-						</td>
-						<td>
-							<span t-field="doc.name"/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span t-if="doc.client_order_ref">
-								<strong>Your Reference</strong>
-							</span>
-						</td>
-						<td>
-							<span t-if="doc.client_order_ref" t-field="doc.client_order_ref"/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span t-if="doc.validity_date and doc.state in ['draft', 'sent']">
-								<strong>Expiration:</strong>
-							</span>
-						</td>
-						<td>
-							<span t-if="doc.validity_date and doc.state in ['draft', 'sent']" t-field="doc.validity_date"/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span t-if="doc.user_id.name">
-								<strong>Salesperson</strong>
-							</span>
-
-						</td>
-						<td>
-							<span t-if="doc.user_id.name" t-field="doc.user_id"/>
-						</td>
-					</tr>
-				</table>
-
+							</td>
+							<td>
+								<span t-if="doc.user_id.name" t-field="doc.user_id"/>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</t>
 
 			<div class="row" style="display:none;">
@@ -79,7 +78,7 @@
 				</div>
 				<div t-if="doc.date_order and doc.state in ['draft','sent']" class="col-auto  mb-6">
 					<strong>Quotation Date:</strong>
-					<p t-field="doc.date_order" t-options='{"widget": "date"}'/>
+					<p t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
 				</div>
 				<div t-if="doc.validity_date and doc.state in ['draft', 'sent']" name="expiration_date" class="col-auto  mb-6">
 					<strong>Expiration:</strong>
@@ -91,9 +90,8 @@
 				</div>
 			</div>
 
-			<t t-set="address" style="padding-top:30px;">
-				<div t-field="doc.partner_id"
-					 t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}'/>
+			<t t-set="address">
+				<div style="padding-top:60px;" t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
 				<p t-if="doc.partner_id.vat"><t t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>:
 					<span t-field="doc.partner_id.vat"/>
 				</p>
@@ -184,10 +182,7 @@
 								<tr class="is-subtotal text-right">
 									<td name="td_section_subtotal" colspan="99">
 										<strong class="mr16">Subtotal</strong>
-										<span
-												t-esc="current_subtotal"
-												t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'
-										/>
+										<span t-esc="current_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}"/>
 									</td>
 								</tr>
 							</t>
@@ -213,12 +208,11 @@
 											<td name="td_amount_by_group_label_3">
 												<span t-esc="amount_by_group[0]"/>
 												<span>&amp;nbsp;<span>on</span>&amp;nbsp;
-													<t t-esc="amount_by_group[2]" t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'/>
+													<t t-esc="amount_by_group[2]" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}"/>
 												</span>
 											</td>
 											<td name="td_amount_by_group_3" class="text-right o_price_total">
-												<span t-esc="amount_by_group[1]"
-													  t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'/>
+												<span t-esc="amount_by_group[1]" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}"/>
 											</td>
 										</t>
 										<t t-else="">
@@ -226,8 +220,7 @@
 												<span t-esc="amount_by_group[0]"/>
 											</td>
 											<td name="td_amount_by_group" class="text-right o_price_total">
-												<span t-esc="amount_by_group[1]"
-													  t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'/>
+												<span t-esc="amount_by_group[1]" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.pricelist_id.currency_id}"/>
 											</td>
 										</t>
 									</tr>
@@ -245,9 +238,7 @@
 					</div>
 				</div>
 				<div>
-					<t t-if="doc.partner_shipping_id == doc.partner_invoice_id
-                             and doc.partner_invoice_id != doc.partner_id
-                             or doc.partner_shipping_id != doc.partner_invoice_id">
+					<t t-if="doc.partner_shipping_id == doc.partner_invoice_id                              and doc.partner_invoice_id != doc.partner_id                              or doc.partner_shipping_id != doc.partner_invoice_id">
 						<t>
 							<table style="width:400px;">
 								<tr>
@@ -261,7 +252,7 @@
 									</td>
 									<td>
 										<span t-field="doc.partner_invoice_id"
-											  t-options='{"widget": "contact", "fields": ["address", "name", "phone"], "no_marker": True, "phone_icons": True}'/>
+											  t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
 									</td>
 								</tr>
 								<tr>
@@ -272,7 +263,7 @@
 									</td>
 									<td>
 										<span t-field="doc.partner_shipping_id"
-											  t-options='{"widget": "contact", "fields": ["address", "name", "phone"], "no_marker": True, "phone_icons": True}'/>
+											  t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
 									</td>
 								</tr>
 								<tr>
