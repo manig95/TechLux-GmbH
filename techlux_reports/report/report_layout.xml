@@ -25,7 +25,7 @@
 	<template id="web.external_layout_standard">
 		<div class="header">
 			<div class="row" style="padding-bottom:40px;">
-				<div class="col-3" style="padding-top:20px !important;">
+				<div class="col-3" style="padding-top:20px !important;color:#908e8e;">
 					<p style="line-height:7px;font-size:11px;">TechLux GmbH</p>
 					<p style="line-height:7px;font-size:11px;">Hochdorfstrasse 5</p>
 					<p style="line-height:7px;font-size:11px;">0800 533 000</p>
@@ -47,20 +47,23 @@
 
 		<div class="footer o_standard_footer">
 			<div style="border-top: 1px solid black;">
-				<div style="float:left;">
+				<div style="float:left; font-size:11px;">
 					<p><strong>Smart.</strong>Simple
 					</p>
 				</div>
-				<div class="text-center">
-					<p>CREDIT SUISSE AG</p>
-					<p>IBAN: CH15 0483 5234 5433 4100 0</p>
-					<p>BIC: CRESCHZZ80A</p>
+				<div style="font-size:11px;text-align:center;">
+					<p>CREDIT SUISSE AG
+						<br/>
+						IBAN: CH15 0483 5234 5433 4100 0
+						<br/>
+						<span style="padding-left: 8%;">BIC: CRESCHZZ80A</span>
+					</p>
 				</div>
-				<div name="financial_infos">
+				<!-- <div name="financial_infos">
 					<span t-field="company.report_footer"/>
-				</div>
+				</div> -->
 
-				<div t-if="report_type == 'pdf'" class="text-muted" style="float:right;">
+				<div t-if="report_type == 'pdf'" class="text-muted" style="font-size:11px;text-align:right;margin-top:-60px">
 					Page:
 					<span class="page"/>
 					/
