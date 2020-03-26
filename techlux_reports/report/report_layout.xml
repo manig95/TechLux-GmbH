@@ -26,12 +26,12 @@
 		<div class="header">
 			<div class="row" style="padding-bottom:40px;">
 				<div class="col-3" style="padding-top:20px !important;color:#908e8e;">
-					<p style="line-height:7px;font-size:11px;">TechLux GmbH</p>
-					<p style="line-height:7px;font-size:11px;">Hochdorfstrasse 5</p>
-					<p style="line-height:7px;font-size:11px;">0800 533 000</p>
+					<p style="line-height:7px;font-size:11px;">TECHLUX GmbH</p>
+					<p style="line-height:7px;font-size:11px;">Hochdorfstrasse 5;6275 Ballwil</p>
 					<p style="line-height:7px;font-size:11px;">info@techlux.ch</p>
+					<p style="line-height:7px;font-size:11px;">www.techlux.ch</p>
 				</div>
-				<div class="col-2" style="padding-top:20px !important;">
+				<div class="col-2" style="padding-top:20px !important;margin-left:-30px;">
 					<img style="width: 50%; float:left;" src="/techlux_reports/static/img/header-seal.png"/>
 				</div>
 				<div class="col-7" style="padding-top:-30px !important;">
@@ -46,24 +46,22 @@
 		</div>
 
 		<div class="footer o_standard_footer">
-			<div style="border-top: 1px solid black;">
-				<div style="float:left; font-size:11px;">
+			<div style="border-top: 1px solid #cbcbcc;" class="row">
+				<div style="float:left; font-size:11px;" class="col-4">
 					<p><strong>Smart.</strong>Simple
 					</p>
 				</div>
-				<div style="font-size:11px;text-align:center;">
-					<p>CREDIT SUISSE AG
+				<div style="font-size:11px;text-align:center;float:left" class="col-4">
+					<p>TECHLUX GmbH
 						<br/>
-						IBAN: CH15 0483 5234 5433 4100 0
+						Hochdorfstrasse 5;6275 Ballwil
 						<br/>
-						<span style="padding-left: 8%;">BIC: CRESCHZZ80A</span>
+						info@techlux.ch
+						<br/>
+						www.techlux.ch
 					</p>
 				</div>
-				<!-- <div name="financial_infos">
-					<span t-field="company.report_footer"/>
-				</div> -->
-
-				<div t-if="report_type == 'pdf'" class="text-muted" style="font-size:11px;text-align:right;margin-top:-60px">
+				<div t-if="report_type == 'pdf'" class="col-4" style="font-size:11px;text-align:right;">
 					Page:
 					<span class="page"/>
 					/
