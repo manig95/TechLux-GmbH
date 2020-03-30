@@ -5,12 +5,12 @@
 			<div>
 				<div class="row" style="padding-top:-30px !important;">
 				<img class="col-4" style="float: left;height: 38px;margin-top: 50px;" src="/techlux_reports/static/img/Logos-02.png"/>
-				<div class="col-6" style="padding-top:20px !important;color:#908e8e;width:25%;font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 100;margin-top: 30px;">
+				<div class="col-4" style="padding-top:20px !important;color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top: 35px;margin-left:100px;float:right;">
 					<p style="line-height:0px;">TECHLUX GmbH</p>
 					<p style="line-height:0px;">Hochdorfstrasse 5</p>
 					<p style="line-height:0px;">CH-6275 Ballwil</p>
 				</div>
-				<div class="col-6" style="color:#908e8e;width:25%;font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 100;margin-top:50px;float:right">
+				<div class="col-4" style="color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top:55px;float:right;">
 					<p style="line-height:0px;">T +41 800 533 000</p>
 					<p style="line-height:0px;">info@techlux.ch</p>
 					<p style="line-height:0px;">www.techlux.ch</p>
@@ -24,13 +24,13 @@
 	<template id="web.external_layout_standard">
 		<div class="header" style="margin-left:64px;margin-right:76px">
 			<div class="row" style="padding-top:-30px !important;">
-				<img class="col-4" style="float: left;height: 38px;margin-top: 50px;" src="/techlux_reports/static/img/Logos-02.png"/>
-				<div class="col-6" style="padding-top:20px !important;color:#908e8e;width:25%;font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 100;margin-top: 30px;margin-left:100px">
+				<img class="col-6" style="float: left;height: 57px;margin-top: 50px;" src="/techlux_reports/static/img/Logos-02.png"/>
+				<div class="col-4" style="padding-top:20px !important;color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top: 35px;margin-left:100px;float:right;">
 					<p style="line-height:0px;">TECHLUX GmbH</p>
 					<p style="line-height:0px;">Hochdorfstrasse 5</p>
 					<p style="line-height:0px;">CH-6275 Ballwil</p>
 				</div>
-				<div class="col-6" style="color:#908e8e;width:25%;font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 100;margin-top:50px;float:right;margin-left:80px">
+				<div class="col-4" style="color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top:55px;float:right;">
 					<p style="line-height:0px;">T +41 800 533 000</p>
 					<p style="line-height:0px;">info@techlux.ch</p>
 					<p style="line-height:0px;">www.techlux.ch</p>
@@ -44,7 +44,7 @@
 		</div>
 
 		<div class="footer o_standard_footer">
-			<div style="border-top: 1px solid #cbcbcc;font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 100;margin-left:64px;margin-right:76px" class="row">
+			<div style="border-top: 1px solid #cbcbcc;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-left:64px;margin-right:76px" class="row">
 				<div style="float:left;" class="col-6">
 					<p><strong>Smart.</strong>Simple
 					</p>

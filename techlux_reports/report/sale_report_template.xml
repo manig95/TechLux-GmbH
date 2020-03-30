@@ -12,58 +12,58 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&quot;display=swap');
 </style> -->
 								<span t-if="doc.date_order and doc.state not in ['draft','sent']">
-									<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Order Date</strong>
+									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Order Date</strong>
 								</span>
 								<span t-if="doc.date_order and doc.state in ['draft','sent']">
-									<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Quote Date</strong>
+									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Quote Date</strong>
 								</span>
 							</td>
 							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
 							</td>
 						</tr>
 						<tr style="line-height:1px;">
 							<td>
 								<span t-if="doc.state not in ['draft','sent']">
-									<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Order Number</strong>
+									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Order Number</strong>
 								</span>
 								<span t-if="doc.state in ['draft','sent']">
-									<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Quote Number</strong>
+									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Quote Number</strong>
 								</span>
 							</td>
 							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-field="doc.name"/>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.name"/>
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<span t-if="doc.client_order_ref">
-									<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Your Reference</strong>
+									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Your Reference</strong>
 								</span>
 							</td>
 							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-if="doc.client_order_ref" t-field="doc.client_order_ref"/>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-if="doc.client_order_ref" t-field="doc.client_order_ref"/>
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<span t-if="doc.validity_date and doc.state in ['draft', 'sent']">
-									<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Expiration:</strong>
+									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Expiration:</strong>
 								</span>
 							</td>
 							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-if="doc.validity_date and doc.state in ['draft', 'sent']" t-field="doc.validity_date"/>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-if="doc.validity_date and doc.state in ['draft', 'sent']" t-field="doc.validity_date"/>
 							</td>
 						</tr>
 						<tr style="line-height:1px;">
 							<td>
 								<span t-if="doc.user_id.name">
-									<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Our Reference</strong>
+									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Our Reference</strong>
 								</span>
 
 							</td>
 							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-if="doc.user_id.name" t-field="doc.user_id"/>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-if="doc.user_id.name" t-field="doc.user_id"/>
 							</td>
 						</tr>
 					</table>
@@ -72,31 +72,31 @@
 
 			<div class="row" style="display:none;margin-left:64px;margin-right:76px">
 				<div t-if="doc.client_order_ref" class="col-auto mb-6">
-					<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Your Reference:</strong>
-					<p style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-field="doc.client_order_ref"/>
+					<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Your Reference:</strong>
+					<p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.client_order_ref"/>
 				</div>
 				<div t-if="doc.date_order and doc.state not in ['draft','sent']" class="col-auto  mb-6">
-					<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Order Date:</strong>
-					<p style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-field="doc.date_order"/>
+					<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Order Date:</strong>
+					<p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order"/>
 				</div>
 				<div t-if="doc.date_order and doc.state in ['draft','sent']" class="col-auto  mb-6">
-					<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Quotation Date:</strong>
-					<p style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+					<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Quotation Date:</strong>
+					<p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
 				</div>
 				<div t-if="doc.validity_date and doc.state in ['draft', 'sent']" name="expiration_date" class="col-auto  mb-6">
-					<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Expiration:</strong>
-					<p style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-field="doc.validity_date"/>
+					<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Expiration:</strong>
+					<p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.validity_date"/>
 				</div>
 				<div t-if="doc.user_id.name" class="col-auto  mb-6">
-					<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Our Reference:</strong>
-					<p style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-field="doc.user_id"/>
+					<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Our Reference:</strong>
+					<p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.user_id"/>
 				</div>
 			</div>
 
 			<t t-set="address">
-				<div style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
-				<p t-if="doc.partner_id.vat"><t style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-left:64px;margin-right:76px" t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>:
-					<span style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id.vat"/>
+				<div style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+				<p t-if="doc.partner_id.vat"><t style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>:
+					<span style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id.vat"/>
 				</p>
 			</t>
 
@@ -115,7 +115,7 @@
 					</t>
 					<span style="font-family: &quot;Montserrat&quot;;font-size:16px;font-weight: 700;" t-field="doc.name"/>
 				</h2>
-				<div t-if="doc.date_order and doc.state not in ['draft','sent','cancel']" style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;">
+				<div t-if="doc.date_order and doc.state not in ['draft','sent','cancel']" style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;">
     				<p style="line-height:0px;">Dear Sir/Madam</p>
     				<p style="line-height:0px;">We thank you for having placed this order with us and are pleased to confirm as follows:</p>
 				</div>
@@ -126,21 +126,21 @@
 				<table class="table table-sm o_main_table">
 					<thead>
 						<tr>
-							<th name="th_description" class="text-left" style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 400;">Description</th>
-							<th name="th_product" class="text-left" style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 400;">Product</th>
-							<th name="th_quantity" style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 400;" class="text-right">Quantity</th>
-							<th name="th_priceunit" class="text-right" style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 400;">Unit Price</th>
+							<th name="th_description" class="text-left" style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 400;">Description</th>
+							<th name="th_product" class="text-left" style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 400;">Product</th>
+							<th name="th_quantity" style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 400;" class="text-right">Quantity</th>
+							<th name="th_priceunit" class="text-right" style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 400;">Unit Price</th>
 							<th name="th_discount" t-if="display_discount" class="text-right" groups="product.group_discount_per_so_line">
-								<span style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 400;">Disc.%</span>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 400;">Disc.%</span>
 							</th>
-							<th name="th_taxes" class="text-right" style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 400;">Taxes</th>
-							<th name="th_subtotal" style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 400;" class="text-right">
+							<th name="th_taxes" class="text-right" style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 400;">Taxes</th>
+							<th name="th_subtotal" style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 400;" class="text-right">
 								<t groups="account.group_show_line_subtotals_tax_excluded">Price</t>
 								<t groups="account.group_show_line_subtotals_tax_included">Total Price</t>
 							</th>
 						</tr>
 					</thead>
-					<tbody class="sale_tbody" style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 100;">
+					<tbody class="sale_tbody" style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;">
 
 						<t t-set="current_subtotal" t-value="0"/>
 
@@ -205,7 +205,7 @@
 					<div id="total" class="row" name="total">
 						<div t-attf-class="#{'col-4' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
 							<table class="table table-sm">
-								<tr class="border-black o_subtotal" style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 100;">
+								<tr class="border-black o_subtotal" style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;">
 									<td name="td_amount_untaxed_label">
 										<strong style="font-weight: 100;">Total</strong>
 									</td>
@@ -214,7 +214,7 @@
 									</td>
 								</tr>
 								<t t-foreach="doc.amount_by_group" t-as="amount_by_group">
-									<tr style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 100;">
+									<tr style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;">
 										<t t-if="amount_by_group[3] == 1 and doc.amount_untaxed == amount_by_group[2]">
 											<td name="td_amount_by_group_label_3">
 												<span t-esc="amount_by_group[0]"/>
@@ -238,10 +238,10 @@
 								</t>
 								<tr class="border-black o_total">
 									<td name="td_amount_total_label">
-										<strong style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 400;" >Total incl. VAT</strong>
+										<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 400;" >Total incl. VAT</strong>
 									</td>
 									<td name="td_amount_total" class="text-right">
-										<span style="font-family: &quot;Montserrat&quot;;font-size:8px;font-weight: 400;" t-field="doc.amount_total"/>
+										<span style="font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 400;" t-field="doc.amount_total"/>
 									</td>
 								</tr>
 							</table>
@@ -255,34 +255,34 @@
 								<tr>
 									<td>
 										<span t-if="doc.partner_shipping_id == doc.partner_invoice_id">
-											<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Invoicing and Shipping Address</strong>
+											<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Invoicing and Shipping Address</strong>
 										</span>
 										<span t-if="doc.partner_shipping_id != doc.partner_invoice_id">
-											<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Invoicing Address</strong>
+											<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Invoicing Address</strong>
 										</span>
 									</td>
 									<td>
-										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-field="doc.partner_invoice_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.partner_invoice_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<span t-if="doc.partner_shipping_id != doc.partner_invoice_id">
-											<strong style="font-family: &quot;Montserrat&quot;;font-size:10px;">Shipping Address</strong>
+											<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Shipping Address</strong>
 										</span>
 									</td>
 									<td>
-										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-field="doc.partner_shipping_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.partner_shipping_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<p t-if="doc.payment_term_id.note">
-											<strong style="font-family: 'Montserrat', sans-serif;font-size:10px;">Payment Terms</strong>
+											<strong style="font-family: 'Montserrat', sans-serif;font-size:12px;">Payment Terms</strong>
 										</p>
 									</td>
 									<td>
-										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;" t-field="doc.payment_term_id.name"/>
+										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.payment_term_id.name"/>
 									</td>
 								</tr>
 							</table>
