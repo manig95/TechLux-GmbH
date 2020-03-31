@@ -22,7 +22,7 @@
 								<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
 							</td>
 						</tr>
-						<tr style="line-height:1px;">
+						<tr style="line-height:10px;">
 							<td>
 								<span t-if="doc.state not in ['draft','sent']">
 									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Order Number</strong>
@@ -55,7 +55,7 @@
 								<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-if="doc.validity_date and doc.state in ['draft', 'sent']" t-field="doc.validity_date"/>
 							</td>
 						</tr>
-						<tr style="line-height:1px;">
+						<tr style="line-height:10px;">
 							<td>
 								<span t-if="doc.user_id.name">
 									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Our Reference</strong>
@@ -94,7 +94,7 @@
 			</div>
 
 			<t t-set="address">
-				<div style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+				<div style="padding-top:66px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
 				<p t-if="doc.partner_id.vat"><t style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>:
 					<span style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id.vat"/>
 				</p>
