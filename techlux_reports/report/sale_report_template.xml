@@ -3,15 +3,15 @@
 	<template id="sale.report_saleorder_document">
 			<t t-call="web.external_layout">
 			<t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)"/>
-			<t t-set="information_block">
+			<!-- <t t-set="information_block">
 				<div style="padding-top:60px;margin-left:64px;margin-right:76px">
 					<table style="width:300px;">
 						<tr>
-							<td>
+							<td> -->
 								<!-- <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat&quot;display=swap');
 </style> -->
-								<span t-if="doc.date_order and doc.state not in ['draft','sent']">
+				<!-- 				<span t-if="doc.date_order and doc.state not in ['draft','sent']">
 									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Order Date</strong>
 								</span>
 								<span t-if="doc.date_order and doc.state in ['draft','sent']">
@@ -68,33 +68,70 @@
 						</tr>
 					</table>
 				</div>
+			</t> -->
+			<t t-set="information_block">
+				<div style="padding-top:60px;margin-left:70px;margin-right:76px;width:300px">
+					<div class="row" t-if="doc.date_order and doc.state not in ['draft','sent']" >
+						<div class="col-5" style="line-height:15px">
+							<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Order Date</strong>
+						</div>
+						<div class="col-6" style="line-height:15px">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order"/>
+						</div>
+					</div>
+					<div class="row" t-if="doc.date_order and doc.state in ['draft','sent']" >
+						<div class="col-5" style="line-height:15px">
+							<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Quote Date</strong>
+						</div>
+						<div class="col-6" style="line-height:15px">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+						</div>
+					</div>
+					<div class="row" t-if="doc.state not in ['draft','sent']" >
+						<div class="col-5" style="line-height:15px">
+							<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Order Number</strong>
+						</div>
+						<div class="col-6" style="line-height:15px">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.name"/>
+						</div>
+					</div>
+					<div class="row" t-if="doc.state in ['draft','sent']" >
+						<div class="col-5" style="line-height:15px">
+							<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Quote Number</strong>
+						</div>
+						<div class="col-6" style="line-height:15px">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.name"/>
+						</div>
+					</div>
+					<div class="row" t-if="doc.client_order_ref" >
+						<div class="col-5" style="line-height:15px">
+							<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Your Reference</strong>
+						</div>
+						<div class="col-6" style="line-height:15px">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.client_order_ref"/>
+						</div>
+					</div>
+					
+					<div class="row" t-if="doc.validity_date and doc.state in ['draft', 'sent']" name="expiration_date" >
+						<div class="col-5" style="line-height:15px">
+							<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Expiration</strong>
+						</div>
+						<div class="col-6" style="line-height:15px">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.validity_date"/>
+						</div>
+					</div>
+					<div class="row" t-if="doc.user_id.name">
+						<div class="col-5" style="line-height:15px">
+							<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Our Reference</strong>
+						</div>
+						<div class="col-6" style="line-height:15px">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.user_id"/>
+						</div>
+					</div>
+				</div>
 			</t>
-
-			<div class="row" style="display:none;margin-left:64px;margin-right:76px">
-				<div t-if="doc.client_order_ref" class="col-auto mb-6">
-					<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Your Reference:</strong>
-					<p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.client_order_ref"/>
-				</div>
-				<div t-if="doc.date_order and doc.state not in ['draft','sent']" class="col-auto  mb-6">
-					<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Order Date:</strong>
-					<p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order"/>
-				</div>
-				<div t-if="doc.date_order and doc.state in ['draft','sent']" class="col-auto  mb-6">
-					<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Quotation Date:</strong>
-					<p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
-				</div>
-				<div t-if="doc.validity_date and doc.state in ['draft', 'sent']" name="expiration_date" class="col-auto  mb-6">
-					<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Expiration:</strong>
-					<p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.validity_date"/>
-				</div>
-				<div t-if="doc.user_id.name" class="col-auto  mb-6">
-					<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Our Reference:</strong>
-					<p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.user_id"/>
-				</div>
-			</div>
-
 			<t t-set="address">
-				<div style="padding-top:66px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+				<div style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
 				<p t-if="doc.partner_id.vat"><t style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>:
 					<span style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id.vat"/>
 				</p>
@@ -254,10 +291,10 @@
 							<table style="width:400px;">
 								<tr>
 									<td>
-										<span t-if="doc.partner_shipping_id == doc.partner_invoice_id">
+										<!-- <span t-if="doc.partner_shipping_id == doc.partner_invoice_id">
 											<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Invoicing and Shipping Address</strong>
-										</span>
-										<span t-if="doc.partner_shipping_id != doc.partner_invoice_id">
+										</span> -->
+										<span t-if="doc.partner_invoice_id">
 											<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Invoicing Address</strong>
 										</span>
 									</td>
@@ -267,7 +304,7 @@
 								</tr>
 								<tr>
 									<td>
-										<span t-if="doc.partner_shipping_id != doc.partner_invoice_id">
+										<span t-if="doc.partner_shipping_id">
 											<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Shipping Address</strong>
 										</span>
 									</td>

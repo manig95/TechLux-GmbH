@@ -5,7 +5,7 @@
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
                     <t t-call="web.external_layout">
-                        <div class="page">
+                        <div style="margin-left:64px;margin-right:76px" class="page">
                             <div class="row justify-content-end mb16">
                                 <div class="col-4" name="right_box">
                                     <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 100)" style="width:300px;height:50px;" alt="Barcode"/>
@@ -35,25 +35,25 @@
                                         <span><strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Customer Address:</strong></span>
                                     </div>
                                     <div t-if="o.partner_id" name="partner_header">
-                                        <div style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="o.partner_id" t-options='{"widget": "contact", "fields": ["name", "phone"], "no_marker": True, "phone_icons": True}'/>
-                                        <p t-if="o.sudo().partner_id.vat"><t style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-esc="o.company_id.country_id.vat_label or 'Tax ID'"/>: <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="o.sudo().partner_id.vat"/></p>
+                                        <div style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="o.partner_id"  t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+                                        <p t-if="o.sudo().partner_id.vat"><t style="font-family: &quot;Montserrat&quot;;font-size:12px;" t-esc="o.company_id.country_id.vat_label or 'Tax ID'"/>: <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="o.sudo().partner_id.vat"/></p>
                                     </div>
                                 </div>
                             </div>
                             <br/>
-                            <h1 t-field="o.name" class="mt0 float-left"/>
+                            <h1 style="font-family: &quot;Montserrat&quot;;font-size:16px;font-weight: 700;" t-field="o.name" class="mt0 float-left"/>
                             <div class="row mt48 mb32">
                                 <div t-if="o.origin" class="col-auto" name="div_origin">
                                     <strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Order:</strong>
-                                    <p t-field="o.origin"/>
+                                    <p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="o.origin"/>
                                 </div>
                                 <div class="col-auto" name="div_state">
                                     <strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Status:</strong>
-                                    <p t-field="o.state"/>
+                                    <p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="o.state"/>
                                 </div>
                                 <div class="col-auto" name="div_sched_date">
                                     <strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Scheduled Date:</strong>
-                                    <p t-field="o.scheduled_date"/>
+                                    <p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="o.scheduled_date"/>
                                 </div>
                             </div>
                             <table class="table table-sm" t-if="o.move_line_ids and o.move_ids_without_package">
@@ -87,26 +87,26 @@
                                         <t t-foreach="move.move_line_ids.sorted(key=lambda ml: ml.location_id.id)" t-as="ml">
                                             <tr>
                                                 <td>
-                                                    <span t-field="ml.product_id.display_name"/><br/>
-                                                    <span t-field="ml.product_id.description_picking"/>
+                                                    <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="ml.product_id.display_name"/><br/>
+                                                    <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="ml.product_id.description_picking"/>
                                                 </td>
                                                 <td>
-                                                    <span t-if="o.state != 'done'" t-field="ml.product_uom_qty"/>
-                                                    <span t-if="o.state == 'done'" t-field="ml.qty_done"/>
-                                                    <span t-field="ml.product_uom_id" groups="uom.group_uom"/>
+                                                    <span t-if="o.state != 'done'" style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="ml.product_uom_qty"/>
+                                                    <span t-if="o.state == 'done'" style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="ml.qty_done"/>
+                                                    <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="ml.product_uom_id" groups="uom.group_uom"/>
 
                                                 </td>
                                                 <td t-if="o.picking_type_id.code != 'incoming'" groups="stock.group_stock_multi_locations">
-                                                    <span t-esc="ml.location_id.display_name"/>
+                                                    <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-esc="ml.location_id.display_name"/>
                                                         <t t-if="ml.package_id">
-                                                            <span t-field="ml.package_id"/>
+                                                            <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="ml.package_id"/>
                                                         </t>
                                                 </td>
                                                 <td t-if="o.picking_type_id.code != 'outgoing'" groups="stock.group_stock_multi_locations">
                                                     <div>
-                                                        <span t-field="ml.location_dest_id"/>
+                                                        <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="ml.location_dest_id"/>
                                                         <t t-if="ml.result_package_id">
-                                                            <span t-field="ml.result_package_id"/>
+                                                            <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="ml.result_package_id"/>
                                                         </t>
                                                     </div>
                                                 </td>
@@ -145,10 +145,10 @@
                                             <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s&amp;humanreadable=1' % ('Code128', package.package_id.name, 600, 100)" style="width:300px;height:50px; margin-left: -50px;" alt="Barcode"/><br/>
                                         </td>
                                         <td t-if="o.picking_type_id.code != 'incoming'" groups="stock.group_stock_multi_locations">
-                                            <span t-field="package.location_id"/>
+                                            <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="package.location_id"/>
                                         </td>
                                         <td t-if="o.picking_type_id.code != 'outgoing'" groups="stock.group_stock_multi_locations">
-                                            <span t-field="package.location_dest_id"/>
+                                            <span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="package.location_dest_id"/>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -157,7 +157,7 @@
                             <p t-if="o.state in ['draft', 'waiting', 'confirmed'] or no_reserved_product"><i class="fa fa-exclamation-triangle" />
                                 All products could not be reserved. Click on the "Check Availability" button to try to reserve products.
                             </p>
-                            <p t-field="o.note"/>
+                            <p style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="o.note"/>
                         </div>
                     </t>
                 </t>
