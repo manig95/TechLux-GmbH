@@ -55,7 +55,7 @@
 								<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-if="doc.validity_date and doc.state in ['draft', 'sent']" t-field="doc.validity_date"/>
 							</td>
 						</tr>
-						<tr style="line-height:10px;">
+						<tr style="line-height:15px;">
 							<td>
 								<span t-if="doc.user_id.name">
 									<strong style="font-family: &quot;Montserrat&quot;;font-size:12px;">Our Reference</strong>
