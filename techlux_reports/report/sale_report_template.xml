@@ -81,7 +81,7 @@
 					</div>
 					<div class="row" t-if="doc.date_order and doc.state in ['draft','sent']" >
 						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
-							<strong>Quote Date</strong>
+							<strong>Quotation Date</strong>
 						</div>
 						<div style="line-height:15px">
 							<span style="width:150px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
