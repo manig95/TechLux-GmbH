@@ -10,7 +10,7 @@
     'description': """
                 TechLux Report Customization
                     """,
-    'depends': ['web','sale','stock'],
+    'depends': ['web','sale','stock','delivery'],
     'data': [
             "report/report_layout.xml",
             "report/sale_report_template.xml",
