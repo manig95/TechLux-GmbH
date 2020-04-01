@@ -70,61 +70,61 @@
 				</div>
 			</t> -->
 			<t t-set="information_block">
-				<div style="padding-top:60px;margin-left:70px;margin-right:76px;width:300px">
+				<div style="padding-top:60px;margin-left:80px;margin-right:76px;width:300px">
 					<div class="row" t-if="doc.date_order and doc.state not in ['draft','sent']" >
-						<div class="col-5" style="line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
 							<strong>Order Date</strong>
 						</div>
-						<div class="col-6" style="line-height:15px">
+						<div style="line-height:15px;width:150px;">
 							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order"/>
 						</div>
 					</div>
 					<div class="row" t-if="doc.date_order and doc.state in ['draft','sent']" >
-						<div class="col-5" style="line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
 							<strong>Quote Date</strong>
 						</div>
-						<div class="col-6" style="line-height:15px">
-							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
+						<div style="line-height:15px">
+							<span style="width:150px;font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/>
 						</div>
 					</div>
 					<div class="row" t-if="doc.state not in ['draft','sent']" >
-						<div class="col-5" style="line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
 							<strong>Order Number</strong>
 						</div>
-						<div class="col-6" style="line-height:15px">
+						<div style="width:150px;line-height:15px">
 							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.name"/>
 						</div>
 					</div>
 					<div class="row" t-if="doc.state in ['draft','sent']" >
-						<div class="col-5" style="line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
 							<strong>Quote Number</strong>
 						</div>
-						<div class="col-6" style="line-height:15px">
+						<div style="width:150px;line-height:15px">
 							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.name"/>
 						</div>
 					</div>
 					<div class="row" t-if="doc.client_order_ref" >
-						<div class="col-5" style="line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
 							<strong>Your Reference</strong>
 						</div>
-						<div class="col-6" style="line-height:15px">
+						<div style="width:150px;line-height:15px">
 							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.client_order_ref"/>
 						</div>
 					</div>
 					
 					<div class="row" t-if="doc.validity_date and doc.state in ['draft', 'sent']" name="expiration_date" >
-						<div class="col-5" style="line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
 							<strong>Expiration</strong>
 						</div>
-						<div class="col-6" style="line-height:15px">
+						<div style="width:150px;line-height:15px">
 							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.validity_date"/>
 						</div>
 					</div>
 					<div class="row" t-if="doc.user_id.name">
-						<div class="col-5" style="line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:12px;">
 							<strong>Our Reference</strong>
 						</div>
-						<div class="col-6" style="line-height:15px">
+						<div style="width:150px;line-height:15px">
 							<span style="font-family: &quot;Montserrat&quot;;font-size:12px;font-weight: 100;" t-field="doc.user_id"/>
 						</div>
 					</div>
