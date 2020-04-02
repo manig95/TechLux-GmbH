@@ -10,11 +10,12 @@
     'description': """
                 TechLux Report Customization
                     """,
-    'depends': ['web','sale','stock','delivery'],
+    'depends': ['web','sale','stock','delivery','account'],
     'data': [
             "report/report_layout.xml",
             "report/sale_report_template.xml",
             "report/picking_report.xml",
+            "report/invoice_report.xml"
     ],
     'demo': [],
     'installable': True,
