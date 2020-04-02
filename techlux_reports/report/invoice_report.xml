@@ -4,7 +4,7 @@
 		<t t-call="web.external_layout">
 			<t t-set="o" t-value="o.with_context(lang=lang)"/>
 
-			<div class="page" style="padding-left:20px;">
+			<div class="page" style="padding-left:20px;margin-left:45px;margin-right:45px">
 				<h2>
 					<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'posted'">Invoice</span>
 					<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
