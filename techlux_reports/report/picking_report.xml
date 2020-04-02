@@ -8,31 +8,31 @@
                         <div style="margin-left:64px;margin-right:76px" class="page">
                             <div class="row justify-content-end mb16">
                                 <div class="col-4" name="right_box">
-                                    <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 100)" style="width:300px;height:50px;" alt="Barcode"/>
+                                    <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 100)" style="width:300px;height:50px;display:none;" alt="Barcode"/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-6" name="div_outgoing_address">
                                     <div t-if="o.move_ids_without_package and o.move_ids_without_package[0].partner_id and o.move_ids_without_package[0].partner_id.id != o.partner_id.id" style="font-family: &quot;Montserrat&quot;;font-size:13px;">
-                                        <span><strong>Delivery Address:</strong></span>
+                                        <span style="display:none;"><strong>Delivery Address:</strong></span>
                                         <div style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.move_ids_without_package[0].partner_id"
                                             t-options='{"widget": "contact", "fields": ["address", "name", "phone"], "no_marker": True, "phone_icons": True}'/>
                                     </div>
                                     <div style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.picking_type_id.code != 'internal' and (not o.move_ids_without_package or not o.move_ids_without_package[0].partner_id) and o.picking_type_id.warehouse_id.partner_id">
-                                        <span><strong>Warehouse Address:</strong></span>
+                                        <span style="display:none;"><strong>Warehouse Address:</strong></span>
                                         <div style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.picking_type_id.warehouse_id.partner_id"
                                             t-options='{"widget": "contact", "fields": ["address", "name", "phone"], "no_marker": True, "phone_icons": True}'/>
                                     </div>
                                 </div>
                                 <div class="col-5 offset-1" style="margin-left: 142px;" name="div_incoming_address">
                                     <div style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.picking_type_id.code=='incoming' and o.partner_id">
-                                        <span><strong>Vendor Address:</strong></span>
+                                        <span style="display:none;"><strong>Vendor Address:</strong></span>
                                     </div>
                                     <div  style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.picking_type_id.code=='internal' and o.partner_id">
-                                        <span><strong>Warehouse Address:</strong></span>
+                                        <span style="display:none;"><strong>Warehouse Address:</strong></span>
                                     </div>
-                                    <div t-if="o.picking_type_id.code=='outgoing' and o.partner_id" style="font-family: &quot;Montserrat&quot;;font-size:13px;">
-                                        <span><strong>Customer Address:</strong></span>
+                                    <div t-if="o.picking_type_id.code=='outgoing' and o.partner_id" style="display:none;font-family: &quot;Montserrat&quot;;font-size:13px;">
+                                        <span style="display:none;"><strong>Customer Address:</strong></span>
                                     </div>
                                     <div t-if="o.partner_id" name="partner_header">
                                         <div style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.partner_id"  t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
@@ -41,21 +41,43 @@
                                 </div>
                             </div>
                             <br/>
-                            <h1 style="font-family: &quot;Montserrat&quot;;font-size:18px;font-weight: 700;" t-field="o.name" class="mt0 float-left"/>
-                            <div class="row mt48 mb32">
-                                <div style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.origin" class="col-auto" name="div_origin">
-                                    <strong>Order:</strong>
-                                    <p style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.origin"/>
+                            <h1 style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-field="o.name" class="mt0 float-left"/>
+                            <div class="row mt48 mb32" style="border-top-style: solid;border-width: 1px;border-color: beige;display:none;">
+                                <div style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.origin" class="col-4" name="div_origin">
+                                    <strong>Order</strong>
+                                    <p style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;border-top-style: solid;border-width: 1px;border-color: beige;" t-field="o.origin"/>
                                 </div>
-                                <div style="font-family: &quot;Montserrat&quot;;font-size:13px;" class="col-auto" name="div_state">
-                                    <strong>Status:</strong>
-                                    <p style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.state"/>
+                                <div style="font-family: &quot;Montserrat&quot;;font-size:13px;display:none;" class="col-auto" name="div_state">
+                                    <strong>Status</strong>
+                                    <p style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;border-top-style: solid;border-width: 1px;border-color: beige;" t-field="o.state"/>
                                 </div>
-                                <div  style="font-family: &quot;Montserrat&quot;;font-size:13px;" class="col-auto" name="div_sched_date">
-                                    <strong>Scheduled Date:</strong>
-                                    <p style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.scheduled_date"/>
+                                <div  style="font-family: &quot;Montserrat&quot;;font-size:13px;" class="col-4" name="div_sched_date">
+                                    <strong>Scheduled Date</strong>
+                                    <p style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;border-top-style: solid;border-width: 1px;border-color: beige;" t-field="o.scheduled_date"/>
                                 </div>
                             </div>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th name="div_origin" t-if="o.origin" style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;">
+                                            <strong>Order</strong>
+                                        </th>
+                                        <th name="div_sched_date" style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;">
+                                            <strong>Scheduled Date</strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td t-if="o.origin">
+                                            <span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.origin"/>
+                                        </td>
+                                        <td name="div_sched_date">
+                                            <span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.scheduled_date"/>
+                                        </td>
+                                    </tr>
+                                  </tbody>
+                            </table>
                             <table class="table table-sm" t-if="o.move_line_ids and o.move_ids_without_package">
                                 <t t-set="has_barcode" t-value="any([move_ids_without_package.product_id and move_ids_without_package.product_id.sudo().barcode or move_ids_without_package.package_id for move_ids_without_package in o.move_line_ids])"/>
                                 <t t-set="has_serial_number" t-value="o.move_line_ids.filtered(lambda ml: ml.lot_id or ml.lot_name)" groups="stock.group_production_lot"/>
@@ -166,16 +188,26 @@
 
         <template id="delivery.report_shipping2" inherit_id="stock.report_picking">
         <xpath expr="//div[@name='div_sched_date']" position="after">
-            <div style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;" t-if="o.picking_type_id.code == 'outgoing' and o.carrier_id" class="col-auto">
-                <strong>Carrier:</strong>
-                <p style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.carrier_id"/>
+            <div style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;display:none;" t-if="o.picking_type_id.code == 'outgoing' and o.carrier_id" class="col-4">
+                <strong>Carrier</strong>
+                <p style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;border-top-style: solid;border-width: 1px;border-color: beige;" t-field="o.carrier_id"/>
             </div>
-            <div style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;" t-if="o.weight" class="col-auto">
-                <strong>Weight:</strong>
+            <div style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;display:none;" t-if="o.weight" class="col-auto">
+                <strong>Weight</strong>
                 <br/>
-                <span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.weight"/>
-                <span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.weight_uom_name"/>
+                <span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;border-top-style: solid;border-width: 1px;border-color: beige;" t-field="o.weight"/>
+                <span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;border-top-style: solid;border-width: 1px;border-color: beige;" t-field="o.weight_uom_name"/>
             </div>
+        </xpath>
+        <xpath expr="//th[@name='div_sched_date']" position="after">
+         	<th style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;" t-if="o.picking_type_id.code == 'outgoing' and o.carrier_id">
+                <strong>Carrier</strong>
+			</th>
+        </xpath>
+		<xpath expr="//td[@name='div_sched_date']" position="after">
+        	<td t-if="o.picking_type_id.code == 'outgoing' and o.carrier_id">
+                <span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.carrier_id"/>
+            </td> 
         </xpath>
     </template>
 
