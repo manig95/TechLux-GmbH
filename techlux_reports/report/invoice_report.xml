@@ -124,7 +124,7 @@
 
 				</div>
 
-				<div style="padding: 3% 0 0 65%;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-top:13px;margin-left:18px;">
+				<div style="padding: 3% 0 0 65%;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-top:13px;margin-left:30px;">
 				<address t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
     				<div t-if="o.partner_id.vat" class="mt16">
     					<t style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.company_id.country_id.vat_label" t-esc="o.company_id.country_id.vat_label" id="inv_tax_id_label"/>
