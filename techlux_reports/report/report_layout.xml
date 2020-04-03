@@ -87,7 +87,7 @@
 					<p><strong>Smart.</strong>Simple
 					</p>
 				</div>
-				<div class="col-4 text-left">
+				<div class="col-4 text-left" style="line-height: 10px;">
 					<strong>Bank Account<br/></strong>
 					<span>Credit Suisse<br/></span>
 					<span>Account no. 2345433-41<br/></span>

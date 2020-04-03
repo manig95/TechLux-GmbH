@@ -6,7 +6,7 @@
 
 			<div class="page" style="padding-left:20px;margin-left:45px;margin-right:45px">
 
-				<div id="information_block" style="padding-left:20px;padding-top:30px;padding-bottom:30px;float:left;">
+				<div id="information_block" style="padding-left:20px;padding-top:22px;padding-bottom:30px;float:left;">
 					<!-- <table style="width:300px;">
 						<tr>
 							<td>
@@ -72,15 +72,6 @@
 
 					</table> -->
 
-
-					<div class="row" t-if="o.invoice_origin">
-						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
-							<strong>Our Reference</strong>
-						</div>
-						<div style="line-height:15px;width:150px;">
-							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_origin"/>
-						</div>
-					</div>
 					<div class="row" t-if="o.invoice_date">
 						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
 							<strong>Order Date</strong>
@@ -89,12 +80,28 @@
 							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_date"/>
 						</div>
 					</div>
+					<div class="row" t-if="o.invoice_origin">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
+							<strong>Order Number</strong>
+						</div>
+						<div style="line-height:15px;width:150px;">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_origin"/>
+						</div>
+					</div>
 					<div class="row" t-if="o.ref">
 						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
 							<strong>Your Reference</strong>
 						</div>
 						<div style="line-height:15px;width:150px;">
 							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.ref"/>
+						</div>
+					</div>
+					<div class="row" t-if="o.invoice_user_id">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
+							<strong>Our Reference</strong>
+						</div>
+						<div style="line-height:15px;width:150px;">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_user_id"/>
 						</div>
 					</div>
 					<div class="row" t-if="o.company_id.vat">
@@ -121,10 +128,9 @@
 							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_date_due"/>
 						</div>
 					</div>
-
 				</div>
 
-				<div style="padding: 3% 0 0 65%;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-top:13px;margin-left:30px;">
+				<div style="padding: 3% 0 0 65%;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-top:50px;margin-left:30px;">
 				<address t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
     				<div t-if="o.partner_id.vat" class="mt16">
     					<t style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.company_id.country_id.vat_label" t-esc="o.company_id.country_id.vat_label" id="inv_tax_id_label"/>
@@ -159,8 +165,9 @@
 				<br/>
 				<br/>
 				<br/>
-				<div name="Inv_name">
-					<h2 class="text-left">
+				<br/>
+				<div name="inv_name" class="text-left">
+					<h2>
 						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'posted'">Invoice</span>
 						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
 						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'cancel'">Cancelled Invoice</span>
@@ -267,49 +274,53 @@
 					</tbody>
 				</table>
 
-				<div class="clearfix" style="border-bottom-style:solid;border-width:1px;border-color:black;">
-                        <div id="total" class="row">
-                            <div t-attf-class="#{'col-5' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
-                                <table class="table table-sm;page-break-inside: avoid;">
-                                    <tr class="border-black o_subtotal" style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;">
-                                        <td><strong>Subtotal</strong></td>
-                                        <td class="text-right">
-                                            <span t-esc="str('%.2f'%o.amount_untaxed).replace('.', ',')" /> CHF
-                                        </td>
+				<div class="clearfix" name="so_total_summary">
+                    <div id="total" class="row"  name="total">
+                        <div t-attf-class="#{'col-4' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
+                            <table class="table table-sm;">
+                                <tr class="border-black o_subtotal" style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;">
+                                    <td name="td_amount_untaxed_label" style="padding: 0.30rem;">
+                                    	<strong>Total</strong>
+                                    </td>
+                                    <td  name="td_amount_untaxed" class="text-right" style="padding: 0.30rem;">
+                                        <span t-esc="str('%.2f'%o.amount_untaxed).replace('.', ',')" /><span> CHF</span>
+                                    </td>
+                                </tr>
+                                <t t-foreach="o.amount_by_group" t-as="amount_by_group">
+                                    <tr style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;">
+                                        <t t-if="len(o.line_ids.filtered(lambda line: line.tax_line_id)) == 1 and o.amount_untaxed == amount_by_group[2]">
+                                            <td name="td_amount_by_group_label_3" style="padding: 0.30rem;">
+                                            	<span t-esc="str(amount_by_group[0]).replace('.', ',')"/>
+											<span>&amp;nbsp;</span></td>
+                                            <td name="td_amount_by_group_3" class="text-right o_price_total" style="padding: 0.30rem;">
+                                                <span t-esc="str(amount_by_group[3]).replace('.', ',')"/>
+                                            </td>
+                                        </t>
+                                        <t t-else="">
+                                            <td name="td_amount_by_group_label" style="padding: 0.30rem;">
+                                                <span t-esc="str(amount_by_group[0]).replace('.', ',')"/>
+                                                <span>&amp;nbsp;
+                                                    <t t-esc="str(amount_by_group[4]).replace('.', ',')"/>
+                                                </span>
+                                            </td>
+                                            <td name="td_amount_by_group" class="text-right o_price_total" style="padding: 0.30rem;">
+                                                <span t-esc="str(amount_by_group[3]).replace('.', ',')"/>
+                                            </td> 
+                                        </t>
                                     </tr>
-                                    <t t-foreach="o.amount_by_group" t-as="amount_by_group">
-                                        <tr style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;">
-                                            <t t-if="len(o.line_ids.filtered(lambda line: line.tax_line_id)) == 1 and o.amount_untaxed == amount_by_group[2]">
-                                                <td>Taxes on <span t-esc="str('%.2f'%o.amount_untaxed).replace('.', ',')"/> CHF</td>
-                                                <td class="text-right o_price_total">
-                                                    <span t-esc="str(amount_by_group[3]).replace('.', ',')"/>
-                                                </td>
-                                            </t>
-                                            <t t-else="">
-                                                <td>
-                                                    <span t-esc="str(amount_by_group[0]).replace('.', ',')"/>
-                                                    <span>&amp;nbsp;<span>on</span>
-                                                        <t t-esc="str(amount_by_group[4]).replace('.', ',')"/>
-                                                    </span>
-                                                </td>
-                                                <td class="text-right o_price_total">
-                                                    <span t-esc="str(amount_by_group[3]).replace('.', ',')"/>
-                                                </td> 
-                                            </t>
-                                        </tr>
-                                    </t>
-                                    <tr class="border-black o_total">
-                                        <td style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;"><strong>Total</strong></td>
-                                        <td class="text-right" style="font-size:13px;">
-                                            <span t-esc="str('%.2f'%o.amount_total).replace('.', ',')"/> CHF
-                                        </td>
-                                    </tr>
-                                    <tr class="border-black o_total" t-if="o.amount_residual">
-                                        <td style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;"><strong>Amount Due</strong></td>
-                                        <td class="text-right" style="font-size:13px;">
-                                            <span t-esc="str('%.2f'%o.amount_residual).replace('.', ',')"/> CHF
-                                        </td>
-                                    </tr>
+                                </t>
+                                <tr class="border-black o_total">
+                                    <td name="td_amount_total_label" style="padding: 0.30rem;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;"><strong>Total incl. VAT</strong></td>
+                                    <td name="td_amount_total" class="text-right" style="padding: 0.30rem;font-size:13px;">
+                                        <span t-esc="str('%.2f'%o.amount_total).replace('.', ',')"/> CHF
+                                    </td>
+                                </tr>
+                               <!--  <tr class="border-black o_total" t-if="o.amount_residual">
+                                    <td style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;"><strong>Amount Due</strong></td>
+                                    <td class="text-right" style="font-size:13px;">
+                                        <span t-esc="str('%.2f'%o.amount_residual).replace('.', ',')"/> CHF
+                                    </td>
+                                </tr> -->
                                 </table>
                             </div>
                         </div>
@@ -318,6 +329,16 @@
 					
 						<t>
 							<table style="width:300px;">
+								<tr  t-if="o.partner_id" >
+									<td>
+										<span t-if="o.partner_id" style="font-family: &quot;Montserrat&quot;;font-size:13px;">
+											<strong>Invoicing Address</strong>
+										</span>
+									</td>
+									<td>
+										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+									</td>
+								</tr>
 								<tr  t-if="o.partner_shipping_id" >
 									<td>
 										<span t-if="o.partner_shipping_id" style="font-family: &quot;Montserrat&quot;;font-size:13px;">
@@ -338,7 +359,7 @@
 										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_payment_term_id.note"/>
 									</td>
 								</tr>
-								<tr t-if="o.narration">
+								<!-- <tr t-if="o.narration">
 									<td>
 										<p t-if="o.narration" style="font-family: 'Montserrat', sans-serif;font-size:13px;">
 											<strong>Comment</strong>
@@ -347,7 +368,7 @@
 									<td>
 										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.narration"/>
 									</td>
-								</tr>
+								</tr> -->
 							</table>
 						</t>
 					
