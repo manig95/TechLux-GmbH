@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="email_template_form_inherited" model="ir.ui.view">
+		<field name="name">Mail Template Inherit</field>
+		<field name="model">mail.template</field>
+		<field name="inherit_id" ref="mail.email_template_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//div[@class='oe_button_box']" position="inside">
+				<button class="oe_stat_button" style="width: 174px;float: left; border-right: 1px solid #cac4c4;" groups="base.group_system" name="send_preview_mail" type="object" icon="fa-envelope-o">
+					<div class="o_field_widget o_stat_info">
+						<span class="o_stat_text">Send Preview Mail</span>
+					</div>
+				</button>
+			</xpath>
+		</field>
+	</record>
+</odoo>
