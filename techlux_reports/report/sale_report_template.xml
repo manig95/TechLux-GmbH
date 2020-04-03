@@ -132,8 +132,8 @@
 			</t>
 			<t t-set="address">
 				<div style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
-				<p t-if="doc.partner_id.vat"><t style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-left:64px;margin-right:76px" t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>:
-					<span style="padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id.vat"/>
+				<p style="display:none;" t-if="doc.partner_id.vat"><t style="display:none;padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-left:64px;margin-right:76px" t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>:
+					<span style="display:none;padding-top:60px;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-left:64px;margin-right:76px" t-field="doc.partner_id.vat"/>
 				</p>
 			</t>
 
