@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<template id="account.report_invoice_document">
-		<t t-call="web.external_layout">
+		<t t-call="techlux_reports.invoice_external_layout_standard">
 			<t t-set="o" t-value="o.with_context(lang=lang)"/>
 
 			<div class="page" style="padding-left:20px;margin-left:45px;margin-right:45px">
-				<h2>
-					<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'posted'">Invoice</span>
-					<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
-					<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'cancel'">Cancelled Invoice</span>
-					<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_refund'">Credit Note</span>
-					<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'in_refund'">Vendor Credit Note</span>
-					<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'in_invoice'">Vendor Bill</span>
-					<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.name != '/'" t-field="o.name"/>
-				</h2>
 
 				<div id="information_block" style="padding-left:20px;padding-top:30px;padding-bottom:30px;float:left;">
 					<!-- <table style="width:300px;">
@@ -165,7 +156,21 @@
 						<p class="m-0" t-field="o.ref"/>
 					</div>
 				</div>
-
+				<br/>
+				<br/>
+				<br/>
+				<div name="Inv_name">
+					<h2 class="text-left">
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'posted'">Invoice</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'cancel'">Cancelled Invoice</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_refund'">Credit Note</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'in_refund'">Vendor Credit Note</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'in_invoice'">Vendor Bill</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.name != '/'" t-field="o.name"/>
+					</h2>
+					<br/>
+				</div>
 				<t t-set="display_discount" t-value="any([l.discount for l in o.invoice_line_ids])"/>
 
 				<table class="table table-sm o_main_table" name="invoice_line_table">
