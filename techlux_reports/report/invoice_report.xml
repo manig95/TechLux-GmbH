@@ -290,7 +290,8 @@
                                     <tr style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;">
                                         <t t-if="len(o.line_ids.filtered(lambda line: line.tax_line_id)) == 1 and o.amount_untaxed == amount_by_group[2]">
                                             <td name="td_amount_by_group_label_3" style="padding: 0.30rem;">
-                                            	<span t-esc="str(amount_by_group[0]).replace('.', ',')"/>
+                                            	<t t-set="vat_translate" t-value="str(amount_by_group[0]).replace('.', ',')"/>
+												<span t-esc="str(vat_translate).replace('MwSt','MwSt.')"/>
 											<span>&amp;nbsp;</span></td>
                                             <td name="td_amount_by_group_3" class="text-right o_price_total" style="padding: 0.30rem;">
                                                 <span t-esc="str(amount_by_group[3]).replace('.', ',')"/>
@@ -298,7 +299,8 @@
                                         </t>
                                         <t t-else="">
                                             <td name="td_amount_by_group_label" style="padding: 0.30rem;">
-                                                <span t-esc="str(amount_by_group[0]).replace('.', ',')"/>
+                                                <t t-set="vat_translate" t-value="str(amount_by_group[0]).replace('.', ',')"/>
+												<span t-esc="str(vat_translate).replace('MwSt','MwSt.')"/>
                                                 <span>&amp;nbsp;
                                                     <t t-esc="str(amount_by_group[4]).replace('.', ',')"/>
                                                 </span>
