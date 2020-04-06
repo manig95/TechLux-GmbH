@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="view_send_preview_wizard" model="ir.ui.view">
+		<field name="name">send.preview.mail.form</field>
+		<field name="model">send.preview.mail.wizard</field>
+		<field name="arch" type="xml">
+			<form string="Send Preview Mail">
+				<sheet>
+					<group>
+						<group>
+							<field name="res_id" required="1"/>
+						</group>
+						<group>
+							<field name="send_mail_to" required="1"  placeholder="someone@example.com"/>
+							<field name="model_id" invisible="1"/>
+						</group>
+					</group>
+				</sheet>
+				<footer>
+					<button name="send_preview_mail_action" type="object" string="Send Mail" class="oe_highlight"/>
+					or
+					<button name="cancel" string="Cancel" special="cancel" class="oe_link"/>
+				</footer>
+			</form>
+		</field>
+	</record>
+
+	<record id="action_preview" model="ir.actions.act_window">
+		<field name="name">Send Mail Preview</field>
+		<field name="res_model">send.preview.mail.wizard</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="view_mode">form</field>
+		<field name="target">new</field>
+		<field name="view_id" ref="view_send_preview_wizard"/>
+	</record>
+
+</odoo>
