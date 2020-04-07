@@ -7,8 +7,8 @@
             <field name="email_from">${(object.user_id.email_formatted or user.email_formatted) | safe}</field>
             <field name="partner_to">${object.partner_id.id}</field>
             <field name="body_html" type="html">
-                  
                 <div style="margin: 0px; padding: 0px;">
+                % if object.website_id:
                     <p style="margin: 0px; padding: 0px; font-size: 12px;">
                         Confirmation of your order at techlux.ch        
                         <br/>
@@ -46,7 +46,43 @@
                         <br/>
                         www.techlux.ch
                     </p>
-                </div> 
+                % else:
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear Sir/Madam<br/>
+                        <br/>
+                        Thank you for your order from techlux.ch.<br/>
+                        <br/>
+                        You'll receive our work confirmation included.<br/>
+                        <br/>
+                        Your order left our warehouse today.
+                        <br/>
+                        <br/>    
+                        Please take the order details from the attached document.
+                        <br/>
+                        <br/>        
+                        If you have any questions or anything is unclear, please do not hesitate to contact us at info@techlux.ch.
+                        <br/>
+                        <br/>
+                        Best regards
+                        <br/>
+                        <br/>
+                        Your techlux.ch team
+                        <br/>
+                        <br/>
+                        Techlux GmbH
+                        <br/>
+                        Hochdorfstrasse 5 
+                        <br/>
+                        CH-6275 Ballwil
+                        <br/>
+                        E-Mail: info@techlux.ch
+                        <br/>
+                        Tel: 0800 533 000
+                        <br/>
+                        www.techlux.ch
+                    </p>
+                % endif
+                </div>            
             </field>
             <field name="report_template" ref="sale.action_report_saleorder"/>
             <field name="report_name">${(object.name or '').replace('/','_')}</field>
@@ -55,7 +91,7 @@
             <field name="auto_delete" eval="False"/>
         </record>
 
-       <record id="stock_mail_template_data_delivery_confirmation" model="mail.template">
+      <!--  <record id="stock_mail_template_data_delivery_confirmation" model="mail.template">
         <field name="name">Delivery: Custom Send by Email</field>
         <field name="model_id" ref="stock.model_stock_picking"/>
         <field name="subject">${object.company_id.name} Delivery Order (Ref ${object.name or 'n/a' })</field>
@@ -103,5 +139,5 @@
         <field name="lang">${object.partner_id.lang}</field>
         <field name="auto_delete" eval="False"/>
         <field name="user_signature" eval="False"/>
-    </record>
+    </record> -->
 </odoo>
