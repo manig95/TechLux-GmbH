@@ -9,7 +9,7 @@
             file="techlux_reports.isr_report_main"
             menu="False"
             print_report_name="'ISR-%s' % object.name"
-            paperformat="paperformat_euro_no_margin"/>
+            paperformat="l10n_ch.paperformat_euro_no_margin"/>
             />
 
 	<template id="report_invoice_document_with_esr">
