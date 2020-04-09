@@ -352,7 +352,7 @@
                     <h1>ISR for invoice <t t-esc="invoice.name"/></h1>
                 </div>
 
-                <div id="isr" t-att-class="'isr-print-bank' if print_bank else None" style="background: url(techlux_reports/static/img/background_virgin_isr.png) bottom no-repeat;
+                <div id="isr" t-att-class="'isr-print-bank' if print_bank else None" style="background: url(/techlux_reports/static/img/background_virgin_isr.png) bottom no-repeat;
             background-size: 100%;">
 
                     <!--Voucher, left part of the ISR.-->
