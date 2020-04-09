@@ -1,77 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<template id="account.report_invoice_document">
+
+	<report id="l10n_ch_isr_report_with_invoice"
+            model="account.move"
+            report_type="qweb-pdf"
+            string="Invoice with ISR"
+            name="techlux_reports.isr_report_main"
+            file="techlux_reports.isr_report_main"
+            menu="False"
+            print_report_name="'ISR-%s' % object.name"
+            paperformat="paperformat_euro_no_margin"/>
+            />
+
+	<template id="report_invoice_document_with_esr">
 		<t t-call="techlux_reports.invoice_external_layout_standard">
 			<t t-set="o" t-value="o.with_context(lang=lang)"/>
-
-			<div class="page" style="padding-left:20px;margin-left:45px;margin-right:45px">
-
+			<div class="page" style="padding-left:20px;margin-left:45px;margin-right:45px;padding-top:150px">
 				<div id="information_block" style="padding-left:20px;padding-top:22px;padding-bottom:30px;float:left;">
-					<!-- <table style="width:300px;">
-						<tr>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.invoice_origin">
-									<strong >Our Reference</strong>
-								</span>
-							</td>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.invoice_origin" t-field="o.invoice_origin"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.invoice_date">
-									<strong>Order Date</strong>
-								</span>
-							</td>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.invoice_date" t-field="o.invoice_date"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.ref">
-									<strong>Your Reference</strong>
-								</span>
-							</td>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.ref" t-field="o.ref"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.company_id.vat">
-									<strong>VAT No.</strong>
-								</span>
-							</td>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.company_id.vat" t-field="o.company_id.vat"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.invoice_date">
-									<strong>Invoice Date</strong>
-								</span>
-							</td>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.invoice_date" t-field="o.invoice_date"/>
-							</td>
-						</tr>
-
-						<tr>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.invoice_date_due">
-									<strong>Due Date</strong>
-								</span>
-							</td>
-							<td>
-								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.invoice_date_due" t-field="o.invoice_date_due"/>
-							</td>
-						</tr>
-
-					</table> -->
-
 					<div class="row" t-if="o.invoice_date">
 						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
 							<strong>Order Date</strong>
@@ -130,7 +75,7 @@
 					</div>
 				</div>
 
-				<div style="padding: 3% 0 0 65%;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-top:50px;margin-left:30px;">
+				<div style="padding: 3% 0 0 65%;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-left:20px;">
 				<address t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
     				<div style="display:none;" t-if="o.partner_id.vat" class="mt16">
     					<t style="display:none;font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.company_id.country_id.vat_label" t-esc="o.company_id.country_id.vat_label" id="inv_tax_id_label"/>
@@ -317,12 +262,6 @@
                                         <span t-esc="str('%.2f'%o.amount_total).replace('.', ',')"/> CHF
                                     </td>
                                 </tr>
-                               <!--  <tr class="border-black o_total" t-if="o.amount_residual">
-                                    <td style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;"><strong>Amount Due</strong></td>
-                                    <td class="text-right" style="font-size:13px;">
-                                        <span t-esc="str('%.2f'%o.amount_residual).replace('.', ',')"/> CHF
-                                    </td>
-                                </tr> -->
                                 </table>
                             </div>
                         </div>
@@ -361,27 +300,10 @@
 										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_payment_term_id.note"/>
 									</td>
 								</tr>
-								<!-- <tr t-if="o.narration">
-									<td>
-										<p t-if="o.narration" style="font-family: 'Montserrat', sans-serif;font-size:13px;">
-											<strong>Comment</strong>
-										</p>
-									</td>
-									<td>
-										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.narration"/>
-									</td>
-								</tr> -->
 							</table>
 						</t>
 					
 				</div>
-		
-				<!-- <p t-if="o.invoice_payment_term_id" name="payment_term">
-					<span t-field="o.invoice_payment_term_id.note"/>
-				</p> -->
-				<!-- <p t-if="o.fiscal_position_id.note" name="note">
-					<span t-field="o.fiscal_position_id.note"/>
-				</p> -->
 				<div id="qrcode" t-if="(o.company_id.qr_code) and (o.currency_id.name == 'EUR') and (o.invoice_partner_bank_id.acc_number != False)">
 					<p t-if="(o.invoice_partner_bank_id.qr_code_valid)">
 						<strong class="text-center">Scan me with your banking app.</strong>
@@ -395,12 +317,29 @@
 					</p>
 				</div>
 			</div>
+			<div class="o_standard_footer" style="margin-top:350px;">
+			<div style="border-top: 1px solid #cbcbcc;font-family: &quot;Montserrat&quot;;font-size:10px;margin-left:64px;margin-right:76px" class="row">
+				<div style="float:left;font-weight: 100;" class="col-4">
+					<p><strong>Smart.</strong>Simple
+					</p>
+				</div>
+				<div class="col-4 text-left" style="line-height: 10px;">
+					<strong>Bank Account<br/></strong>
+					<span>Credit Suisse<br/></span>
+					<span>Account no. 2345433-41<br/></span>
+					<span>IBAN	      CH15 0483 5234 5433 4100 0<br/></span>
+					<span>BIC      	CRESCHZZXXX</span>
+				</div>
+				<!-- <div t-if="report_type == 'pdf'" class="col-4" style="text-align:right;font-weight: 100;">
+					Page:
+					<span class="page" style="content:counter(page);display:inline;"/>
+					/
+					<span class="topage" style="content:counter(pages);display:inline;"/>
+				</div> -->
+			</div>
+		</div>
 		</t>
-	</template>
-
-	<template  id="assets_common_inherit_isr" name="l10n_ch_isr_report_inherit" inherit_id="l10n_ch.l10n_ch_isr_report_template">
-		 <xpath expr="t[@t-call='web.external_layout']" position="replace">
-            <t t-call="web.external_layout">
+		 <t t-call="web.external_layout">
                 <t t-set="split_total_amount" t-value="invoice.split_total_amount()"/>
                 <t t-set="print_bank" t-value="invoice.company_id.l10n_ch_isr_print_bank_location"/>
 
@@ -512,6 +451,15 @@
                     </div>
                 </div>
             </t>
-           </xpath>
-        </template>
+	</template>
+
+	<template id="techlux_reports.isr_report_main">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="invoice">
+                <t t-set="o" t-value="invoice"/>
+                <t t-call="techlux_reports.report_invoice_document_with_esr"/>
+            </t>
+        </t>
+    </template>
+
 </odoo>
