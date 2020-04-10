@@ -14,7 +14,7 @@
 
 	<template id="report_invoice_document_with_esr">
 		<t t-call="techlux_reports.esr_external_layout_standard">
-			<t t-set="o" t-value="o.with_context(lang=lang)"/>
+			<t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)" />
 			<div class="page" style="padding-left:20px;margin-left:68px;margin-right:45px;padding-top:150px">
 				<div id="information_block" style="padding-left:20px;padding-top:22px;padding-bottom:30px;float:left;">
 					<div class="row" t-if="o.invoice_date">
@@ -297,7 +297,7 @@
 										</p>
 									</td>
 									<td>
-										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_payment_term_id.note"/>
+										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-lang="o.partner_id.lang" t-esc="o.invoice_payment_term_id.note"/>
 									</td>
 								</tr>
 							</table>
