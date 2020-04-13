@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+		<!-- Shop confirmation message backgrounf change -->
+	<template id="shop_confirmation_inherit" name="Shop confirmation Intherit" inherit_id="website_sale.payment_confirmation_status">
+		<xpath expr="//div[@class='card-header']" position="attributes">
+			<attribute name="style">background-color: #38544d;</attribute>
+		</xpath>
+	</template>
+
 	<template id="website_sale_product_price_inherit" name="Product Price Inherit" inherit_id="website_sale.product_price">
 		<xpath expr="//div[@class='product_price mt16']" position="replace">
 			<div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price mt16">
