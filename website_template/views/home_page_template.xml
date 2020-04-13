@@ -114,10 +114,10 @@
 
 					<section class="">
 						<div>
-						  <img width="100%" style="margin-top:50px" src="/website_template/static/img/martin-katler-BVd8jS5H7VU-unsplash.jpg" alt=""/>
+						  <img width="100%" style="margin-top: -5px;" src="/website_template/static/img/martin-katler-BVd8jS5H7VU-unsplash.jpg" alt=""/>
 						</div>
 						<div>
-						  <img width="100%" style="margin-top:50px" src="/website_template/static/img/martin-katler-7rkYTBxZnkY-unsplash.jpg" alt=""/>
+						  <img width="100%" src="/website_template/static/img/martin-katler-7rkYTBxZnkY-unsplash.jpg" alt=""/>
 						</div>
 					</section>
 
