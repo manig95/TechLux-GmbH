@@ -107,14 +107,14 @@
 						</div>
 					</section>
 					<section class="">
-						<iframe width="100%" height="100%" src="/website_template/static/video/fnf1-3.mp4" />
+						<!-- <iframe width="100%" height="100%" src="/website_template/static/video/fnf1-3.mp4" />
 						<iframe width="100%" height="100%" src="/website_template/static/video/fnf1-3.ogg" />
-						<iframe width="100%" height="100%" src="/website_template/static/video/fnf1-3.webm" />
-						<!-- <video width="100%" height="100%" preload="auto" playsinline="true" autoplay="true" muted="" loop="true">
+						<iframe width="100%" height="100%" src="/website_template/static/video/fnf1-3.webm" /> -->
+						<video width="100%" height="100%" preload="auto" playsinline="true" autoplay="true" muted="" loop="true">
 						  <source src="/website_template/static/video/fnf1-3.mp4" type="video/mp4"/>
 						  <source src="/website_template/static/video/fnf1-3.ogg" type="video/ogg"/>
 						  <source src="/website_template/static/video/fnf1-3.webm" type="video/webm"/>
-						</video> -->
+						</video>
 					</section>
 
 					<section class="">
