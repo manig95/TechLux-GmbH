@@ -34,7 +34,8 @@
 						function init() {
 						    alert("initiated")
 						    var myVideo = document.getElementById("video");
-						    myVideo.addEventListener('ended', loopVideo, false);
+						    <!-- myVideo.addEventListener('ended', loopVideo, false); -->
+						    myVideo.play();
 						}
 						function loopVideo() {
 						    alert("video playing")
