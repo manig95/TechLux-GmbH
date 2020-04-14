@@ -363,7 +363,7 @@
 						<!-- </video> -->
 					<!-- </body> -->
 					<!-- </section> -->
-					<section class="main-slider">
+					<!--<section class="main-slider">
 				        <div class="item video">
 				          <video class="slide-video slide-media" loop="true" playsinline="true" muted="true">
 				            <source src="https://techlux-stage-867330.dev.odoo.com/website_template/static/video/fnf1-3.mp4" type="video/mp4" />
@@ -377,7 +377,7 @@
 						<div>
 						  <img width="100%" src="/website_template/static/img/martin-katler-7rkYTBxZnkY-unsplash.jpg" alt=""/>
 						</div>
-					</section>
+					</section>-->
 
 					<!-- <section class="">
 						<div class="mx-part" style="background-color: #38544d; padding: 10em 0;color: #fff;text-align:center">

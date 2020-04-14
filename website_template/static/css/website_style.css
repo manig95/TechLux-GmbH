@@ -950,7 +950,7 @@ padding-top: 55px;
 }
 
 .container {
-    /* background-color: #f2f2f2; */
+    background-color: inherit;
     color: #444;
     line-height: 1.6;
     padding: 40px 0;
