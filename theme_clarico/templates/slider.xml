@@ -3,7 +3,7 @@
 	<!-- ============================= Slider Style 1 ============================= -->
 	<template id="clarico_slider_styles_one_template" name="Slider Style 1">
 		<section t-if="filter_data" class="te_pc_style_main">
-			<div class="container">
+			<div class="container" style="background-color:inherit;">
 				<!-- Display Filters -->
 				<div class="te_slider_filter_main">
 					<t
