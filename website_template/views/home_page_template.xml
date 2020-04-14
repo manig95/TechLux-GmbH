@@ -32,13 +32,13 @@
 				<div id="wrap" class="oe_structure content-all" style="">
 					<script type="text/javascript">
 						function init() {
-						    alert("initiated")
+						    alert("initiated 2222")
 						    var myVideo = document.getElementById("video");
 						    <!-- myVideo.addEventListener('ended', loopVideo, false); -->
 						    myVideo.play();
 						}
 						function loopVideo() {
-						    alert("video playing")
+						    alert("video playing  3333")
 						    var myVideo  = document.getElementById("video");
 						    myVideo.play();
 						}
