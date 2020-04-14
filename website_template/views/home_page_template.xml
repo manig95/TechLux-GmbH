@@ -32,16 +32,15 @@
 				<div id="wrap" class="oe_structure content-all" style="">
 					<script type="text/javascript">
 						function init() {
-						    alert("initiated 2222")
+						    alert("initiated 4444");
 						    var myVideo = document.getElementById("video");
-						    <!-- myVideo.addEventListener('ended', loopVideo, false); -->
 						    myVideo.play();
 						}
-						function loopVideo() {
+						<!-- function loopVideo() {
 						    alert("video playing  3333")
 						    var myVideo  = document.getElementById("video");
 						    myVideo.play();
-						}
+						} -->
 					</script>
 					<section class="container-fluid pb0" data-name="style 1">
 						<div class="row mbl-display" style="margin-bottom: 50px;">
