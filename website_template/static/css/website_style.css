@@ -948,3 +948,10 @@ padding-top: 55px;
 .o_clean_header img {
     max-height: 160px !important;
 }
+
+.container {
+    /* background-color: #f2f2f2; */
+    color: #444;
+    line-height: 1.6;
+    padding: 40px 0;
+}
