@@ -23,16 +23,16 @@
 				<div class="navbar" style="background: #000; width: 100% !important;position: fixed; z-index: 10000;">
 					<ul class="left-side">
 						<li>
-							<a href="/">KLIXX</a>
+							<a class="menu-lnk" href="/">KLIXX</a>
 						</li>
 						<li>
-							<a href="/shop">SHOP</a>
+							<a class="menu-lnk" href="/shop">SHOP</a>
 						</li>
 						<li>
-							<a href="/aboutus">ABOUT US</a>
+							<a class="menu-lnk" href="/aboutus">ABOUT US</a>
 						</li>
 						<li>
-							<a href="/contactus">CONTACT US</a>
+							<a class="menu-lnk" href="/contactus">CONTACT US</a>
 						</li>
 					</ul>
 					<span id="mb-menu-btn" class="toggle-btn" onclick="openSideMenu()">

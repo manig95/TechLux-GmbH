@@ -605,7 +605,7 @@ li.te_ftr_add_info {
 }
 
 .fa-stack .fa {
-	color: white;
+	color: #000;
 }
 
 .fa-stack .fa.fa-circle-thin {
@@ -1029,7 +1029,7 @@ padding-top: 55px;
     }
 .carousel-caption a:hover
 {
-    background: #b70826;
+    background: #000;
     color:#fff;
 }
 .carousel-caption h1
@@ -1061,3 +1061,27 @@ padding-top: 55px;
     font-size: 18px;
     text-transform: uppercase;
 }
+.carousel-indicators .active {
+    opacity: 0;
+    cursor: inherit;
+}
+.pd-img img{
+    width: 50% !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/*.menu-lnk::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+.menu-lnk:hover::after {
+    width: 100%;
+}*/
+
+
+
