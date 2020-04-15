@@ -1,3 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/93a467f70a3e7b27a9b52a686f351dbe?family=DINNextLTPro-Regular);
+@font-face {font-family: "DINNextLTPro-Regular"; src: url("//db.onlinewebfonts.com/t/93a467f70a3e7b27a9b52a686f351dbe.eot"); src: url("//db.onlinewebfonts.com/t/93a467f70a3e7b27a9b52a686f351dbe.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/93a467f70a3e7b27a9b52a686f351dbe.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/93a467f70a3e7b27a9b52a686f351dbe.woff") format("woff"), url("//db.onlinewebfonts.com/t/93a467f70a3e7b27a9b52a686f351dbe.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/93a467f70a3e7b27a9b52a686f351dbe.svg#DINNextLTPro-Regular") format("svg"); }
+
 body {
 	font-family:  DINNextLTPro-Regular;
 }
