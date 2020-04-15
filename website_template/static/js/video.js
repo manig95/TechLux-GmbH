@@ -66,7 +66,7 @@ $(document).ready(function () {
 		slideWrapper.on("init", function(slick){
 		  slick = $(slick.currentTarget);
 		  setTimeout(function(){
-		  	// alert('aaaaaaa');
+		  	alert('aaaaaaa');
 		    playPauseVideo(slick,"play");
 		  }, 1000);
 		  resizePlayer(iframes, 16/9);

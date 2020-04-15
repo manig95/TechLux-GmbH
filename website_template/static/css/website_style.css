@@ -91,7 +91,7 @@ video {
 		text-align: center;
 	}
 	.mbl-menu {
-		background: #38544d;
+		background: #000;
 		height: 100%;
 		width: 88%;
 		z-index: 12;
@@ -439,7 +439,7 @@ li.te_ftr_add_info {
 	margin: 10% auto;
 	padding: 19px 22px 20px 33px;
 	background: #fff;
-	background: #38544d;
+	background: #000;
 	border: 3px solid #fff;
 }
 
@@ -947,4 +947,11 @@ padding-top: 55px;
 
 .o_clean_header img {
     max-height: 160px !important;
+}
+
+.container {
+    background-color: inherit;
+    color: #444;
+    line-height: 1.6;
+    padding: 40px 0;
 }

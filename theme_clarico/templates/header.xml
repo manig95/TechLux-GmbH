@@ -20,7 +20,7 @@
 		</xpath>
 		<xpath expr="//header" position="before">
 			<div class="te_header_before_overlay">
-				<div class="navbar" style="background: #38544d; width: 100% !important;position: fixed; z-index: 10000;">
+				<div class="navbar" style="background: #000; width: 100% !important;position: fixed; z-index: 10000;">
 					<ul class="left-side">
 						<li>
 							<a href="/">KLIXX</a>

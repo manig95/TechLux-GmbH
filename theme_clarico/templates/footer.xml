@@ -4,10 +4,10 @@
 	<template id="customize_footer_style_1" inherit_id="website.footer_custom"
 			  active="True">
 		<xpath expr="//div[@id='footer']" position="replace">
-			<div id="footer" class="oe_structure oe_structure_solo" style="background: #38544d;">
+			<div id="footer" class="oe_structure oe_structure_solo" style="background: #000;">
 				<!--<xpath expr="//div[@id='footer']" position="before">-->
 				<section class="s_newsletter_block pt64 oe_img_bg oe_custom_bg" data-name="Newsletter block" style="width: 100%;">
-					<div class="container">
+					<div class="container" style="background: #000 !important;">
 						<div class="row">
 							<div class="col-lg-6 offset-lg-3 pb32" style="color: #fff;">
 								<div class="text-center" style="border: 2px solid #fff;padding: 30px;">
