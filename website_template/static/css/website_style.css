@@ -1,5 +1,5 @@
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family:  DINNextLTPro-Regular;
 }
 
 .const-container {
@@ -8,7 +8,6 @@ body {
 
 .const-container .content-area {
 	border: 1px solid transparent;
-	width: 85%;
 }
 
 .content-area.right-align {
@@ -26,21 +25,66 @@ video {
 }
 
 .const-container .content-area blockquote {
-	border-left: 4px solid #000;
-	padding: 0.5em 10px;
-	height: 95px;
-	margin: 1.5em 10px 0 0;
-	background: #fff;
-	margin-left: 2.7em;
-	position: relative;
+	 border-left: 4px solid #000;
+    padding: 0.5em 10px;
+    height: 95px;
+    margin: 1.5em 10px 0 0;
+    background: #fff;
+    margin-left: 2.7em;
+    position: relative;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.5s;
 }
 
-.const-container .content-area span.box-title {
+.const-container .content-area blockquote:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.const-container .content-area blockquote:hover {
+    color: #fff;
+}
+
+.const-container .content-area blockquote:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+/*.const-container .content-area span.box-title {
 	font-size: 20px;
+}*/
+.box-title{
+    font-family: DINNextLTPro-Regular;
+    font-weight: bold;
+    letter-spacing: 1.92px;
+    font-size:18px;
+}
+
+.content-area p{
+padding-top: 10px;
+font-size:15px;
 }
 
 .const-container .content-area span.box-paragraph {
-	line-height: 30px;
+	line-height: 15px;
 }
 
 @media only screen and (min-width: 320px) and (max-width:991px) {
@@ -954,4 +998,63 @@ padding-top: 55px;
     color: #444;
     line-height: 1.6;
     padding: 40px 0;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.carousel-caption a
+    {
+        margin-top: 10px;
+        background: #fff;
+        width: 180px;
+        border: none;
+        color: #000;
+        font-family: DINNextLTPro-Regular;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 1.92px;
+        font-weight:600;
+    }
+.carousel-caption a:hover
+{
+    background: #b70826;
+    color:#fff;
+}
+.carousel-caption h1
+{
+    padding-right: 28px;
+    font-size: 24px;
+    font-family: DINNextLTPro-Regular;
+    font-weight: 600;
+    letter-spacing: 1.92px;
+}
+/*
+.content-area blockquote {
+    background: linear-gradient(to left, black 50%, black 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition:all 1s ease;
+}
+
+.content-area blockquote:hover {
+    background-position: left bottom;
+}*/
+.head-txt{
+    margin-top: 50px;
+}
+
+.head-txt p{
+    border-top: 3px solid;
+    margin-left: 65px;
+    font-size: 18px;
+    text-transform: uppercase;
 }

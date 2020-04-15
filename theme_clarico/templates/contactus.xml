@@ -43,7 +43,7 @@
 			<div class="oe_structure">
 				<section class="te_contactus_banner_section oe_img_bg">
 					<div class="s_title text-center">
-						<h2 style="text-transform:uppercase;font-family: 'Montserrat', sans-serif;font-size: 31px;font-weight: 600;">Contact Us</h2>
+						<h2 style="text-transform:uppercase;font-family: DINNextLTPro-Regular;font-size: 31px;font-weight: 600;">Contact Us</h2>
 					</div>
 				</section>
 			</div>
@@ -159,7 +159,7 @@
 					<div id="wrap">
 						<div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_1"/>
 						<div class="container pt-3" style="padding: 53px 19% 40px 22%;text-align: center;">
-							<h1 style="font-family: 'Montserrat', sans-serif;">Thanks!</h1>
+							<h1 style="font-family: DINNextLTPro-Regular;">Thanks!</h1>
 							<div class="row">
 								<div class="col-lg-12">
 									<div class="alert alert-success" role="status">

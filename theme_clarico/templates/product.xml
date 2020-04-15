@@ -34,7 +34,7 @@
 		</xpath>
 		<xpath expr="//div[@id='product_details']/h1" position="attributes">
 			<attribute name="class">te_product_name mbl-pr-name</attribute>
-			<attribute name="style">text-transform:uppercase !important;font-family: 'Montserrat', sans-serif;font-weight:600;margin-top:25px;</attribute>
+			<attribute name="style">text-transform:uppercase !important;font-family: DINNextLTPro-Regular;font-weight:600;margin-top:25px;</attribute>
 		</xpath>
 		<xpath expr="//div[@id='product_details']/h1" position="after">
 			<span id="te_rect_cnt" class="d-none" t-esc="website.number_of_product_line"/>
