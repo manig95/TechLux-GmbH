@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<record id="bestellung-und-bezahlung-page" model="ir.ui.view">
+		<field name="name">Bestellung Und Bezahlung</field>
+		<field name="type">qweb</field>
+		<field name="key">website.bestellung</field>
+		<field name="arch" type="xml">
+			<t name="Bestellung Und Bezahlung" t-name="website.bestellung-und-bezahlung-page">
+				<t t-call="website.layout">
+					<style>
+						.links p {line-height: 40px};
+					</style>
+					<div id="wrap" class="oe_structure">
+						<section class="s_cover parallax s_parallax_is_fixed pt96 pb96 s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
+							<span class="s_parallax_bg oe_img_bg oe_custom_bg"
+								  style="background-image: url(/website_template/static/img/georgie-cobbs.jpg); background-position: 50% -388px;background-attachment: inherit;"/>
+							<div class="container">
+								<div class="row s_nb_column_fixed">
+									<div class="col-lg-12 s_title" data-name="Title">
+										<h1 class="s_title_thin" style="text-align: center;color:#fff;">Bestellung und Bezahlung</h1>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section data-name="Title">
+							<div class="container">
+								<div class="row s_nb_column_fixed">
+									<div class="col-lg-12 s_title" style="text-align: center;">
+										<h4 class="te_s_title_default">
+											<font style="font-size: 36px;">Bestellung und Bezahlung</font>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="s_faq_collapse" data-name="Accordion">
+							<style>
+								.te_section_accordion .card {
+								border-bottom: transparent !important;
+								}
+							</style>
+							<div class="container te_section_accordion">
+								<div class="row s_nb_column_fixed">
+								</div>
+								<div class="row s_col_no_bgcolor">
+									<div class="col-lg-12">
+										<div class="col-lg-4" style="float:left;line-height: 40px !important; width: 260px; background: #f3f3f3; margin-bottom: 20px">
+											<div class="elementor-text-editor elementor-clearfix links">
+												<p>
+													<a href="/faq-page">FAQ</a>
+												</p>
+												<p>
+													<a href="/bestellung-und-bezahlung-page">Bestellung und Bezahlung</a>
+												</p>
+												<p>
+													<a href="/versand-und-ruckgabe">Versand und Rückgabe</a>
+												</p>
+												<p>
+													<a href="/allgemeine-gescha-ftsbedingungen-page">Allgemeine Geschäftsbedingungen</a>
+												</p>
+												<p>
+													<a href="https://klixx.info/rueckgabe-und-umtausch/">Rückgabe und Umtausch</a>
+												</p>
+												<p>
+													<a href="https://klixx.info/rueckgabeformular/">Rückgabeformular</a>
+												</p>
+												<p></p>
+												<p>
+													<a href="https://klixx.info/about-techlux/">About Techlux</a>
+												</p>
+												<p>
+													<a href="/mpressum-page">Impressum</a>
+												</p>
+												<p>
+													<a href="datenschutz-page/">Datenschutzrichtlinien</a>
+												</p>
+												<p>
+													<a href="https://klixx.info/b2b/">B2B</a>
+												</p>
+											</div>
+										</div>
+										<div class="col-lg-8 pt16 pb16" style="float:right;">
+											<div id="myCollapse" class="accordion" role="tablist">
+												<div class="card bg-white">
+													<a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-target="#myCollapseTab1581337810978" data-original-title=""
+													   title=""
+													   aria-describedby="tooltip377685">
+														Der gezeigte Preis ist der Endpreis
+													</a>
+													<div class="collapse" role="tabpanel" id="myCollapseTab1581337810978" style="">
+														<div class="card-body">
+															<p class="card-text">
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;; font-size: 14px;">Wir zeigen dir den Preis für deinen Einkauf in der in
+																	deinem
+																	Wohnsitz gültigen Währung an: Schweizer Franken.
+																</span>
+																<br/>
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="card bg-white">
+													<a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-target="#myCollapseTab1581337810979" data-original-title=""
+													   title="">
+														Unsere
+														Produkte werden so transparent wie möglich angezeigt
+													</a>
+													<div class="collapse" role="tabpanel" id="myCollapseTab1581337810979" style="">
+														<div class="card-body">
+															<p class="card-text">
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;; font-size: 14px;">Wir tun unser Bestes, um unsere Produkte so
+																	realitätsgetreu
+																	wie
+																	möglich abzubilden. Die bereitgestellten Bilder können aber ein paar geringfügige Abweichungen zu dem tatsächlichen Produkt aufweisen; dies ist jedoch von deinem Browser und
+																	deiner
+																	Bildschirmanzeige abhängig.
+																</span>
+																<br/>
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="card bg-white">
+													<a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-target="#myCollapseTab1581337810980" data-original-title=""
+													   title=""
+													   aria-describedby="tooltip44692">Du kannst auch als Gast bestellen
+													</a>
+													<div class="collapse" role="tabpanel" id="myCollapseTab1581337810980" style="">
+														<div class="card-body">
+															<p class="card-text">
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;; font-size: 14px;">Wenn du uns bei deiner Bestellung deine E-Mail-Adresse
+																	und
+																	ein
+																	Passwort angibst, kannst du deine aktuellen Bestellungen und deren Versandstatus anschliessend jederzeit überprüfen. Falls du es aber eilig hast, kannst du deine Bestellung auch
+																	als
+																	Gast
+																	tätigen, ohne ein Passwort einzugeben.
+																</span>
+																<br/>
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="card bg-white">
+													<a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-original-title="" title="" aria-describedby="tooltip44692"
+													   data-target="#myCollapseTab1581337997632">Gutscheine können bei der Bezahlung eingelöst werden
+													</a>
+													<div class="collapse" role="tabpanel" style="" id="myCollapseTab1581337997632">
+														<div class="card-body">
+															<p class="card-text">
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;; font-size: 14px;">Wenn du einen Gutschein besitzt, kannst du diesen
+																	während
+																	des
+																	letzten Schritts des Bestellprozesses einlösen, nachdem du gefragt wirst, auf welche Weise du bezahlen möchtest. Wenn du diesen einlöst, wird dir der entsprechende Betrag
+																	automatisch
+																	angezeigt und gutgeschrieben
+																</span>
+																<br/>
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="card bg-white">
+													<a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-original-title="" title="" aria-describedby="tooltip44692"
+													   data-target="#myCollapseTab1581337997442">Nur erhältliche Artikel können bestellt werden
+													</a>
+													<div class="collapse" role="tabpanel" style="" id="myCollapseTab1581337997442">
+														<div class="card-body">
+															<p class="card-text">
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;; font-size: 14px;">Du kannst nur Produkte bestellen, die momentan verfügbar
+																	sind.
+																</span>
+																<br/>
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="card bg-white">
+													<a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-original-title="" title="" aria-describedby="tooltip44692"
+													   data-target="#myCollapseTab1581337997225">Sollten wir dein bestelltes Produkt nicht liefern können, erstatten wir dir den vollen Betrag zurück.
+													</a>
+													<div class="collapse" role="tabpanel" style="" id="myCollapseTab1581337997225">
+														<div class="card-body">
+															<p class="card-text">
+																<span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;; font-size: 14px;">In Ausnahmefällen kann es vorkommen, dass wir das von
+																	dir
+																	bestellte
+																	Produkt nicht liefern können. Sollte dies der Fall sein, behalten wir uns das Recht vor, dir deinen Zahlungsbetrag zurückzuerstatten, anstatt deine Bestellung auszuführen. Es
+																	versteht sich
+																	von selbst, dass wir dich in einem solchen Fall sofort informieren.
+																</span>
+																<br/>
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="card bg-white">
+													<a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-original-title="" title="" aria-describedby="tooltip44692"
+													   data-target="#myCollapseTab1581337997027">Wie bezahlen
+													</a>
+													<div class="collapse" role="tabpanel" style="" id="myCollapseTab1581337997027">
+														<div class="card-body">
+															<div class="wpsm_panel wpsm_panel-default"
+																 style="margin: 5px 0px 0px; padding: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 16px; line-height: inherit; font-family: &quot;!!! cerapro light&quot;, Arial, Tahoma, sans-serif; vertical-align: baseline; background-color: rgb(255, 255, 255); border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px; overflow: hidden; color: rgb(119, 119, 119); border: 1px solid transparent !important;">
+																<div id="ac_1013_collapse8" class="wpsm_panel-collapse collapse in" aria-expanded="true"
+																	 style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;">
+																	<div class="wpsm_panel-body"
+																		 style="margin: 0px; padding: 15px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; overflow: hidden; border: 2px solid rgb(232, 232, 232) !important; font-family: &quot;Open Sans&quot; !important; color: rgb(0, 0, 0) !important;">
+																		<font style="font-size: 14px;">Du kannst deine Bestellung mit deiner Kreditkarte oder mit PayPal bezahlen.</font>
+																	</div>
+																</div>
+															</div>
+															<div class="wpsm_panel wpsm_panel-default"
+																 style="margin: 5px 0px 0px; padding: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 16px; line-height: inherit; font-family: &quot;!!! cerapro light&quot;, Arial, Tahoma, sans-serif; vertical-align: baseline; background-color: rgb(255, 255, 255); border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px; overflow: hidden; color: rgb(119, 119, 119); border: 1px solid transparent !important;">
+																<div class="wpsm_panel-heading" role="tab"
+																	 style="margin: 0px; border-width: 0px; border-style: initial; border-image: initial; font: inherit; vertical-align: baseline; border-top-left-radius: 0px; border-top-right-radius: 0px; padding: 0px !important; border-color: rgb(232, 232, 232) !important; color: rgb(0, 0, 0) !important; background-color: rgb(232, 232, 232) !important;">
+																	<h4 class="wpsm_panel-title"
+																		style="padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: 16px; font-family: &quot;lato bold&quot;, Arial, Tahoma, sans-serif; vertical-align: baseline; color: inherit; letter-spacing: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 0px !important; line-height: 1 !important;">
+																		<a class="collapsed" data-toggle="collapse" data-parent="#wpsm_accordion_1013 " href="https://klixx.info/bestellung-und-bezahlung/#ac_1013_collapse9" aria-expanded="false"
+																		   style="margin: 0px; padding: 0px; border-top: 0px; border-right: 0px; border-left: 0px; border-image: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; outline: 0px; box-shadow: none; overflow: hidden; display: block; border-bottom: 0px !important; font-size: 18px !important; font-family: &quot;Open Sans&quot; !important; color: rgb(0, 0, 0) !important;">
+																			<br class="Apple-interchange-newline"/>
+																		</a>
+																	</h4>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card bg-white">
+													<a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-original-title="" title="" aria-describedby="tooltip44692"
+													   data-target="#myCollapseTab1581338296821">Ist mein Einkauf bei TechLux sicher?
+														<span style="white-space:pre"></span>
+														<br/>
+													</a>
+													<div class="collapse" role="tabpanel" style="" id="myCollapseTab1581338296821">
+														<div class="card-body">
+															<div class="wpsm_panel wpsm_panel-default"
+																 style="margin: 5px 0px 0px; padding: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 16px; line-height: inherit; font-family: &quot;!!! cerapro light&quot;, Arial, Tahoma, sans-serif; vertical-align: baseline; background-color: rgb(255, 255, 255); border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px; overflow: hidden; color: rgb(119, 119, 119); border: 1px solid transparent !important;">
+																<div class="wpsm_panel-collapse in collapse show" aria-expanded="true" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;"
+																	 id="myCollapseTab1581338296821">
+																	<div class="wpsm_panel-body"
+																		 style="margin: 0px; padding: 15px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; overflow: hidden; border: 2px solid rgb(232, 232, 232) !important; font-family: &quot;Open Sans&quot; !important; color: rgb(0, 0, 0) !important;">
+																		<font style="font-size: 14px;">Mach dir keine Sorgen. Um deinen Einkauf möglichst sicher und einfach zu gestalten, verwenden wir die Secure Socket Layer (SSL) Technologie.
+																			Damit
+																			werden
+																			die Daten, die du uns über das Internet schickst, verschlüsselt und geschützt.
+																		</font>
+																		<br/>
+																	</div>
+																</div>
+															</div>
+															<div class="wpsm_panel wpsm_panel-default"
+																 style="margin: 5px 0px 0px; padding: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 16px; line-height: inherit; font-family: &quot;!!! cerapro light&quot;, Arial, Tahoma, sans-serif; vertical-align: baseline; background-color: rgb(255, 255, 255); border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px; overflow: hidden; color: rgb(119, 119, 119); border: 1px solid transparent !important;">
+																<div class="wpsm_panel-heading" role="tab"
+																	 style="margin: 0px; border-width: 0px; border-style: initial; border-image: initial; font: inherit; vertical-align: baseline; border-top-left-radius: 0px; border-top-right-radius: 0px; padding: 0px !important; border-color: rgb(232, 232, 232) !important; color: rgb(0, 0, 0) !important; background-color: rgb(232, 232, 232) !important;">
+																	<h4 class="wpsm_panel-title"
+																		style="padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: 16px; font-family: &quot;lato bold&quot;, Arial, Tahoma, sans-serif; vertical-align: baseline; color: inherit; letter-spacing: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 0px !important; line-height: 1 !important;">
+																		<a data-toggle="collapse" data-parent="#myCollapse" href="https://klixx.info/bestellung-und-bezahlung/#ac_1013_collapse9" aria-expanded="false"
+																		   style="margin: 0px; padding: 0px; border-top: 0px; border-right: 0px; border-left: 0px; border-image: initial; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; outline: 0px; box-shadow: none; overflow: hidden; display: block; border-bottom: 0px !important; font-size: 18px !important; font-family: &quot;Open Sans&quot; !important; color: rgb(0, 0, 0) !important;"
+																		   data-target="#myCollapseTab1581338296821" class="collapsed">
+																			<br class="Apple-interchange-newline"/>
+																		</a>
+																	</h4>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+
+	<record id="bestellung-und-bezahlung-page-action" model="website.page">
+		<field name="is_published">True</field>
+		<field name="url">/bestellung-und-bezahlung-page</field>
+		<field name="view_id" ref="bestellung-und-bezahlung-page"/>
+		<field name="track">True</field>
+	</record>
+</odoo>

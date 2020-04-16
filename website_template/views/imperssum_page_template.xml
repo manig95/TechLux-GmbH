@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<record id="impressum-page" model="ir.ui.view">
+		<field name="name">Impressum</field>
+		<field name="type">qweb</field>
+		<field name="key">website.impressum-page</field>
+		<field name="arch" type="xml">
+			<t name="Impressum" t-name="website.impressum-page">
+				<t t-call="website.layout">
+					<div id="wrap" class="oe_structure">
+						<section data-name="Title">
+							<div class="container">
+								<div class="row s_nb_column_fixed">
+									<div class="col-lg-12" style="text-align: center;padding-top:50px">
+										<h4 class="te_s_title_default">
+											<font class="s_title s_title-t" style="font-size: 36px;font-family: DINNextLTPro-Regular;font-weight:600;">TERMS &amp; CONDITIONS</font>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="impr" style="padding: 50px 25% 60px 30%; text-align: justify;">
+								<div>
+									<p style="font-size: 19px;">
+										<b>Contact Address</b>
+									</p>
+
+									<p>Techlux GmbH</p>
+
+									<p>Hochdorfstrasse 5</p>
+
+									<p>6275 Ballwil</p>
+
+									<p>Switzerland</p>
+								</div>
+
+								<div style="margin-top: 15px;">
+									<p style="font-size: 19px;">
+										<b>Email: info@techlux.ch</b>
+									</p>
+								</div>
+
+
+								<div style="margin-top: 15px;">
+									<p>
+										<b>Authorized Representative</b>
+									</p>
+
+									<p>Marco Niggli - CEO</p>
+								</div>
+
+								<div style="margin-top: 15px;">
+									<p>
+										<b>Commercial Registration</b>
+									</p>
+
+									<p>Registered Company Name:</p>
+
+									<p>Techlux GmbH</p>
+
+									<p>Commercial register number: CHE-268.606.949</p>
+								</div>
+								<div style="margin-top: 15px;">
+									<p>
+										<b>VAT number</b>
+									</p>
+									<p>CH10048079027</p>
+								</div>
+
+								<div style="margin-top: 15px;">
+									<p>
+										<b>Disclaimer</b>
+									</p>
+
+									<p>The author assumes no liability for the correctness of the content,</p>
+
+									<p>Accuracy, timeliness, reliability and completeness of the information.</p>
+
+									<p>Liability claims against the author for material or immaterial damage resulting from access, use or non-use of the published information through misuse of the
+										Connection or
+									</p>
+
+									<p>caused by technical faults are excluded.</p>
+
+									<p>All offers are non-binding. The author expressly reserves the right to change, add to, or delete parts of the pages or the entire offer or the
+										Discontinue publication temporarily or permanently.
+									</p>
+								</div>
+								<div style="margin-top: 15px;">
+									<p>
+										<b>Disclaimer for links</b>
+									</p>
+
+									<p>References and links to third party websites are outside our area of ​​responsibility. It rejected any responsibility for such websites. Access and use of such websites
+										are at the user's own risk.
+									</p>
+								</div>
+
+
+								<div style="margin-top: 15px;">
+									<p>
+										<b>Copyrights</b>
+									</p>
+
+									<p>The copyrights and all other rights to content, images, photos or other files on this website belong exclusively to <b>Techlux GmbH</b> or the specifically named rights holders. For
+										Reproduction of any elements requires the prior written consent of the copyright holder.
+									</p>
+
+								</div>
+							</div>
+						</section>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+
+	<record id="impressum-page" model="website.page">
+		<field name="is_published">True</field>
+		<field name="url">/impressum-page</field>
+		<field name="view_id" ref="impressum-page"/>
+		<field name="track">True</field>
+	</record>
+</odoo>
