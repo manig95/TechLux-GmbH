@@ -15,9 +15,9 @@
 						  t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"
 					/>
 					<!--<b class="oe_price" style="white-space: nowrap;" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>-->
-					<div style="font-size:16px;font-weight: 600; font-family: DINNextLTPro-Regular">
+					<div style="font-size:18px;font-weight: 600; font-family: DINNextLTPro-Regular;letter-spacing:1.92px;">
 						<span t-esc="website.currency_id.name"/>
-						<span t-if="combination_info['price']" t-esc="'%.f' % (combination_info['price'])"/>
+						<span t-if="combination_info['price']" t-esc="'%.2f' % (combination_info['price'])"/>
 					</div>
 					<span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
 				</h4>
@@ -40,7 +40,7 @@
 			<div t-if="bins" class="o_wsale_products_grid_table_wrapper" style="">
 				<div class="shop-title">
 					<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 12px 22px 0px;"/>
-					<h1 class="sp-p-1" style="font-weight: 600;font-size: 45px;margin-top:20px;letter-spacing: 3px;display: initial;">SHOP</h1>
+					<h1 class="sp-p-1" style="font-weight: 600;font-size: 45px;margin-top:20px;letter-spacing: 3px;display: initial;color: #000;">SHOP</h1>
 					<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 10px 17px 3px;"/>
 					<!--<p style="font-size: 15px;">OUR PATENTED SWISS TECHNOLOGIES</p>-->
 				</div>
@@ -76,16 +76,18 @@
 
 	<template id="shop_product_inherit" name="Shop Product Intherit" inherit_id="website_sale.product">
 		<xpath expr="//a[@class='btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block']" position="replace">
-			<a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block" href="#" style="text-transform:uppercase; background: #ae4a51;">Add to Cart</a>
+			<a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block"
+			   href="#" style="text-transform:uppercase; background-color: #000; color: #d6d8d9; width: 202px;	text-transform: uppercase; font-size: 18px;	letter-spacing: 1.92px;">Add to Cart
+			</a>
 		</xpath>
 		<xpath expr="//div[@id='product_details']//p[3][@class='text-muted']" position="replace">
-			<p class="text-muted">
+			<!--<p class="text-muted">
 				<img src="/website_template/static/img/swiss-icon.png"
 					 onmouseover="this.src='/website_template/static/img/swiss-2.png'"
 					 onmouseout="this.src='/website_template/static/img/swiss-icon.png'"
 					 border="0" alt="" style="padding-right: 10px;"/>
 				<span style="text-transform:uppercase;color: #000; font-weight: bold;font-size: 15px;">SWISS MADE</span>
-			</p>
+			</p>-->
 		</xpath>
 	</template>
 

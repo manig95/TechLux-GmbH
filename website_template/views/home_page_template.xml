@@ -8,9 +8,6 @@
 				<script type="text/javascript" src="/website_template/static/js/website.js"></script>
 				<link href="https://fonts.googleapis.com/css?family=Montserrat:800&amp;display=swap" rel="stylesheet"/>
 				<link href="//db.onlinewebfonts.com/c/93a467f70a3e7b27a9b52a686f351dbe?family=DINNextLTPro-Regular" rel="stylesheet" type="text/css"/>
-				<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/> -->
-				<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
-				<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script> -->
 			</xpath>
 		</template>
 
@@ -262,10 +259,10 @@
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<img src="/website_template/static/img/bmw-front.jpg" style="width:100%"/>
-									<div class="carousel-caption" style="text-align:right;">
-										<!--<h1>KLIXX  1.0</h1>-->
+									<!--<div class="carousel-caption" style="text-align:right;">
+										&lt;!&ndash;<h1>KLIXX  1.0</h1>&ndash;&gt;
 										<a href="/shop/product/9944-klixx-1-0-1" role="button" class="btn btn-secondary btn-sm a-submit px-3 py-2">Discover</a>
-									</div>
+									</div>-->
 								</div>
 								<!--<div class="carousel-item">
 									<img src="/website_template/static/img/bmw-back.jpg" style="width:100%"/>
@@ -543,6 +540,9 @@
 					</section> -->
 
 					<section>
+						<div class="col-lg-2 head-txt" style="padding-bottom:20px;">
+							<p>The Animation</p>
+						</div>
 						<video id="video" width="100%" height="100%" preload="auto" playsinline="true" autoplay="true" muted="true" loop="true">
 							<source src="/website_template/static/video/fnf1-3.mp4" type="video/mp4"/>
 							<source src="/website_template/static/video/fnf1-3.ogg" type="video/ogg"/>
@@ -566,7 +566,7 @@
 								<div class="input-group js_subscribe d-none" data-list-id="1">
 									<input type="email" name="email" class="js_subscribe_email form-control" required="required" placeholder="ENTER YOUR EMAIL"/>
 									<span class="input-group-append">
-										<a id="view-code-btn" role="button" href="#" class="btn btn-primary js_subscribe_btn o_default_snippet_text" style="background: #AE4A51;">VIEW CODE</a>
+										<a id="view-code-btn" role="button" href="#" class="btn btn-primary js_subscribe_btn o_default_snippet_text" style="background: #000;border: 1px solid #fff;">VIEW CODE</a>
 										<!--<a role="button" href="#" class="btn js_subscribed_btn d-none o_default_snippet_text" disabled="disabled" style="background: #ae4a51;color: #fff;">Thanks</a>-->
 									</span>
 								</div>

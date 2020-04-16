@@ -6,8 +6,8 @@
 		<xpath expr="//div[@id='footer']" position="replace">
 			<div id="footer" class="oe_structure oe_structure_solo" style="background: #fff;">
 				<!--<xpath expr="//div[@id='footer']" position="before">-->
-				<section class="s_newsletter_block pt64 oe_img_bg oe_custom_bg" data-name="Newsletter block" style="width: 100%;">
-					<div class="container" style="background: #fff !important;">
+				<section class="s_newsletter_block oe_img_bg oe_custom_bg" data-name="Newsletter block" style="width: 100%;">
+					<!--<div class="container" style="background: #fff !important;">
 						<div class="row">
 							<div class="col-lg-6 offset-lg-3 pb32" style="color: #fff;">
 								<div class="text-center" style="border: 2px solid #000;padding: 30px;background: #000;">
@@ -23,7 +23,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<div class="col-lg-12">
 						<p style="text-align:center;color:#000;padding:6px;">
 							<a style="color:#000" href="/impressum-page">TERMS &amp; CONDITIONS</a>

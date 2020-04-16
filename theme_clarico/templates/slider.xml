@@ -55,7 +55,13 @@
 												</t>
 											</div>
 											<div class="col-lg-12">
-												<p class="sh-txt">OUR PATENTED SWISS TECHNOLOGIES</p>
+												<!--<p class="sh-txt">OUR PATENTED SWISS TECHNOLOGIES</p>-->
+												<div class="shop-title" style="display: block ruby;">
+													<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 12px 22px 0px;"/>
+													<h1 class="sp-p-1" style="font-weight: 600;font-size: 45px;margin-top:20px;letter-spacing: 3px;display: initial;color: #000;">SHOP</h1>
+													<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 10px 17px 3px;"/>
+													<!--<p style="font-size: 15px;">OUR PATENTED SWISS TECHNOLOGIES</p>-->
+												</div>
 												<div class="col-lg-12 pd-img" style="float:left;">
 													<section class="te_slider_img dd_slider_prod_bg">
 														<a t-att-href="product.website_url">
@@ -74,7 +80,7 @@
 															<h4
 																	t-attf-class="my-2 mb-0 product_name #{'te_2_line' if (website.number_of_product_line == '2') else 'te_3_line' if (website.number_of_product_line == '3') else ''}"
 																	t-raw="product.name" style="text-transform: uppercase; font-weight: bold; color: #000;font-family: DINNextLTPro-Regular;"/>
-														</a>
+														</a> -->
 														<div itemprop="offers" itemscope="itemscope"
 															 itemtype="http://schema.org/Offer"
 															 class="product_price">
@@ -84,12 +90,12 @@
 																	  t-esc="combination_info['list_price']"
 																	  t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"
 																/>
-																&lt;!&ndash;<b class="oe_price" style="white-space: nowrap;"
+																<!-- <b class="oe_price" style="white-space: nowrap;"
 																   t-esc="combination_info['price']"
-																   t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>&ndash;&gt;
-																<div style="font-size:16px;font-weight: 600; font-family: DINNextLTPro-Regular;">
+																   t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>-->
+																<div style="font-size:18px;font-weight: 600; font-family: DINNextLTPro-Regular;">
 																	<span t-esc="website.currency_id.name"/>
-																	<span t-if="combination_info['price']" t-esc="'%.f' % (combination_info['price'])"/>
+																	<span t-if="combination_info['price']" t-esc="'%.2f' % (combination_info['price'])"/>
 																</div>
 
 																<span itemprop="price" style="display:none;"
@@ -104,7 +110,7 @@
                                                                                    "display_currency": product.currency_id,
                                                                                }'/>
 															</h6>
-														</div>-->
+														</div>
 														<section class="te_prod_cart_wish">
 															<t t-call="theme_clarico.product_slider_btn"/>
 														</section>
@@ -541,13 +547,12 @@
 	</template>
 	<!--============= 'Add to cart',Wishlist,Quick view icons ===================-->
 	<template id="product_slider_btn">
-		<a role="button" class="btn btn-secondary btn-sm a-submit px-3 py-2" href="#" title="Shopping cart"
+		<a role="button" class="btn btn-secondary btn-sm a-submit px-3 py-2 cart-btn" href="#" title="Shopping cart"
 		   style="background-color: #000;
 				color: #d6d8d9;
 				width: 230px;
 				text-transform: uppercase;
 				font-size: 18px;
-				margin-top: 25px;
 				letter-spacing: 1.92px;
 				">
 			ADD TO CART
