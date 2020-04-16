@@ -504,11 +504,11 @@ li.te_ftr_add_info {
 }
 
 #products_grid .o_wsale_product_grid_wrapper:hover {
-	-webkit-box-shadow: inherit;
-	-moz-box-shadow: inherit;
-	-ms-box-shadow: inherit;
-	-o-box-shadow: inherit;
-	box-shadow: inherit;
+	-webkit-box-shadow: inherit !important;
+	-moz-box-shadow: inherit !important;
+	-ms-box-shadow: inherit !important;
+	-o-box-shadow: inherit !important;
+	box-shadow: inherit !important;
 }
 
 @media (min-width: 768px) {
@@ -1071,17 +1071,6 @@ padding-top: 55px;
     margin-right: auto;
     display: block;
 }
-/*.menu-lnk::after {
-    content: '';
-    display: block;
-    width: 0%;
-    height: 2px;
-    background: #fff;
-    transition: width .3s;
-}
-.menu-lnk:hover::after {
-    width: 100%;
-}*/
 
 
 

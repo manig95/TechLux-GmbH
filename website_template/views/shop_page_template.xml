@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-		<!-- Shop confirmation message backgrounf change -->
+	<!-- Shop confirmation message backgrounf change -->
 	<template id="shop_confirmation_inherit" name="Shop confirmation Intherit" inherit_id="website_sale.payment_confirmation_status">
 		<xpath expr="//div[@class='card-header']" position="attributes">
 			<attribute name="style">background-color: #38544d;</attribute>
@@ -39,8 +39,10 @@
 		<xpath expr="//div[@class='o_wsale_products_grid_table_wrapper']" position="replace">
 			<div t-if="bins" class="o_wsale_products_grid_table_wrapper" style="">
 				<div class="shop-title">
-					<p class="sp-p-1" style="font-weight: 600;font-size: 35px;margin-top:20px">SHOP</p>
-					<p style="font-size: 15px;">OUR PATENTED SWISS TECHNOLOGIES</p>
+					<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 12px 22px 0px;"/>
+					<h1 class="sp-p-1" style="font-weight: 600;font-size: 45px;margin-top:20px;letter-spacing: 3px;display: initial;">SHOP</h1>
+					<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 10px 17px 3px;"/>
+					<!--<p style="font-size: 15px;">OUR PATENTED SWISS TECHNOLOGIES</p>-->
 				</div>
 				<table class="table table-borderless m-0" t-att-data-ppg="ppg" t-att-data-ppr="ppr" style="table-layout: auto !important;">
 					<colgroup t-ignore="true">
@@ -101,13 +103,13 @@
 		</xpath>
 		<xpath expr="//div[@class='p-2 o_wsale_product_information_text']" position="replace">
 			<div class="p-2 o_wsale_product_information_text" style="font-size:15px;text-align:center; letter-spacing: 1px;">
-				<h3 class="o_wsale_products_item_title">
+				<h3 class="o_wsale_products_item_title" style="display:none;">
 					<a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" style="color: #000;text-transform:uppercase;font-weight:bold;font-size:18px;font-family: DINNextLTPro-Regular;"/>
 					<a role="button" t-if="not product.website_published" t-att-href="product_href" class="btn btn-sm btn-danger" title="This product is unpublished.">Unpublished</a>
 				</h3>
-				<div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" style="letter-spacing: 1px;font-size: 16px;">
-						<del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']"
-							 t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+				<div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" style="letter-spacing: 1px;font-size: 16px; display:none;">
+					<del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']"
+						 t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
 					<div style="font-size:16px;font-weight: 600; font-family: DINNextLTPro-Regular;">
 						<span t-esc="website.currency_id.name"/>
 						<span t-if="combination_info['price']" t-esc="'%.f' % (combination_info['price'])"/>
