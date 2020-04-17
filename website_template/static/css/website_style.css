@@ -116,7 +116,7 @@ font-size:15px;
 	.const-container .content-area blockquote {
 		border-left: 4px solid #000;
 		padding: 0.5em 0px 0px 19px;
-		height: 95px;
+		height: 118px;
 		margin: 1.5em 10px 0 0;
 		margin-left: 0px;
 		background: #fff;
@@ -399,7 +399,7 @@ font-size:15px;
         margin-top: 0 !important;
     }
     .sp-p-1 {
-        font-size: 29px !important;
+        font-size: 25px !important;
         padding-bottom: 25px !important;
     }
     .const-container .content-area span.box-paragraph {
@@ -933,7 +933,7 @@ transition: 0.5s;
 
 @media only screen and (max-width: 600px) and (min-width: 320px)
 {
-.carousel-item img{
+.banner-img img{
     height: calc(70vh - (80px - 2px));
     max-height: 100%;
     min-height: auto;

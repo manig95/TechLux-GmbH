@@ -266,6 +266,11 @@
 	<!--=================== Vertical Multi Image Carousel =====================-->
 
 
+	<template id="shop_product_carousel_ept" inherit_id="website_sale.shop_product_carousel">
+		<xpath expr="//div[@class='d-flex align-items-center justify-content-center h-100']" position="attributes">
+			<attribute name="class">product-mbl-view</attribute>
+		</xpath>
+	</template>
 	<!--<template id="shop_product_carousel_ept" inherit_id="website_sale.shop_product_carousel">
 		<xpath expr="//div[@id='o-carousel-product']" position="replace">
 			<div id="mainSlider" class="position-relative">
