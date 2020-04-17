@@ -42,8 +42,10 @@
 		<xpath expr="//div[hasclass('oe_structure')]" position="replace">
 			<div class="oe_structure">
 				<section class="te_contactus_banner_section oe_img_bg">
-					<div class="s_title text-center">
-						<h2 style="text-transform:uppercase;font-family: DINNextLTPro-Regular;font-size: 31px;font-weight: 600;">Contact Us</h2>
+					<div class="s_title text-center" style="margin-top: 50px;">
+						<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 12px 22px 0px;"/>
+						<h1 class="sp-p-1" style="font-weight: 600;font-size: 45px;margin-top:20px;letter-spacing: 3px;display: initial;color: #000;">CONTACT US</h1>
+						<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 10px 17px 3px;"/>
 					</div>
 				</section>
 			</div>

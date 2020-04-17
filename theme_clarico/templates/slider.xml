@@ -547,14 +547,7 @@
 	</template>
 	<!--============= 'Add to cart',Wishlist,Quick view icons ===================-->
 	<template id="product_slider_btn">
-		<a role="button" class="btn btn-secondary btn-sm a-submit px-3 py-2 cart-btn" href="#" title="Shopping cart"
-		   style="background-color: #000;
-				color: #d6d8d9;
-				width: 230px;
-				text-transform: uppercase;
-				font-size: 18px;
-				letter-spacing: 1.92px;
-				">
+		<a role="button" class="btn btn-secondary btn-sm a-submit px-3 py-2 cart-btn add-t-cart-btn" href="#" title="Shopping cart">
 			ADD TO CART
 		</a>
 		<t t-set="show_wishlist" t-value="request.website.viewref('website_sale_wishlist.add_to_wishlist').active"/>

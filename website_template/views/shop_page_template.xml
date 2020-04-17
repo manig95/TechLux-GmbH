@@ -76,8 +76,8 @@
 
 	<template id="shop_product_inherit" name="Shop Product Intherit" inherit_id="website_sale.product">
 		<xpath expr="//a[@class='btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block']" position="replace">
-			<a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block"
-			   href="#" style="text-transform:uppercase; background-color: #000; color: #d6d8d9; width: 202px;	text-transform: uppercase; font-size: 18px;	letter-spacing: 1.92px;">Add to Cart
+			<a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block add-t-cart-btn"
+			   href="#">Add to Cart
 			</a>
 		</xpath>
 		<xpath expr="//div[@id='product_details']//p[3][@class='text-muted']" position="replace">
