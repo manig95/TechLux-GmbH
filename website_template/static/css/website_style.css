@@ -82,6 +82,16 @@ font-size:18px;
 width: 45px;
 }
 
+.ab-txt{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    width: 50%;
+    padding-bottom: 60px;
+}
 
 /*.const-container .content-area span.box-title {
 	font-size: 20px;
@@ -345,7 +355,8 @@ font-size:15px;
     }
 
     .ab-txt{
-        padding: 4% 4% 38px 12% !important;
+        padding: 20px !important;
+        width:100% !important;
     }
     .impr{
         padding: 10% 7% 40px 7% !important;
@@ -840,16 +851,6 @@ span.toggle-btn {
     display:none
 }
 
-.ab-txt{
-    font-size: 15px;
-    text-align: justify;
-    line-height: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle;
-    width: 50%;
-    padding-bottom: 60px;
-}
 
 .contact-form {
     width: 70%;
