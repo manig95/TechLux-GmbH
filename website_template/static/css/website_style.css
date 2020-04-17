@@ -372,9 +372,8 @@ font-size:15px;
         text-align:center !important;
     }
     .mbl-spinner{
-        padding: 0px 25% 0px 30% !important;
         max-width: 350px !important;
-        margin-left:53px !important;
+        margin-left: 30% !important;
     }
     #o-carousel-product .carousel-outer {
         height: 230px !important;
