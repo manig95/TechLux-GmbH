@@ -358,6 +358,9 @@ font-size:15px;
         padding: 20px !important;
         width:100% !important;
     }
+    .container {
+    width:90% !important;
+    }
     .impr{
         padding: 10% 7% 40px 7% !important;
     }
