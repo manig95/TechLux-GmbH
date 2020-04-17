@@ -1203,7 +1203,7 @@ display: inline-block !important;
     background-color: #000;
     color: #d6d8d9;
     width: 230px;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
     font-size: 18px;
     letter-spacing: 1.92px;
     border: 1px solid #000;
