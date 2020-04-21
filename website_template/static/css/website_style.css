@@ -1044,6 +1044,9 @@ width:100% !important;
 }
 @media only screen and (max-width: 1024px) and (min-width: 800px)
 {
+.mbl-display {
+    flex-direction: row !important;
+}
 .banner-img img {
     width: 100%;
     height: calc(100vh - (53px - 2px));
