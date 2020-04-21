@@ -1063,8 +1063,8 @@ width: 152px;
 }
 
 .plate-img img{
-    margin-right: -140px !important;
-    margin-top: 60px;
+        margin-left: 130px !important;
+        margin-top: 60px;
 }
 .te_ftr_add_info img {
     height: 45px;
@@ -1077,6 +1077,13 @@ width: 152px;
 
 @media only screen and (max-width: 1023px) and (min-width: 768px)
 {
+.banner-img img {
+    height: calc(100vh - (53px - 2px));
+    max-height: 100%;
+    min-height: auto;
+    min-width: auto;
+    object-fit: cover;
+    }
 .mbl-display {
     flex-direction: column-reverse;
 }
