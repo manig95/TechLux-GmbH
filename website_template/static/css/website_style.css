@@ -16,6 +16,9 @@ body {
 .content-area.right-align {
 	margin-left: auto;
 }
+.scrollup-div {
+bottom: 60px !important;
+}
 
 .const-container .content-area span.box-char {
 	font-size: 78px;
