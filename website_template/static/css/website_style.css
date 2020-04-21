@@ -1051,7 +1051,11 @@ width:100% !important;
 }
 
 .head-txt p {
-width: 115px;
+width: 152px;
+}
+
+.const-container .content-area blockquote {
+height: 120px;
 }
 }
 
