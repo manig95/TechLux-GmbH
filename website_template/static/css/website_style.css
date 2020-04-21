@@ -1039,6 +1039,21 @@ width:100% !important;
         top: -15px;
     }
 }
+@media only screen and (max-width: 1024px) and (min-width: 800px)
+{
+.banner-img img {
+    width: 100%;
+    height: calc(100vh - (53px - 2px));
+    max-height: 100%;
+    min-height: auto;
+    min-width: auto;
+    object-fit: cover;
+}
+
+.head-txt p {
+width: 115px;
+}
+}
 
 
 .content-draw {
