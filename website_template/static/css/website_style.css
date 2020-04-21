@@ -1089,13 +1089,16 @@ width:100% !important;
 .qty-spinner {
     border: 1px solid #c7c7c7;
 }
+.pd-img img {
+    width: 100% !important;
+}
 }
 
 
 @media only screen and (max-width: 1024px) and (min-width: 800px)
 {
 .mbl-display {
-    flex-direction: row !important;
+        flex-direction: column-reverse !important;
 }
 .banner-img img {
     width: 100%;
@@ -1116,8 +1119,9 @@ width: 152px;
 }
 
 .plate-img img{
-        margin-left: 130px !important;
-        margin-top: 60px;
+        margin-left: auto !important;
+        margin-top: 0px;
+        width: 45% !important;
 }
 .te_ftr_add_info img {
     height: 45px;
@@ -1129,8 +1133,11 @@ width: 152px;
  .pd-img img {
     width:100% !important;
 }
+.mb-view{
+margin-top: -260px !important;
+    width: 55% !important;
 }
-
+}
 
 
 .content-draw {
