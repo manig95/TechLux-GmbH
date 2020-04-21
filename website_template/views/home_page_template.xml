@@ -258,7 +258,7 @@
 							<!-- The slideshow -->
 							<div class="carousel-inner">
 								<div class="carousel-item active banner-img">
-									<img src="/website_template/static/img/bmw.png" style="width:100%"/>
+									<img src="/website_template/static/img/bmw-front-img.png" style="width:100%"/>
 									<!--<div class="carousel-caption" style="text-align:right;">
 										&lt;!&ndash;<h1>KLIXX  1.0</h1>&ndash;&gt;
 										<a href="/shop/product/9944-klixx-1-0-1" role="button" class="btn btn-secondary btn-sm a-submit px-3 py-2">Discover</a>

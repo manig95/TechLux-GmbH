@@ -32,7 +32,7 @@
 						</p>
 					</div>
 					<div class="col-lg-12" style="min-height:60px">
-						<div class="row copy-right-box">
+						<div class="row">
 							<div class="col-lg-3 copy-right" style="padding-top: 15px;">
 								<p style="color:#000;">
 									<span>&amp;copy;</span>
@@ -40,46 +40,46 @@
 								</p>
 							</div>
 
-							<div class="col-lg-6 icons-social-media" style="padding: 0;top: 2px;text-align:center;">
+							<div class="col-lg-6" style="padding: 0;top: 2px;text-align:center;">
 								<ul class="te_footer_info_text" style="list-style-type:none;padding: 0;">
 									<li class="te_ftr_add_info">
-										<div style="" class="social">
-											<a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link">
+										<div style="" class="">
+											<a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link scm-icons">
 												<span class="fa-stack" style="display: inline-block">
 													<i class="fa fa-circle fa-stack-2x "/>
 													<i class="fa fa-circle-thin fa-stack-2x"/>
 													<i class="fa fa-facebook fa-stack-1x "/>
 												</span>
 											</a>
-											<a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link">
+											<a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link scm-icons">
 												<span class="fa-stack" style="display: inline-block">
 													<i class="fa fa-circle fa-stack-2x "/>
 													<i class="fa fa-circle-thin fa-stack-2x"/>
 													<i class="fa fa-twitter fa-stack-1x "/>
 												</span>
 											</a>
-											<a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link">
+											<a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link scm-icons">
 												<span class="fa-stack" style="display: inline-block">
 													<i class="fa fa-circle fa-stack-2x "/>
 													<i class="fa fa-circle-thin fa-stack-2x"/>
 													<i class="fa fa-linkedin fa-stack-1x "/>
 												</span>
 											</a>
-											<a t-if="website.social_youtube" t-att-href="website.social_youtube" class="btn btn-sm btn-link">
+											<a t-if="website.social_youtube" t-att-href="website.social_youtube" class="btn btn-sm btn-link scm-icons">
 												<span class="fa-stack" style="display: inline-block">
 													<i class="fa fa-circle fa-stack-2x "/>
 													<i class="fa fa-circle-thin fa-stack-2x"/>
 													<i class="fa fa-youtube fa-stack-1x "/>
 												</span>
 											</a>
-											<a t-if="website.social_github" t-att-href="website.social_github" class="btn btn-sm btn-link">
+											<a t-if="website.social_github" t-att-href="website.social_github" class="btn btn-sm btn-link scm-icons">
 												<span class="fa-stack" style="display: inline-block">
 													<i class="fa fa-circle fa-stack-2x "/>
 													<i class="fa fa-circle-thin fa-stack-2x"/>
 													<i class="fa fa-github fa-stack-1x "/>
 												</span>
 											</a>
-											<a t-if="website.social_instagram" t-att-href="website.social_instagram" class="btn btn-sm btn-link">
+											<a t-if="website.social_instagram" t-att-href="website.social_instagram" class="btn btn-sm btn-link scm-icons">
 												<span class="fa-stack" style="display: inline-block">
 													<i class="fa fa-circle fa-stack-2x "/>
 													<i class="fa fa-circle-thin fa-stack-2x"/>
