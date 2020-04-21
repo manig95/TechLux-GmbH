@@ -258,7 +258,7 @@
 							<!-- The slideshow -->
 							<div class="carousel-inner">
 								<div class="carousel-item active banner-img">
-									<img src="/website_template/static/img/bmw-front.png" style="width:100%"/>
+									<img src="/website_template/static/img/bmw-front-new.png" style="width:100%"/>
 									<!--<div class="carousel-caption" style="text-align:right;">
 										&lt;!&ndash;<h1>KLIXX  1.0</h1>&ndash;&gt;
 										<a href="/shop/product/9944-klixx-1-0-1" role="button" class="btn btn-secondary btn-sm a-submit px-3 py-2">Discover</a>
@@ -542,8 +542,13 @@
 						<div class="col-lg-2 head-txt" style="padding-bottom:20px;">
 							<p>The Animation</p>
 						</div>
-						<video id="video" width="100%" height="100%" preload="auto" playsinline="true" autoplay="true" muted="true" loop="true">
-							<source src="/website_template/static/video/techlux-no-audio.mp4" type="video/mp4"/>
+						<script>
+							document.getElementById('video').addEventListener('loadedmetadata', function() {
+							this.currentTime = 10;
+							}, false);
+						</script>
+						<video width="100%" height="100%" preload="auto" playsinline="true" autoplay="true" muted="true" loop="true">
+							<source src="https://drive.google.com/uc?export=download&amp;id=1yFTPYoy9GOolB0yy2-eF8yg7QtLIcmRt" type='video/mp4'/>
 						</video>
 					</section>
 					<section data-name="title" style="width:100%;float:left;padding-top: 20px;">
