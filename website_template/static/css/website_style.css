@@ -1063,6 +1063,13 @@ width: 152px;
     margin-right: -140px;
     margin-top: 60px;
 }
+.te_ftr_add_info img {
+    height: 45px;
+    }
+
+ .copy-right p{
+    font-size:13px;
+ }
 }
 
 
