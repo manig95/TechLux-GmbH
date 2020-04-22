@@ -1098,7 +1098,7 @@ width:100% !important;
 @media only screen and (max-width: 1024px) and (min-width: 800px)
 {
 .mbl-display {
-        flex-direction: column-reverse !important;
+        flex-direction: row !important;
 }
 .banner-img img {
     width: 100%;
@@ -1119,9 +1119,7 @@ width: 152px;
 }
 
 .plate-img img{
-        margin-left: auto !important;
-        margin-top: 0px;
-        width: 45% !important;
+       width: 78% !important;
 }
 .te_ftr_add_info img {
     height: 45px;
@@ -1133,10 +1131,10 @@ width: 152px;
  .pd-img img {
     width:100% !important;
 }
-.mb-view{
+/*.mb-view{
 margin-top: -260px !important;
     width: 55% !important;
-}
+}*/
 }
 
 
