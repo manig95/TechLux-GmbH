@@ -1150,6 +1150,9 @@ margin-top: -260px !important;
 }
 }
 
+.content-draw {
+    max-width: 500px;
+}
 
  p.txt-thanks {
     display:none;
