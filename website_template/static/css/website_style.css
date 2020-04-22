@@ -1137,10 +1137,19 @@ margin-top: -260px !important;
 }*/
 }
 
-
-.content-draw {
-    max-width: 500px;
+@media only screen and (max-width: 800px)
+{
+.mbl-display {
+    flex-direction: column-reverse !important;
 }
+.mb-view {
+   margin-top: 70px !important;
+}
+.plate-img img{
+    width:100% !important;
+}
+}
+
 
  p.txt-thanks {
     display:none;
