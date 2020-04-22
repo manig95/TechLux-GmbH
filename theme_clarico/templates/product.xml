@@ -33,7 +33,7 @@
 			<attribute name="class">col-lg-2 offset-xl-0 pro-mbl</attribute>
 		</xpath>
 		<xpath expr="//div[@id='product_details']" position="attributes">
-			<attribute name="style">text-align:center;margin-left: 8%;</attribute>
+			<attribute name="style">text-align:center;</attribute>
 		</xpath>
 		<xpath expr="//div[@id='product_details']/h1" position="attributes">
 			<attribute name="class">te_product_name mbl-pr-name</attribute>

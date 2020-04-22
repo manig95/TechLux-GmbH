@@ -1041,8 +1041,14 @@ width:100% !important;
         right: 17px;
         top: -15px;
     }
-}
 
+
+}
+@media only screen and (max-width: 600px){
+.mbl-spinner {
+    margin-left: 31% !important;
+    }
+}
 @media only screen and (max-width: 1023px) and (min-width: 768px)
 {
 .banner-img img {
@@ -1092,6 +1098,14 @@ width:100% !important;
 .pd-img img {
     width: 100% !important;
 }
+.form-group {
+justify-content: center !important;
+}
+
+.cnt-btn {
+margin: 0 auto !important;
+}
+
 }
 
 
