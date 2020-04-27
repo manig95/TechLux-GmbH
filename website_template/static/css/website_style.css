@@ -1121,9 +1121,8 @@ width:100% !important;
     width: 45% !important;
 }
 .mb-view{
-    margin-top: -238px !important;
+   /* margin-top: -238px !important;*/
     width: 60% !important;
-
     }
    .scm-icons{
         font-size: 20px !important;
@@ -1239,7 +1238,7 @@ left: 5px;
 
 }
 
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 991px)
 {
 .mbl-display {
     flex-direction: column-reverse !important;
