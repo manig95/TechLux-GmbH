@@ -34,6 +34,7 @@ $(document).ready(function () {
 				}
 			});
 			$('#coupon-code-view').hide();
+			$('.o_notification_manager').hide();
 			$('#coupon-code-view-show').show();
 		}
 	});

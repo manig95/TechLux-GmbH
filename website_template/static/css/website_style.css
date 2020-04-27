@@ -11,6 +11,8 @@ body {
 
 .const-container .content-area {
 	border: 1px solid transparent;
+	display: grid;
+    grid-template-columns: 20% 80%;
 }
 
 .content-area.right-align {
@@ -22,7 +24,7 @@ bottom: 60px !important;
 
 .const-container .content-area span.box-char {
 	font-size: 78px;
-	float: left;
+	text-align:right;
 }
 
 video {
@@ -33,10 +35,10 @@ video {
 .const-container .content-area blockquote {
 	 border-left: 4px solid #000;
     padding: 0.5em 10px;
-    height: 95px;
+    height: 90%;
     margin: 1.5em 10px 0 0;
     background: #fff;
-    margin-left: 2.7em;
+    margin-left: -8px;
     position: relative;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -1196,7 +1198,7 @@ width: 152px;
 }
 
 .const-container .content-area blockquote {
-    height: 95px;
+    height: 87%;
     width: 400px;
 }
 

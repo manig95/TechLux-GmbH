@@ -560,6 +560,9 @@
 					</section>
 				</div>
 				<div id="openModal" class="modalDialog">
+					<script>
+						o_notification_manager
+					</script>
 					<div class="content-draw">
 						<div class="" style="color:#fff;">
 							<div id="coupon-code-view" class="text-center pop-up-box" style="padding: 15px; text-align: center;">
