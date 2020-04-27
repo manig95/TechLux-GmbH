@@ -65,6 +65,7 @@ $(window).resize(function () {
 	var test = $(window).width();
 	if (test >= "971") {
 		$('#mb-menu-btn').attr('style', 'display: none !important');
+		$('#mbl-menu-open').attr('style', 'display: none !important');
 		document.getElementById("mbl-menu-close").style.display = "none";
 	} else {
 		$('#mb-menu-btn').attr('style', 'display: block !important');
