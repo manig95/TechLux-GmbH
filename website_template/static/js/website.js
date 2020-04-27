@@ -35,7 +35,6 @@ $(document).ready(function () {
 			});
 			$('#coupon-code-view').hide();
 			$('#coupon-code-view-show').show();
-//			$('.o_notification_manager').hide();
 		}
 	});
 });
