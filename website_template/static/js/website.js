@@ -68,7 +68,7 @@ $(window).resize(function () {
 		$('#mbl-menu-open').attr('style', 'display: none !important');
 		document.getElementById("mbl-menu-close").style.display = "none";
 	} else {
-		$('#mb-menu-btn').attr('style', 'display: block !important');
+		/*$('#mb-menu-btn').attr('style', 'display: block !important');*/
 	}
 });
 
