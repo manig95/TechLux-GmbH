@@ -27,8 +27,8 @@ class MassMailController(MassMailController):
         request.session['mass_mailing_email'] = email
         mass_mailing_list = request.env['mailing.list'].sudo().browse(list_id)
 
-        # return {'toast_content': mass_mailing_list.toast_content}
-        return True
+        return {'toast_content': mass_mailing_list.toast_content}
+        # return True
 
 
 class WebsiteCoupon(http.Controller):
