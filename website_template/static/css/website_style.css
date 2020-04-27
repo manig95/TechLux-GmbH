@@ -251,10 +251,11 @@ left: 5px;
 		display: block;
 		text-align: left;
 		padding: 15px 0px;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        padding-left: 1em
 	}
 	.drawe-content {
-		padding: 0 20px;
+		/* padding: 0 20px; */
 		overflow: auto;
 	}
 	.overlay {
@@ -455,17 +456,17 @@ left: 5px;
         padding: 10% 7% 40px 7% !important;
     }
 
-    #product_details #add_to_cart{
+    /* #product_details #add_to_cart{
      margin-left: 30px !important;
-    }
-    .pro-mbl{
+    } */
+    /* .pro-mbl{
         text-align:center !important;
         margin-right:15px !important;
-    }
-    .mbl-spinner{
+    } */
+    /* .mbl-spinner{
         max-width: 350px !important;
         margin-left: 30% !important;
-    }
+    } */
     #o-carousel-product .carousel-outer {
         height: 230px !important;
     }
@@ -1080,9 +1081,9 @@ width:100% !important;
 
 }
 @media only screen and (max-width: 600px){
-.mbl-spinner {
+/* .mbl-spinner {
     margin-left: 31% !important;
-    }
+    } */
 }
 
 @media only screen and (max-width: 320px){
@@ -1132,14 +1133,14 @@ width:100% !important;
 #o-carousel-product .carousel-outer {
         height: unset !important;
     }
-.mbl-spinner{
+/* .mbl-spinner{
         max-width: 350px !important;
         margin-left: 40% !important;
-    }
+    } */
 
-.oe_website_sale .row {
+/* .oe_website_sale .row {
     margin-right: 45px !important;
-}
+} */
 .qty-spinner {
     border: 1px solid #c7c7c7;
 }
@@ -1459,3 +1460,71 @@ display: inline-block !important;
 }
 
 
+/* Oddo CSS file 
+Date: 23-04-2020
+url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&model=ir.ui.view&view_type=form&cids=1&menu_id=4
+*/
+
+
+		    
+.dropdown-menu.show a { line-height: normal !important; padding: 10px !important; }
+.js_language_selector .dropdown-menu.show { height: 100px; }
+.te_user_account .dropdown-menu.dropdown-menu-right.js_usermenu.show { top: 45px; }
+.right-side li:nth-child(2):before {bottom: -8px;}
+.right-side li:last-child a { padding: 0; line-height: 36px; }
+
+.navbar {padding: 0.5rem 1rem;}
+.navbar-brand {line-height: 53px !important;}
+#wrap { margin-top: 55px;}
+
+
+.o_wsale_products_main_row #products_grid .table { table-layout: fixed !important;}
+.o_wsale_products_main_row #products_grid .table td { width: 100%; }
+.o_wsale_products_main_row #products_grid .table td .o_wsale_product_grid_wrapper {
+  height: 280px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#product_detail #o-carousel-product .carousel-item .product-mbl-view {
+  width: 290px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+
+
+@media all and (max-width: 991px) and (min-width: 768px) {
+#product_detail .row #o-carousel-product > .carousel-outer { width: 100%; }
+.oe_website_sale .row { margin-right: 0px !important; }
+.mbl-spinner { max-width: 100% !important; margin-left: auto !important; }
+#product_details #add_to_cart { margin-left: 0 !important; margin-right: 0 !important; }
+
+
+}
+
+@media all and (max-width: 767px) and (min-width: 320px) {
+.mbl-spinner{margin-left:0!important;margin-right:0!important;max-width:100%!important}
+.pro-mbl {margin-right: 0 !important;}
+#product_details { margin-top: 0; }
+#product_details #add_to_cart { margin-left: 0 !important; margin-right: 0 !important; }
+
+}
+
+
+@media only screen and (max-device-width: 768px) {
+#wrap { margin-top: 65px;}
+.mbl-menu-footer{ width: 100% !important; transform: translateX(-35px); padding-left: 34px; }
+.navbar.nv.nav-overwrite .drawe-content {padding: 0 !important;}
+.navbar.nv.nav-overwrite.mbl-menu .drawe-content a { padding-left: 1em; }
+}
+
+@media only screen and (min-device-width: 320px) {
+.navbar { z-index: 1040 !important;}
+}
+
+
+/* Oddo CSS file */

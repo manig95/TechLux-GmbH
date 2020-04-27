@@ -30,7 +30,7 @@
 			<attribute name="class">col-lg-6</attribute>
 		</xpath>
 		<xpath expr="//div[@id='product_details']" position="attributes">
-			<attribute name="class">col-lg-2 offset-xl-0 pro-mbl</attribute>
+			<attribute name="class">col-lg-4 offset-xl-0 pro-mbl</attribute>
 		</xpath>
 		<xpath expr="//div[@id='product_details']" position="attributes">
 			<attribute name="style">text-align:center;</attribute>
