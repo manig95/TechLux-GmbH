@@ -64,7 +64,7 @@ function closeSideMenu() {
 $(window).resize(function () {
 	var test = $(window).width();
 	if (test >= "971") {
-		$('#mb-menu-btn').attr('style', 'display: none !important');
+		$('#mb-menu-btn').attr('style', 'display: none');
 		$('#mbl-menu-open').attr('style', 'display: none !important');
 		document.getElementById("mbl-menu-close").style.display = "none";
 	} else {

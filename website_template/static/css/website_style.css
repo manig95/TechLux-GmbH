@@ -285,6 +285,7 @@ left: 5px;
 		transform: translateX(-35px);
 		border-top: 1px solid rgba(255, 255, 255, 0.25);
 		padding: 15px 0;
+		padding-left: 34px;
 		-webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.25) inset;
 		box-shadow: 0 1px rgba(255, 255, 255, 0.25) inset;
 	}
@@ -1474,6 +1475,7 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 .te_user_account .dropdown-menu.dropdown-menu-right.js_usermenu.show { top: 45px; }
 .right-side li:nth-child(2):before {bottom: -8px;}
 .right-side li:last-child a { padding: 0; line-height: 36px; }
+ span.te_user_account_name { padding-right: 10px; }
 
 .navbar {padding: 0.5rem 1rem;}
 .navbar-brand {line-height: 53px !important;}
