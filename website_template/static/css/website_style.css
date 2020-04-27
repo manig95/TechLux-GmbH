@@ -1080,16 +1080,16 @@ width:100% !important;
 
 
 }
-@media only screen and (max-width: 600px){
-/* .mbl-spinner {
+/*@media only screen and (max-width: 600px){
+*//* .mbl-spinner {
     margin-left: 31% !important;
-    } */
-}
+    } *//*
+}*/
 
 @media only screen and (max-width: 320px){
-    .mbl-spinner{
+   /* .mbl-spinner{
         margin-left: 28% !important;
-    }
+    }*/
     #product_details {
         margin-top: -32px !important;
     }
