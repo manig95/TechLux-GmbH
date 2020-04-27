@@ -1073,10 +1073,10 @@ width:100% !important;
         display:block;
     }
 
-    .close-popup {
+   /* .close-popup {
         right: 17px;
         top: -15px;
-    }
+    }*/
 
 
 }
@@ -1303,6 +1303,7 @@ display: block;
 
 #coupon-code-view-show {
     display: none;
+    position: relative;
 }
 
 .side-menu-close {
