@@ -1488,18 +1488,19 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 }
 
 .o_wsale_products_main_row #products_grid .table { table-layout: fixed !important;}
-.o_wsale_products_main_row #products_grid .table td { width: 100%; }
+.o_wsale_products_main_row #products_grid .table td {text-align: center; vertical-align: middle; }
 .o_wsale_products_main_row #products_grid .table td .o_wsale_product_grid_wrapper {
-  height: 280px;
-  width: 280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+    min-height: 300px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 22px;
 }
 #product_detail #o-carousel-product .carousel-item .product-mbl-view {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -1538,6 +1539,10 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
     display: none;
 }
 .o_footer > #footer { margin-bottom: 10px; }
+
+#product_detail #o-carousel-product .carousel-item .product-mbl-view {
+  width: 300px;
+  height: 300px;}
 }
 
 @media only screen and (min-device-width: 320px) {
