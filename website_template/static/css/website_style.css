@@ -1531,7 +1531,8 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 .navbar.nv.nav-overwrite .drawe-content {padding: 0 !important;}
 .navbar.nv.nav-overwrite.mbl-menu .drawe-content a { padding-left: 1em; }
 .te_prod_cart_wish .a-submit.cart-btn {
-    font-size: 14px;
+    font-size: 14px !important;
+    width: 100% !important;
 }
 }
 
