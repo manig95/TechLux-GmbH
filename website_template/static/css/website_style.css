@@ -1483,6 +1483,9 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 .contact-form .form-group {
     justify-content: center;
 }
+.input-group-prepend, .input-group-append {
+    justify-content: center;
+}
 
 .o_wsale_products_main_row #products_grid .table { table-layout: fixed !important;}
 .o_wsale_products_main_row #products_grid .table td { width: 100%; }
@@ -1527,6 +1530,9 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 .mbl-menu-footer{ width: 100% !important; transform: translateX(-35px); padding-left: 34px; }
 .navbar.nv.nav-overwrite .drawe-content {padding: 0 !important;}
 .navbar.nv.nav-overwrite.mbl-menu .drawe-content a { padding-left: 1em; }
+.te_prod_cart_wish .a-submit.cart-btn {
+    font-size: 14px;
+}
 }
 
 @media only screen and (min-device-width: 320px) {
