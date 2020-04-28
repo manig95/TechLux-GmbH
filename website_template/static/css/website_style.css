@@ -1480,7 +1480,9 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 .navbar {padding: 0.5rem 1rem;}
 .navbar-brand {line-height: 53px !important;}
 #wrap { margin-top: 55px;}
-
+.contact-form .form-group {
+    justify-content: center;
+}
 
 .o_wsale_products_main_row #products_grid .table { table-layout: fixed !important;}
 .o_wsale_products_main_row #products_grid .table td { width: 100%; }
