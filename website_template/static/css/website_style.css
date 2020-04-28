@@ -1534,6 +1534,10 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
     font-size: 14px !important;
     width: 100% !important;
 }
+.images-payment {
+    display: none;
+}
+.o_footer > #footer { margin-bottom: 10px; }
 }
 
 @media only screen and (min-device-width: 320px) {
