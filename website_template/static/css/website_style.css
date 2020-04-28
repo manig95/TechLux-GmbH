@@ -1549,6 +1549,10 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 #o-carousel-product .carousel-control-prev, #o-carousel-product .carousel-control-next { height: auto; top: 0; }
 }
 
+.h-100{
+    height: unset !important;
+}
+
 @media only screen and (min-device-width: 320px) {
 .navbar { z-index: 1040 !important;}
 }
