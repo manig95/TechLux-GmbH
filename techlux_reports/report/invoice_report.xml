@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="account.report_invoice_document">
+		<t t-call="techlux_reports.invoice_external_layout_standard">
+			<t t-set="o" t-value="o.with_context(lang=lang)"/>
+
+			<div class="page" style="padding-left:20px;margin-left:45px;margin-right:45px">
+
+				<div id="information_block" style="padding-left:20px;padding-top:22px;padding-bottom:30px;float:left;">
+					<!-- <table style="width:300px;">
+						<tr>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.invoice_origin">
+									<strong >Our Reference</strong>
+								</span>
+							</td>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.invoice_origin" t-field="o.invoice_origin"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.invoice_date">
+									<strong>Order Date</strong>
+								</span>
+							</td>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.invoice_date" t-field="o.invoice_date"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.ref">
+									<strong>Your Reference</strong>
+								</span>
+							</td>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.ref" t-field="o.ref"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.company_id.vat">
+									<strong>VAT No.</strong>
+								</span>
+							</td>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.company_id.vat" t-field="o.company_id.vat"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.invoice_date">
+									<strong>Invoice Date</strong>
+								</span>
+							</td>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.invoice_date" t-field="o.invoice_date"/>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.invoice_date_due">
+									<strong>Due Date</strong>
+								</span>
+							</td>
+							<td>
+								<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-if="o.invoice_date_due" t-field="o.invoice_date_due"/>
+							</td>
+						</tr>
+
+					</table> -->
+
+					<div class="row" t-if="o.invoice_date">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
+							<strong>Order Date</strong>
+						</div>
+						<div style="line-height:15px;width:150px;">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_date"/>
+						</div>
+					</div>
+					<div class="row" t-if="o.invoice_origin">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
+							<strong>Order Number</strong>
+						</div>
+						<div style="line-height:15px;width:150px;">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_origin"/>
+						</div>
+					</div>
+					<div class="row" t-if="o.ref">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
+							<strong>Your Reference</strong>
+						</div>
+						<div style="line-height:15px;width:150px;">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.ref"/>
+						</div>
+					</div>
+					<div class="row" t-if="o.invoice_user_id">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
+							<strong>Our Reference</strong>
+						</div>
+						<div style="line-height:15px;width:150px;">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_user_id"/>
+						</div>
+					</div>
+					<div class="row" t-if="o.company_id.vat">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
+							<strong>VAT No.</strong>
+						</div>
+						<div style="line-height:15px;width:150px;">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.company_id.vat"/>
+						</div>
+					</div>
+					<div class="row" t-if="o.invoice_date">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
+							<strong>Invoice Date</strong>
+						</div>
+						<div style="line-height:15px;width:150px;">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_date"/>
+						</div>
+					</div>
+					<div class="row" t-if="o.invoice_date_due">
+						<div style="width:150px;line-height:15px;font-family: &quot;Montserrat&quot;;font-size:13px;">
+							<strong>Due Date</strong>
+						</div>
+						<div style="line-height:15px;width:150px;">
+							<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_date_due"/>
+						</div>
+					</div>
+				</div>
+
+				<div style="padding: 3% 0 0 65%;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;margin-top:50px;margin-left:30px;">
+				<address t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+    				<div style="display:none;" t-if="o.partner_id.vat" class="mt16">
+    					<t style="display:none;font-family: &quot;Montserrat&quot;;font-size:13px;" t-if="o.company_id.country_id.vat_label" t-esc="o.company_id.country_id.vat_label" id="inv_tax_id_label"/>
+    					<t style="display:none;font-family: &quot;Montserrat&quot;;font-size:13px;" t-else="">Tax ID</t>:
+    					<span style="display:none;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.partner_id.vat"/>
+    				</div>
+
+			</div>
+
+				<div id="informations" class="row" style="display:none">
+					<div class="col-auto mw-100 mb-2" t-if="o.invoice_date" name="invoice_date">
+						<strong>Invoice Date:</strong>
+						<p class="m-0" t-field="o.invoice_date"/>
+					</div>
+					<div class="col-auto mw-100 mb-2" t-if="o.invoice_date_due and o.type == 'out_invoice' and o.state == 'posted'" name="due_date">
+						<strong>Due Date:</strong>
+						<p class="m-0" t-field="o.invoice_date_due"/>
+					</div>
+					<div class="col-auto mw-100 mb-2" t-if="o.invoice_origin" name="origin">
+						<strong>Source:</strong>
+						<p class="m-0" t-field="o.invoice_origin"/>
+					</div>
+					<div class="col-auto mw-100 mb-2" t-if="o.partner_id.ref" name="customer_code">
+						<strong>Customer Code:</strong>
+						<p class="m-0" t-field="o.partner_id.ref"/>
+					</div>
+					<div class="col-auto mw-100 mb-2" t-if="o.ref" name="reference">
+						<strong>Reference:</strong>
+						<p class="m-0" t-field="o.ref"/>
+					</div>
+				</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<div name="inv_name" class="text-left">
+					<h2>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'posted'">Invoice</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_invoice' and o.state == 'cancel'">Cancelled Invoice</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'out_refund'">Credit Note</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'in_refund'">Vendor Credit Note</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.type == 'in_invoice'">Vendor Bill</span>
+						<span style="font-family: &quot;Montserrat&quot;;font-size:22px;font-weight: 700;" t-if="o.name != '/'" t-field="o.name"/>
+					</h2>
+					<br/>
+				</div>
+				<t t-set="display_discount" t-value="any([l.discount for l in o.invoice_line_ids])"/>
+
+				<table class="table table-sm o_main_table" name="invoice_line_table">
+					<thead>
+						<tr style="border-bottom: 1px solid black;">
+							<!-- TODO: remove in master -->
+							<t t-set="colspan" t-value="6"/>
+							<th style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 600;" name="th_description" class="text-left">
+								<span>Description</span>
+							</th>
+							<th style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 600;" name="th_product" class="text-left">
+								<span>Product</span>
+							</th>
+							<th style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 600;" name="th_source" class="d-none text-left">
+								<span>Source Document</span>
+							</th>
+							<th style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 600;" name="th_quantity" class="text-right">
+								<span>Quantity</span>
+							</th>
+							<th style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 600;" name="th_priceunit" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+								<span>Unit Price</span>
+							</th>
+							<th style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 600;" name="th_price_unit" t-if="display_discount" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+								<span>Disc.%</span>
+								<!-- TODO: remove in master -->
+								<t t-set="colspan" t-value="colspan+1"/>
+							</th>
+							<th style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 600;" name="th_taxes" t-attf-class="text-left {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+								<span>Taxes</span>
+							</th>
+							<th style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 600;" name="th_subtotal" class="text-right">
+								<span groups="account.group_show_line_subtotals_tax_excluded">Price</span>
+								<span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
+							</th>
+						</tr>
+					</thead>
+					<tbody class="invoice_tbody" style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;">
+						<t t-set="current_subtotal" t-value="0"/>
+
+						<t t-foreach="o.invoice_line_ids" t-as="line">
+
+							<t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal" groups="account.group_show_line_subtotals_tax_excluded"/>
+							<t t-set="current_subtotal" t-value="current_subtotal + line.price_total" groups="account.group_show_line_subtotals_tax_included"/>
+
+							<tr t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">
+								<t t-if="not line.display_type" name="account_invoice_line_accountable">
+									<td name="account_invoice_line_name">
+										<span t-field="line.name"/>
+									</td>
+									<td name="product">
+										<span t-field="line.product_id.name"/>
+									</td>
+									<td class="text-right">
+										<span t-esc="'%.f'%(line.quantity)"/>
+										<span t-field="line.product_uom_id" groups="uom.group_uom"/>
+									</td>
+									<td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+										<span t-esc="str('%.2f'%line.price_unit).replace('.', ',')"/>
+									</td>
+									<td t-if="display_discount" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+										<span t-esc="str('%.2f'%line.discount).replace('.', ',')"/>
+									</td>
+									<td t-attf-class="text-left {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+										<span t-esc="', '.join(map(lambda x: (x.description or x.name), line.tax_ids))" id="line_tax_ids"/>
+									</td>
+									<td class="text-right o_price_total">
+										<span t-esc="str('%.2f'%line.price_subtotal).replace('.', ',')"  groups="account.group_show_line_subtotals_tax_excluded"/> CHF
+										<span t-esc="str('%.2f'%line.price_total).replace('.', ',')"  groups="account.group_show_line_subtotals_tax_included"/>
+									</td>
+								</t>
+								<t t-if="line.display_type == 'line_section'">
+									<td colspan="99">
+										<span t-field="line.name"/>
+									</td>
+									<t t-set="current_section" t-value="line"/>
+									<t t-set="current_subtotal" t-value="0"/>
+								</t>
+								<t t-if="line.display_type == 'line_note'">
+									<td colspan="99">
+										<span t-field="line.name"/>
+									</td>
+								</t>
+							</tr>
+
+							<t t-if="current_section and (line_last or o.invoice_line_ids[line_index+1].display_type == 'line_section')">
+								<tr class="is-subtotal text-right">
+									<td colspan="99">
+										<strong class="mr16">Total</strong>
+										<span t-esc="str('%.2f'%current_subtotal).replace('.', ',')" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+									</td>
+								</tr>
+							</t>
+						</t>
+					</tbody>
+				</table>
+
+				<div class="clearfix" name="so_total_summary">
+                    <div id="total" class="row"  name="total">
+                        <div t-attf-class="#{'col-5' if report_type != 'html' else 'col-sm-7 col-md-5'} ml-auto">
+                            <table class="table table-sm;">
+                                <tr class="border-black o_subtotal" style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;">
+                                    <td name="td_amount_untaxed_label" style="padding: 0.30rem;">
+                                    	<strong>Total</strong>
+                                    </td>
+                                    <td  name="td_amount_untaxed" class="text-right" style="padding: 0.30rem;">
+                                        <span t-esc="str('%.2f'%o.amount_untaxed).replace('.', ',')" /><span> CHF</span>
+                                    </td>
+                                </tr>
+                                <t t-foreach="o.amount_by_group" t-as="amount_by_group">
+                                    <tr style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;">
+                                        <t t-if="len(o.line_ids.filtered(lambda line: line.tax_line_id)) == 1 and o.amount_untaxed == amount_by_group[2]">
+                                            <td name="td_amount_by_group_label_3" style="padding: 0.30rem;">
+                                            	<t t-set="vat_translate" t-value="str(amount_by_group[0]).replace('.', ',')"/>
+												<span t-esc="str(vat_translate).replace('MwSt','MwSt.')"/>
+											<span>&amp;nbsp;</span></td>
+                                            <td name="td_amount_by_group_3" class="text-right o_price_total" style="padding: 0.30rem;">
+                                                <span t-esc="str(amount_by_group[3]).replace('.', ',')"/>
+                                            </td>
+                                        </t>
+                                        <t t-else="">
+                                            <td name="td_amount_by_group_label" style="padding: 0.30rem;">
+                                                <t t-set="vat_translate" t-value="str(amount_by_group[0]).replace('.', ',')"/>
+												<span t-esc="str(vat_translate).replace('MwSt','MwSt.')"/>
+                                                <span>&amp;nbsp;
+                                                    <t t-esc="str(amount_by_group[4]).replace('.', ',')"/>
+                                                </span>
+                                            </td>
+                                            <td name="td_amount_by_group" class="text-right o_price_total" style="padding: 0.30rem;">
+                                                <span t-esc="str(amount_by_group[3]).replace('.', ',')"/>
+                                            </td> 
+                                        </t>
+                                    </tr>
+                                </t>
+                                <tr class="border-black o_total">
+                                    <td name="td_amount_total_label" style="padding: 0.30rem;font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 400;"><strong>Total incl. VAT</strong></td>
+                                    <td name="td_amount_total" class="text-right" style="padding: 0.30rem;font-size:13px;">
+                                        <span t-esc="str('%.2f'%o.amount_total).replace('.', ',')"/> CHF
+                                    </td>
+                                </tr>
+                               <!--  <tr class="border-black o_total" t-if="o.amount_residual">
+                                    <td style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;"><strong>Amount Due</strong></td>
+                                    <td class="text-right" style="font-size:13px;">
+                                        <span t-esc="str('%.2f'%o.amount_residual).replace('.', ',')"/> CHF
+                                    </td>
+                                </tr> -->
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+				<div style="margin-top:15px;">
+					
+						<t>
+							<table style="width:300px;">
+								<tr  t-if="o.partner_id" >
+									<td>
+										<span t-if="o.partner_id" style="font-family: &quot;Montserrat&quot;;font-size:13px;">
+											<strong>Invoicing Address</strong>
+										</span>
+									</td>
+									<td>
+										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+									</td>
+								</tr>
+								<tr  t-if="o.partner_shipping_id" >
+									<td>
+										<span t-if="o.partner_shipping_id" style="font-family: &quot;Montserrat&quot;;font-size:13px;">
+											<strong>Shipping Address</strong>
+										</span>
+									</td>
+									<td>
+										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.partner_shipping_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+									</td>
+								</tr>
+								<tr t-if="o.invoice_payment_term_id">
+									<td>
+										<p t-if="o.invoice_payment_term_id" style="font-family: 'Montserrat', sans-serif;font-size:13px;">
+											<strong>Payment Terms</strong>
+										</p>
+									</td>
+									<td>
+										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.invoice_payment_term_id.note"/>
+									</td>
+								</tr>
+								<!-- <tr t-if="o.narration">
+									<td>
+										<p t-if="o.narration" style="font-family: 'Montserrat', sans-serif;font-size:13px;">
+											<strong>Comment</strong>
+										</p>
+									</td>
+									<td>
+										<span style="padding-top:20pxfont-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.narration"/>
+									</td>
+								</tr> -->
+							</table>
+						</t>
+					
+				</div>
+		
+				<!-- <p t-if="o.invoice_payment_term_id" name="payment_term">
+					<span t-field="o.invoice_payment_term_id.note"/>
+				</p> -->
+				<!-- <p t-if="o.fiscal_position_id.note" name="note">
+					<span t-field="o.fiscal_position_id.note"/>
+				</p> -->
+				<div id="qrcode" t-if="(o.company_id.qr_code) and (o.currency_id.name == 'EUR') and (o.invoice_partner_bank_id.acc_number != False)">
+					<p t-if="(o.invoice_partner_bank_id.qr_code_valid)">
+						<strong class="text-center">Scan me with your banking app.</strong>
+						<br/>
+						<br/>
+						<img class="border border-dark rounded" t-att-src="o.invoice_partner_bank_id.build_qr_code_url(o.amount_residual,(o.ref) if (o.ref) else o.name)"/>
+					</p>
+					<p t-if="(o.invoice_partner_bank_id.qr_code_valid == False)">
+						<strong class="text-center">The SEPA QR Code informations are not set correctly.</strong>
+						<br/>
+					</p>
+				</div>
+			</div>
+		</t>
+	</template>
+
+	<template  id="assets_common_inherit_isr" name="l10n_ch_isr_report_inherit" inherit_id="l10n_ch.l10n_ch_isr_report_template">
+		 <xpath expr="t[@t-call='web.external_layout']" position="replace">
+            <t t-call="techlux_reports.esr_external_layout_standard">
+                <t t-set="split_total_amount" t-value="invoice.split_total_amount()"/>
+                <t t-set="print_bank" t-value="invoice.company_id.l10n_ch_isr_print_bank_location"/>
+
+                <!-- add class to body tag -->
+                <script>document.body.className += " l10n_ch_isr";</script>
+
+                <!-- since the body content take the whole page we need a way to add margin
+                     back on content outside the ISR so it does not overlap with the header -->
+                <div id="content_outside_isr">
+                    <!-- <h1>ISR for invoice <t t-esc="invoice.name"/></h1> -->
+                </div>
+
+                <div id="isr" t-att-class="'isr-print-bank' if print_bank else None" style="background: url(/techlux_reports/static/img/background_virgin_isr.png) bottom no-repeat;
+            background-size: 100%;">
+
+                    <!--Voucher, left part of the ISR.-->
+                    <div id="voucher">
+                        <!--Einzahlung für/Versement pour/Versamento per-->
+
+                        <!--If we use the alternate ISR layout, displaying name
+                        and location of the bank.-->
+                        <t t-if="print_bank">
+                            <div id="voucher-for-bank">
+                                <p t-if="not invoice.company_id.l10n_ch_isr_preprinted_bank">
+                                    <t t-esc="invoice.invoice_partner_bank_id.bank_id.name"/><br />
+                                    <t t-esc="invoice.invoice_partner_bank_id.bank_id.zip"/>
+                                    <t t-esc="invoice.invoice_partner_bank_id.bank_id.city"/>
+                                </p>
+                            </div>
+                            <!--Zugunsten von/En faveur de/A favore di-->
+                        </t>
+                        <div id="voucher-for-contact">
+                            <p id="voucher-for_name" t-field="invoice.company_id.display_name"/>
+                            <p id="voucher-for_address1" t-field="invoice.company_id.street"/>
+                            <p id="voucher-for_address2" t-field="invoice.company_id.street2"/>
+                            <p id="voucher-for_address3">
+                                <t t-esc="invoice.company_id.zip"/>
+                                <t t-esc="invoice.company_id.city"/>
+                            </p>
+                        </div>
+
+                        <div id="voucher-bank" t-if="not print_bank or not invoice.company_id.l10n_ch_isr_preprinted_account">
+                            <!--Konto/Compte/Conto-->
+                            <p id="voucher-bank_ref" t-field="invoice.l10n_ch_isr_subscription_formatted"/>
+                        </div>
+
+                        <p id="voucher-amount_units" t-esc="split_total_amount[0]"/>
+                        <p id="voucher-amount_cents" t-esc="split_total_amount[1]"/>
+
+                        <div id="voucher-by">
+                            <!--Einbezahlt von/Versé par/Versato da-->
+                            <p id="voucher-by_reference_number" t-field="invoice.l10n_ch_isr_number"/>
+                            <address id="voucher-by_customer_address" t-field="invoice.partner_id" t-options='{"widget": "contact", "fields": ["address","name"], "no_marker": True}' />
+                        </div>
+                    </div>
+
+                    <!--Slip, right part of the ISR.-->
+                    <div id="slip">
+                        <!--Einzahlung für/Versement pour/Versamento per-->
+
+                        <!--If we use the alternate ISR layout, displaying name
+                        and location of the bank.-->
+                        <t t-if="print_bank">
+                            <div id="slip-for-bank">
+                                <p t-if="not invoice.company_id.l10n_ch_isr_preprinted_bank">
+                                    <t t-esc="invoice.invoice_partner_bank_id.bank_id.name"/><br />
+                                    <t t-esc="invoice.invoice_partner_bank_id.bank_id.zip"/>
+                                    <t t-esc="invoice.invoice_partner_bank_id.bank_id.city"/>
+                                </p>
+                            </div>
+                            <!--Zugunsten von/En faveur de/A favore di-->
+                        </t>
+
+                        <div id="slip-for-contact">
+                            <p id="slip-for_name" t-field="invoice.company_id.display_name"/>
+                            <p id="slip-for_address1" t-field="invoice.company_id.street"/>
+                            <p id="slip-for_address2" t-field="invoice.company_id.street2"/>
+                            <p id="slip-for_address3">
+                                <t t-esc="invoice.company_id.zip"/>
+                                <t t-esc="invoice.company_id.city"/>
+                            </p>
+                        </div>
+
+                        <div id="slip-bank" t-if="not print_bank or not invoice.company_id.l10n_ch_isr_preprinted_account">
+                            <!--Konto/Compte/Conto-->
+                            <!--aka ISR Subscriber number provided by the financial institution-->
+                            <p id="slip-bank_ref" t-field="invoice.l10n_ch_isr_subscription_formatted"/>
+                        </div>
+
+                        <p id="slip-amount_units" t-esc="split_total_amount[0]"/>
+                        <p id="slip-amount_cents" t-esc="split_total_amount[1]"/>
+
+                        <div id="slip-reference">
+                            <!--Referenz-Nr./N°de référence/N°di riferimento-->
+                            <p id="slip-reference_number" t-field="invoice.l10n_ch_isr_number_spaced"/>
+                        </div>
+
+                        <div id="slip-by">
+                            <!--Einbezahlt von/Versé par/Versato da-->
+                            <address id="slip-by_customer_address" t-field="invoice.partner_id" t-options='{"widget": "contact", "fields": ["address","name"], "no_marker": True}' />
+                        </div>
+
+                        <div id="slip-optical-line">
+                            <!--Optical reference-->
+                            <div t-attf-style="top: {{ invoice.company_id.l10n_ch_isr_scan_line_top }}mm; left: {{ invoice.company_id.l10n_ch_isr_scan_line_left }}mm;">
+                                <div t-foreach="invoice.l10n_ch_isr_optical_line" t-as="char" t-esc="char" t-attf-style="right: {{ round((char_size - char_index - 1) * 0.1, 1) }}in"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+           </xpath>
+        </template>
+</odoo>

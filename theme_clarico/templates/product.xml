@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!--=================== Product ========================-->
+	<template id="product_ept" inherit_id="website_sale.product" name="product" priority="16">
+		<xpath expr="//div[hasclass('row')]/div[hasclass('col-md-4')]"
+			   position="replace">
+		</xpath>
+		<xpath expr="//hr[@t-if='product.description_sale']" position="replace"/>
+		<xpath expr="//p[@t-field='product.description_sale']" position="replace"/>
+		<xpath expr="//section[@id='product_detail']" position="before">
+			<div class="te_product_breadcrumb">
+				<ol class="breadcrumb">
+					<section class="container">
+						<li class="breadcrumb-item">
+							<a t-att-href="keep(category=0)">Products</a>
+						</li>
+						<li t-if="category" class="breadcrumb-item">
+							<a t-att-href="keep('/shop/category/%s' % slug(category), category=0)"
+							   t-field="category.name"/>
+						</li>
+						<li class="breadcrumb-item active">
+							<span t-field="product.name"/>
+						</li>
+					</section>
+				</ol>
+			</div>
+		</xpath>
+		<xpath expr="//div[hasclass('row')]/div[hasclass('col-md-6')]"
+			   position="attributes">
+			<attribute name="class">col-lg-6</attribute>
+		</xpath>
+		<xpath expr="//div[@id='product_details']" position="attributes">
+			<attribute name="class">col-lg-4 offset-xl-0 pro-mbl</attribute>
+		</xpath>
+		<xpath expr="//div[@id='product_details']" position="attributes">
+			<attribute name="style">text-align:center;</attribute>
+		</xpath>
+		<xpath expr="//div[@id='product_details']/h1" position="attributes">
+			<attribute name="class">te_product_name mbl-pr-name</attribute>
+			<attribute name="style">text-transform:uppercase !important;font-family: DINNextLTPro-Regular;font-weight:600;margin-top:25px;font-size:25px;letter-spacing:1.92px;</attribute>
+		</xpath>
+		<xpath expr="//div[@id='product_details']/h1" position="after">
+			<span id="te_rect_cnt" class="d-none" t-esc="website.number_of_product_line"/>
+		</xpath>
+		<xpath expr="//div[@id='product_details']/hr" position="attributes">
+			<attribute name="style">display:none;</attribute>
+		</xpath>
+
+		<xpath expr="//h1[@t-field='product.name']" position="after">
+			<div class="o_not_editable">
+				<p t-field="product.description_sale" class="te_prod_desc"/>
+			</div>
+			<div class="te_time_main_div">
+				<div class="timer_data"/>
+				<div class="te_display_end_date"/>
+			</div>
+		</xpath>
+		<xpath expr="//t[@t-call='website_sale.pricelist_list']"
+			   position="replace">
+		</xpath>
+		<xpath expr="//t[@t-call='website_sale.product_price']"
+			   position="replace"></xpath>
+		<xpath expr="//t[@t-placeholder='select']" position="before">
+			<t t-call="website_sale.product_price"/>
+		</xpath>
+		<xpath expr="//div[@id='product_full_description']" position="replace">
+			<div itemprop="description" t-field="product.website_description"
+				 class="oe_structure container te_product_tab tab1C" id="product_full_description"/>
+		</xpath>
+		<xpath expr="//div[@id='product_option_block']" position="after">
+			<div class="availability_messages o_not_editable"/>
+		</xpath>
+		<!-- Social buttons to share product -->
+		<xpath expr="//div[@id='product_details']/p[last()]" position="after">
+			<div class="product_share">
+				<div class="oe_share s_share">
+					<t t-if="website.facebook_sharing">
+						<a target="_Blank" href="https://www.facebook.com/sharer/sharer.php?u={url}"
+						   class="oe_share_icon">
+							<span class="fa fa-facebook"/>
+						</a>
+					</t>
+					<t t-if="website.twitter_sharing">
+						<a target="_Blank" href="https://twitter.com/intent/tweet?text={title}&amp;url={url}"
+						   class="oe_share_icon">
+							<span class="fa fa-twitter"/>
+						</a>
+					</t>
+					<t t-if="website.linkedin_sharing">
+						<a target="_Blank"
+						   href="http://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title={title}&amp;"
+						   class="oe_share_icon">
+							<span class="fa fa-linkedin"/>
+						</a>
+					</t>
+					<t t-if="website.mail_sharing">
+						<a href="mailto:?body={url}&amp;subject={title}" class="oe_share_icon">
+							<span class="fa fa-envelope-o"/>
+						</a>
+					</t>
+				</div>
+			</div>
+		</xpath>
+		<xpath expr="//section[@id='product_detail']" position="inside">
+			<!-- Tabs -->
+			<div class="col-lg-8 pt16 pb16" style="margin-left: auto;margin-right: auto;">
+				<div class="panel panel-default">
+					<div style="" class="product_panel">Product Specification</div>
+					<div style="text-align:center;border: 1px solid #f0f1f2;color:#000;">
+						<div class="product-cnt">
+							<h6 style="padding-top: 20px;padding-bottom: 15px;font-size: 16px;">DETAILS</h6>
+							<p>Patented TWO-WAVE change system</p>
+							<p><img src="/website_template/static/img/hexagon.png" style="width:12px;"/></p>
+							<p>Suitable for every generation vehicle</p>
+							<p><img src="/website_template/static/img/hexagon.png" style="width:12px;"/></p>
+							<p>Tested and approved for road traffic</p>
+						</div>
+						<div>
+							<h6 style="padding-top: 20px;padding-bottom: 15px;font-size: 16px;" >CONTENTS</h6>
+							<p>Complete set for the front and rear SWISS control plates</p>
+							<p><img src="/website_template/static/img/hexagon.png" style="width:12px;"/></p>
+							<p>Screws for fastening to the vehicle</p>
+							<p><img src="/website_template/static/img/hexagon.png" style="width:12px;"/></p>
+							<p>Operation manual</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<div id="myCollapse" class="accordion" role="tablist" style="width:100%;">
+				<div class="card bg-100 text-sm-center-x" style="">
+					<a href="#" style="color: #000;text-transform:uppercase;font-weight:600;" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse"
+					   data-target="#myCollapseTab1581336318358" data-original-title=""
+					   title="" aria-describedby="tooltip574330">Product Specification
+					</a>
+					<div class="collapse" role="tabpanel" id="myCollapseTab1581336318358" style="">
+						<div class="card-body" style="border-bottom: 1px solid #e8e8e8;">
+							<div class="wpsm_panel wpsm_panel-default"
+								 style="margin: 0px; padding: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 16px; line-height: inherit; vertical-align: baseline; background-color: rgb(255, 255, 255); border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px; overflow: hidden; color: rgb(119, 119, 119); border: 1px solid transparent !important;">
+								<div id="ac_1032_collapse1" class="wpsm_panel-collapse collapse in" aria-expanded="true"
+									 style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; display: block;">
+									<div class="wpsm_panel-body"
+										 style="color: rgb(0, 0, 0) !important;">
+										<font style="font-size: 14px;">
+											<span t-field="product.website_description"/>
+										</font>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+			<!--</li>-->
+			<!--<t t-set="categories"
+			   t-value="product.valid_product_template_attribute_line_ids._prepare_categories_for_display()"/>
+			<t t-if="categories">
+				<li class="specification_li">
+					<a id="tab2">Specification</a>
+				</li>
+			</t>-->
+			<!--<li class="rating_review_li">
+				<a id="tab3">Ratings and Reviews</a>
+			</li>-->
+			<!--</ul>-->
+		</xpath>
+		<xpath expr="//div[@id='product_details']/hr" position="after">
+			<t t-if="request.website.viewref('theme_clarico.product_brand_container').active">
+				<t t-call="theme_clarico.product_brand_container"/>
+			</t>
+		</xpath>
+		<xpath expr="//div[@id='product_full_description']" position="after">
+			<!--=========================== Alternative Products ===========================-->
+			<div class="recommended_product_slider_main container">
+				<t t-if="request.website.viewref('website_sale.recommended_products').active">
+					<div t-if="product.alternative_product_ids"
+						 t-attf-class="alternative_product_main #{'full-width' if not product.accessory_product_ids else ''}">
+						<div id="myCarousel_alt_prod" class=""
+							 data-interval="5000">
+							<h3 class="te_product_alt_h3">Alternative Products</h3>
+							<div class="owl-carousel">
+								<t t-foreach="product.alternative_product_ids" t-as="alt_product">
+									<div class="border mt16 prod_details">
+										<div class="oe_product_image">
+											<a t-attf-href="/shop/product/#{ slug(alt_product) }">
+												<div t-field="alt_product.image_512" class="new_span dd_shop_prod_bg"
+													 t-options='{"widget": "image", "alt-field": "name"}'/>
+											</a>
+										</div>
+										<section class="alt_detail_section">
+											<a class="product_name"
+											   t-attf-href="/shop/product/#{ slug(alt_product) }">
+												<h6>
+													<span t-att-title="alt_product.name" t-field="alt_product.name"
+														  t-attf-class="alt_prod_name #{'te_2_line' if (website.number_of_product_line == '2') else 'te_3_line' if (website.number_of_product_line == '3') else ''}"/>
+												</h6>
+											</a>
+											<del t-attf-class="te_shop_del mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}"
+												 style="white-space: nowrap;" t-esc="alt_product.list_price"
+												 t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+											<span t-if="combination_info['price']" t-esc="alt_product.price"
+												  t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+											<span itemprop="price" style="display:none;" t-esc="alt_product.price"/>
+											<span itemprop="priceCurrency" style="display:none;"
+												  t-esc="website.currency_id.name"/>
+										</section>
+									</div>
+								</t>
+							</div>
+						</div>
+					</div>
+				</t>
+				<!--===================== Accesories Products =========================-->
+				<div t-if="product.accessory_product_ids"
+					 t-attf-class="accessory_product_main #{'full-width' if (not product.alternative_product_ids or not request.website.viewref('website_sale.recommended_products').active) else ''}">
+					<div id="myCarousel_acce_prod" class=""
+						 data-interval="5000">
+						<h3 class="te_product_alt_h3">Accessories Products</h3>
+						<div class="owl-carousel">
+							<t t-foreach="product.accessory_product_ids" t-as="alt_product">
+								<div class="border mt16 prod_details">
+									<div class="oe_product_image">
+										<a t-attf-href="/shop/product/#{ slug(alt_product.product_tmpl_id) }">
+											<div t-field="alt_product.image_512" class="new_span dd_shop_prod_bg"
+												 t-options='{"widget": "image", "alt-field": "name"}'/>
+										</a>
+									</div>
+									<section class="alt_detail_section">
+										<a class="product_name"
+										   t-attf-href="/shop/product/#{ slug(alt_product.product_tmpl_id) }">
+											<h6>
+												<span t-att-title="alt_product.name" t-field="alt_product.name"
+													  t-attf-class="alt_prod_name #{'te_2_line' if (website.number_of_product_line == '2') else 'te_3_line' if (website.number_of_product_line == '3') else ''}"/>
+											</h6>
+										</a>
+										<del t-attf-class="te_shop_del mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}"
+											 style="white-space: nowrap;" t-esc="alt_product.list_price"
+											 t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+										<span t-if="combination_info['price']" t-esc="alt_product.price"
+											  t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+										<span itemprop="price" style="display:none;" t-esc="alt_product.price"/>
+										<span itemprop="priceCurrency" style="display:none;"
+											  t-esc="website.currency_id.name"/>
+									</section>
+								</div>
+							</t>
+						</div>
+					</div>
+				</div>
+			</div>
+		</xpath>
+	</template>
+	<!--=================== Product page brand block =====================-->
+	<template id="product_brand_container">
+		<t t-if="product.product_brand_ept_id.logo or product.product_brand_ept_id.description">
+			<div class="row my-3"
+				 t-if="product.product_brand_ept_id and product.product_brand_ept_id.website_id.id == request.website.id or not product.product_brand_ept_id.website_id.id">
+				<div class="te_brand_img  col-xl-3 col-lg-4" t-if="product.product_brand_ept_id.logo"
+					 t-field="product.product_brand_ept_id.logo"
+					 t-options="{'widget': 'image','class':'te_product_brand_img'}"/>
+				<div class=" col-xl-9 col-lg-8 col-sm col">
+					<p class="te_product_brand_desc" t-if="product.product_brand_ept_id.description"
+					   t-field="product.product_brand_ept_id.description"/>
+				</div>
+			</div>
+		</t>
+	</template>
+	<!--=================== Vertical Multi Image Carousel =====================-->
+
+
+	<template id="shop_product_carousel_ept" inherit_id="website_sale.shop_product_carousel">
+		<xpath expr="//div[@class='d-flex align-items-center justify-content-center h-100']" position="attributes">
+			<attribute name="class">product-mbl-view</attribute>
+		</xpath>
+	</template>
+	<!--<template id="shop_product_carousel_ept" inherit_id="website_sale.shop_product_carousel">
+		<xpath expr="//div[@id='o-carousel-product']" position="replace">
+			<div id="mainSlider" class="position-relative">
+				<div class="owl-carousel carousel-inner">
+					<t t-foreach="product_images" t-as="product_image">
+						<div t-attf-class="#{' active' if product_image_first else ''}">
+							<div t-if="product_image._name == 'product.image' and product_image.embed_code"
+								 class="d-flex align-items-center justify-content-center h-100 embed-responsive embed-responsive-16by9">
+								<t t-raw="product_image.embed_code"/>
+							</div>
+							<div t-else="" t-field="product_image.image_1920"
+								 class="d-flex align-items-center justify-content-center h-100"
+								 t-options='{"widget": "image", "preview_image": "image_1024", "class": "product_detail_img mh-100", "alt-field": "name", "zoom": product_image.can_image_1024_be_zoomed and "image_1920"}'/>
+						</div>
+					</t>
+				</div>
+			</div>
+			<div t-ignore="True" id="thumbnailSlider" class="">
+				<input id="len-ept-image" type="hidden" t-attf-value="#{len(product_images)}"/>
+				<ol t-if="len(product_images) > 1" class="owl-carousel d-inline-block my-0 py-1 px-0 text-left">
+					<t t-foreach="product_images" t-as="product_image">
+						<li t-attf-class="d-inline-block align-top {{'active' if product_image_first else ''}}"
+							data-target="#o-carousel-product" t-att-data-slide-to="str(product_image_index)">
+							<div t-field="product_image.image_128"
+								 class="d-flex align-items-center justify-content-center h-100"
+								 t-options='{"widget": "image", "alt-field": "name"}'/>
+							<span t-if="product_image._name == 'product.image' and product_image.embed_code"
+							   class="fa fa-2x fa-play-circle-o o_product_video_thumb"/>
+						</li>
+					</t>
+				</ol>
+			</div>
+		</xpath>
+	</template>-->
+
+	<template id="produc_cart_ept" inherit_id="website_sale.product"
+			  name="product" priority="25">
+		<xpath expr="//a[@id='add_to_cart']" position="before">
+			<span class="te_a2c_divider"></span>
+		</xpath>
+	</template>
+	<template id="variants_ept" inherit_id="sale.variants">
+		<xpath expr="//label[hasclass('col-form-label')]" position="attributes">
+			<attribute name="style"></attribute>
+		</xpath>
+		<xpath expr="//li/strong" position="replace">
+			<h6 t-field="ptal.attribute_id.name"></h6>
+		</xpath>
+	</template>
+	<!--======================== Product Quantity ======================-->
+	<template id="product_quantity_ept" inherit_id="website_sale.product_quantity">
+		<xpath expr="//div[hasclass('css_quantity')]" position="attributes">
+			<attribute name="class">css_quantity input-group oe_website_spinner	te_product_quantity mbl-spinner	</attribute>
+			<attribute name="style">margin-left:20%</attribute>
+		</xpath>
+		<xpath expr="//input[@name='add_qty']" position="attributes">
+			<attribute name="class">qty-spinner</attribute>
+		</xpath>
+	</template>
+	<!--================== Product Rating ======================-->
+	<template id="product_comment_ept" inherit_id="website_sale.product_comment">
+		<xpath expr="//div[hasclass('o_shop_discussion_rating')]" position="attributes">
+			<attribute name="class">te_product_tab tab3C
+				o_shop_discussion_rating container
+			</attribute>
+		</xpath>
+	</template>
+	<!--===================== Remove Default Alternative Products item ===========================-->
+	<template id='recommended_products_ept' inherit_id="website_sale.recommended_products" name="Alternative Products">
+		<xpath expr="//div[@t-if='product.alternative_product_ids']" position="replace">
+			<div class="d-none">
+				<h3></h3>
+			</div>
+		</xpath>
+	</template>
+	<!--===================== Recently Viewd ========================-->
+	<template id="s_products_recently_viewed_ept" inherit_id="website_sale.s_products_recently_viewed">
+		<xpath expr="//div[hasclass('slider')]" position="attributes">
+			<attribute name="class">slider o_not_editable te_recently_viewed dd_recent_prod_bg</attribute>
+		</xpath>
+	</template>
+	<!--============= Change Place Of Available Message ==============-->
+	<template id="website_sale_stock_product_ept" inherit_id="website_sale_stock.website_sale_stock_product">
+		<xpath expr="//div[hasclass('availability_messages')]" position="replace">
+		</xpath>
+	</template>
+</odoo>

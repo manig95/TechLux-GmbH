@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<record id="datenschutz-page" model="ir.ui.view">
+		<field name="name">Datenschutz</field>
+		<field name="type">qweb</field>
+		<field name="key">website.datenschutz-page</field>
+		<field name="arch" type="xml">
+			<t name="Impressum" t-name="website.datenschutz-page">
+				<t t-call="website.layout">
+					<div id="wrap" class="oe_structure">
+						<section data-name="Title">
+							<div class="container">
+								<div class="row s_nb_column_fixed">
+									<div class="col-lg-12 s_title" style="text-align: center;padding-top:50px">
+										<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 12px 22px 0px;"/>
+										<h1 class="sp-p-1" style="font-weight: 600;font-size: 45px;margin-top:20px;letter-spacing: 3px;display: initial;color: #000;">PRIVACY POLICY</h1>
+										<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 10px 17px 3px;"/>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="daten" style="padding: 50px 19% 60px 20%;text-align: justify;">
+								<p>Responsible body in terms of data protection laws, in particular the EU General Data Protection Regulation (GDPR), is:
+								</p>
+								<br/>
+								<p>Techlux GmbH</p>
+								<p>Hochdorfstrasse 5</p>
+								<p>CH-6275 Ballwil</p>
+								<p>E-Mail: info@techlux.ch
+									<p>WebSite: http://www.techlux.ch/</p>
+								</p>
+								<h5>General Remark</h5>
+								<p>
+									Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the Confederation (Data Protection Act, DSG)
+									In cooperation with our hosting providers, we strive to protect the databases as well as possible from outside access, loss, misuse or counterfeiting.
+									We would like to point out that data transmission over the Internet (e.g. when communicating by email) can have security gaps. It is not possible to completely protect data from access by third parties.
+									By using this website, you agree to the collection, processing and use of data as described below. This website can generally be visited without registration. Data such as pages viewed or the name of the file
+									accessed, date and time are stored on the server for statistical purposes, without this data being directly related to you personally. Personal data, in particular name, address or email address, are collected on a
+									voluntary basis as far as possible. Without your consent, the data will not be passed on to third parties.
+								</p>
+								<h5>Bearbeitung
+									von Personendaten
+								</h5>
+								<p>Personal data is all information that relates to a specific or identifiable person. A data subject is a person who is used to process personal data. Processing includes all handling of personal data, regardless of
+									the means and procedures used, in particular the storage, disclosure, procurement, deletion, storage, modification, destruction and use of personal data.
+									We process personal data in accordance with Swiss data protection law. For the rest, we process - insofar as and insofar as the EU GDPR is applicable - personal data in accordance with the following legal bases in
+									connection with Art. 6 Para. 1 GDPR
+								</p>
+								<ul>
+									<li>lit. a)
+										Processing of personal data with the consent of the data subject.
+									</li>
+									<li>lit. b) Processing of personal data to fulfill a contract with the person concerned and to carry out appropriate pre-contractual measures.
+									</li>
+									<li>lit. c) Processing of personal data in order to fulfill a legal obligation that we have in accordance with the applicable EU law or the applicable law of a country in which the GDPR
+									</li>
+									<li>lit. d) Processing of personal data in order to protect the vital interests of the data subject or another natural person.
+									</li>
+									<li>lit. f)Processing of personal data in order to protect the legitimate interests of us or third parties, provided that the fundamental freedoms and fundamental rights as well as the interests of the data subject
+										do not prevail. Legitimate interests are, in particular, our business interest in being able to provide our website, information security, the enforcement of our own legal claims and compliance with Swiss law.
+									</li>
+								</ul>
+								<p>We process personal data for the duration that is necessary for the respective purpose or purposes. In the case of longer storage obligations due to legal and other obligations to which we are subject, we restrict
+									processing accordingly.
+								</p>
+								<h5>Privacy policy for cookies
+								</h5>
+								<p>This website uses cookies. These are small ones Text files that make it possible on the end device of the Store user-specific information related to the user,
+									while using the website. Cookies enable in particular frequency of use and number of users of the pages identify, analyze behavior of page usage, but also
+									to make our offer more customer-friendly. Cookies remain saved and at the end of a browser session can be called up again when visiting the site again.
+									If you don't want that, your internet browser should be like this set that he refuses to accept cookies.
+								</p>
+								<p>On
+									general objection to the use of data for the purposes of
+									Cookies used online marketing can be used for a variety of services
+									especially in the case of tracking, through the US side
+									<a href="http://www.aboutads.info/choices/" target="_ blank" rel="noopener">http://www.aboutads.info/choices/
+									</a>
+									or the EU side
+
+									<a href="http://www.youronlinechoices.com/" target="_ blank" rel="noopener">http://www.youronlinechoices.com/
+									</a>
+									be explained. Of
+									Furthermore, the storage of cookies can be switched off in the
+									Settings of the browser can be reached. Please note that then
+									possibly not all functions of this online offer are used
+									can.
+
+								</p>
+								<h5>Data protection declaration for SSL/TLS encryption
+								</h5>
+								<p>This website uses SSL / TLS encryption for security reasons and to protect the transmission of confidential content, such as inquiries that you send to us as the website operator. You can recognize an encrypted
+									connection by the fact that the address line of the browser changes from "http: //" to "https: //" and by the lock symbol in your browser line.
+								</p>
+								<p>If SSL or TLS encryption is activated, the data that you transmit to us cannot be read by third parties.
+								</p>
+								<h5>Data protection declaration for server log files
+								</h5>
+								<p>The provider of this website collects and stores
+									Automatically information in so-called server log files that your browser
+									automatically sent to us. These are:
+								</p>
+								<ul>
+									<li>Browser type and version
+									</li>
+									<li>Operating system used</li>
+									<li>Referrer URL
+									</li>
+									<li>Host name of the accessing computer</li>
+									<li>Time of the server request
+									</li>
+								</ul>
+								<p>This data cannot be assigned to specific people. This data is not merged with other data sources. We reserve the right to check this data retrospectively if we become aware of specific indications of illegal use.
+								</p>
+								<h5>Third party services
+								</h5>
+								<p>This website uses Google Maps for embedding maps, Google Invisible reCAPTCHA for protection against bots and spam and YouTube for embedding videos.
+								</p>
+								<p>These services of the American Google LLC use cookies, among other things, and as a result, data is transmitted to Google in the USA, whereby we assume that no personal tracking takes place in this context solely
+									through the use of our website.
+								</p>
+								<p>Google is committed to ensuring adequate data protection in accordance with the American-European and American-Swiss Privacy Shield.
+								</p>
+								<p>Further information can be found in Google's data protection declaration.
+									<a href='https://policies.google.com/privacy?hl=de' target="_blank" rel="noopener" style="color: inherit;">Datenschutzerklärung von Google</a>.
+								</p>
+								<h5>Data protection declaration for contact form
+								</h5>
+								<p>If you send us inquiries using the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in the event
+									of follow-up questions. We will not pass on this data without your consent.
+								</p>
+								<h5>Data protection declaration for newsletter data
+								</h5>
+								<p>If you would like to receive the newsletter offered on this website, we need an e-mail address from you as well as information that allows us to verify that you are the owner of the e-mail address provided and that
+									you agree to receive the newsletter . Further data is not collected. We use this data exclusively for sending the requested information and do not pass it on to third parties.
+								</p>
+								<p>You can revoke your consent to the storage of data, email address and their use for sending the newsletter at any time, for example via the "Unsubscribe" link in the newsletter.
+								</p>
+								<h5>Data protection declaration for comment function on this website
+								</h5>
+								<p>For the comment function on this website, in addition to your comment, information about the time the comment was created, your email address and, if you do not post anonymously, the user name you selected will be
+									saved.
+								</p>
+								<p>
+									<i>Storage of the IP address</i>
+								</p>
+								<p>Our comment function stores the IP addresses of users who write comments. Since we do not check comments on our site before activation, we need this data in order to be able to act against the author in the event of
+									legal violations such as insults or propaganda.
+								</p>
+								<p>
+									<i>Subscribe to comments
+									</i>
+								</p>
+								<p>As a user of the page, you can search for a Subscribe to subscribe to comments. You will receive one Confirmation email to verify that you are the owner of the
+									specified email address. You can use this feature at any time
+									via a link in the info mails
+									to unsubscribe.
+								</p>
+								<h5>Data protection declaration for right to information, deletion, blocking
+								</h5>
+								<p>You have the right to free information about your stored personal data, its origin and recipient and the purpose of data processing as well as the right to correct, block or delete this data at any time. You can
+									contact us at any time at the address given in the imprint if you have any further questions about personal data.
+								</p>
+								<h5>Data protection declaration for objection to advertising mails
+								</h5>
+								<p>We hereby object to the use of contact data published within the scope of the imprint obligation for sending unsolicited advertising and information material. The operators of the pages expressly reserve the right
+									to take legal action in the event of unsolicited sending of advertising information, such as spam e-mails.
+								</p>
+								<h5>Paid services</h5>
+								<p>We will ask for additional data to provide services that are subject to a charge, e.g. Payment details to process your order or To be able to carry out your order. We store this data in our systems until the
+									statutory retention periods have expired.
+								</p>
+								<h5>Use of Google Maps</h5>
+								<p>This website uses Google Maps. This enables us to show you interactive maps directly on the website and enables you to conveniently use the map function. When you visit the website, Google receives the information
+									that you have accessed the corresponding subpage of our website. This takes place regardless of whether Google provides a user account that you are logged in to or whether there is no user account. If you are
+									logged in to Google, your data will be assigned directly to your account. If you do not want your profile to be assigned to Google, you must log out before activating the button. Google stores your data as usage
+									profiles and uses them for the purposes of advertising, market research and / or the needs-based design of its website. Such an evaluation is carried out in particular (even for users who are not logged in) to
+									provide needs-based advertising and to inform other users of the social network about your activities on our website. You have a right to object to the creation of these user profiles, and you must contact Google
+									to exercise them. Further information on the purpose and scope of data collection and processing by Google can be found alongside further information on your rights in this regard and setting options for protecting
+									your privacy at:
+									<a
+											href="http://www.google.de/intl/de/policies/privacy" target="_blank"
+											rel="noopener">www.google.de/intl/de/policies/privacy</a>.
+								</p>
+								<h5>Google AdWords</h5>
+								<p>This website uses Google conversion tracking. If you have reached our website via an advertisement placed by Google, Google Adwords will set a cookie on your computer. The cookie for conversion tracking is set when
+									a user clicks on an ad placed by Google. These cookies lose their validity after 30 days and are not used for personal identification. If the user visits certain pages of our website and the cookie has not yet
+									expired, we and Google can recognize that the user clicked on the ad and was redirected to this page. Every Google AdWords customer receives a different cookie. Cookies cannot therefore be tracked via the websites
+									of AdWords customers. The information obtained using the conversion cookie is used to create conversion statistics for AdWords customers who have opted for conversion tracking. Customers learn the total number of
+									users who clicked on their ad and were redirected to a page with a conversion tracking tag. However, you will not receive any information that can be used to personally identify users.
+								</p>
+								<p>If you do not want to participate in the tracking, you can refuse the setting of a cookie required for this - for example by setting your browser, which generally deactivates the automatic setting of cookies or set
+									your browser so that cookies from the domain "googleleadservices.com" are blocked.
+								</p>
+								<p>
+									Please note that you must not delete the opt-out cookies as long as you do not want measurement data to be recorded. If you have deleted all your cookies in the browser, you have to set the respective opt-out
+									cookie again.
+								</p>
+								<h5>Use of Google remarketing
+								</h5>
+								<p>This website uses the remarketing function of Google Inc. The function serves to present website visitors within the Google advertising network with interest-related advertisements. A so-called "cookie" is saved in
+									the browser of the website visitor, which makes it possible to recognize the visitor when he or she visits websites that belong to the Google advertising network. On these pages, visitors can be presented with
+									advertisements that relate to content that the visitor has previously accessed on websites that use Google's remarketing function.
+								</p>
+								<p>According to its own information, Google does not collect any personal data in this process. If you still do not want Google's remarketing function, you can always deactivate it by making the appropriate settings
+									under
+									<a href="http://www.google.com/settings/ads" target="_blank" rel="noopener">http://www.google.com/settings/ads</a>
+									make. Alternatively, you can deactivate the use of cookies for interest-based advertising via the advertising network initiative by following the instructions at
+									<a
+											href="http://www.networkadvertising.org/managing/opt_out.asp"
+											target="_blank"
+											rel="noopener">http://www.networkadvertising.org/managing/opt_out.asp
+									</a>
+									consequences.
+								</p>
+								<h5>Use of Google reCAPTCHA</h5>
+								<p>This website uses the reCAPTCHA service from Google Inc. (1600 Amphitheater Parkway, Mountain View, CA 94043, USA; "Google"). The purpose of the query is to differentiate whether the input is made by a human or by
+									automated, mechanical processing. The query includes sending the IP address and any other data required by Google for the reCAPTCHA service to Google. For this purpose, your input will be transmitted to Google and
+									used further there. However, Google will shorten your IP address beforehand within member states of the European Union or in other signatory states to the Agreement on the European Economic Area. Only in
+									exceptional cases will the full IP address be transferred to a Google server in the USA and shortened there. Google will use this information on behalf of the operator of this website to evaluate your use of this
+									service. The IP address transmitted by your browser as part of reCaptcha will not be merged with other Google data. Your data may also be transferred to the United States. An adequacy decision by the European
+									Commission, the "Privacy Shield", exists for data transfers to the USA. Google participates in the "Privacy Shield" and has submitted to the requirements. By pressing the query, you consent to the processing of
+									your data. Processing is based on Art. 6 (1) lit. a GDPR with your consent. You can revoke your consent at any time without affecting the lawfulness of the processing carried out based on the consent until the
+									revocation.
+								</p>
+								<p>Further information on Google reCAPTCHA and the associated data protection declaration can be found at:
+									<a href="https://www.google.com/privacy/ads/" target="_blank"
+									   rel="noopener">https://www.google.com/privacy/ads/
+									</a>
+								</p>
+								<h5>Data protection declaration for Google Analytics</h5>
+								<p>This website uses Google Analytics, a web analytics service provided by Google LL.C., 1600 Amphitheater Parkway, Mountain View, CA 94043, USA («Google»). We can use the statistics obtained to improve our offer and
+									make it more interesting for you as a user. This website also uses Google Analytics for a cross-device analysis of visitor flows, which is carried out via a user ID. If you have a Google user account, you can
+									deactivate the cross-device analysis of your usage in the settings under "My data", "Personal data".
+								</p>
+								<p>
+									1258/5000
+									The legal basis for the use of Google Analytics is Art. 6 Para. 1 S. 1 lit. f GDPR. The IP address transmitted by your browser as part of Google Analytics will not be merged with other Google data. We would like to
+									point out that on this website Google Analytics has the code «_anonymizeIp ();» was expanded to ensure anonymous collection of IP addresses. As a result, IP addresses are further processed in abbreviated form, so
+									that they cannot be linked to a person. As far as the data collected about you is personal, it is immediately excluded and the personal data is deleted immediately.
+								</p>
+								<p>Only in exceptional cases will the full IP address be transferred to a Google server in the USA and shortened there. On behalf of the operator of this website, Google will use this information to evaluate your use
+									of the website, to compile reports on website activity and to provide the website operator with other services related to website activity and internet usage. For the exceptional cases in which personal data are
+									transferred to the USA, Google has submitted to the EU-US Privacy Shield
+									<a
+											href="https://www.privacyshield.gov/EU-US-Framework" target="_blank"
+											rel="noopener">https://www.privacyshield.gov/EU-US-Framework</a>.
+
+								</p>
+								<p>Google Analytics uses cookies. The information generated by the cookie about your use of this website is usually transferred to a Google server in the USA and stored there. You can prevent the storage of cookies by
+									setting your browser software accordingly; however, we would like to point out that in this case you may not be able to use all functions of this website to their full extent. You can also prevent Google from
+									collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by Google by downloading the browser plug-in available under the
+									following link and install:
+									<a
+											href="https://tools.google.com/dlpage/gaoptout" target="_blank"
+											rel="noopener">https://tools.google.com/dlpage/gaoptout</a>.
+
+								</p>
+								<p>AYou can also prevent the use of Google Analytics by clicking on this link
+									<a href="/de/datenschutz/#"
+									   target="_blank" rel="noopener">Google Analytics deaktivieren</a>.As a result, a so-called opt-out cookie is saved on your data carrier, which prevents the processing of personal data by Google Analytics. Please
+									note that if you delete all cookies on your device, these opt-out cookies will also be deleted, i.e. you will have to set the opt-out cookies again if you want to continue to prevent this form of data collection.
+									The opt-out cookies are set for each browser and computer / device and must therefore be activated separately for each browser, computer or other device.
+
+								</p>
+								<h5>Data protection declaration for GoogleAds</h5>
+								<p>This website uses the online marketing tool Google Ads from Google (“Google Ads”). Google Ads uses cookies to display ads relevant to users, to improve reports on campaign performance or to prevent a user from
+									seeing the same ads multiple times. Google uses a cookie ID to record which ads are displayed in which browser and can thus prevent them from being displayed multiple times. In addition, Google Ads can use cookie
+									IDs to record so-called conversions that relate to ad requests. This is the case, for example, if a user sees a Google Ads ad and later calls up the advertiser's website with the same browser and buys something
+									there. According to Google, Google Ads cookies do not contain any personal information.
+								</p>
+								<p>Due to the marketing tools used, your browser automatically establishes a direct connection to the Google server. By integrating Google Ads, Google receives the information that you have accessed the corresponding
+									part of our website or clicked on an advertisement from us. If you are registered with a Google service, Google can assign the visit to your account. Even if you are not registered with Google or have not logged
+									in, there is a possibility that Google will find out and save your IP address.
+								</p>
+								<p>There are a number of ways to prevent you from participating in this tracking process:
+								</p>
+								<ul>
+									<li>by setting your browser accordingly
+										Software, in particular the suppression of third party cookies, leads to the fact that
+										You do not receive any third-party ads;
+									</li>
+									<li>by deactivation
+										the cookies for conversion tracking by setting your browser so
+										that cookies from the domain «www.googleadservices.com»
+										be blocked
+
+										<a href="https://adssettings.google.com" target="_blank"
+										   rel="noopener">https://adssettings.google.com</a>, being this setting
+										is deleted when you delete your cookies;
+
+									</li>
+									<li>by deactivating the
+										interest-based advertisements from providers that are part of the self-regulatory
+										Campaign "About Ads" are about the link
+										<a
+												href="http://www.aboutads.info/choices" target="_blank"
+												rel="noopener">https://www.aboutads.info/choices</a>,where these
+										Setting is deleted when you delete your cookies;
+
+									</li>
+									<li>by
+										permanent deactivation in your browsers Firefox, Internet Explorer or
+										Google Chrome at the link
+
+										<a
+												href="http://www.google.com/settings/ads/plugin" target="_blank"
+												rel="noopener">https://www.google.com/settings/ads/plugin</a>. We point
+										Please note that in this case you may not have all the functions
+										can make full use of this offer.
+									</li>
+								</ul>
+								<p>The legal basis for the processing of your data is one
+									Balance of interests, according to which the processing of your
+									personal data no overriding interests
+									You oppose this (Art. 6 Para. 1 Clause 1 lit.f GDPR). Further
+									You can find information about Google Ads from Google at
+
+									<a
+											href="https://ads.google.com/intl/de_DE/home/" target="_blank"
+											rel="noopener">https://ads.google.com/intl/de_DE/home/</a>, and for data protection at Google in general:
+
+									<a
+											href="https://www.google.de/intl/de/policies/privacy" target="_blank"
+											rel="noopener">https://www.google.de/intl/de/policies/privacy</a>. Alternatively
+									you can visit the website of the Network Advertising Initiative (NAI) at
+
+									<a
+											href="http://www.networkadvertising.org" target="_blank"
+											rel="noopener">https://www.networkadvertising.org
+									</a>
+									visit.
+
+								</p>
+								<h5>Data protection declaration for the Use of Google Web Fonts
+								</h5>
+								<p>This website uses so-called web fonts provided by Google for the uniform display of fonts. When you visit a page, your browser loads the required web fonts into your browser cache in order to display texts and fonts
+									correctly. If your browser does not support web fonts, a standard font will be used by your computer.
+								</p>
+								<p>You can find more information about Google Web Fonts at
+
+
+									<a href="https://developers.google.com/fonts/faq" target="_blank" style="color:
+inherit;">https://developers.google.com/fonts/faq
+									</a>
+									and in Google’s privacy policy:
+
+									<a
+											href="https://www.google.com/policies/privacy/" target="_blank" style="color:
+inherit;">https://www.google.com/policies/privacy/
+									</a>
+								</p>
+								<h5
+								>Google Tag Manager
+								</h5>
+								<p>Google Tag Manager is a solution with which we can manage so-called website tags via an interface, e.g. Can integrate Google Analytics and other Google marketing services into our online offering. The Tag Manager
+									itself, which implements the tags, does not process any personal data of the users. With regard to the processing of users' personal data, reference is made to the following information about Google services. Usage
+									guidelines:
+									<a
+											href="https://www.google.com/intl/de/tagmanager/use-policy.html"
+											target="_blank"
+											rel="noopener">https://www.google.com/intl/de/tagmanager/use-
+										policy.html</a>.
+
+								</p>
+								<h5>Use of Matomo</h5>
+								<p>This website uses Matomo (formerly Piwik), an open source
+									Software for statistical evaluation of visitor access. Matomo
+									uses so-called cookies, i.e. text files on your computer
+									are saved and an analysis of the use of the website by
+									They allow.
+								</p>
+								<p>The information generated by the cookie about your use of the website is stored on a server in Germany.
+								</p>
+								<p>The IP address is immediately after the
+									Processing and anonymized before storing. You have the
+									Possibility of installing cookies by changing the
+									Prevent setting of your browser software. We point out
+									that with the appropriate setting, not all functions may be available
+									available on this website.
+								</p>
+								<p>you can decide whether there is a unique web analysis cookie in your browser may be filed to allow the operator of the website to record and Analysis of various statistical data enable.
+								</p>
+								<h5>Use of Adobe Analytics (Omniture)</h5>
+								<p>This website uses Adobe Analytics, a
+									Web analysis service from Adobe Systems Software Ireland Limited
+									("Adobe"). Adobe Analytics uses cookies
+									Text files that are stored on your computer and that are analyzed
+									enable you to use the website. Will be a tracking
+									Data record from a browser of a website visitor to Adobe
+									Data center is transmitted, then the one we have carried out
+									Server setting ensures that the IP
+									Address is anonymized, i.e. that the last octet of the IP address through
+									Zeros is replaced. Before saving the tracking package, the IP address
+									replaced by individual generic IP addresses.
+								</p>
+								<p>On behalf of the
+									Adobe, the operator of this website, will use this information to obtain the information
+									Use of the website by the user to evaluate reports on
+									compile the website activities and for further with the
+									Website and Internet related services
+									to provide to the website operator. The under
+									Adobe Analytics will not transmit your browser's IP address
+									merged with other Adobe data.
+								</p>
+								<p>It can save the cookies by a corresponding
+									Prevent setting your browser software. This offer points the
+									However, users point out that in this case they may not
+									all functions of this website become fully functional
+									to be able to use. Users can also use the
+									Collection of the cookies generated and their use of the website
+									related data (including your IP address) to Adobe and the processing
+									Prevent this data from Adobe by doing the following
+									Download and install the available browser plug-in link:
+
+									<a
+											href="http://www.adobe.com/de/privacy/opt-out.html" target="_blank"
+											rel="noopener">http://www.adobe.com/de/privacy/opt-
+										out.html
+									</a>
+								</p>
+								<h5>Analysis by WiredMinds</h5>
+								<p>This website uses tracking pixel technology from WiredMinds AG
+									(www.wiredminds.de) for the analysis of visitor behavior
+								</p>
+								<p>Here data is collected, processed and stored, from which under one
+									Pseudonym usage profiles are created. Where possible and sensible,
+									these usage profiles are completely anonymized. For this
+									cookies can be used. Cookies are small text files,
+									which are stored in the visitor's internet browser and for
+									Serve the recognition of the Internet browser. The data collected, the
+									may also contain personal data
+									WiredMinds transmitted or collected directly from WiredMinds.
+									WiredMinds may receive information by visiting the websites
+									be used to create anonymized usage profiles.
+									The data obtained in this way are processed without the separate consent given
+									of the person concerned not used to the visitor of this website
+									identify personally and they will not be personal
+									Data on the bearer of the pseudonym merged.
+									As far as IP addresses are recorded, their immediate anonymization takes place by deleting the last number block.
+								</p>
+								<p>For inquiries regarding opt-out, please use the contact details at the beginning this privacy policy.
+								</p>
+								<p></p>
+								<h5>Use of the scalable central measuring method
+								</h5>
+								<p>This website uses that Measuring procedure («SZMnG») from INFOnline GmbH (https://www.INFOnline.de) to determine statistical parameters via
+									the use of our offers. The goal of the usage measurement is the number
+									the visits to our website, the number of website visitors and their
+									Statistical surfing behavior - based on a uniform standard procedure -
+									to determine and thus obtain comparable values across the market.
+								</p>
+								<p>For all digital offers that are members of the information community
+									to determine the distribution of advertising media (IVW -
+									http://www.ivw.eu) or are part of the studies of the Arbeitsgemeinschaft Online-
+									Research e.V. (AGOF - http://www.agof.de), the
+									Usage statistics regularly from the AGOF and the
+									Arbeitsgemeinschaft Media-Analyze e.V. (agma - http://www.agma-mmc.de)
+									processed to reach and with the performance value «Unique
+									User »published and by IVW with the performance values
+									"Page Impression" and "Visits". These ranges
+									and statistics can be viewed on the respective websites
+									become.
+								</p>
+								<ol>
+									<li>
+										<strong>Legal basis for processing</strong>
+									</li>
+								</ol>
+								<p>Measurement using the SZMnG measuring method
+									by INFOnline GmbH with legitimate interest according to Art. 6 para.
+									1 lit. f) GDPR.
+								</p>
+								<p>Purpose of processing personal
+									Data is the creation of statistics and the formation of user categories.
+									The statistics are used to understand the use of our offer
+									and to be able to prove. The user categories form the basis
+									for an interest-oriented alignment of advertising materials or
+									Advertising measures. To market this website is a
+									Usage measurement, which is a comparability to other market participants
+									guaranteed, essential. Our legitimate interest results
+									derive from the economic usability deriving from the statistics and
+									Insights and the market value of our user categories
+									Website - also in direct comparison with third-party websites - based on
+									which allows statistics to be determined.
+								</p>
+								<p>In addition we have
+									a legitimate interest in the pseudonymized data of INFOnline,
+									the AGOF and the IVW for the purpose of market research (AGOF, agma) and
+									to be made available for statistical purposes (INFOnline, IVW).
+									Furthermore, we have a legitimate interest in being pseudonymized
+									INFOnline data for further development and provision
+									to provide interest-based advertising material.
+								</p>
+								<ol
+										start="2">
+									<li>
+										<strong>Type of data</strong>
+									</li>
+								</ol>
+								<p>The INFOnline
+									GmbH collects the following data, which according to EU GDPR
+									Have personal reference:
+								</p>
+								<ul>
+									<li>IP address: Required on the Internet
+										each device for transmitting data has a unique address,
+										the so-called IP address. The at least short-term storage of the IP
+										Address is technically necessary due to the way the Internet works; IP addresses are shortened by 1 byte before any processing
+										and only anonymized There is no storage or further processing
+										the unabridged IP addresses.
+									</li>
+									<li>A randomly generated one
+										Client identifier: The range processing used for recognition
+										computer systems alternatively either a cookie with the identifier
+										«Ioam.de», a «Local Storage Object» or one
+										Signature that is automatically transmitted from various
+										Information of your browser is created. This identifier is for one
+										Browser unique as long as the cookie or local storage object is not
+										is deleted. A measurement of the data and subsequent assignment
+										for the respective client identifier is therefore also possible if
+										You access other websites that also use the measurement method
+										(«SZMnG») from INFOnline GmbH. The validity
+										the cookie is limited to a maximum of 1 year.
+									</li>
+								</ul>
+								<ol start="3">
+									<li>
+										<strong>Use of the data</strong>
+									</li>
+								</ol>
+								<p>The measuring method
+									of INFOnline GmbH, which is used on this website
+									Usage data. This is done to measure the performance values of page impressions,
+									To collect visits and clients and to form further key figures (e.g.
+									qualified clients). In addition, the measured data such as
+									used as follows:
+								</p>
+								<ul>
+									<li>Eine sogenannte Geolokalisierung, also die
+										Zuordnung eines Webseitenaufrufs zum Ort des Aufrufs, erfolgt
+										ausschliesslich auf der Grundlage der anonymisierten IP-Adresse und nur bis
+										zur geographischen Ebene der Bundesländer / Regionen. Aus den so
+										gewonnenen geographischen Informationen kann in keinem Fall ein
+										Rückschluss auf den konkreten Aufenthaltsort eines Nutzers gezogen
+										werden.
+									</li>
+									<li>The usage data of a technical client (e.g. a
+										Browsers on one device) become cross-website
+										merged and stored in a database. This
+										Information is used for technical assessment of the
+										Socio information age and gender used and sent to the service providers of the
+										AGOF handed over for further range processing. As part of
+										The AGOF study are based on a random sample
+										Technically estimated sociological features which are the following
+										Allocate categories: age, gender, nationality, professional
+										Activity, marital status, general household information, household
+										Income, place of residence, internet use, online interests, place of use,
+										User type.
+									</li>
+								</ul>
+								<ol start="4">
+									<li>
+										<strong>Storage period of the data
+										</strong>
+									</li>
+								</ol>
+								<p>The full IP address is provided by the
+									INFOnline GmbH not saved. The shortened IP address is
+									stored for a maximum of 60 days. The usage data in connection with the
+									unique identifiers are stored for a maximum of 6 months.
+								</p>
+								<ol
+										start="5">
+									<li>
+										<strong>Disclosure of data</strong>
+									</li>
+								</ol>
+								<p>The IP
+									The address and the shortened IP address will not be passed on.
+									Data with client identifiers are used to create the AGOF study
+									passed on to the following AGOF service providers:
+								</p>
+								<ul>
+									<li>Cantar Germany GmbH (
+
+										<a href="https://www.tns-infratest.com/" target="_blank"
+										   rel="noopener">https://www.tns-infratest.com/</a>)
+
+									</li>
+									<li>Ankordata GmbH &amp; Co. KG (
+
+										<a href="http://www.ankordata.de/homepage/" target="_blank"
+										   rel="noopener">http://www.ankordata.de/homepage/</a>)
+
+									</li>
+									<li>Interrogare GmbH (
+										<a href="https://www.interrogare.de/" target="_blank"
+										   rel="noopener">https://www.interrogare.de/</a>)
+
+									</li>
+								</ul>
+								<ol start="6">
+									<li>
+										<strong>Rights of the data subject</strong>
+									</li>
+								</ol>
+								<p>The Data subject has the following rights:
+								</p>
+								<ul>
+									<li>Right to information (Art. 15 GDPR)
+									</li>
+									<li>Right to rectification (Art. 16 GDPR)</li>
+									<li>Right to object (Art. 21 GDPR)</li>
+									<li>Right to cancellation (Art. 17 GDPR)
+									</li>
+									<li>Right to restriction of processing (Art. 18f. GDPR)
+									</li>
+									<li>Right to data portability (Art. 20 GDPR)
+									</li>
+								</ul>
+								<p>For inquiries of this kind, please contact
+									Contact details at the end of this data protection declaration. Please note,
+									that with such requests we have to make sure
+									is actually the data subject.
+								</p>
+								<p>
+									<strong>Right to object</strong>
+								</p>
+								<p>When you're at the measurement
+									do not want to participate, you can under the following link
+									disagree:
+
+									<a href="https://optout.ioam.de" target="_blank"
+									   rel="noopener">https://optout.ioam.de
+									</a>
+								</p>
+								<p>To exclude from To guarantee the measurement, it is technically necessary to set a cookie.
+									If you delete the cookies in your browser, it is necessary to
+									Repeat the opt-out process under the link above.
+								</p>
+								<p>The Data subject has the right to contact a data protection authority
+									To lodge a complaint.
+								</p>
+								<p>Further information on data protection in
+									You can find measurement methods on the INFOnline GmbH website
+									(https://www.infonline.de), which operates the measurement process, the
+									AGOF data protection website(
+
+									<a href="http://www.agof.de/datenschutz"
+									   target="_blank" rel="noopener">http://www.agof.de/datenschutz</a>) and the
+									IVW data protection website(
+
+									<a href="http://www.ivw.eu" target="_blank"
+									   rel="noopener">http://www.ivw.eu</a>).
+
+								</p>
+								<h5>Use of the scalable central measuring method through an application
+								</h5>
+								<p>Our application
+									uses the INFOnline GmbH measuring method («SZMnG») (
+									<a
+											href="https://www.INFOnline.de" target="_blank"
+											rel="noopener">https://www.INFOnline.de</a>) to determine statistical
+									Characteristic values about the use of our offers. goal of
+									Usage measurement is the intensity of use, the number of
+									Uses and users of our application and their surfing behavior
+									to be determined statistically - on the basis of a uniform standard procedure
+									and thus obtain comparable values across the market.
+
+								</p>
+								<p>For all
+									Digital offers that member of the information community for finding
+									the distribution of advertising media (IVW - http://www.ivw.eu)
+									or in the studies of the Arbeitsgemeinschaft Online-Forschung e.V. (AGOF -
+									http://www.agof.de) participate, the usage statistics
+									regularly by the AGOF and the Media Analysis Working Group
+									e.V. (agma - http://www.agma-mmc.de) for ranges further processed and
+									published with the performance value "Unique User" as well
+									from IVW with the performance values «Page Impression» and
+									"Visits". These ranges and statistics can be viewed on the respective websites.
+								</p>
+								<ol>
+									<li>
+										<strong>
+											Legal basis for processing
+										</strong>
+									</li>
+								</ol>
+								<p>Die
+									Measurement using the SZMnG measuring method by INFOnline GmbH
+									takes place with legitimate interest according to Art. 6 Para. 1 lit. f) GDPR.
+								</p>
+								<p>The purpose of processing the personal data is the creation
+									of statistics for the formation of user categories. The statistics serve us
+									to understand and prove the use of our offer
+									can. The user categories form the basis for one
+									Orientation of advertising materials or advertising measures in line with interests.
+									To market this application is a usage measurement, which is a
+									Comparability with other market participants guaranteed,
+									essential. Our legitimate interest arises from the
+									economic usability resulting from the statistics and
+									Insights and the market value of our user categories
+									Application - also in direct comparison with third-party applications - that is
+									based on the statistics.
+								</p>
+								<p>Furthermore
+									we have a legitimate interest in the pseudonymized data of the
+									INFOnline, AGOF and IVW for the purpose of market research (AGOF,
+									agma) and for statistical purposes (IVW, INFOnline)
+									to deliver. Furthermore, we have a legitimate interest in that
+									pseudonymized data from INFOnline for further development and
+									Provision of advertising material in line with interests
+									put.
+								</p>
+								<ol start="2">
+									<li>
+										<strong>Type of data</strong>
+									</li>
+								</ol>
+								<p>INFOnline GmbH collects the following data, which according to GDPR have a personal reference:
+								</p>
+								<ul>
+									<li>IP address: On the Internet
+										Every device needs one to transfer data
+										unique address, the so-called IP address. The at least temporary
+										Storage of the IP address is due to the way the Internet works
+										technically required. The IP addresses are before any processing
+										shortened and only processed anonymously. There is no
+										Storage or processing of the unabridged IP addresses.
+									</li>
+									<li>A device identifier: The range measurement is used for
+										Recognition of devices unique identifications of the
+										Terminal device or a signature that is made up of different automatically
+										transmitted information of your device is created. A
+										Measurement of the data and subsequent assignment to the respective
+										Identifier may also be possible if you
+										Call other applications that also use the measurement method
+										(«SZMnG») from INFOnline GmbH.
+									</li>
+								</ul>
+								<p>The following
+									Unique device identifiers can be hashed to the INFOnline
+									GmbH are transmitted:
+								</p>
+								<ul>
+									<li>Advertising identifier</li>
+									<li>Installation ID</li>
+									<li>Android-ID</li>
+									<li>Vendor-ID</li>
+								</ul>
+								<ol
+										start="3">
+									<li>
+										<strong>Use of the data</strong>
+									</li>
+								</ol>
+								<p>The
+									INFOnline GmbH measurement method used in this application
+									is determined, usage data. This is done in order to Page
+									Collect impressions, visits and clients and further key figures from them
+									form (e.g. qualified clients). In addition, the measured data are used as follows:
+								</p>
+								<ul>
+									<li>A so-called
+										Geolocation, i.e. the assignment of a website call to the location of the
+										Call, takes place exclusively on the basis of the anonymized IP
+										Address and only up to the geographical level of the federal states /
+										Regions. From the geographic information obtained in this way
+										in no case a conclusion about the specific place of residence of a user
+										to be pulled.
+									</li>
+									<li>The usage data of a technical client (e.g.
+										of a browser on one device) become cross-application
+										merged and stored in a database. This
+										Information is used for technical assessment of the
+										Socio information age and gender used and sent to the service providers of the
+										AGOF handed over for further range processing. As part of
+										The AGOF study are based on a random sample
+										Technically estimated sociological features which are the following
+										Allocate categories: age, gender, nationality, professional
+										Activity, marital status, general household information, household
+										Income, place of residence, internet use, online interests, place of use,
+										User type.
+									</li>
+								</ul>
+								<ol start="4">
+									<li>
+										<strong>Storage period of the data
+										</strong>
+									</li>
+								</ol>
+								<p>The full IP address is provided by the
+									INFOnline GmbH not saved. The shortened IP address is
+									stored for a maximum of 60 days. The usage data in connection with the
+									unique identifiers are stored for a maximum of 6 months.
+								</p>
+								<ol
+										start="5">
+									<li>
+										<strong>Disclosure of data</strong>
+									</li>
+								</ol>
+								<p>The IP
+									The address and the shortened IP address will not be passed on.
+									Data with client identifiers are used to create the AGOF study
+									passed on to the following AGOF service providers:
+								</p>
+								<ul>
+									<li>Kantar
+										Deutschland GmbH (
+
+										<a href="https://www.tns-infratest.com/" target="_blank"
+										   rel="noopener">https://www.tns-infratest.com/</a>)
+
+									</li>
+									<li>Ankordata GmbH
+										&amp; Co. KG (
+
+										<a href="http://www.ankordata.de/homepage/" target="_blank"
+										   rel="noopener">http://www.ankordata.de/homepage/</a>)
+
+									</li>
+									<li>Interrogare
+										GmbH (
+
+										<a href="https://www.interrogare.de/" target="_blank"
+										   rel="noopener">https://www.interrogare.de/</a>)
+
+									</li>
+								</ul>
+								<ol start="6">
+									<li>
+										<strong>Rights of the data subject</strong>
+									</li>
+								</ol>
+								<p>The
+									Data subject has the following rights:
+								</p>
+								<ul>
+									<li>Right to information (Art. 15 GDPR)
+									</li>
+									<li>Right to rectification (Art. 16 GDPR)</li>
+									<li>Right to object (Art. 21 GDPR)</li>
+									<li>Right to cancellation (Art. 17 GDPR)
+									</li>
+									<li>Right to restriction of processing (Art. 18f. GDPR)
+									</li>
+									<li>Right to data portability (Art. 20 GDPR)
+									</li>
+								</ul>
+								<p>For inquiries of this kind, please contact the
+									Contact details at the beginning of this data protection declaration. Please note
+									You that we have to make sure that it is with such requests
+									is actually the data subject.
+								</p>
+								<p>
+									<strong>Right to object</strong>
+								</p>
+								<p>When you're at the measurement
+									you do not want to participate, you can object here:
+								</p>
+								<p>The data subject has the right to contact a data protection authority
+									To lodge a complaint.
+								</p>
+								<p>Further information on data protection in
+									You can find the measurement procedure on the website of INFOnline GmbH (https://www.infonline.de), which operates the measurement procedure
+									AGOF data protection website (
+
+									<a href="http://www.agof.de/datenschutz"
+									   target="_blank" rel="noopener">http://www.agof.de/datenschutz</a>) and the
+									IVW data protection website(
+
+									<a href="http://www.ivw.eu" target="_blank"
+									   rel="noopener">http://www.ivw.eu</a>).
+
+								</p>
+								<p></p>
+								<h5>Data protection declaration for the use of Hotjar
+								</h5>
+								<p>This website
+									uses the Hotjar service to improve the
+									Ease of use: Hotjar Ltd. Hotjar Ltd. is a
+									European company based in Malta (Hotjar Ltd, Level 2, St
+									Julians Business Center, 3, Elia Zammit Street, St Julians STJ 1000, Malta,
+									Europe). There can be mouse clicks as well as mouse and scroll movements
+									to be recorded. Likewise, on this website
+									performed keystrokes are recorded. Personalized
+									Information is not included. Hotjar used for
+									Collection and transmission of your data a tracking code. As soon as
+									When you visit our website, the Hotjar tracking code is automatically collected
+									the data based on your activity and stores it on the Hotjar
+									Servers (location Ireland). They also collect through the website on your
+									Cookies also placed data on your computer or your end device.
+									For more information on how Hotjar works, visit them
+									Page:
+
+									<a href="https://www.hotjar.com/privacy" target="_blank"
+									   rel="noopener">https://www.hotjar.com/privacy</a>.
+
+								</p>
+								<p>Would like
+									If you object to the collection of data by Hotjar (opt-out), click
+									please here:
+
+									<a href="https://www.hotjar.com/opt-out" target="_blank"
+									   rel="noopener">https://www.hotjar.com/opt-
+										out</a>.
+
+								</p>
+								<p></p>
+								<h5>Tracking tool CrazyEgg</h5>
+								<p>This
+									Website uses the tracking tool CrazyEgg.com to randomly
+									selected individual visits exclusively with anonymized IP address
+									to record. This tracking tool allows it using
+									Cookies evaluate how you use the website (e.g. which ones
+									Content clicked). For this purpose, a usage profile is shown visually. It
+									only usage profiles are created when using pseudonyms.
+									The legal basis for the processing of your data is one
+									Balance of interests, according to which the processing of your
+									personal data no overriding interests
+									You oppose this (Art. 6 Para. 1 Clause 1 lit.f GDPR).
+								</p>
+								<p>she can at any time collect, process and record the through
+									Data generated by CrazyEgg.com contradict by
+
+									<a
+											href="http://www.crazyegg.com/opt-out" target="_blank"
+											rel="noopener">dieser Anleitung folgen</a>. Wfurther information on
+									Data protection at CrazyEgg.com can be found at
+
+									<a
+											href="https://www.crazyegg.com/privacy" target="_blank"
+											rel="noopener">this
+										Data protection</a>.
+
+								</p>
+								<p></p>
+								<h5>Tracking tool Chartbeat
+								</h5>
+								<p>On this website is the web analysis tool
+									"ChartBeat" by Chartbeat Inc. from 826 Broadway, 6th Floor,
+									New York, NY 10003, USA. For the analysis of the use of the websites, certain usage data is collected by ChartBeat and
+									evaluated, which your browser transmits. To this usage data
+									chartBeat can use one or more cookies. In addition,
+									the IP address assigned to your device at the relevant time and
+									partially transmitted a device-specific customer number. The IP address
+									is used solely for the purpose of session identification and for geolocation (until
+									at city level). We only get statistical, aggregated
+									Data without the ability to create a personal reference.
+									The legal basis for the processing of your data is one
+									Weighing interests according to which the processing of your
+									personal data no overriding interests
+									You oppose this (Art. 6 Para. 1 Clause 1 lit.f GDPR). Further
+									You can find information about Chartbeat at
+
+									<a
+											href="https://chartbeat.com/about/" target="_blank">chartbeat.com/about/</a>.
+									Chartbeat's privacy policy can be found at
+
+									<a
+											href="https://chartbeat.com/privacy" target="_blank"
+											rel="noopener">chartbeat.com/privacy</a>.
+
+								</p>
+								<p></p>
+								<h5>Datensch declaration of use for Facebook
+								</h5>
+								<p>This website uses
+									Features of Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304,
+									UNITED STATES . When you access our pages with Facebook plug-ins, a connection is established
+									between your browser and the Facebook servers. Here
+									data is already being transferred to Facebook. Do you have one
+									Facebook account, this data can be linked to it.
+									If you do not assign this data to your Facebook account
+									please log in before visiting our site
+									Facebook off. Interactions, especially the use of a
+									Comment function or clicking a "Like" or "Share" button
+									are also passed on to Facebook. Find out more at
+
+									<a
+											href="https://de-de.facebook.com/about/privacy" target="_blank" style="color:
+inherit;">https://de-
+										de.facebook.com/about/privacy</a>.
+
+								</p>
+								<p></p>
+								<h5>Privacy Policy fermentation for Twitter
+								</h5>
+								<p>This website uses functions
+									by Twitter, Inc., 1355 Market St, Suite 900, San Francisco, CA 94103, USA.
+									When you access our pages with Twitter plug-ins, a connection is established between
+									Your browser and the servers of Twitter. Doing so already
+									Transfer data to Twitter. Do you have a Twitter account
+									this data can be linked to it. If you don't
+									If you want this data to be assigned to your Twitter account, log in
+									please visit Twitter before visiting our site. Interactions,
+									in particular, clicking on a "re-tweet" button will also be activated
+									Twitter shared. Find out more at
+
+									<a
+											href="https://twitter.com/privacy" target="_blank" style="color:
+inherit;">https://twitter.com/privacy</a>.
+
+								</p>
+								<p></p>
+								<h5>Data protection explanation for Instagram
+								</h5>
+								<p>Are on our website
+									Functions of the Instagram service integrated. These functions are
+									offered by Instagram Inc., 1601 Willow Road, Menlo Park, CA,
+									94025, USA integrated. If you are logged into your Instagram account, you can click on the Instagram button to view the content of our
+									Link pages with your Instagram profile. This allows Instagram to
+									Assign a visit to our website to your user account. We point out
+									that we as the provider of the website have no knowledge of the content of the
+									transmitted data and their use by Instagram
+									receive.
+								</p>
+								<p>More information can be found in the
+									Instagram privacy policy:
+
+									<a
+											href="https://instagram.com/about/legal/privacy/" target="_blank" style="color:
+inherit;">http://instagram.com/about/legal/privacy/
+									</a>
+								</p>
+								<p></p>
+								<h5
+								>Data protection declaration for LinkedIn
+								</h5>
+								<p>This website uses
+									Functions of the LinkedIn network. The provider is the LinkedIn Corporation,
+									2029 Stierlin Court, Mountain View, CA 94043, USA. One for each call
+									Our website, which contains functions of LinkedIn, becomes a
+									Connects to LinkedIn servers. LinkedIn is about it
+									informs you that you have visited our website with your IP address.
+									If you click the "Recommend button" from LinkedIn and in your
+									If you are logged into LinkedIn, it is possible for your LinkedIn
+									Assign a visit to our website to you and your user account.
+									We would like to point out that we as the provider of the website have no knowledge of
+									Content of the transmitted data and their use by LinkedIn
+									to have.
+								</p>
+								<p>More information can be found in the
+									LinkedIn's privacy policy at:
+
+									<a
+											href="https://www.linkedin.com/legal/privacy-policy" target="_blank"
+											style="color: inherit;">https://www.linkedin.com/legal/privacy-
+										policy
+									</a>
+								</p>
+								<p></p>
+								<h5>Data protection declaration for
+									Pinterest
+								</h5>
+								<p>On this website we use social plugins from the
+									social network Pinterest, operated by Pinterest Inc., 808 Brannan Street
+									San Francisco, CA 94103-490, USA ("Pinterest"). If you
+									Call up a page that contains such a plugin, your browser
+									direct connection to the servers of Pinterest. The plugin
+									transmits log data to the Pinterest server in the USA.
+									This log data may include your IP address
+									Address of the websites visited, which also have Pinterest functions
+									included, type and settings of the browser, date and time of
+									Request, your use of Pinterest as well
+									Cookies.
+								</p>
+								<p>Further information on the purpose, scope and others
+									Processing and use of the data by Pinterest and yours
+									related rights and ways to protect your
+									You can find privacy in Pinterest's privacy policy:
+
+
+									<a href="https://about.pinterest.com/de/privacy-policy" target="_blank"
+									   style="color: inherit;">https://about.pinterest.com/de/privacy-
+										policy
+									</a>
+								</p>
+								<p></p>
+								<h5>Data protection declaration for SoundCloud
+								</h5>
+								<p>On this website you can find social plugins
+									Network SoundCloud (SoundCloud Limited, Berners House, 47-48 Berners
+									Street, London W1T 3NF, Great Britain.) The
+									You can recognize SoundCloud plugins by the SoundCloud logo on the
+									affected pages.
+								</p>
+								<p>When you visit our website, a direct connection between your browser and
+									the SoundCloud server. SoundCloud gets the
+									Information that you have visited our website with your IP address.This allows SoundCloud to be your user account
+									assign the visit to our pages. We point out that we as
+									Provider of the site has no knowledge of the content of the transmitted data
+									as well as their use through SoundCloud. Further information
+									You can find this in the SoundCloud data protection declaration at:
+									<a
+											href="https://soundcloud.com/pages/privacy" target="_blank" style="color:
+inherit;">https://soundcloud.com/pages/privacy
+									</a>
+								</p>
+							</div>
+						</section>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+
+	<record id="datenschutz-page" model="website.page">
+		<field name="is_published">True</field>
+		<field name="url">/datenschutz-page</field>
+		<field name="view_id" ref="datenschutz-page"/>
+		<field name="track">True</field>
+	</record>
+</odoo>

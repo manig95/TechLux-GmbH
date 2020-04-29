@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- Shop confirmation message backgrounf change -->
+	<template id="shop_confirmation_inherit" name="Shop confirmation Intherit" inherit_id="website_sale.payment_confirmation_status">
+		<xpath expr="//div[@class='card-header']" position="attributes">
+			<attribute name="style">background-color: #38544d;</attribute>
+		</xpath>
+	</template>
+
+	<template id="website_sale_product_price_inherit" name="Product Price Inherit" inherit_id="website_sale.product_price">
+		<xpath expr="//div[@class='product_price mt16']" position="replace">
+			<div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price mt16">
+				<h4 class="oe_price_h4 css_editable_mode_hidden">
+					<span t-attf-class="text-danger oe_default_price {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="text-decoration: line-through; white-space: nowrap;"
+						  t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"
+					/>
+					<!--<b class="oe_price" style="white-space: nowrap;" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>-->
+					<div style="font-size:18px;font-weight: 600; font-family: DINNextLTPro-Regular;letter-spacing:1.92px;">
+						<span t-esc="website.currency_id.name"/>
+						<span t-if="combination_info['price']" t-esc="'%.2f' % (combination_info['price'])"/>
+					</div>
+					<span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+				</h4>
+				<h4 class="css_non_editable_mode_hidden decimal_precision" t-att-data-precision="str(website.currency_id.decimal_places)">
+					<span t-field="product.list_price"
+						  t-options='{
+                   "widget": "monetary",
+                   "display_currency": product.currency_id,
+               }'/>
+				</h4>
+			</div>
+		</xpath>
+	</template>
+
+
+	<!--============ Shop Page ===============-->
+
+	<template id="shop_form_inherit" name="Shop Inherit" inherit_id="website_sale.products">
+		<xpath expr="//div[@class='o_wsale_products_grid_table_wrapper']" position="replace">
+			<div t-if="bins" class="o_wsale_products_grid_table_wrapper" style="">
+				<div class="shop-title">
+					<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 12px 22px 0px;"/>
+					<h1 class="sp-p-1" style="font-weight: 600;font-size: 45px;margin-top:20px;letter-spacing: 3px;display: initial;color: #000;">SHOP</h1>
+					<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 10px 17px 3px;"/>
+					<!--<p style="font-size: 15px;">OUR PATENTED SWISS TECHNOLOGIES</p>-->
+				</div>
+				<table class="table table-borderless m-0" t-att-data-ppg="ppg" t-att-data-ppr="ppr" style="table-layout: auto !important;">
+					<colgroup t-ignore="true">
+						<!-- Force the number of columns (useful when only one row of (x < ppr) products) -->
+						<col t-foreach="ppr" t-as="p"/>
+					</colgroup>
+					<tbody>
+						<tr t-foreach="bins" t-as="tr_product">
+							<t t-foreach="tr_product" t-as="td_product">
+								<t t-if="td_product">
+									<t t-set="product" t-value="td_product['product']"/>
+									<td t-att-colspan="td_product['x'] != 1 and td_product['x']"
+										t-att-rowspan="td_product['y'] != 1 and td_product['y']"
+										t-attf-class="oe_product #{td_product['class']}">
+										<div t-attf-class="o_wsale_product_grid_wrapper	 o_wsale_product_grid_wrapper_#{td_product['x']}_#{td_product['y']}" style="border: none;">
+											<t t-call="website_sale.products_item">
+												<t t-set="product_image_big" t-value="td_product['x'] + td_product['y'] &gt; 2"/>
+											</t>
+										</div>
+									</td>
+								</t>
+								<td t-else=""/>
+							</t>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</xpath>
+	</template>
+
+
+	<template id="shop_product_inherit" name="Shop Product Intherit" inherit_id="website_sale.product">
+		<xpath expr="//a[@class='btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block']" position="replace">
+			<a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block add-t-cart-btn"
+			   href="#">Add to Cart
+			</a>
+		</xpath>
+		<xpath expr="//div[@id='product_details']//p[3][@class='text-muted']" position="replace">
+			<!--<p class="text-muted">
+				<img src="/website_template/static/img/swiss-icon.png"
+					 onmouseover="this.src='/website_template/static/img/swiss-2.png'"
+					 onmouseout="this.src='/website_template/static/img/swiss-icon.png'"
+					 border="0" alt="" style="padding-right: 10px;"/>
+				<span style="text-transform:uppercase;color: #000; font-weight: bold;font-size: 15px;">SWISS MADE</span>
+			</p>-->
+		</xpath>
+	</template>
+
+	<template id="shop_form__product_inherit" name="Shop Inherit Product" inherit_id="website_sale.products_item">
+		<xpath expr="//form[@action='/shop/cart/update']" position="attributes">
+			<attribute name="style">border:none !important;</attribute>
+		</xpath>
+		<xpath expr="//a[@t-att-href='product_href']" position="replace">
+			<a t-att-href="product_href" class="d-block h-100" itemprop="url">
+				<img style="max-width:50%" src="/website_template/static/img/np-1.png"
+					 onmouseover="this.src='/website_template/static/img/np-2.png'"
+					 onmouseout="this.src='/website_template/static/img/np-1.png'"
+					 border="0" alt=""/>
+			</a>
+		</xpath>
+		<xpath expr="//div[@class='p-2 o_wsale_product_information_text']" position="replace">
+			<div class="p-2 o_wsale_product_information_text" style="font-size:15px;text-align:center; letter-spacing: 1px;">
+				<h3 class="o_wsale_products_item_title" style="display:none;">
+					<a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" style="color: #000;text-transform:uppercase;font-weight:bold;font-size:18px;font-family: DINNextLTPro-Regular;"/>
+					<a role="button" t-if="not product.website_published" t-att-href="product_href" class="btn btn-sm btn-danger" title="This product is unpublished.">Unpublished</a>
+				</h3>
+				<div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" style="letter-spacing: 1px;font-size: 16px; display:none;">
+					<del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']"
+						 t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+					<div style="font-size:16px;font-weight: 600; font-family: DINNextLTPro-Regular;">
+						<span t-esc="website.currency_id.name"/>
+						<span t-if="combination_info['price']" t-esc="'%.f' % (combination_info['price'])"/>
+					</div>
+					<span itemprop="price" style="display:none;" t-esc="combination_info['price']"/>
+					<span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+				</div>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="shop_address_inherit" name="Address Managemen" inherit_id="website_sale.address">
+		<xpath expr="//form[@class='checkout_autoformat']" position="replace">
+			<form action="/shop/address" method="post" class="checkout_autoformat">
+				<div class="form-row">
+					<div class="w-100"/>
+					<div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''} col-lg-6 div_name">
+						<label class="col-form-label" for="name">Name</label>
+						<input type="text" name="name" t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}" t-att-value="'name' in checkout and checkout['name']"/>
+					</div>
+					<t t-if="mode[1] == 'billing'">
+						<div t-attf-class="form-group #{error.get('email') and 'o_has_error' or ''} col-lg-6" id="div_email">
+							<label class="col-form-label" for="email">Email</label>
+							<input type="email" name="email" t-attf-class="form-control #{error.get('email') and 'is-invalid' or ''}" t-att-value="'email' in checkout and checkout['email']"/>
+						</div>
+					</t>
+					<!--<div t-attf-class="form-group  col-lg-6" id="div_phone">
+						<label class="col-form-label" for="phone">Phone</label>
+						<input type="tel" name="phone" t-attf-class="form-control"/>
+					</div>-->
+					<div class="w-100"/>
+					<div t-attf-class="form-group #{error.get('street') and 'o_has_error' or ''} col-lg-6 div_street">
+						<label class="col-form-label" for="street">Street
+							<span class="d-none d-md-inline">and Number</span>
+						</label>
+						<input type="text" name="street" t-attf-class="form-control #{error.get('street') and 'is-invalid' or ''}" t-att-value="'street' in checkout and checkout['street']"/>
+					</div>
+					<div t-attf-class="form-group #{error.get('street2') and 'o_has_error' or ''} col-lg-6 div_street2">
+						<label class="col-form-label label-optional" for="street2">Street 2</label>
+						<input type="text" name="street2" t-attf-class="form-control #{error.get('street2') and 'is-invalid' or ''}" t-att-value="'street2' in checkout and checkout['street2']"/>
+					</div>
+					<div class="w-100"/>
+					<t t-set='zip_city' t-value='country and [x for x in country.get_address_fields() if x in ["zip", "city"]] or ["city", "zip"]'/>
+					<t t-if="'zip' in zip_city and zip_city.index('zip') &lt; zip_city.index('city')">
+						<div t-attf-class="form-group #{error.get('zip') and 'o_has_error' or ''} col-md-4 div_zip">
+							<label class="col-form-label label-optional" for="zip">Zip Code</label>
+							<input type="text" name="zip" t-attf-class="form-control #{error.get('zip') and 'is-invalid' or ''}" t-att-value="'zip' in checkout and checkout['zip']"/>
+						</div>
+					</t>
+					<div t-attf-class="form-group #{error.get('city') and 'o_has_error' or ''} col-md-8 div_city">
+						<label class="col-form-label" for="city">City</label>
+						<input type="text" name="city" t-attf-class="form-control #{error.get('city') and 'is-invalid' or ''}" t-att-value="'city' in checkout and checkout['city']"/>
+					</div>
+					<t t-if="'zip' in zip_city and zip_city.index('zip') &gt; zip_city.index('city')">
+						<div t-attf-class="form-group #{error.get('zip') and 'o_has_error' or ''} col-md-4 div_zip">
+							<label class="col-form-label label-optional" for="zip">Zip Code</label>
+							<input type="text" name="zip" t-attf-class="form-control #{error.get('zip') and 'is-invalid' or ''}" t-att-value="'zip' in checkout and checkout['zip']"/>
+						</div>
+					</t>
+					<div class="w-100"/>
+					<div t-attf-class="form-group #{error.get('country_id') and 'o_has_error' or ''} col-lg-6 div_country">
+						<label class="col-form-label" for="country_id">Country</label>
+						<select id="country_id" name="country_id" t-attf-class="form-control #{error.get('country_id') and 'is-invalid' or ''}">
+							<option value="">Country...</option>
+							<t t-foreach="countries" t-as="c">
+								<option t-att-value="c.id" t-att-selected="c.id == (country and country.id or -1)">
+									<t t-esc="c.name"/>
+								</option>
+							</t>
+						</select>
+					</div>
+					<div t-attf-class="form-group #{error.get('state_id') and 'o_has_error' or ''} col-lg-6 div_state" t-att-style="(not country or not country.state_ids) and 'display: none'">
+						<label class="col-form-label" for="state_id">State / Province</label>
+						<select name="state_id" t-attf-class="form-control #{error.get('state_id') and 'is-invalid' or ''}" data-init="1">
+							<option value="">State / Province...</option>
+							<t t-foreach="country and country.state_ids or []" t-as="s">
+								<option t-att-value="s.id" t-att-selected="s.id == ('state_id' in checkout and country and checkout['state_id'] != '' and int(checkout['state_id']))">
+									<t t-esc="s.name"/>
+								</option>
+							</t>
+						</select>
+					</div>
+					<div class="w-100"/>
+					<t t-if="mode == ('new', 'billing') and not only_services">
+						<div class="col-lg-12">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" id='shipping_use_same' class="mr8" name='use_same' value="1" checked='checked'/>Ship to the same address
+									<span class='ship_to_other text-muted' style="display: none">&amp;nbsp;(
+										<i>Your shipping address will be requested later)</i>
+									</span>
+								</label>
+							</div>
+						</div>
+					</t>
+				</div>
+
+				<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+				<input type="hidden" name="submitted" value="1"/>
+				<input type="hidden" name="partner_id" t-att-value="partner_id or '0'"/>
+				<input type="hidden" name="callback" t-att-value="callback"/>
+				<!-- Example -->
+				<input type="hidden" name="field_required" t-att-value="'name'"/>
+
+				<div class="d-flex justify-content-between">
+					<a role="button" t-att-href="mode == ('new', 'billing') and '/shop/cart' or '/shop/checkout'" class="btn btn-secondary mb32">
+						<i class="fa fa-chevron-left"/>
+						<span>Back</span>
+					</a>
+					<a role="button" href="#" class="btn btn-primary mb32 a-submit a-submit-disable a-submit-loading">
+						<span>Next</span>
+						<i class="fa fa-chevron-right"/>
+					</a>
+				</div>
+			</form>
+		</xpath>
+	</template>
+
+</odoo>

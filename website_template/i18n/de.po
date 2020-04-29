@@ -1,0 +1,2830 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_template
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-18 12:51+0000\n"
+"PO-Revision-Date: 2020-03-18 12:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+") hat jede Person Anspruch auf Schutz ihrer\n"
+"\t\t\t\t\t\t\t\t\tPrivatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen\n"
+"\t\t\t\t\t\t\t\t\tDaten. Die Betreiber dieser Seiten nehmen den Schutz Ihrer\n"
+"\t\t\t\t\t\t\t\t\tpersönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen\n"
+"\t\t\t\t\t\t\t\t\tDaten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften\n"
+"\t\t\t\t\t\t\t\t\tsowie dieser Datenschutzerklärung."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+") und der\n"
+"\t\t\t\t\t\t\t\t\tDatenschutzwebseite der IVW ("
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+") zur Ermittlung statistischer\n"
+"\t\t\t\t\t\t\t\t\tKennwerte über die Nutzung unserer Angebote. Ziel der\n"
+"\t\t\t\t\t\t\t\t\tNutzungsmessung ist es, die Nutzungsintensität, die Anzahl der\n"
+"\t\t\t\t\t\t\t\t\tNutzungen und Nutzer unserer Applikation und deren Surfverhalten\n"
+"\t\t\t\t\t\t\t\t\tstatistisch– auf Basis eines einheitlichen Standardverfahrens – zu bestimmen\n"
+"\t\t\t\t\t\t\t\t\tund somit marktweit vergleichbare Werte zu erhalten."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ", sowie zumDatenschutz bei Google allgemein:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+", wobei diese\n"
+"\t\t\t\t\t\t\t\t\t\tEinstellung gelöscht wird, wenn Sie Ihre Cookies löschen;"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+", wobei diese Einstellung\n"
+"\t\t\t\t\t\t\t\t\t\tgelöscht wird, wenn Sie Ihre Cookies löschen;"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+".\n"
+"\t\t\t\t\t\t\t\t\tDie Datenschutzerklärung von Chartbeat finden Sie unter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+". Alternativ\n"
+"\t\t\t\t\t\t\t\t\tkönnen Sie die Webseite der Network Advertising Initiative (NAI) unter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+". Hierdurch\n"
+"\t\t\t\t\t\t\t\t\twird ein sog. opt-out Cookie auf ihrem Datenträger gespeichert, der die\n"
+"\t\t\t\t\t\t\t\t\tVerarbeitung personenbezogener Daten durch Google Analytics verhindert.\n"
+"\t\t\t\t\t\t\t\t\tBitte beachten Sie, dass bei einem Löschen sämtlicher Cookies auf Ihrem\n"
+"\t\t\t\t\t\t\t\t\tEndgerät auch diese Opt-out-Cookies gelöscht werden, d.h., dass Sie erneut\n"
+"\t\t\t\t\t\t\t\t\tdie Opt-out-Cookies setzen müssen, wenn Sie weiterhin diese Form der\n"
+"\t\t\t\t\t\t\t\t\tDatenerhebung verhindern wollen. Die Opt-out-Cookies sind pro Browser und\n"
+"\t\t\t\t\t\t\t\t\tRechner/Endgerät gesetzt und müssen daher für jeden Browser, Rechner\n"
+"\t\t\t\t\t\t\t\t\toder anderes Endgerät gesondert aktiviert\n"
+"\t\t\t\t\t\t\t\t\twerden."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+". Weitere Informationen zum\n"
+"\t\t\t\t\t\t\t\t\tDatenschutz bei CrazyEgg.com finden Sie unter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+". Wir weisen\n"
+"\t\t\t\t\t\t\t\t\t\tSie darauf hin, dass Sie in diesem Fall gegebenenfalls nicht alle Funktionen\n"
+"\t\t\t\t\t\t\t\t\t\tdieses Angebots vollumfänglich nutzen können."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "30 Days Return Policy"
+msgstr "30 Tage Rückgaberecht"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "6275 Ballwil"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "<b> Datenschutzerklärung </b>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "<b>Authorized Representative</b>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "<b>Commercial Registration</b>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "<b>Contact Address</b>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "<b>Copyrights</b>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "<b>Disclaimer for links</b>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "<b>Disclaimer</b>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "<b>Email: info@techlux.ch</b>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.about_us_ept_new
+msgid ""
+"<b>Techlux</b>\n"
+"\t\t\t\t\t\tstands for quality made in Switzerland. Our multi-layered products are the epitome\n"
+"\t\t\t\t\t\tfor perfect design and pure driving pleasure, they represent the successful combination of exclusive\n"
+"\t\t\t\t\t\t<b>aesthetics</b>\n"
+"\t\t\t\t\t\tand\n"
+"\t\t\t\t\t\t<b>dynamic functionality.</b>\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\tNot only committed car fans come to the\n"
+"\t\t\t\t\t\tstrong assortment rave about. Techlux is also a permanent point of contact for business customers\n"
+"\t\t\t\t\t\tfrom Switzerland, who make no compromises when it comes to vehicle equipment. Through our\n"
+"\t\t\t\t\t\tComprehensive equipment as well as <b>technological know-how</b> allow us to do it\n"
+"\t\t\t\t\t\tThe full potential of professional body design. We make it clear that luxury and attractive\n"
+"\t\t\t\t\t\tConditions do not conflict.\n"
+"\t\t\t\t\t\tService puts capital on <b>Techlux</b>.\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\tOur company is located in the heart of Lucerne, more precisely\n"
+"\t\t\t\t\t\tsaid in Ballwil. We have the experience to innovate every vehicle\n"
+"\t\t\t\t\t\thelp. Clear lines and imaginative forms cause <b>a sensation.</b> We are known for the love of perfection and distinctive details. Techlux develops contemporary de-luxe bodies,\n"
+"\t\t\t\t\t\twhereby modern production processes and <b>selected materials</b> go hand in hand.\n"
+"\t\t\t\t\t\tOrder processing is uncomplicated and therefore quick - with quick response times\n"
+"\t\t\t\t\t\tour customers can count.\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\tYou have a dedicated contact person at your side at any time, who\n"
+"\t\t\t\t\t\thelp with all matters."
+msgstr ""
+"<b>Techlux</b> steht für Qualität made in Switzerland. Unsere "
+"vielschichtigen Produkte sind der Inbegriff für perfektes Design und puren "
+"Fahrspaß. Sie stehen für die erfolgreiche Kombination von exklusiver<b> "
+"Ästhetik</b> und <b>dynamischer "
+"Funktionalität</b>.<div><br/></div><div>Nicht nur engagierte Autofans kommen"
+" zu der starken Reichweite, von der sie schwärmen. Techlux ist auch ein "
+"ständiger Ansprechpartner für Geschäftskunden aus der Schweiz, die bei der "
+"Fahrzeugausstattung keine Kompromisse eingehen. Dank unserer umfangreichen "
+"Ausstattung und unseres <b>technologischen Know-hows</b> können wir das "
+"volle Potenzial professioneller Karosseriedesigns nutzen. Wir machen "
+"deutlich, dass Luxus und attraktive Bedingungen nicht in Konflikt stehen. "
+"Der Service basiert auf "
+"<b>Techlux</b>.<br/></div><div><br/></div><div>Unsere Firma befindet sich im"
+" Herzen von Luzern, genauer gesagt in Ballwil. Wir haben die Erfahrung, jede"
+" Fahrzeughilfe zu innovieren. Klare Linien und einfallsreiche Formen sorgen "
+"für<b> Aufsehen</b>. Wir sind bekannt für die Liebe zur Perfektion und zu "
+"unverwechselbaren Details. Techlux entwickelt zeitgemäße Luxus-Karosserien, "
+"bei denen moderne Produktionsverfahren und <b>ausgewählte Materialien</b> "
+"Hand in Hand gehen. Die Auftragsabwicklung ist unkompliziert und daher "
+"schnell - mit schnellen Reaktionszeiten können unsere Kunden "
+"zählen.</div><div><br/></div><div><div>Sie haben immer einen engagierten "
+"Ansprechpartner an Ihrer Seite, der Ihnen bei Fragen hilft.</div></div>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "<b>VAT number</b>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid ""
+"<font class=\"s_title s_title-t\" style=\"font-size: 36px;font-family: "
+"'Montserrat', sans-serif;font-weight:600;\">TERMS &amp; CONDITIONS</font>"
+msgstr ""
+"<div><font face=\"Montserrat, sans-serif\"><span style=\"font-size: "
+"36px;\">IMPRESSUM</span></font></div>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.about_us_ept_new
+msgid ""
+"<font style=\"font-size: 29px;font-family: 'Montserrat', sans-serif;\">ABOUT"
+" US</font>"
+msgstr ""
+"<font style=\"font-size: 29px;font-family: 'Montserrat', sans-serif;\">ÜBER "
+"UNS</font>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"<font style=\"font-size: 36px;font-family: 'Montserrat', sans-serif;font-"
+"weight:600;\">Datenschutz</font>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid ""
+"<i class=\"fa fa-chevron-left\"/>\n"
+"\t\t\t\t\t\t<span>Back</span>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"<i>Abonnieren von\n"
+"\t\t\t\t\t\t\t\t\t\tKommentaren\n"
+"\t\t\t\t\t\t\t\t\t</i>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "<i>Speicherung der IPAdresse</i>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid ""
+"<span class=\"box-title\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<b>APPROVED FOR ECE AND ASA</b>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">In accordance with the applicable guidelines of the ECE and ASA.</span>"
+msgstr ""
+"<span style=\"font-size: 20px;\"><b>GENEHMIGT FÜR ECE UND ASA</b></span><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">In Übereinstimmung mit den geltenden Richtlinien der ECE und der ASA.</span>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid ""
+"<span class=\"box-title\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<b>APPROVED FOR TOP SPEED</b>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Developed for maximum speed.</span>"
+msgstr ""
+"<span class=\"box-title\"><b>GENEHMIGT FÜR TOP SPEED</b>&amp;nbsp;</span><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Entwickelt für maximale Geschwindigkeit.</span>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid ""
+"<span class=\"box-title\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<b>BEST RESOURCES</b>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">The material used is an important factor for the quality and durability of our products.</span>"
+msgstr ""
+"<span class=\"box-title\"><b>BESTE RESSOURCEN</b>&amp;nbsp;</span><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">The materiDas verwendete Material ist ein wichtiger Faktor für die Qualität und Langlebigkeit unserer Produkte.</span>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid ""
+"<span class=\"box-title\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<b>SOLID CONSTRUCTION</b>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Our designers focus on the highest design and functional requirements.</span>"
+msgstr ""
+"<span class=\"box-title\"><b>FESTE KONSTRUKTION</b>&amp;nbsp;</span><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Unsere Designer konzentrieren sich auf höchste Design- und Funktionsanforderungen.</span>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid ""
+"<span class=\"box-title\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t<b>TESTED FOR CARWASH</b>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t</span>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">The product is washable</span>"
+msgstr ""
+"<span class=\"box-title\"><b>AUF CARWASH GETESTET</b>&amp;nbsp;</span><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"box-paragraph\">Das Produkt ist waschbar</span>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "<span class=\"txt-feel-diff\">FEEL THE DIFFERENCE</span>"
+msgstr "<span class=\"txt-feel-diff\">FÜHLE DEN UNTERSCHIED</span>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_product_inherit
+msgid ""
+"<span style=\"text-transform:uppercase;color: #000; font-weight: bold;font-"
+"size: 15px;\">SWISS MADE</span>"
+msgstr ""
+"<font color=\"#000000\"><span style=\"font-size: 15px; text-transform: "
+"uppercase;\"><b>IN DER SCHWEIZ HERGESTELLT</b></span></font>"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid ""
+"<span>Next</span>\n"
+"\t\t\t\t\t\t<i class=\"fa fa-chevron-right\"/>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"<strong>\n"
+"\t\t\t\t\t\t\t\t\t\t\tRechtsgrundlage für die Verarbeitung\n"
+"\t\t\t\t\t\t\t\t\t\t</strong>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "<strong>Art der Daten</strong>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "<strong>Nutzung der Daten</strong>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "<strong>Rechte der betroffenen Person</strong>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"<strong>Rechtsgrundlage für die Verarbeitung\n"
+"\t\t\t\t\t\t\t\t\t\t</strong>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"<strong>Speicherdauer der Daten\n"
+"\t\t\t\t\t\t\t\t\t\t</strong>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "<strong>Weitergabe der Daten</strong>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "<strong>Widerspruchsrecht</strong>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Accuracy, timeliness, reliability and completeness of the information."
+msgstr ""
+"Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der "
+"Informationen."
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_product_inherit
+msgid "Add to Cart"
+msgstr "IN DEN WARENKORB LEGEN"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Advertising-Identifier"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid ""
+"All offers are non-binding. The author expressly reserves the right to change, add to, or delete parts of the pages or the entire offer or the\n"
+"\t\t\t\t\t\t\t\t\t\tDiscontinue publication temporarily or permanently."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Allgemeiner Hinweis"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Als Nutzer der Seite können Sie nach einer\n"
+"\t\t\t\t\t\t\t\t\tAnmeldung Kommentare abonnieren. Sie erhalten eine\n"
+"\t\t\t\t\t\t\t\t\tBestätigungsemail, um zu prüfen, ob Sie der Inhaber der\n"
+"\t\t\t\t\t\t\t\t\tangegebenen E-Mail-Adresse sind. Sie können diese Funktion jederzeit\n"
+"\t\t\t\t\t\t\t\t\tüber einen Link in den Info-Mails\n"
+"\t\t\t\t\t\t\t\t\tabbestellen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Analyse durch WiredMinds"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Android-ID"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Ankordata GmbH\n"
+"\t\t\t\t\t\t\t\t\t\t&amp; Co. KG ("
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Ankordata GmbH &amp; Co. KG ("
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Auf dieser Webseite können Plugins des sozialen\n"
+"\t\t\t\t\t\t\t\t\tNetzwerks SoundCloud (SoundCloud Limited, Berners House, 47-48 Berners\n"
+"\t\t\t\t\t\t\t\t\tStreet, London W1T 3NF, Großbritannien.) integriert sein. Die\n"
+"\t\t\t\t\t\t\t\t\tSoundCloud-Plugins erkennen Sie an dem SoundCloud-Logo auf den\n"
+"\t\t\t\t\t\t\t\t\tbetroffenen Seiten."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Auf dieser Webseite verwenden wir Social Plugins des\n"
+"\t\t\t\t\t\t\t\t\tsozialen Netzwerkes Pinterest, das von der Pinterest Inc., 808 Brannan Street\n"
+"\t\t\t\t\t\t\t\t\tSan Francisco, CA 94103-490, USA (\"Pinterest\") betrieben wird. Wenn Sie\n"
+"\t\t\t\t\t\t\t\t\teine Seite aufrufen, die ein solches Plugin enthält, stellt Ihr Browser eine\n"
+"\t\t\t\t\t\t\t\t\tdirekte Verbindung zu den Servern von Pinterest her. Das Plugin\n"
+"\t\t\t\t\t\t\t\t\tübermittelt dabei Protokolldaten an den Server von Pinterest in die USA.\n"
+"\t\t\t\t\t\t\t\t\tDiese Protokolldaten enthalten möglicherweise Ihre IP-Adresse, die\n"
+"\t\t\t\t\t\t\t\t\tAdresse der besuchten Websites, die ebenfalls Pinterest- Funktionen\n"
+"\t\t\t\t\t\t\t\t\tenthalten, Art und Einstellungen des Browsers, Datum und Zeitpunkt der\n"
+"\t\t\t\t\t\t\t\t\tAnfrage, Ihre Verwendungsweise von Pinterest sowie\n"
+"\t\t\t\t\t\t\t\t\tCookies."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Auf dieser Webseite wird das Webanalysewerkzeug\n"
+"\t\t\t\t\t\t\t\t\t«ChartBeat» der Chartbeat Inc. aus 826 Broadway, 6th Floor,\n"
+"\t\t\t\t\t\t\t\t\tNew York, NY 10003, USA, eingesetzt. Für die Analyse der Nutzung derWebsites werden durch ChartBeat bestimmte Nutzungsdaten erhoben und\n"
+"\t\t\t\t\t\t\t\t\tausgewertet, die Ihr Browser übermittelt. Um diese Nutzungsdaten zu\n"
+"\t\t\t\t\t\t\t\t\terfassen, kann ChartBeat einen oder mehrere Cookies einsetzen. Zudem wird\n"
+"\t\t\t\t\t\t\t\t\tdie Ihrem Gerät zum betreffenden Zeitpunkt zugewiesene IP-Adresse sowie\n"
+"\t\t\t\t\t\t\t\t\tteilweise eine gerätespezifische Kundennummer übermittelt. Die IP-Adresse\n"
+"\t\t\t\t\t\t\t\t\twird allein zum Zweck der Sessionkennung und für die Geolokalisierung (bis\n"
+"\t\t\t\t\t\t\t\t\tauf Stadt-Ebene) benötigt. Wir erhalten lediglich statistische, aggregierte\n"
+"\t\t\t\t\t\t\t\t\tDaten ohne eigene Möglichkeit zur Herstellung eines Personenbezugs.\n"
+"\t\t\t\t\t\t\t\t\tRechtsgrundlage für die Verarbeitung Ihrer Daten ist eine\n"
+"\t\t\t\t\t\t\t\t\tInteressenabwägung, wonach der vorstehend geschilderten Verarbeitung Ihrer\n"
+"\t\t\t\t\t\t\t\t\tpersonenbezogener Daten keine überwiegenden gegenteiligen Interessen\n"
+"\t\t\t\t\t\t\t\t\tIhrerseits entgegenstehen (Art. 6 Abs. 1 S. 1 lit. f DSGVO). Weitere\n"
+"\t\t\t\t\t\t\t\t\tInformationen über Chartbeat finden Sie unter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Auf unserer Webseite sind\n"
+"\t\t\t\t\t\t\t\t\tFunktionen des Dienstes Instagram eingebunden. Diese Funktionen werden\n"
+"\t\t\t\t\t\t\t\t\tangeboten durch die Instagram Inc., 1601 Willow Road, Menlo Park, CA,\n"
+"\t\t\t\t\t\t\t\t\t94025, USA integriert. Wenn Sie in Ihrem Instagram-Account eingeloggt sindkönnen Sie durch Anklicken des Instagram-Buttons die Inhalte unserer\n"
+"\t\t\t\t\t\t\t\t\tSeiten mit Ihrem Instagram-Profil verlinken. Dadurch kann Instagram den\n"
+"\t\t\t\t\t\t\t\t\tBesuch unserer Seiten Ihrem Benutzerkonto zuordnen. Wir weisen darauf hin,\n"
+"\t\t\t\t\t\t\t\t\tdass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der\n"
+"\t\t\t\t\t\t\t\t\tübermittelten Daten sowie deren Nutzung durch Instagram\n"
+"\t\t\t\t\t\t\t\t\terhalten."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Aufgrund der\n"
+"\t\t\t\t\t\t\t\t\teingesetzten Marketing-Tools baut Ihr Browser automatisch eine direkte\n"
+"\t\t\t\t\t\t\t\t\tVerbindung mit dem Server von Google auf. Durch die Einbindung von Google\n"
+"\t\t\t\t\t\t\t\t\tAds erhält Google die Information, dass Sie den entsprechenden Teil unseres\n"
+"\t\t\t\t\t\t\t\t\tInternetauftritts aufgerufen oder eine Anzeige von uns angeklickt haben.\n"
+"\t\t\t\t\t\t\t\t\tSofern Sie bei einem Dienst von Google registriert sind, kann Google den\n"
+"\t\t\t\t\t\t\t\t\tBesuch Ihrem Account zuordnen. Selbst wenn Sie nicht bei Google registriert\n"
+"\t\t\t\t\t\t\t\t\tsind bzw. sich nicht eingeloggt haben, besteht die Möglichkeit, dass Google\n"
+"\t\t\t\t\t\t\t\t\tIhre IP-Adresse in Erfahrung bringt und speichert."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Auskunftsrecht (Art. 15\n"
+"\t\t\t\t\t\t\t\t\t\tDSGVO)"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Ausserdem können Sie die Nutzung von Google Analytics auch\n"
+"\t\t\t\t\t\t\t\t\tverhindern, indem sie auf diesen Link klicken:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Bearbeitung\n"
+"\t\t\t\t\t\t\t\t\tvon Personendaten"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Bei Anfragen\n"
+"\t\t\t\t\t\t\t\t\tbetreffend Opt-Out, wenden Sie sich bitte an die Kontaktdaten zu Beginn\n"
+"\t\t\t\t\t\t\t\t\tdieser Datenschutzerklärung."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Bei Anfragen dieser Art, wenden Sie sich bitte an\n"
+"\t\t\t\t\t\t\t\t\tKontaktdaten am Ende dieser Datenschutzerklärung. Bitte beachten Sie,\n"
+"\t\t\t\t\t\t\t\t\tdass wir bei derartigen Anfragen sicherstellen müssen, dass es sich\n"
+"\t\t\t\t\t\t\t\t\ttatsächlich um die betroffene Person handelt."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Bei Anfragen dieser Art, wenden Sie sich bitte an die\n"
+"\t\t\t\t\t\t\t\t\tKontaktdaten zu Beginn dieser Datenschutzerklärung. Bitte beachten\n"
+"\t\t\t\t\t\t\t\t\tSie, dass wir bei derartigen Anfragen sicherstellen müssen, dass es sich\n"
+"\t\t\t\t\t\t\t\t\ttatsächlich um die betroffene Person handelt."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Bitte\n"
+"\t\t\t\t\t\t\t\t\tbeachten Sie, dass Sie die Opt-out-Cookies nicht löschen dürfen,\n"
+"\t\t\t\t\t\t\t\t\tsolange Sie keine Aufzeichnung von Messdaten wünschen. Haben Sie\n"
+"\t\t\t\t\t\t\t\t\talle Ihre Cookies im Browser gelöscht, müssen Sie das jeweilige\n"
+"\t\t\t\t\t\t\t\t\tOpt-out Cookie erneut setzen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Browsertyp und\n"
+"\t\t\t\t\t\t\t\t\t\tBrowserversion"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "CH10048079027"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "CONTINUE SHOPPING"
+msgstr "MIT DEM EINKAUFEN FORTFAHREN"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid "City"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "Close"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Commercial register number: CHE-268.606.949"
+msgstr "Handelsregisternummer: CHE-268.606.949"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Cookies\n"
+"\t\t\t\t\t\t\t\t\tbleiben über das Ende einer Browser-Sitzung gespeichert und\n"
+"\t\t\t\t\t\t\t\t\tkönnen bei einem erneuten Seitenbesuch wieder aufgerufen werden.\n"
+"\t\t\t\t\t\t\t\t\tWenn Sie das nicht wünschen, sollten Sie Ihren Internetbrowser so\n"
+"\t\t\t\t\t\t\t\t\teinstellen, dass er die Annahme von Cookies verweigert."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid "Country"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid "Country..."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Dabei\n"
+"\t\t\t\t\t\t\t\t\twerden Daten erhoben, verarbeitet und gespeichert, aus denen unter einem\n"
+"\t\t\t\t\t\t\t\t\tPseudonym Nutzungsprofile erstellt werden. Wo möglich und sinnvoll,\n"
+"\t\t\t\t\t\t\t\t\twerden diese Nutzungsprofile vollständig anonymisiert. Hierzu\n"
+"\t\t\t\t\t\t\t\t\tkönnen Cookies zum Einsatz kommen. Cookies sind kleine Textdateien,\n"
+"\t\t\t\t\t\t\t\t\tdie im Internet-Browser des Besuchers gespeichert werden und zur\n"
+"\t\t\t\t\t\t\t\t\tWiedererkennung des Internet-Browsers dienen. Die erhobenen Daten, die\n"
+"\t\t\t\t\t\t\t\t\tauch personenbezogene Daten beinhalten können, werden an\n"
+"\t\t\t\t\t\t\t\t\tWiredMinds übermittelt oder direkt von WiredMinds erhoben.\n"
+"\t\t\t\t\t\t\t\t\tWiredMinds darf Informationen, die durch Besuche auf den Webseiten\n"
+"\t\t\t\t\t\t\t\t\thinterlassen werden, nutzen, um anonymisierte Nutzungsprofile zu erstellen.\n"
+"\t\t\t\t\t\t\t\t\tDie dabei gewonnenen Daten werden ohne die gesondert erteilte Zustimmung\n"
+"\t\t\t\t\t\t\t\t\tdes Betroffenen nicht benutzt, um den Besucher dieser Webseite\n"
+"\t\t\t\t\t\t\t\t\tpersönlich zu identifizieren und sie werden nicht mit personenbezogenen\n"
+"\t\t\t\t\t\t\t\t\tDaten über den Träger des Pseudonyms zusammengeführt.\n"
+"\t\t\t\t\t\t\t\t\tSoweit IP-Adressen erfasst werden, erfolgt deren sofortige Anonymisierungdurch Löschen des letzten Nummernblocks."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Darüber hinaus\n"
+"\t\t\t\t\t\t\t\t\thaben wir ein berechtigtes Interesse daran, die pseudonymisierten Daten der\n"
+"\t\t\t\t\t\t\t\t\tINFOnline, der AGOF und der IVW zum Zwecke der Marktforschung (AGOF,\n"
+"\t\t\t\t\t\t\t\t\tagma) und für statistische Zwecke (IVW, INFOnline) zur Verfügung\n"
+"\t\t\t\t\t\t\t\t\tzu stellen. Weiterhin haben wir ein berechtigtes Interesse daran, die\n"
+"\t\t\t\t\t\t\t\t\tpseudonymisierten Daten der INFOnline zur Weiterentwicklung und\n"
+"\t\t\t\t\t\t\t\t\tBereitstellung interessengerechter Werbemittel zur Verfügung zu\n"
+"\t\t\t\t\t\t\t\t\tstellen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Darüber hinaus haben wir\n"
+"\t\t\t\t\t\t\t\t\tein berechtigtes Interesse daran, die pseudonymisierten Daten der INFOnline,\n"
+"\t\t\t\t\t\t\t\t\tder AGOF und der IVW zum Zwecke der Marktforschung (AGOF, agma) und\n"
+"\t\t\t\t\t\t\t\t\tfür statistische Zwecke (INFOnline, IVW) zur Verfügung zu stellen.\n"
+"\t\t\t\t\t\t\t\t\tWeiterhin haben wir ein berechtigtes Interesse daran, die pseudonymisierten\n"
+"\t\t\t\t\t\t\t\t\tDaten der INFOnline zur Weiterentwicklung und Bereitstellung\n"
+"\t\t\t\t\t\t\t\t\tinteressengerechter Werbemittel zur Verfügung zu stellen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Das\n"
+"\t\t\t\t\t\t\t\t\tMessverfahren der INFOnline GmbH, welches in dieser Applikation eingesetzt\n"
+"\t\t\t\t\t\t\t\t\twird, ermittelt Nutzungsdaten. Dies geschieht, um die Leistungswerte Page\n"
+"\t\t\t\t\t\t\t\t\tImpressions, Visits und Clients zu erheben und weitere Kennzahlen daraus zu\n"
+"\t\t\t\t\t\t\t\t\tbilden (z.B. qualifizierte Clients). Darüber hinaus werden diegemessenen Daten wie folgt genutzt:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Das Messverfahren\n"
+"\t\t\t\t\t\t\t\t\tder INFOnline GmbH, welches auf dieser Webseite eingesetzt wird, ermittelt\n"
+"\t\t\t\t\t\t\t\t\tNutzungsdaten. Dies geschieht, um die Leistungswerte Page Impressions,\n"
+"\t\t\t\t\t\t\t\t\tVisits und Clients zu erheben und weitere Kennzahlen daraus zu bilden (z.B.\n"
+"\t\t\t\t\t\t\t\t\tqualifizierte Clients). Darüber hinaus werden die gemessenen Daten wie\n"
+"\t\t\t\t\t\t\t\t\tfolgt genutzt:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datensch\n"
+"\t\t\t\t\t\t\t\t\tutzerklärung für Facebook"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutze\n"
+"\t\t\t\t\t\t\t\t\trklärung für Instagram"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutze\n"
+"\t\t\t\t\t\t\t\t\trklärung für die Nutzung von Hotjar"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerkl\n"
+"\t\t\t\t\t\t\t\t\tärung für Twitter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für\n"
+"\t\t\t\t\t\t\t\t\tCookies"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für\n"
+"\t\t\t\t\t\t\t\t\tKommentarfunktion auf dieser Webseite"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für\n"
+"\t\t\t\t\t\t\t\t\tKontaktformular"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für\n"
+"\t\t\t\t\t\t\t\t\tNewsletterdaten"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für\n"
+"\t\t\t\t\t\t\t\t\tPinterest"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für\n"
+"\t\t\t\t\t\t\t\t\tRecht auf Auskunft, Löschung, Sperrung"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für\n"
+"\t\t\t\t\t\t\t\t\tSoundCloud"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Datenschutzerklärung für Google Analytics"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Datenschutzerklärung für GoogleAds"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Datenschutzerklärung für LinkedIn"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für SSL-\n"
+"\t\t\t\t\t\t\t\t\t/TLS-Verschlüsselung"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für Server-\n"
+"\t\t\t\t\t\t\t\t\tLog-Files"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für Widerspruch Werbe-\n"
+"\t\t\t\t\t\t\t\t\tMails"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung für die\n"
+"\t\t\t\t\t\t\t\t\tNutzung von Google Web Fonts"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Datenschutzerklärung von\n"
+"\t\t\t\t\t\t\t\t\t\tGoogle"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Der Nutzung von im Rahmen der Impressumspflicht\n"
+"\t\t\t\t\t\t\t\t\tveröffentlichten Kontaktdaten zur übersendung von nicht\n"
+"\t\t\t\t\t\t\t\t\tausdrücklich angeforderter Werbung und Informationsmaterialien wird\n"
+"\t\t\t\t\t\t\t\t\thiermit widersprochen. Die Betreiber der Seiten behalten sich\n"
+"\t\t\t\t\t\t\t\t\tausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung\n"
+"\t\t\t\t\t\t\t\t\tvon Werbeinformationen, etwa durch Spam-E-Mails,\n"
+"\t\t\t\t\t\t\t\t\tvor."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Der Provider dieser Webseite erhebt und speichert\n"
+"\t\t\t\t\t\t\t\t\tautomatisch Informationen in so genannten Server-Log Files, die Ihr Browser\n"
+"\t\t\t\t\t\t\t\t\tautomatisch an uns übermittelt. Dies sind:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die\n"
+"\t\t\t\t\t\t\t\t\tMessung mittels des Messverfahrens SZMnG durch die INFOnline GmbH\n"
+"\t\t\t\t\t\t\t\t\terfolgt mit berechtigtem Interesse nach Art. 6 Abs. 1 lit. f) DSGVO."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die\n"
+"\t\t\t\t\t\t\t\t\tbetroffene Person hat das Recht, bei einer Datenschutzbehörde\n"
+"\t\t\t\t\t\t\t\t\tBeschwerde einzulegen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die\n"
+"\t\t\t\t\t\t\t\t\tbetroffene Person hat folgende Rechte:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die INFOnline\n"
+"\t\t\t\t\t\t\t\t\tGmbH erhebt die folgenden Daten, welche nach EU-DSGVO einen\n"
+"\t\t\t\t\t\t\t\t\tPersonenbezug aufweisen:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die INFOnline GmbH erhebt die folgenden Daten, welche nach DSGVO\n"
+"\t\t\t\t\t\t\t\t\teinen Personenbezug aufweisen:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die IP-\n"
+"\t\t\t\t\t\t\t\t\tAdresse wie auch die gekürzte IP-Adresse werden nicht weitergegeben.\n"
+"\t\t\t\t\t\t\t\t\tFür die Erstellung der AGOF-Studie werden Daten mit Client-Identifiern\n"
+"\t\t\t\t\t\t\t\t\tan die folgenden Dienstleister der AGOF weitergegeben:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die IP-Adresse wird unmittelbar nach der\n"
+"\t\t\t\t\t\t\t\t\tVerarbeitung und vor deren Speicherung anonymisiert. Sie haben die\n"
+"\t\t\t\t\t\t\t\t\tMöglichkeit, die Installation der Cookies durch änderung der\n"
+"\t\t\t\t\t\t\t\t\tEinstellung Ihrer Browser-Software zu verhindern. Wir weisen Sie darauf hin,\n"
+"\t\t\t\t\t\t\t\t\tdass bei entsprechender Einstellung eventuell nicht mehr alle Funktionen\n"
+"\t\t\t\t\t\t\t\t\tdieser Website zur Verfügung stehen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die Messung mittels des Messverfahrens SZMnG\n"
+"\t\t\t\t\t\t\t\t\tdurch die INFOnline GmbH erfolgt mit berechtigtem Interesse nach Art. 6 Abs.\n"
+"\t\t\t\t\t\t\t\t\t1 lit. f) DSGVO."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die Nutzungsdaten eines technischen Clients (bspw.\n"
+"\t\t\t\t\t\t\t\t\t\teines Browsers auf einem Gerät) werden applikationsübergreifend\n"
+"\t\t\t\t\t\t\t\t\t\tzusammengeführt und in einer Datenbank gespeichert. Diese\n"
+"\t\t\t\t\t\t\t\t\t\tInformationen werden zur technischen Abschätzung der\n"
+"\t\t\t\t\t\t\t\t\t\tSozioinformation Alter und Geschlecht verwendet und an die Dienstleister der\n"
+"\t\t\t\t\t\t\t\t\t\tAGOF zur weiteren Reichweitenverarbeitung übergeben. Im Rahmen\n"
+"\t\t\t\t\t\t\t\t\t\tder AGOF-Studie werden auf Basis einer zufälligen Stichprobe\n"
+"\t\t\t\t\t\t\t\t\t\tSoziomerkmale technisch abgeschätzt, welche sich den folgenden\n"
+"\t\t\t\t\t\t\t\t\t\tKategorien zuordnen lassen: Alter, Geschlecht, Nationalität, Berufliche\n"
+"\t\t\t\t\t\t\t\t\t\tTätigkeit, Familienstand, Allgemeine Angaben zum Haushalt, Haushalts-\n"
+"\t\t\t\t\t\t\t\t\t\tEinkommen, Wohnort, Internetnutzung, Online-Interessen, Nutzungsort,\n"
+"\t\t\t\t\t\t\t\t\t\tNutzertyp."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die Nutzungsdaten eines technischen Clients (bspw. eines\n"
+"\t\t\t\t\t\t\t\t\t\tBrowsers auf einem Gerät) werden webseitenübergreifend\n"
+"\t\t\t\t\t\t\t\t\t\tzusammengeführt und in einer Datenbank gespeichert. Diese\n"
+"\t\t\t\t\t\t\t\t\t\tInformationen werden zur technischen Abschätzung der\n"
+"\t\t\t\t\t\t\t\t\t\tSozioinformation Alter und Geschlecht verwendet und an die Dienstleister der\n"
+"\t\t\t\t\t\t\t\t\t\tAGOF zur weiteren Reichweitenverarbeitung übergeben. Im Rahmen\n"
+"\t\t\t\t\t\t\t\t\t\tder AGOF-Studie werden auf Basis einer zufälligen Stichprobe\n"
+"\t\t\t\t\t\t\t\t\t\tSoziomerkmale technisch abgeschätzt, welche sich den folgenden\n"
+"\t\t\t\t\t\t\t\t\t\tKategorien zuordnen lassen: Alter, Geschlecht, Nationalität, Berufliche\n"
+"\t\t\t\t\t\t\t\t\t\tTätigkeit, Familienstand, Allgemeine Angaben zum Haushalt, Haushalts-\n"
+"\t\t\t\t\t\t\t\t\t\tEinkommen, Wohnort, Internetnutzung, Online-Interessen, Nutzungsort,\n"
+"\t\t\t\t\t\t\t\t\t\tNutzertyp."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die betroffene Person hat das Recht, bei einer Datenschutzbehörde\n"
+"\t\t\t\t\t\t\t\t\tBeschwerde einzulegen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die durch das Cookie erzeugten Informationen\n"
+"\t\t\t\t\t\t\t\t\tüber Ihre Nutzung des Internetangebotes werden auf einem Server in\n"
+"\t\t\t\t\t\t\t\t\tDeutschland gespeichert."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die erteilte Einwilligung zur Speicherung der Daten, der E-\n"
+"\t\t\t\t\t\t\t\t\tMail-Adresse sowie deren Nutzung zum Versand des Newsletters\n"
+"\t\t\t\t\t\t\t\t\tkönnen Sie jederzeit widerrufen, etwa über den \"Austragen\"-Link\n"
+"\t\t\t\t\t\t\t\t\tim Newsletter."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Die vollständige IP-Adresse wird von der\n"
+"\t\t\t\t\t\t\t\t\tINFOnline GmbH nicht gespeichert. Die gekürzte IP-Adresse wird\n"
+"\t\t\t\t\t\t\t\t\tmaximal 60 Tage gespeichert. Die Nutzungsdaten in Verbindung mit dem\n"
+"\t\t\t\t\t\t\t\t\teindeutigen Identifier werden maximal 6 Monate gespeichert."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Dienste\n"
+"\t\t\t\t\t\t\t\t\tvon Dritten"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese\n"
+"\t\t\t\t\t\t\t\t\tWebseite benutzt Google Analytics, einen Webanalysedienst der Google\n"
+"\t\t\t\t\t\t\t\t\tLL.C., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA\n"
+"\t\t\t\t\t\t\t\t\t(«Google»). Über die gewonnenen Statistiken können wir unser\n"
+"\t\t\t\t\t\t\t\t\tAngebot verbessern und für Sie als Nutzer interessanter ausgestalten. Diese\n"
+"\t\t\t\t\t\t\t\t\tWebseite verwendet Google Analytics zudem für eine geräteübergreifende\n"
+"\t\t\t\t\t\t\t\t\tAnalyse von Besucherströmen, die über eine User-ID durchgeführt wird.\n"
+"\t\t\t\t\t\t\t\t\tSofern Sie über ein Google-Benutzerkonto verfügen, können Sie in den\n"
+"\t\t\t\t\t\t\t\t\tdortigen Einstellungen unter «Meine Daten», «persönlicheDaten» die geräteübergreifende Analyse Ihrer Nutzung\n"
+"\t\t\t\t\t\t\t\t\tdeaktivieren."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese\n"
+"\t\t\t\t\t\t\t\t\tWebseite nutzt das Angebot von Google Maps. Dadurch können wir Ihnen\n"
+"\t\t\t\t\t\t\t\t\tinteraktive Karten direkt in der Webseite anzeigen und ermöglichen Ihnen die\n"
+"\t\t\t\t\t\t\t\t\tkomfortable Nutzung der Karten-Funktion. Durch den Besuch auf der\n"
+"\t\t\t\t\t\t\t\t\tWebseite erhält Google die Information, dass Sie die entsprechende\n"
+"\t\t\t\t\t\t\t\t\tUnterseite unserer Webseite aufgerufen haben. Dies erfolgt unabhängig\n"
+"\t\t\t\t\t\t\t\t\tdavon, ob Google ein Nutzerkonto bereitstellt, über das Sie eingeloggt sind,\n"
+"\t\t\t\t\t\t\t\t\toder ob kein Nutzerkonto besteht. Wenn Sie bei Google eingeloggt sind,\n"
+"\t\t\t\t\t\t\t\t\twerden Ihre Daten direkt Ihrem Konto zugeordnet. Wenn Sie die Zuordnung\n"
+"\t\t\t\t\t\t\t\t\tmit Ihrem Profil bei Google nicht wünschen, müssen Sie sich vor Aktivierung\n"
+"\t\t\t\t\t\t\t\t\tdes Buttons ausloggen. Google speichert Ihre Daten als Nutzungsprofile und\n"
+"\t\t\t\t\t\t\t\t\tnutzt sie für Zwecke der Werbung, Marktforschung und/oder bedarfsgerechten\n"
+"\t\t\t\t\t\t\t\t\tGestaltung seiner Webseite. Eine solche Auswertung erfolgt insbesondere\n"
+"\t\t\t\t\t\t\t\t\t(selbst für nicht eingeloggte Nutzer) zur Erbringung von bedarfsgerechter\n"
+"\t\t\t\t\t\t\t\t\tWerbung und um andere Nutzer des sozialen Netzwerks über Ihre Aktivitäten\n"
+"\t\t\t\t\t\t\t\t\tauf unserer Webseite zu informieren. Ihnen steht ein Widerspruchsrecht zu\n"
+"\t\t\t\t\t\t\t\t\tgegen die Bildung dieser Nutzerprofile, wobei Sie sich zur Ausübung dessenan Google richten müssen. Weitere Informationen zu Zweck und Umfang der\n"
+"\t\t\t\t\t\t\t\t\tDatenerhebung und ihrer Verarbeitung durch Google erhalten Sie neben\n"
+"\t\t\t\t\t\t\t\t\tweiteren Informationen zu Ihren diesbezüglichen Rechten und\n"
+"\t\t\t\t\t\t\t\t\tEinstellungsmöglichkeiten zum Schutze Ihrer Privatsphäre unter:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese\n"
+"\t\t\t\t\t\t\t\t\tWebseite verwendet das Tracking-Tool CrazyEgg.com, um zufällig\n"
+"\t\t\t\t\t\t\t\t\tausgewählte einzelne Besuche ausschliesslich mit anonymisierter IP-Adresse\n"
+"\t\t\t\t\t\t\t\t\taufzuzeichnen. Dieses Tracking-Tool erlaubt es unter Verwendung von\n"
+"\t\t\t\t\t\t\t\t\tCookies auszuwerten, auf welche Art Sie die Webseite nutzen (z.B. welche\n"
+"\t\t\t\t\t\t\t\t\tInhalte angeklickt werden). Dazu wird ein Nutzungsprofil visuell dargestellt. Es\n"
+"\t\t\t\t\t\t\t\t\twerden lediglich Nutzungsprofile bei Verwendung von Pseudonymen erstellt.\n"
+"\t\t\t\t\t\t\t\t\tRechtsgrundlage für die Verarbeitung Ihrer Daten ist eine\n"
+"\t\t\t\t\t\t\t\t\tInteressenabwägung, wonach der vorstehend geschilderten Verarbeitung Ihrer\n"
+"\t\t\t\t\t\t\t\t\tpersonenbezogenen Daten keine überwiegenden gegenteiligen Interessen\n"
+"\t\t\t\t\t\t\t\t\tIhrerseits entgegenstehen (Art. 6 Abs. 1 S. 1 lit. f DSGVO)."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Daten sind nicht bestimmten Personen\n"
+"\t\t\t\t\t\t\t\t\tzuordenbar. Eine Zusammenführung dieser Daten mit anderen\n"
+"\t\t\t\t\t\t\t\t\tDatenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten\n"
+"\t\t\t\t\t\t\t\t\tnachträglich zuprüfen, wenn uns konkrete Anhaltspunkte für\n"
+"\t\t\t\t\t\t\t\t\teine rechtswidrige Nutzung bekannt werden."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Dienste der amerikanischen Google LLC verwenden\n"
+"\t\t\t\t\t\t\t\t\tunter anderem Cookies und infolgedessen werden Daten an Google in den\n"
+"\t\t\t\t\t\t\t\t\tUSA übertragen, wobei wir davon ausgehen, dass in diesem Rahmen\n"
+"\t\t\t\t\t\t\t\t\tkein personenbezogenes Tracking allein durch die Nutzung unserer Website\n"
+"\t\t\t\t\t\t\t\t\tstattfindet."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite\n"
+"\t\t\t\t\t\t\t\t\tbenutzt den Service von Hotjar zur Verbesserung der\n"
+"\t\t\t\t\t\t\t\t\tBenutzerfreundlichkeit.Die Hotjar Ltd. Hotjar Ltd. ist ein\n"
+"\t\t\t\t\t\t\t\t\teuropäisches Unternehmen mit Sitz in Malta (Hotjar Ltd, Level 2, St\n"
+"\t\t\t\t\t\t\t\t\tJulians Business Centre, 3, Elia Zammit Street, St Julians STJ 1000, Malta,\n"
+"\t\t\t\t\t\t\t\t\tEurope). Es können Mausklicks sowie Maus- und Scroll-Bewegungen\n"
+"\t\t\t\t\t\t\t\t\taufgezeichnet werden. Ebenso können auf dieser Internetseite\n"
+"\t\t\t\t\t\t\t\t\tdurchgeführte Tastatureingaben aufgezeichnet werden. Personifizierte\n"
+"\t\t\t\t\t\t\t\t\tInformationen werden dabei nicht aufgenommen. Hotjar verwendet zur\n"
+"\t\t\t\t\t\t\t\t\tErhebung und übertragung Ihrer Daten einen Tracking-Code. Sobald\n"
+"\t\t\t\t\t\t\t\t\tSie unsere Website besuchen, erhebt der Hotjar Tracking-Code automatisch\n"
+"\t\t\t\t\t\t\t\t\tdie auf Ihrer Aktivität beruhenden Daten und speichert Sie auf den Hotjar\n"
+"\t\t\t\t\t\t\t\t\tServern (Standort Irland) ab. Zudem erheben die durch die Website auf Ihrem\n"
+"\t\t\t\t\t\t\t\t\tComputer oder Ihrem Endendgerät platzierten Cookies ebenfalls Daten.\n"
+"\t\t\t\t\t\t\t\t\tFür weitere Informationen, wie Hotjar arbeitet, besuchen Sie diese\n"
+"\t\t\t\t\t\t\t\t\tSeite:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite benutzt Adobe Analytics, einen\n"
+"\t\t\t\t\t\t\t\t\tWebanalysedienst der Adobe Systems Software Ireland Limited\n"
+"\t\t\t\t\t\t\t\t\t(«Adobe»). Adobe Analytics verwendet sog. Cookies, also\n"
+"\t\t\t\t\t\t\t\t\tTextdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse\n"
+"\t\t\t\t\t\t\t\t\tder Benutzung der Website durch Sie ermöglichen. Wird ein Tracking\n"
+"\t\t\t\t\t\t\t\t\tDatensatz von einem Browser eines Webseitenbesuchers an die Adobe\n"
+"\t\t\t\t\t\t\t\t\tDatacenter übermittelt, dann wird durch die von uns vorgenommene\n"
+"\t\t\t\t\t\t\t\t\tServereinstellung gewährleistet, dass vor der Geolokalisierung die IP-\n"
+"\t\t\t\t\t\t\t\t\tAdresse anonymisiert wird, d.h. dass das letzte Oktett der IP Adresse durch\n"
+"\t\t\t\t\t\t\t\t\tNullen ersetzt wird. Vor Speicherung des Tracking-Pakets wird die IP Adresse\n"
+"\t\t\t\t\t\t\t\t\tdurch einzelne generische IP Adressen ersetzt."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite benutzt Matomo (ehemals Piwik), eine Open-Source-\n"
+"\t\t\t\t\t\t\t\t\tSoftware zur statistischen Auswertung von Besucherzugriffen. Matomo\n"
+"\t\t\t\t\t\t\t\t\tverwendet sog. Cookies, also Textdateien, die auf Ihrem Computer\n"
+"\t\t\t\t\t\t\t\t\tgespeichert werden und die eine Analyse der Benutzung der Website durch\n"
+"\t\t\t\t\t\t\t\t\tSie ermöglichen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite nutzt\n"
+"\t\t\t\t\t\t\t\t\tFunktionen des Netzwerks LinkedIn. Anbieter ist die LinkedIn Corporation,\n"
+"\t\t\t\t\t\t\t\t\t2029 Stierlin Court, Mountain View, CA 94043, USA. Bei jedem Abruf einer\n"
+"\t\t\t\t\t\t\t\t\tunserer Seiten, die Funktionen von LinkedIn enthält, wird eine\n"
+"\t\t\t\t\t\t\t\t\tVerbindung zu Servern von LinkedIn aufbaut. LinkedIn wird darüber\n"
+"\t\t\t\t\t\t\t\t\tinformiert, dass Sie unsere Internetseiten mit Ihrer IP-Adresse besucht haben.\n"
+"\t\t\t\t\t\t\t\t\tWenn Sie den \"Recommend-Button\" von LinkedIn anklicken und in Ihrem\n"
+"\t\t\t\t\t\t\t\t\tAccount bei LinkedIn eingeloggt sind, ist es LinkedIn möglich, Ihren\n"
+"\t\t\t\t\t\t\t\t\tBesuch auf unserer Internetseite Ihnen und Ihrem Benutzerkonto zuzuordnen.\n"
+"\t\t\t\t\t\t\t\t\tWir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom\n"
+"\t\t\t\t\t\t\t\t\tInhalt der übermittelten Daten sowie deren Nutzung durch LinkedIn\n"
+"\t\t\t\t\t\t\t\t\thaben."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite nutzt aus Gründen\n"
+"\t\t\t\t\t\t\t\t\tder Sicherheit und zum Schutz der übertragung vertraulicher Inhalte, wie\n"
+"\t\t\t\t\t\t\t\t\tzum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine\n"
+"\t\t\t\t\t\t\t\t\tSSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung\n"
+"\t\t\t\t\t\t\t\t\terkennen Sie daran, dass die Adresszeile des Browsers von\n"
+"\t\t\t\t\t\t\t\t\t\"http://\" auf \"https://\" wechselt und an dem Schloss-\n"
+"\t\t\t\t\t\t\t\t\tSymbol in Ihrer Browserzeile."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite nutzt das\n"
+"\t\t\t\t\t\t\t\t\tMessverfahren («SZMnG») der INFOnline GmbH\n"
+"\t\t\t\t\t\t\t\t\t(https://www.INFOnline.de) zur Ermittlung statistischer Kennwerte über\n"
+"\t\t\t\t\t\t\t\t\tdie Nutzung unserer Angebote. Ziel der Nutzungsmessung ist es, die Anzahl\n"
+"\t\t\t\t\t\t\t\t\tder Besuche auf unserer Website, die Anzahl der Websitebesucher und deren\n"
+"\t\t\t\t\t\t\t\t\tSurfverhalten statistisch – auf Basis eines einheitlichen Standardverfahrens –\n"
+"\t\t\t\t\t\t\t\t\tzu bestimmen und somit marktweit vergleichbare Werte zu erhalten."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite nutzt das Google\n"
+"\t\t\t\t\t\t\t\t\tConversion-Tracking. Sind Sie über eine von Google geschaltete\n"
+"\t\t\t\t\t\t\t\t\tAnzeige auf unsere WebSite gelangt, wird von Google Adwords ein Cookie auf\n"
+"\t\t\t\t\t\t\t\t\tIhrem Rechner gesetzt. Das Cookie für Conversion-Tracking wird\n"
+"\t\t\t\t\t\t\t\t\tgesetzt, wenn ein Nutzer auf eine von Google geschaltete Anzeige klickt.\n"
+"\t\t\t\t\t\t\t\t\tDiese Cookies verlieren nach 30 Tagen ihre Gültigkeit und dienen nicht\n"
+"\t\t\t\t\t\t\t\t\tder persönlichen Identifizierung. Besucht der Nutzer bestimmte Seiten\n"
+"\t\t\t\t\t\t\t\t\tunserer Website und das Cookie ist noch nicht abgelaufen, können wir\n"
+"\t\t\t\t\t\t\t\t\tund Google erkennen, dass der Nutzer auf die Anzeige geklickt hat und zu\n"
+"\t\t\t\t\t\t\t\t\tdieser Seite weitergeleitet wurde. Jeder Google AdWords-Kunde erhält\n"
+"\t\t\t\t\t\t\t\t\tein anderes Cookie. Cookies können somit nicht über die Websites\n"
+"\t\t\t\t\t\t\t\t\tvon AdWords-Kunden nachverfolgt werden. Die mithilfe des Conversion-\n"
+"\t\t\t\t\t\t\t\t\tCookies eingeholten Informationen dienen dazu, Conversion-Statistiken\n"
+"\t\t\t\t\t\t\t\t\tfür AdWords-Kunden zu erstellen, die sich für Conversion-Tracking\n"
+"\t\t\t\t\t\t\t\t\tentschieden haben. Die Kunden erfahren die Gesamtanzahl der Nutzer, die\n"
+"\t\t\t\t\t\t\t\t\tauf ihre Anzeige geklickt haben und zu einer mit einem Conversion-Tracking-\n"
+"\t\t\t\t\t\t\t\t\tTag versehenen Seite weitergeleitet wurden. Sie erhalten jedoch keine\n"
+"\t\t\t\t\t\t\t\t\tInformationen, mit denen sich Nutzer persönlich identifizieren\n"
+"\t\t\t\t\t\t\t\t\tlassen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite nutzt das Online-Marketing-Tool Google Ads\n"
+"\t\t\t\t\t\t\t\t\tvon Google («Google Ads»). Google Ads setzt Cookies ein, um\n"
+"\t\t\t\t\t\t\t\t\tfür die Nutzer relevante Anzeigen zu schalten, die Berichte zur\n"
+"\t\t\t\t\t\t\t\t\tKampagnenleistung zu verbessern oder um zu vermeiden, dass ein Nutzer die\n"
+"\t\t\t\t\t\t\t\t\tgleichen Anzeigen mehrmals sieht. Über eine Cookie-ID erfasst Google,\n"
+"\t\t\t\t\t\t\t\t\twelche Anzeigen in welchem Browser geschaltet werden und kann so\n"
+"\t\t\t\t\t\t\t\t\tverhindern, dass diese mehrfach angezeigt werden. Darüber hinaus kann\n"
+"\t\t\t\t\t\t\t\t\tGoogle Ads mithilfe von Cookie-IDs sog. Conversions erfassen, die Bezug zu\n"
+"\t\t\t\t\t\t\t\t\tAnzeigenanfragen haben. Das ist etwa der Fall, wenn ein Nutzer eine Google\n"
+"\t\t\t\t\t\t\t\t\tAds-Anzeige sieht und später mit demselben Browser die Webseite des\n"
+"\t\t\t\t\t\t\t\t\tWerbetreibenden aufruft und dort etwas kauft. Laut Google enthalten Google\n"
+"\t\t\t\t\t\t\t\t\tAds-Cookies keine personenbezogenen Informationen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite nutzt die Zählpixeltechnologie der WiredMinds AG\n"
+"\t\t\t\t\t\t\t\t\t(www.wiredminds.de) zur Analyse des Besucherverhaltens"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite nutzt zur\n"
+"\t\t\t\t\t\t\t\t\teinheitlichen Darstellung von Schriftarten so genannte Web Fonts, die von\n"
+"\t\t\t\t\t\t\t\t\tGoogle bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser\n"
+"\t\t\t\t\t\t\t\t\tdie benötigten Web Fonts in ihren Browsercache, um Texte und\n"
+"\t\t\t\t\t\t\t\t\tSchriftarten korrekt anzuzeigen. Wenn Ihr Browser Web Fonts nicht\n"
+"\t\t\t\t\t\t\t\t\tunterstützt, wird eine Standardschrift von Ihrem Computer\n"
+"\t\t\t\t\t\t\t\t\tgenutzt."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite verwenden allenfalls Google Maps\n"
+"\t\t\t\t\t\t\t\t\tfür das Einbetten von Karten, Google Invisible reCAPTCHA für den\n"
+"\t\t\t\t\t\t\t\t\tSchutz gegen Bots und Spam sowie YouTube für das Einbetten von\n"
+"\t\t\t\t\t\t\t\t\tVideos."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite verwendet\n"
+"\t\t\t\t\t\t\t\t\tFunktionen von Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304,\n"
+"\t\t\t\t\t\t\t\t\tUSA . Bei Aufruf unserer Seiten mit Facebook-Plug-Ins wird eine Verbindung\n"
+"\t\t\t\t\t\t\t\t\tzwischen Ihrem Browser und den Servern von Facebook aufgebaut. Dabei\n"
+"\t\t\t\t\t\t\t\t\twerden bereits Daten an Facebook übertragen. Besitzen Sie einen\n"
+"\t\t\t\t\t\t\t\t\tFacebook-Account, können diese Daten damit verknüpft werden.\n"
+"\t\t\t\t\t\t\t\t\tWenn Sie keine Zuordnung dieser Daten zu Ihrem Facebook-Account\n"
+"\t\t\t\t\t\t\t\t\twünschen, loggen Sie sich bitte vor dem Besuch unserer Seite bei\n"
+"\t\t\t\t\t\t\t\t\tFacebook aus. Interaktionen, insbesondere das Nutzen einer\n"
+"\t\t\t\t\t\t\t\t\tKommentarfunktion oder das Anklicken eines „Like“- oder „Teilen“-Buttons\n"
+"\t\t\t\t\t\t\t\t\twerden ebenfalls an Facebook weitergegeben. Mehr erfahren Sie unter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite verwendet Cookies. Das sind kleine\n"
+"\t\t\t\t\t\t\t\t\tTextdateien, die es möglich machen, auf dem Endgerät des\n"
+"\t\t\t\t\t\t\t\t\tNutzers spezifische, auf den Nutzer bezogene Informationen zu speichern,\n"
+"\t\t\t\t\t\t\t\t\twährend er die Website nutzt. Cookies ermöglichen es,\n"
+"\t\t\t\t\t\t\t\t\tinsbesondere Nutzungshäufigkeit und Nutzeranzahl der Seiten zu\n"
+"\t\t\t\t\t\t\t\t\termitteln, Verhaltensweisen der Seitennutzung zu analysieren, aber auch\n"
+"\t\t\t\t\t\t\t\t\tunser Angebot kundenfreundlicher zu gestalten."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite verwendet Funktionen\n"
+"\t\t\t\t\t\t\t\t\tvon Twitter, Inc., 1355 Market St, Suite 900, San Francisco, CA 94103, USA.\n"
+"\t\t\t\t\t\t\t\t\tBei Aufruf unserer Seiten mit Twitter-Plug-Ins wird eine Verbindung zwischen\n"
+"\t\t\t\t\t\t\t\t\tIhrem Browser und den Servern von Twitter aufgebaut. Dabei werden bereits\n"
+"\t\t\t\t\t\t\t\t\tDaten an Twitter übertragen. Besitzen Sie einen Twitter-Account,\n"
+"\t\t\t\t\t\t\t\t\tkönnen diese Daten damit verknüpft werden. Wenn Sie keine\n"
+"\t\t\t\t\t\t\t\t\tZuordnung dieser Daten zu Ihrem Twitter-Account wünschen, loggen Sie sich\n"
+"\t\t\t\t\t\t\t\t\tbitte vor dem Besuch unserer Seite bei Twitter aus. Interaktionen,\n"
+"\t\t\t\t\t\t\t\t\tinsbesondere das Anklicken eines „Re-Tweet“-Buttons werden ebenfalls an\n"
+"\t\t\t\t\t\t\t\t\tTwitter weitergegeben. Mehr erfahren Sie unter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite verwendet den Dienst reCAPTCHA der Google Inc. (1600\n"
+"\t\t\t\t\t\t\t\t\tAmphitheatre Parkway, Mountain View, CA 94043, USA; „Google“). Die\n"
+"\t\t\t\t\t\t\t\t\tAbfrage dient dem Zweck der Unterscheidung, ob die Eingabe durch einen\n"
+"\t\t\t\t\t\t\t\t\tMenschen oder durch automatisierte, maschinelle Verarbeitung erfolgt. Die\n"
+"\t\t\t\t\t\t\t\t\tAbfrage schliesst den Versand der IP-Adresse und ggf. weiterer von Google\n"
+"\t\t\t\t\t\t\t\t\tfür den Dienst reCAPTCHA benötigter Daten an Google ein. Zu\n"
+"\t\t\t\t\t\t\t\t\tdiesem Zweck wird Ihre Eingabe an Google übermittelt und dort weiter\n"
+"\t\t\t\t\t\t\t\t\tverwendet. Ihre IP-Adresse wird von Google jedoch innerhalb von\n"
+"\t\t\t\t\t\t\t\t\tMitgliedstaaten der Europäischen Union oder in anderen\n"
+"\t\t\t\t\t\t\t\t\tVertragsstaaten des Abkommens über den Europäischen\n"
+"\t\t\t\t\t\t\t\t\tWirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die\n"
+"\t\t\t\t\t\t\t\t\tvolle IP-Adresse an einen Server von Google in den USA übertragen\n"
+"\t\t\t\t\t\t\t\t\tund dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google\n"
+"\t\t\t\t\t\t\t\t\tdiese Informationen benutzen, um Ihre Nutzung dieses Dienstes auszuwerten.\n"
+"\t\t\t\t\t\t\t\t\tDie im Rahmen von reCaptcha von Ihrem Browser übermittelte IP-\n"
+"\t\t\t\t\t\t\t\t\tAdresse wird nicht mit anderen Daten von Google zusammengeführt.\n"
+"\t\t\t\t\t\t\t\t\tIhre Daten werden dabei gegebenenfalls auch in die USA übermittelt.\n"
+"\t\t\t\t\t\t\t\t\tFür Datenübermittlungen in die USA ist ein\n"
+"\t\t\t\t\t\t\t\t\tAngemessenheitsbeschluss der Europäischen Kommission, das\n"
+"\t\t\t\t\t\t\t\t\t\"Privacy Shield\", vorhanden. Google nimmt am \"Privacy Shield\" teil und hat\n"
+"\t\t\t\t\t\t\t\t\tsich den Vorgaben unterworfen. Mit Betätigen der Abfrage willigen Sie in\n"
+"\t\t\t\t\t\t\t\t\tdie Verarbeitung Ihrer Daten ein. Die Verarbeitung erfolgt auf Grundlage des\n"
+"\t\t\t\t\t\t\t\t\tArt. 6 (1) lit. a DSGVO mit Ihrer Einwilligung. Sie können Ihre\n"
+"\t\t\t\t\t\t\t\t\tEinwilligung jederzeit widerrufen, ohne dass die Rechtmässigkeit der\n"
+"\t\t\t\t\t\t\t\t\taufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung\n"
+"\t\t\t\t\t\t\t\t\tberührt wird."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Diese Webseite verwendet die Remarketing-Funktion\n"
+"\t\t\t\t\t\t\t\t\tder Google Inc. Die Funktion dient dazu, Webseitenbesuchern innerhalb des\n"
+"\t\t\t\t\t\t\t\t\tGoogle-Werbenetzwerks interessenbezogene Werbeanzeigen zu\n"
+"\t\t\t\t\t\t\t\t\tpräsentieren. Im Browser des Webseitenbesuchers wird ein sog.\n"
+"\t\t\t\t\t\t\t\t\t„Cookie“ gespeichert, der es ermöglicht, den Besucher\n"
+"\t\t\t\t\t\t\t\t\twiederzuerkennen, wenn dieser Webseiten aufruft, die dem Werbenetzwerk\n"
+"\t\t\t\t\t\t\t\t\tvon Google angehören. Auf diesen Seiten können dem Besucher\n"
+"\t\t\t\t\t\t\t\t\tWerbeanzeigen präsentiert werden, die sich auf Inhalte beziehen, die\n"
+"\t\t\t\t\t\t\t\t\tder Besucher zuvor auf Webseiten aufgerufen hat, die die Remarketing\n"
+"\t\t\t\t\t\t\t\t\tFunktion von Google verwenden."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Durch die\n"
+"\t\t\t\t\t\t\t\t\tNutzung dieser WebSite erklären Sie sich mit der Erhebung,\n"
+"\t\t\t\t\t\t\t\t\tVerarbeitung und Nutzung von Daten gemäss der nachfolgenden\n"
+"\t\t\t\t\t\t\t\t\tBeschreibung einverstanden. Diese WebSite kann grundsätzlich ohne\n"
+"\t\t\t\t\t\t\t\t\tRegistrierung besucht werden. Dabei werden Daten wie beispielsweise\n"
+"\t\t\t\t\t\t\t\t\taufgerufene Seiten bzw. Namen der abgerufenen Datei, Datum und Uhrzeit zu\n"
+"\t\t\t\t\t\t\t\t\tstatistischen Zwecken auf dem Server gespeichert, ohne dass diese Daten\n"
+"\t\t\t\t\t\t\t\t\tunmittelbar auf Ihre Person bezogen werden. Personenbezogene Daten,\n"
+"\t\t\t\t\t\t\t\t\tinsbesondere Name, Adresse oder E-Mail-Adresse werden soweit\n"
+"\t\t\t\t\t\t\t\t\tmöglich auf freiwilliger Basis erhoben. Ohne Ihre Einwilligung erfolgt\n"
+"\t\t\t\t\t\t\t\t\tkeine Weitergabe der Daten an Dritte."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"E-Mail:\n"
+"\t\t\t\t\t\t\t\t\tinfo@techlux.ch\n"
+"\n"
+"\t\t\t\t\t\t\t\t\t<br/>WebSite: http://www.techlux.ch/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "ENTER YOUR EMAIL"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Ein\n"
+"\t\t\t\t\t\t\t\t\tgenereller Widerspruch gegen den Einsatz der zu Zwecken des\n"
+"\t\t\t\t\t\t\t\t\tOnlinemarketing eingesetzten Cookies kann bei einer Vielzahl der Dienste, vor\n"
+"\t\t\t\t\t\t\t\t\tallem im Fall des Trackings, über die US-amerikanische Seite"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Eine sogenannte\n"
+"\t\t\t\t\t\t\t\t\t\tGeolokalisierung, also die Zuordnung eines Webseitenaufrufs zum Ort des\n"
+"\t\t\t\t\t\t\t\t\t\tAufrufs, erfolgt ausschliesslich auf der Grundlage der anonymisierten IP-\n"
+"\t\t\t\t\t\t\t\t\t\tAdresse und nur bis zur geographischen Ebene der Bundesländer /\n"
+"\t\t\t\t\t\t\t\t\t\tRegionen. Aus den so gewonnenen geographischen Informationen kann in\n"
+"\t\t\t\t\t\t\t\t\t\tkeinem Fall ein Rückschluss auf den konkreten Wohnort eines Nutzers\n"
+"\t\t\t\t\t\t\t\t\t\tgezogen werden."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Eine sogenannte Geolokalisierung, also die\n"
+"\t\t\t\t\t\t\t\t\t\tZuordnung eines Webseitenaufrufs zum Ort des Aufrufs, erfolgt\n"
+"\t\t\t\t\t\t\t\t\t\tausschliesslich auf der Grundlage der anonymisierten IP-Adresse und nur bis\n"
+"\t\t\t\t\t\t\t\t\t\tzur geographischen Ebene der Bundesländer / Regionen. Aus den so\n"
+"\t\t\t\t\t\t\t\t\t\tgewonnenen geographischen Informationen kann in keinem Fall ein\n"
+"\t\t\t\t\t\t\t\t\t\tRückschluss auf den konkreten Aufenthaltsort eines Nutzers gezogen\n"
+"\t\t\t\t\t\t\t\t\t\twerden."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Einen Geräte-Identifier: Die Reichweitenmessung verwendet zur\n"
+"\t\t\t\t\t\t\t\t\t\tWiedererkennung von Geräten eindeutige Kennungen des\n"
+"\t\t\t\t\t\t\t\t\t\tEndgerätes oder eine Signatur, die aus verschiedenen automatisch\n"
+"\t\t\t\t\t\t\t\t\t\tübertragenen Informationen Ihres Gerätes erstellt wird. Eine\n"
+"\t\t\t\t\t\t\t\t\t\tMessung der Daten und anschliessende Zuordnung zu dem jeweiligen\n"
+"\t\t\t\t\t\t\t\t\t\tIdentifier ist unter Umständen auch dann möglich, wenn Sie\n"
+"\t\t\t\t\t\t\t\t\t\tandere Applikationen aufrufen, die ebenfalls das Messverfahren\n"
+"\t\t\t\t\t\t\t\t\t\t(«SZMnG») der INFOnline GmbH nutzen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Einen zufällig erzeugten\n"
+"\t\t\t\t\t\t\t\t\t\tClient-Identifier: Die Reichweitenverarbeitung verwendet zur Wiedererkennung\n"
+"\t\t\t\t\t\t\t\t\t\tvon Computersystemen alternativ entweder ein Cookie mit der Kennung\n"
+"\t\t\t\t\t\t\t\t\t\t«ioam.de», ein «Local Storage Object» oder eine\n"
+"\t\t\t\t\t\t\t\t\t\tSignatur, die aus verschiedenen automatisch übertragenen\n"
+"\t\t\t\t\t\t\t\t\t\tInformationen Ihres Browsers erstellt wird. Diese Kennung ist für einen\n"
+"\t\t\t\t\t\t\t\t\t\tBrowser eindeutig, solange das Cookie oder Local Storage Object nicht\n"
+"\t\t\t\t\t\t\t\t\t\tgelöscht wird. Eine Messung der Daten und anschliessende Zuordnung\n"
+"\t\t\t\t\t\t\t\t\t\tzu dem jeweiligen Client-Identifier ist daher auch dann möglich, wenn\n"
+"\t\t\t\t\t\t\t\t\t\tSie andere Webseiten aufrufen, die ebenfalls das Messverfahren\n"
+"\t\t\t\t\t\t\t\t\t\t(«SZMnG») der INFOnline GmbH nutzen. Die Gültigkeit\n"
+"\t\t\t\t\t\t\t\t\t\tdes Cookies ist auf maximal 1 Jahr beschränkt."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Einsatz von Google\n"
+"\t\t\t\t\t\t\t\t\tRemarketing"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid "Email"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "Fast Delivery"
+msgstr "Schnelle Lieferung"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Folgende\n"
+"\t\t\t\t\t\t\t\t\teindeutige Geräte-Kennungen können als Hash an die INFOnline\n"
+"\t\t\t\t\t\t\t\t\tGmbH übermittelt werden:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Für alle\n"
+"\t\t\t\t\t\t\t\t\tDigital-Angebote, die Mitglied der Informationsgemeinschaft zur Feststellung\n"
+"\t\t\t\t\t\t\t\t\tder Verbreitung von Werbeträgern e.V. (IVW – http://www.ivw.eu) sind\n"
+"\t\t\t\t\t\t\t\t\toder an den Studien der Arbeitsgemeinschaft Online-Forschung e.V. (AGOF –\n"
+"\t\t\t\t\t\t\t\t\thttp://www.agof.de) teilnehmen, werden die Nutzungsstatistiken\n"
+"\t\t\t\t\t\t\t\t\tregelmässig von der AGOF und der Arbeitsgemeinschaft Media-Analyse\n"
+"\t\t\t\t\t\t\t\t\te.V. (agma – http://www.agma-mmc.de) zu Reichweiten weiter verarbeitet und\n"
+"\t\t\t\t\t\t\t\t\tmit dem Leistungswert «Unique User» veröffentlicht sowie\n"
+"\t\t\t\t\t\t\t\t\tvon der IVW mit den Leistungswerten «Page Impression» und\n"
+"\t\t\t\t\t\t\t\t\t«Visits». Diese Reichweiten und Statistiken können auf denjeweiligen Webseiten eingesehen werden."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Für alle Digital-Angebote, die Mitglied der Informationsgemeinschaft\n"
+"\t\t\t\t\t\t\t\t\tzur Feststellung der Verbreitung von Werbeträgern e.V. (IVW –\n"
+"\t\t\t\t\t\t\t\t\thttp://www.ivw.eu) sind oder an den Studien der Arbeitsgemeinschaft Online-\n"
+"\t\t\t\t\t\t\t\t\tForschung e.V. (AGOF – http://www.agof.de) teilnehmen, werden die\n"
+"\t\t\t\t\t\t\t\t\tNutzungsstatistiken regelmässig von der AGOF und der\n"
+"\t\t\t\t\t\t\t\t\tArbeitsgemeinschaft Media-Analyse e.V. (agma – http://www.agma-mmc.de)\n"
+"\t\t\t\t\t\t\t\t\tzu Reichweiten weiter verarbeitet und mit dem Leistungswert «Unique\n"
+"\t\t\t\t\t\t\t\t\tUser» veröffentlicht sowie von der IVW mit den Leistungswerten\n"
+"\t\t\t\t\t\t\t\t\t«Page Impression» und «Visits». Diese Reichweiten\n"
+"\t\t\t\t\t\t\t\t\tund Statistiken können auf den jeweiligen Webseiten eingesehen\n"
+"\t\t\t\t\t\t\t\t\twerden."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Für die\n"
+"\t\t\t\t\t\t\t\t\tKommentarfunktion auf dieser Webseite werden neben Ihrem Kommentar\n"
+"\t\t\t\t\t\t\t\t\tauch Angaben zum Zeitpunkt der Erstellung des Kommentars, Ihre E-Mail-\n"
+"\t\t\t\t\t\t\t\t\tAdresse und, wenn Sie nicht anonym posten, der von Ihnen gewählte\n"
+"\t\t\t\t\t\t\t\t\tNutzername gespeichert."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Gestützt auf\n"
+"\t\t\t\t\t\t\t\t\tArtikel 13 der schweizerischen Bundesverfassung und die\n"
+"\t\t\t\t\t\t\t\t\tdatenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz,\n"
+"\t\t\t\t\t\t\t\t\tDSG"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Google AdWords"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Google Analytics deaktivieren"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Google Analytics verwendet Cookies. Die durch den Cookie erzeugten\n"
+"\t\t\t\t\t\t\t\t\tInformationen über Ihre Benutzung dieser Webseite werden in der Regel an\n"
+"\t\t\t\t\t\t\t\t\teinen Server von Google in den USA übertragen und dort gespeichert. Sie\n"
+"\t\t\t\t\t\t\t\t\tkönnen die Speicherung der Cookies durch eine entsprechende Einstellung\n"
+"\t\t\t\t\t\t\t\t\tIhrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie\n"
+"\t\t\t\t\t\t\t\t\tin diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Webseite\n"
+"\t\t\t\t\t\t\t\t\tvollumfänglich werden nutzen können. Sie können darüber hinaus die\n"
+"\t\t\t\t\t\t\t\t\tErfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Webseite\n"
+"\t\t\t\t\t\t\t\t\tbezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung\n"
+"\t\t\t\t\t\t\t\t\tdieser Daten durch Google verhindern, indem sie das unter dem folgenden\n"
+"\t\t\t\t\t\t\t\t\tLink verfügbare Browser-Plugin herunterladen und installieren:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Google Tag Manager"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Google Tag Manager ist eine Lösung,\n"
+"\t\t\t\t\t\t\t\t\tmit der wir sog. Website-Tags über eine Oberfläche verwalten\n"
+"\t\t\t\t\t\t\t\t\tkönnen und so z.B. Google Analytics sowie andere Google-Marketing-\n"
+"\t\t\t\t\t\t\t\t\tDienste in unser Onlineangebot einbinden können. Der Tag Manager selbst,\n"
+"\t\t\t\t\t\t\t\t\twelcher die Tags implementiert, verarbeitet keine personenbezogenen Daten\n"
+"\t\t\t\t\t\t\t\t\tder Nutzer. Im Hinblick auf die Verarbeitung der personenbezogenen Daten\n"
+"\t\t\t\t\t\t\t\t\tder Nutzer wird auf die folgenden Angaben zu den Google-Diensten\n"
+"\t\t\t\t\t\t\t\t\tverwiesen. Nutzungsrichtlinien:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Google hat sich verpflichtet, einen angemessenen\n"
+"\t\t\t\t\t\t\t\t\tDatenschutz gemäss dem amerikanisch-europäischen und dem\n"
+"\t\t\t\t\t\t\t\t\tamerikanisch-schweizerischen Privacy Shield zu\n"
+"\t\t\t\t\t\t\t\t\tgewährleisten."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "HERE'S A 10% OFF COUPON CODE:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Hochdorfstrasse 5"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Hostname des zugreifenden Rechners"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"IP-Adresse: Im Internet\n"
+"\t\t\t\t\t\t\t\t\t\tbenötigt jedes Gerät zur übertragung von Daten eine\n"
+"\t\t\t\t\t\t\t\t\t\teindeutige Adresse, die sogenannte IP-Adresse. Die zumindest kurzzeitige\n"
+"\t\t\t\t\t\t\t\t\t\tSpeicherung der IP-Adresse ist aufgrund der Funktionsweise des Internets\n"
+"\t\t\t\t\t\t\t\t\t\ttechnisch erforderlich. Die IP-Adressen werden vor jeglicher Verarbeitung\n"
+"\t\t\t\t\t\t\t\t\t\tgekürzt und nur anonymisiert weiterverarbeitet. Es erfolgt keine\n"
+"\t\t\t\t\t\t\t\t\t\tSpeicherung oder Verarbeitung der ungekürzten IP-Adressen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"IP-Adresse: Im Internet benötigt\n"
+"\t\t\t\t\t\t\t\t\t\tjedes Gerät zur übertragung von Daten eine eindeutige Adresse,\n"
+"\t\t\t\t\t\t\t\t\t\tdie sogenannte IP-Adresse. Die zumindest kurzzeitige Speicherung der IP-\n"
+"\t\t\t\t\t\t\t\t\t\tAdresse ist aufgrund der Funktionsweise des Internets technisch erforderlich.Die IP-Adressen werden vor jeglicher Verarbeitung um 1 Byte gekürzt\n"
+"\t\t\t\t\t\t\t\t\t\tund nur anonymisiert Es erfolgt keine Speicherung oder weitere Verarbeitung\n"
+"\t\t\t\t\t\t\t\t\t\tder ungekürzten IP-Adressen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Im Auftrag des\n"
+"\t\t\t\t\t\t\t\t\tBetreibers dieser Website wird Adobe diese Informationen benutzen, um die\n"
+"\t\t\t\t\t\t\t\t\tNutzung der Website durch die Nutzer auszuwerten, um Reports über\n"
+"\t\t\t\t\t\t\t\t\tdie Websiteaktivitäten zusammenzustellen und um weitere mit der\n"
+"\t\t\t\t\t\t\t\t\tWebsitenutzung und der Internetnutzung verbundene Dienstleistungen\n"
+"\t\t\t\t\t\t\t\t\tgegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von\n"
+"\t\t\t\t\t\t\t\t\tAdobe Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht\n"
+"\t\t\t\t\t\t\t\t\tmit anderen Daten von Adobe zusammengeführt."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"In Zusammenarbeit mit\n"
+"\t\t\t\t\t\t\t\t\tunseren Hosting-Providern bemühen wir uns, die Datenbanken so gut\n"
+"\t\t\t\t\t\t\t\t\twie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor\n"
+"\t\t\t\t\t\t\t\t\tFälschung zu schützen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Installation-ID"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Interrogare\n"
+"\t\t\t\t\t\t\t\t\t\tGmbH ("
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Kantar\n"
+"\t\t\t\t\t\t\t\t\t\tDeutschland GmbH ("
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Kostenpflichtige Leistungen"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid ""
+"Liability claims against the author for material or immaterial damage resulting from access, use or non-use of the published information through misuse of the\n"
+"\t\t\t\t\t\t\t\t\t\tConnection or"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "MAXIMUM PERFORMANCE"
+msgstr "MAXIMALE PERFORMANCE"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Marco Niggli\n"
+"\n"
+"\t\t\t\t\t\t\t\t\t<br/>6275 Ballwil"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Marco Niggli - CEO"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Möchten\n"
+"\t\t\t\t\t\t\t\t\tSie der Erhebung der Daten durch Hotjar widersprechen (Opt-Out), klicken Sie\n"
+"\t\t\t\t\t\t\t\t\tbitte hier:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Möchten Sie nicht am Tracking teilnehmen,\n"
+"\t\t\t\t\t\t\t\t\tkönnen Sie das hierfür erforderliche Setzen eines Cookies\n"
+"\t\t\t\t\t\t\t\t\tablehnen – etwa per Browser-Einstellung, die das automatische Setzen von\n"
+"\t\t\t\t\t\t\t\t\tCookies generell deaktiviert oder Ihren Browser so einstellen, dass Cookies\n"
+"\t\t\t\t\t\t\t\t\tvon der Domain „googleleadservices.com“ blockiert werden."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "NOT FOR ME, THANKS"
+msgstr "NICHT FÜR MICH, DANKE"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Nach eigenen Angaben erhebt\n"
+"\t\t\t\t\t\t\t\t\tGoogle bei diesem Vorgang keine personenbezogenen Daten. Sollten Sie die\n"
+"\t\t\t\t\t\t\t\t\tFunktion Remarketing von Google dennoch nicht wünschen,\n"
+"\t\t\t\t\t\t\t\t\tkönnen Sie diese grundsätzlich deaktivieren, indem Sie die\n"
+"\t\t\t\t\t\t\t\t\tentsprechenden Einstellungen unter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid "Name"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Nur in Ausnahmefällen wird die volle IP-Adresse an einen\n"
+"\t\t\t\t\t\t\t\t\tServer von Google in den USA übertragen und dort gekürzt. Im Auftrag des\n"
+"\t\t\t\t\t\t\t\t\tBetreibers dieser Webseite wird Google diese Informationen benutzen, um\n"
+"\t\t\t\t\t\t\t\t\tIhre Nutzung der Webseite auszuwerten, um Reports über die\n"
+"\t\t\t\t\t\t\t\t\tWebseitenaktivitäten zusammenzustellen und um weitere mit der\n"
+"\t\t\t\t\t\t\t\t\tWebseitennutzung und der Internetnutzung verbundene Dienstleistungen\n"
+"\t\t\t\t\t\t\t\t\tgegenüber dem Webseitenbetreiber zu erbringen. Für die Ausnahmefälle, in\n"
+"\t\t\t\t\t\t\t\t\tdenen personenbezogene Daten in die USA übertragen werden, hat sich\n"
+"\t\t\t\t\t\t\t\t\tGoogle dem EU-US Privacy Shield unterworfen,"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Nutzung des\n"
+"\t\t\t\t\t\t\t\t\tSkalierbaren Zentralen Messverfahrens"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Nutzung des Skalierbaren\n"
+"\t\t\t\t\t\t\t\t\tZentralen Messverfahrens durch eine Applikation"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Nähere Informationen zu Google\n"
+"\t\t\t\t\t\t\t\t\treCAPTCHA sowie die dazugehörige Datenschutzerklärung finden\n"
+"\t\t\t\t\t\t\t\t\tSie unter:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_form_inherit
+msgid "OUR PATENTED SWISS TECHNOLOGIES"
+msgstr "UNSERE PATENTIERTEN SCHWEIZER TECHNOLOGIEN"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Personendaten sind alle Angaben, die sich auf\n"
+"\t\t\t\t\t\t\t\t\teine bestimmte oder bestimmbare Person beziehen. Eine betroffene Person\n"
+"\t\t\t\t\t\t\t\t\tist eine Person, über die Personendaten bearbeitet werden. Bearbeiten\n"
+"\t\t\t\t\t\t\t\t\tumfasst jeden Umgang mit Personendaten, unabhängig von den\n"
+"\t\t\t\t\t\t\t\t\tangewandten Mitteln und Verfahren, insbesondere das Aufbewahren,\n"
+"\t\t\t\t\t\t\t\t\tBekanntgeben, Beschaffen, Löschen, Speichern, Verändern,\n"
+"\t\t\t\t\t\t\t\t\tVernichten und Verwenden von Personendaten."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Recht auf Berichtigung (Art. 16 DSGVO)"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Recht auf Datenübertragbarkeit (Art. 20\n"
+"\t\t\t\t\t\t\t\t\t\tDSGVO)"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Recht auf Einschränkung der Verarbeitung\n"
+"\t\t\t\t\t\t\t\t\t\t(Art. 18f. DSGVO)"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Recht auf Löschung\n"
+"\t\t\t\t\t\t\t\t\t\t(Art. 17 DSGVO)"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Rechtsgrundlage für die Nutzung von Google Analytics\n"
+"\t\t\t\t\t\t\t\t\tist Art. 6 Abs. 1 S. 1 lit. f DS-GVO. Die im Rahmen von Google Analytics von\n"
+"\t\t\t\t\t\t\t\t\tIhrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von\n"
+"\t\t\t\t\t\t\t\t\tGoogle zusammengeführt. Wir weisen Sie darauf hin, dass auf dieser\n"
+"\t\t\t\t\t\t\t\t\tWebseite Google Analytics um den Code «_anonymizeIp();»\n"
+"\t\t\t\t\t\t\t\t\terweitert wurde, um eine anonymisierte Erfassung von IP-Adressen zu\n"
+"\t\t\t\t\t\t\t\t\tgewährleisten. Dadurch werden IP-Adressen gekürzt weiterverarbeitet, eine\n"
+"\t\t\t\t\t\t\t\t\tPersonenbeziehbarkeit kann damit ausgeschlossen werden. Soweit den über\n"
+"\t\t\t\t\t\t\t\t\tSie erhobenen Daten ein Personenbezug zukommt, wird dieser also sofort\n"
+"\t\t\t\t\t\t\t\t\tausgeschlossen und die personenbezogenen Daten damit umgehend\n"
+"\t\t\t\t\t\t\t\t\tgelöscht."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Rechtsgrundlage für die Verarbeitung Ihrer Daten ist eine\n"
+"\t\t\t\t\t\t\t\t\tInteressenabwägung, wonach der vorstehend geschilderten Verarbeitung Ihrer\n"
+"\t\t\t\t\t\t\t\t\tpersonenbezogenen Daten keine überwiegenden gegenteiligen Interessen\n"
+"\t\t\t\t\t\t\t\t\tIhrerseits entgegenstehen (Art. 6 Abs. 1 S. 1 lit. f DSGVO). Weitere\n"
+"\t\t\t\t\t\t\t\t\tInformationen zu Google Ads von Google erhalten Sie unter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid ""
+"References and links to third party websites are outside our area of ​​responsibility. It rejected any responsibility for such websites. Access and use of such websites\n"
+"\t\t\t\t\t\t\t\t\t\tare at the user's own risk."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Referrer\n"
+"\t\t\t\t\t\t\t\t\t\tURL"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Registered Company Name:"
+msgstr "Eingetragener Firmenname:"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_form_inherit
+msgid "SHOP"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "SIGN UP AND SAVE 10% ON YOUR FIRST ORDER!"
+msgstr "REGISTRIEREN SIE SICH UND SPAREN SIE 10% AUF IHRE ERSTE BESTELLUNG!"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "Secure Payment"
+msgstr "Sichere Bezahlung"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid ""
+"Ship to the same address\n"
+"\t\t\t\t\t\t\t\t\t<span class=\"ship_to_other text-muted\" style=\"display: none\">&amp;nbsp;(\n"
+"\t\t\t\t\t\t\t\t\t\t<i>Your shipping address will be requested later)</i>\n"
+"\t\t\t\t\t\t\t\t\t</span>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Sie\n"
+"\t\t\t\t\t\t\t\t\tkönnen die Speicherung der Cookies durch eine entsprechende\n"
+"\t\t\t\t\t\t\t\t\tEinstellung Ihrer Browser-Software verhindern. Dieses Angebot weist die\n"
+"\t\t\t\t\t\t\t\t\tNutzer jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht\n"
+"\t\t\t\t\t\t\t\t\tsämtliche Funktionen dieser Website vollumfänglich werden\n"
+"\t\t\t\t\t\t\t\t\tnutzen können. Die Nutzer können darüber hinaus die\n"
+"\t\t\t\t\t\t\t\t\tErfassung der durch das Cookie erzeugten und auf ihre Nutzung der Website\n"
+"\t\t\t\t\t\t\t\t\tbezogenen Daten (inkl. Ihrer IP-Adresse) an Adobe sowie die Verarbeitung\n"
+"\t\t\t\t\t\t\t\t\tdieser Daten durch Adobe verhindern, indem sie das unter dem folgenden\n"
+"\t\t\t\t\t\t\t\t\tLink verfügbare Browser-Plug-In herunterladen und installieren:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Sie\n"
+"\t\t\t\t\t\t\t\t\tkönnen jederzeit der Erhebung, Verarbeitung und Erfassung der durch\n"
+"\t\t\t\t\t\t\t\t\tCrazyEgg.com erzeugten Daten widersprechen, indem sie"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Sie haben jederzeit\n"
+"\t\t\t\t\t\t\t\t\tdas Recht auf unentgeltliche Auskunft über Ihre gespeicherten\n"
+"\t\t\t\t\t\t\t\t\tpersonenbezogenen Daten, deren Herkunft und Empfänger und den\n"
+"\t\t\t\t\t\t\t\t\tZweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung\n"
+"\t\t\t\t\t\t\t\t\toder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum\n"
+"\t\t\t\t\t\t\t\t\tThema personenbezogene Daten können Sie sich jederzeit unter der im\n"
+"\t\t\t\t\t\t\t\t\tImpressum angegebenen Adresse an uns wenden."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Sie können die\n"
+"\t\t\t\t\t\t\t\t\tTeilnahme an diesem Tracking-Verfahren auf verschiedene Weise\n"
+"\t\t\t\t\t\t\t\t\tverhindern:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Sie können sich\n"
+"\t\t\t\t\t\t\t\t\tentscheiden, ob in Ihrem Browser ein eindeutiger Webanalyse-Cookie\n"
+"\t\t\t\t\t\t\t\t\tabgelegt werden darf, um dem Betreiber der Webseite die Erfassung und\n"
+"\t\t\t\t\t\t\t\t\tAnalyse verschiedener statistischer Daten zu\n"
+"\t\t\t\t\t\t\t\t\termöglichen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid "State / Province"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid "State / Province..."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid ""
+"Street\n"
+"\t\t\t\t\t\t\t<span class=\"d-none d-md-inline\">and Number</span>"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid "Street 2"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Switzerland"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "THANKS!"
+msgstr "VIELEN DANK!"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "Techlux GmbH"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "The author assumes no liability for the correctness of the content,"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid ""
+"The copyrights and all other rights to content, images, photos or other files on this website belong exclusively to <b>Techlux GmbH</b> or the specifically named rights holders. For\n"
+"\t\t\t\t\t\t\t\t\t\tReproduction of any elements requires the prior written consent of the copyright holder."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_form__product_inherit
+msgid "This product is unpublished."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Tracking Tool CrazyEgg"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Traking Tool\n"
+"\t\t\t\t\t\t\t\t\tChartbeat"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Uhrzeit der\n"
+"\t\t\t\t\t\t\t\t\t\tServeranfrage"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Um einen Ausschluss von\n"
+"\t\t\t\t\t\t\t\t\tder Messung zu garantieren, ist es technisch notwendig, ein Cookie zu setzen.\n"
+"\t\t\t\t\t\t\t\t\tSollten Sie die Cookies in Ihrem Browser löschen, ist es notwendig, den\n"
+"\t\t\t\t\t\t\t\t\tOpt-Out-Vorgang unter dem oben genannten Link zu wiederholen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_form__product_inherit
+msgid "Unpublished"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Unsere Applikation\n"
+"\t\t\t\t\t\t\t\t\tnutzt das Messverfahren («SZMnG») der INFOnline GmbH ("
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Unsere Kommentarfunktion speichert die IP-Adressen der\n"
+"\t\t\t\t\t\t\t\t\tNutzer, die Kommentare verfassen. Da wir Kommentare auf unserer Seite\n"
+"\t\t\t\t\t\t\t\t\tnicht vor der Freischaltung prüfen, benötigen wir diese Daten, um\n"
+"\t\t\t\t\t\t\t\t\tim Falle von Rechtsverletzungen wie Beleidigungen oder Propaganda gegen\n"
+"\t\t\t\t\t\t\t\t\tden Verfasser vorgehen zu können."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "VIEW CODE"
+msgstr "CODE ANZEIGEN"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Vendor-ID"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Verantwortliche Stelle im Sinne der\n"
+"\t\t\t\t\t\t\t\t\tDatenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung\n"
+"\t\t\t\t\t\t\t\t\t(DSGVO), ist:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Verwendung von Adobe Analytics(Omniture)"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Verwendung von Google Maps"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Verwendung von Google reCAPTCHA"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Verwendung von Matomo"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Weitere Informationen finden sich in der"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Weitere Informationen hierzu finden Sie in der\n"
+"\t\t\t\t\t\t\t\t\tDatenschutzerklärung von Instagram:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Weitere Informationen hierzu finden Sie in der\n"
+"\t\t\t\t\t\t\t\t\tDatenschutzerklärung von LinkedIn unter:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Weitere Informationen zu Google Web Fonts finden Sie unter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Weitere Informationen zu Zweck, Umfang und weiterer\n"
+"\t\t\t\t\t\t\t\t\tVerarbeitung und Nutzung der Daten durch Pinterest sowie Ihre\n"
+"\t\t\t\t\t\t\t\t\tdiesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer\n"
+"\t\t\t\t\t\t\t\t\tPrivatsphäre finden Sie in den den Datenschutzhinweisen von Pinterest:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Weitere Informationen zum Datenschutz im\n"
+"\t\t\t\t\t\t\t\t\tMessverfahren finden Sie auf der Webseite der INFOnline GmbH\n"
+"\t\t\t\t\t\t\t\t\t(https://www.infonline.de), die das Messverfahren betreibt, der\n"
+"\t\t\t\t\t\t\t\t\tDatenschutzwebseite der AGOF ("
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Weitere Informationen zum Datenschutz im\n"
+"\t\t\t\t\t\t\t\t\tMessverfahren finden Sie auf der Webseite der INFOnline GmbH(https://www.infonline.de), die das Messverfahren betreibt, der\n"
+"\t\t\t\t\t\t\t\t\tDatenschutzwebseite der AGOF ("
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Wenn Sie an der Messung\n"
+"\t\t\t\t\t\t\t\t\tnicht teilnehmen möchten, können Sie hier widersprechen:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Wenn Sie an der Messung\n"
+"\t\t\t\t\t\t\t\t\tnicht teilnehmen möchten, können Sie unter folgendem Link\n"
+"\t\t\t\t\t\t\t\t\twidersprechen:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Wenn Sie den auf dieser Webseite angebotenen\n"
+"\t\t\t\t\t\t\t\t\tNewsletter beziehen möchten, benötigen wir von Ihnen eine E-\n"
+"\t\t\t\t\t\t\t\t\tMail-Adresse sowie Informationen, welche uns die überprüfung\n"
+"\t\t\t\t\t\t\t\t\tgestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind und mit\n"
+"\t\t\t\t\t\t\t\t\tdem Empfang des Newsletters einverstanden sind. Weitere Daten werden\n"
+"\t\t\t\t\t\t\t\t\tnicht erhoben. Diese Daten verwenden wir ausschließlich für den\n"
+"\t\t\t\t\t\t\t\t\tVersand der angeforderten Informationen und geben sie nicht an Dritte\n"
+"\t\t\t\t\t\t\t\t\tweiter."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Wenn Sie nicht"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Wenn Sie uns per Kontaktformular Anfragen\n"
+"\t\t\t\t\t\t\t\t\tzukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive\n"
+"\t\t\t\t\t\t\t\t\tder von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der\n"
+"\t\t\t\t\t\t\t\t\tAnfrage und für den Fall von Anschlussfragen bei uns gespeichert.\n"
+"\t\t\t\t\t\t\t\t\tDiese Daten geben wir nicht ohne Ihre Einwilligung\n"
+"\t\t\t\t\t\t\t\t\tweiter."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Wenn Sie unsere Seiten besuchen, wird nachAktivierung des Plugin eine direkte Verbindung zwischen Ihrem Browser und\n"
+"\t\t\t\t\t\t\t\t\tdem SoundCloud-Server hergestellt. SoundCloud erhält dadurch die\n"
+"\t\t\t\t\t\t\t\t\tInformation, dass Sie mit Ihrer IP-Adresse unsere Seite besucht haben. Wenn\n"
+"\t\t\t\t\t\t\t\t\tSie den \"Like-Button\" oder \"Share- Button\" anklicken\n"
+"\t\t\t\t\t\t\t\t\twährend Sie in Ihrem SoundCloud- Benutzerkonto eingeloggt sind,\n"
+"\t\t\t\t\t\t\t\t\tkönnen Sie die Inhalte unserer Seiten mit Ihrem SoundCloud-Profil\n"
+"\t\t\t\t\t\t\t\t\tverlinken und/oder teilen. Dadurch kann SoundCloud Ihrem Benutzerkonto\n"
+"\t\t\t\t\t\t\t\t\tden Besuch unserer Seiten zuordnen. Wir weisen darauf hin, dass wir als\n"
+"\t\t\t\t\t\t\t\t\tAnbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten\n"
+"\t\t\t\t\t\t\t\t\tsowie deren Nutzung durch SoundCloud erhalten. Weitere Informationen\n"
+"\t\t\t\t\t\t\t\t\thierzu finden Sie in der Datenschutzerklärung von SoundCloud unter:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Wenn die SSL bzw. TLS\n"
+"\t\t\t\t\t\t\t\t\tVerschlüsselung aktiviert ist, können die Daten, die Sie an uns\n"
+"\t\t\t\t\t\t\t\t\tübermitteln, nicht von Dritten mitgelesenwerden."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "Widerspruchsrecht (Art. 21 DSGVO)"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Wir bearbeiten\n"
+"\t\t\t\t\t\t\t\t\tPersonendaten im Einklang mit dem schweizerischen Datenschutzrecht. Im\n"
+"\t\t\t\t\t\t\t\t\tübrigen bearbeiten wir – soweit und sofern die EU-DSGVO anwendbar\n"
+"\t\t\t\t\t\t\t\t\tist – Personendaten gemäss folgenden Rechtsgrundlagen im\n"
+"\t\t\t\t\t\t\t\t\tZusammenhang mit Art. 6 Abs. 1 DSGVO"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Wir bearbeiten Personendaten für\n"
+"\t\t\t\t\t\t\t\t\tjene Dauer, die für den jeweiligen Zweck oder die jeweiligen Zwecke\n"
+"\t\t\t\t\t\t\t\t\terforderlich ist. Bei länger dauernden Aufbewahrungspflichten aufgrund\n"
+"\t\t\t\t\t\t\t\t\tvon gesetzlichen und sonstigen Pflichten, denen wir unterliegen,\n"
+"\t\t\t\t\t\t\t\t\tschränken wir die Bearbeitung entsprechend\n"
+"\t\t\t\t\t\t\t\t\tein."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Wir weisen darauf hin, dass die\n"
+"\t\t\t\t\t\t\t\t\tDatenübertragung im Internet (z.B. bei der Kommunikation per E-Mail)\n"
+"\t\t\t\t\t\t\t\t\tSicherheitslücken aufweisen kann. Ein lückenloser Schutz der\n"
+"\t\t\t\t\t\t\t\t\tDaten vor dem Zugriff durch Dritte ist nicht möglich."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.shop_address_inherit
+msgid "Zip Code"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Zur\n"
+"\t\t\t\t\t\t\t\t\tErbringung kostenpflichtiger Leistungen werden von uns zusätzliche\n"
+"\t\t\t\t\t\t\t\t\tDaten erfragt, wie z.B. Zahlungsangaben, um Ihre Bestellung resp. Ihren\n"
+"\t\t\t\t\t\t\t\t\tAuftrag ausführen zu können. Wir speichern diese Daten in\n"
+"\t\t\t\t\t\t\t\t\tunseren Systemen, bis die gesetzlichen Aufbewahrungsfristen abgelaufen\n"
+"\t\t\t\t\t\t\t\t\tsind."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Zweck der Verarbeitung der personenbezogenen\n"
+"\t\t\t\t\t\t\t\t\tDaten ist die Erstellung von Statistiken und die Bildung von Nutzerkategorien.\n"
+"\t\t\t\t\t\t\t\t\tDie Statistiken dienen dazu, die Nutzung unseres Angebots nachvollziehen\n"
+"\t\t\t\t\t\t\t\t\tund belegen zu können. Die Nutzerkategorien bilden die Grundlage\n"
+"\t\t\t\t\t\t\t\t\tfür eine interessengerechte Ausrichtung von Werbemitteln bzw.\n"
+"\t\t\t\t\t\t\t\t\tWerbemassnahmen. Zur Vermarktung dieser Webseite ist eine\n"
+"\t\t\t\t\t\t\t\t\tNutzungsmessung, welche eine Vergleichbarkeit zu anderen Marktteilnehmern\n"
+"\t\t\t\t\t\t\t\t\tgewährleistet, unerlässlich. Unser berechtigtes Interesse ergibt\n"
+"\t\t\t\t\t\t\t\t\tsich aus der wirtschaftlichen Verwertbarkeit der sich aus den Statistiken und\n"
+"\t\t\t\t\t\t\t\t\tNutzerkategorien ergebenden Erkenntnisse und dem Marktwert unserer\n"
+"\t\t\t\t\t\t\t\t\tWebseite -auch in direktem Vergleich mit Webseiten Dritter- der sich anhand\n"
+"\t\t\t\t\t\t\t\t\tder Statistiken ermitteln lässt."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"Zweck der Verarbeitung der personenbezogenen Daten ist die Erstellung\n"
+"\t\t\t\t\t\t\t\t\tvon Statistiken zur Bildung von Nutzerkategorien. Die Statistiken dienen uns\n"
+"\t\t\t\t\t\t\t\t\tdazu, die Nutzung unseres Angebots nachvollziehen und belegen zu\n"
+"\t\t\t\t\t\t\t\t\tkönnen. Die Nutzerkategorien bilden die Grundlage für eine\n"
+"\t\t\t\t\t\t\t\t\tinteressengerechte Ausrichtung von Werbemitteln bzw. Werbemassnahmen.\n"
+"\t\t\t\t\t\t\t\t\tZur Vermarktung dieser Applikation ist eine Nutzungsmessung, welche eine\n"
+"\t\t\t\t\t\t\t\t\tVergleichbarkeit zu anderen Marktteilnehmern gewährleistet,\n"
+"\t\t\t\t\t\t\t\t\tunerlässlich. Unser berechtigtes Interesse ergibt sich aus der\n"
+"\t\t\t\t\t\t\t\t\twirtschaftlichen Verwertbarkeit der sich aus den Statistiken und\n"
+"\t\t\t\t\t\t\t\t\tNutzerkategorien ergebenden Erkenntnisse und dem Marktwert unserer\n"
+"\t\t\t\t\t\t\t\t\tApplikation -auch in direktem Vergleich mit Applikationen Dritter-, der sich\n"
+"\t\t\t\t\t\t\t\t\tanhand der Statistiken ermitteln lässt."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "besuchen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.impressum-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.impressum-page
+msgid "caused by technical faults are excluded."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "chartbeat.com/about/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "chartbeat.com/privacy"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.new_custom_home_page
+msgid "click to copy"
+msgstr "Klicken Sie zum Kopieren"
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"dieser\n"
+"\t\t\t\t\t\t\t\t\t\tDatenschutzerklärung"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "dieser Anleitung folgen"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"durch\n"
+"\t\t\t\t\t\t\t\t\t\tdauerhafte Deaktivierung in Ihren Browsern Firefox, Internetexplorer oder\n"
+"\t\t\t\t\t\t\t\t\t\tGoogle Chrome unter dem Link"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"durch Deaktivierung\n"
+"\t\t\t\t\t\t\t\t\t\tder Cookies für Conversion-Tracking, indem Sie Ihren Browser so einstellen,\n"
+"\t\t\t\t\t\t\t\t\t\tdass Cookies von der Domain «www.googleadservices.com»\n"
+"\t\t\t\t\t\t\t\t\t\tblockiert werden,"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"durch Deaktivierung der\n"
+"\t\t\t\t\t\t\t\t\t\tinteressenbezogenen Anzeigen der Anbieter, die Teil der Selbstregulierungs-\n"
+"\t\t\t\t\t\t\t\t\t\tKampagne «About Ads» sind, über den Link"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"durch eine entsprechende Einstellung Ihrer Browser-\n"
+"\t\t\t\t\t\t\t\t\t\tSoftware, insbesondere führt die Unterdrückung von Drittcookies dazu, dass\n"
+"\t\t\t\t\t\t\t\t\t\tSie keine Anzeigen von Drittanbietern erhalten;"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"erklärt werden. Des\n"
+"\t\t\t\t\t\t\t\t\tWeiteren kann die Speicherung von Cookies mittels deren Abschaltung in den\n"
+"\t\t\t\t\t\t\t\t\tEinstellungen des Browsers erreicht werden. Bitte beachten Sie, dass dann\n"
+"\t\t\t\t\t\t\t\t\tgegebenenfalls nicht alle Funktionen dieses Onlineangebotes genutzt werden\n"
+"\t\t\t\t\t\t\t\t\tkönnen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "folgen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"ganz\n"
+"\t\t\t\t\t\t\t\t\t\toder teilweise anwendbar ist, unterliegen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "http://instagram.com/about/legal/privacy/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "http://www.aboutads.info/choices/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"http://www.adobe.com/de/privacy/opt-\n"
+"\t\t\t\t\t\t\t\t\t\tout.html"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "http://www.agof.de/datenschutz"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "http://www.ankordata.de/homepage/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "http://www.google.com/settings/ads"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "http://www.ivw.eu"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "http://www.networkadvertising.org/managing/opt_out.asp"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "http://www.youronlinechoices.com/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"https://about.pinterest.com/de/privacy-\n"
+"\t\t\t\t\t\t\t\t\t\tpolicy"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://ads.google.com/intl/de_DE/home/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://adssettings.google.com"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"https://de-\n"
+"\t\t\t\t\t\t\t\t\t\tde.facebook.com/about/privacy"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://developers.google.com/fonts/faq"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://optout.ioam.de"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://soundcloud.com/pages/privacy"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://tools.google.com/dlpage/gaoptout"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://twitter.com/privacy"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.INFOnline.de"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.aboutads.info/choices"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"https://www.google.com/intl/de/tagmanager/use-\n"
+"\t\t\t\t\t\t\t\t\t\tpolicy.html"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.google.com/policies/privacy/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.google.com/privacy/ads/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.google.com/settings/ads/plugin"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.google.de/intl/de/policies/privacy"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"https://www.hotjar.com/opt-\n"
+"\t\t\t\t\t\t\t\t\t\tout"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.hotjar.com/privacy"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.interrogare.de/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"https://www.linkedin.com/legal/privacy-\n"
+"\t\t\t\t\t\t\t\t\t\tpolicy"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.networkadvertising.org"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.privacyshield.gov/EU-US-Framework"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "https://www.tns-infratest.com/"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"lit. a)\n"
+"\t\t\t\t\t\t\t\t\t\tBearbeitung von Personendaten mit Einwilligung der betroffenen Person."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"lit. b) Bearbeitung von Personendaten zur Erfüllung eines Vertrages\n"
+"\t\t\t\t\t\t\t\t\t\tmit der betroffenen Person sowie zur Durchführung entsprechender\n"
+"\t\t\t\t\t\t\t\t\t\tvorvertraglicher Massnahmen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"lit. c) Bearbeitung von Personendaten\n"
+"\t\t\t\t\t\t\t\t\t\tzur Erfüllung einer rechtlichen Verpflichtung, der wir gemäss\n"
+"\t\t\t\t\t\t\t\t\t\tallenfalls anwendbarem Recht der EU oder gemäss allenfallsanwendbarem Recht eines Landes, in dem die DSGVO"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"lit. d) Bearbeitung von\n"
+"\t\t\t\t\t\t\t\t\t\tPersonendaten um lebenswichtige Interessen der betroffenen Person oder\n"
+"\t\t\t\t\t\t\t\t\t\teiner anderen natürlichen Person zu schützen."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"lit. f)\n"
+"\t\t\t\t\t\t\t\t\t\tBearbeitung von Personendaten um die berechtigten Interessen von uns oder\n"
+"\t\t\t\t\t\t\t\t\t\tvon Dritten zu wahren, sofern nicht die Grundfreiheiten und Grundrechte sowie\n"
+"\t\t\t\t\t\t\t\t\t\tInteressen der betroffenen Person überwiegen. Berechtigte Interessen\n"
+"\t\t\t\t\t\t\t\t\t\tsind insbesondere unser betriebswirtschaftliches Interesse, unsere Website\n"
+"\t\t\t\t\t\t\t\t\t\tbereitstellen zu können, die Informationssicherheit, die Durchsetzung\n"
+"\t\t\t\t\t\t\t\t\t\tvon eigenen rechtlichen Ansprüchen und die Einhaltung von\n"
+"\t\t\t\t\t\t\t\t\t\tschweizerischem Recht."
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "oder die EU-Seite"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"und in der\n"
+"\t\t\t\t\t\t\t\t\tDatenschutzerklärung von Google:"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "verwendetes Betriebssystem"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid ""
+"vornehmen.\n"
+"\t\t\t\t\t\t\t\t\tAlternativ können Sie den Einsatz von Cookies für\n"
+"\t\t\t\t\t\t\t\t\tinteressenbezogene Werbung über die Werbenetzwerkinitiative\n"
+"\t\t\t\t\t\t\t\t\tdeaktivieren, indem Sie den Anweisungen unter"
+msgstr ""
+
+#. module: website_template
+#: model_terms:ir.ui.view,arch_db:website_template.datenschutz-page_ir_ui_view
+#: model_terms:website.page,arch_db:website_template.datenschutz-page
+msgid "www.google.de/intl/de/policies/privacy"
+msgstr ""

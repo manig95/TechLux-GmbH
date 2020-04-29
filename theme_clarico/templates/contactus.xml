@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="contactus_form_inherit" name="Contact Form (Opportunity)" inherit_id="website_crm.contactus_form">
+		<xpath expr="//form" position="replace">
+			<div t-ignore="true">
+				<form style="" action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32 contact-form" enctype="multipart/form-data"
+					  data-editable-form="false">
+					<div class="form-group row form-field o_website_form_required_custom">
+
+						<div class="col-lg-7 col-md-8" style="text-align:center">
+							<input type="text" class="form-control o_website_form_input" name="email_from" placeholder="Email*" required="1" t-att-value="request.params.get('email_from', '')"/>
+						</div>
+					</div>
+					<div class="form-group row form-field o_website_form_required">
+
+						<div class="col-lg-7 col-md-8" style="text-align:center">
+							<input type="text" class="form-control o_website_form_input" name="name" placeholder="Subject*" required="1" t-att-value="request.params.get('name', '')"/>
+						</div>
+					</div>
+					<div class="form-group row form-field o_website_form_required_custom">
+
+						<div class="col-lg-7 col-md-8" style="text-align:center">
+							<textarea class="form-control o_website_form_input" name="description" placeholder="Description*" required="1">
+								<t t-esc="request.params.get('description', '')" placeholder="Description*"/>
+							</textarea>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="cnt-btn">
+							<a href="#" role="button" class="btn btn-primary btn-lg o_website_form_send" style="text-align:center">Send</a>
+							<span id="o_website_form_result"></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="contact_us_ept" inherit_id="website.contactus" name="Contact Us">
+		<xpath expr="//section[hasclass('s_text_block')]" position="replace">
+		</xpath>
+		<xpath expr="//div[hasclass('oe_structure')]" position="replace">
+			<div class="oe_structure">
+				<section class="te_contactus_banner_section oe_img_bg">
+					<div class="s_title text-center" style="margin-top: 50px;">
+						<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 12px 22px 0px;"/>
+						<h1 class="sp-p-1" style="font-weight: 600;font-size: 45px;margin-top:20px;letter-spacing: 3px;display: initial;color: #000;">CONTACT US</h1>
+						<img src="/website_template/static/img/hexagon.png" style="width:12px;margin: 0px 10px 17px 3px;"/>
+					</div>
+				</section>
+			</div>
+		</xpath>
+
+		<xpath expr="//div[@id='wrap']/div[hasclass('container')]" position="attributes">
+			<attribute name="class">container mt-2 mb32</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('col-lg-4')]" position="replace">
+		</xpath>
+		<xpath expr="//div[hasclass('col-lg-8')]" position="attributes">
+			<attribute name="class">col-lg-12</attribute>
+		</xpath>
+	</template>
+
+
+	<!--<template id="about_us_ept" inherit_id="website.aboutus" name="About Us">
+		<xpath expr="//section[hasclass('s_text_image')]//div[hasclass('col-lg-6')][2]" position="attributes">
+			<attribute name="class">col-lg-6 pt16 pb16 te_aboutus_img</attribute>
+		</xpath>
+	</template>-->
+
+
+	<template id="company_description_ept" name="Company Description Ept">
+		<address itemscope="itemscope" itemtype="http://schema.org/Organization">
+			<!-- TODO widget contact must add itemprop attributes -->
+			<t t-set="company" t-value="res_company.partner_id"/>
+			<div class="row">
+				<section class="col-lg-4">
+					<div class="te_add_flip_box">
+						<div class="te_add_flip_front text-center">
+							<i class="fa fa-map-marker fa-4x"></i>
+							<h2 class="pt-2">Corporate Office</h2>
+							<p>Lorem ipsum dolor sit amet, eam et reque justo quidam, te est</p>
+						</div>
+						<div class="te_add_flip_back">
+							<div class="pb-2">
+								<t t-esc="company.name"/>
+							</div>
+							<t t-esc="company.street"/>,
+							<t t-esc="company.street2"/>,
+							<t t-esc="company.city"/>,
+							<t t-esc="company.state_id.name"/>,
+							<t t-esc="company.zip"/>,
+							<t t-esc="company.country_id.name"/>
+							<div class="pt-2">
+								<t t-if="not res_company.google_map_img()">
+									<span class="fa fa-map-marker fa-fw mt16" role="img" aria-label="Address"
+										  title="Address"/>
+									<a t-att-href="res_company.google_map_link()" target="_BLANK">Google Maps</a>
+								</t>
+							</div>
+							<section>
+								<a href="#" class="btn btn-primary te_theme_button mt-3">Request A Call</a>
+							</section>
+						</div>
+					</div>
+				</section>
+				<section class="col-lg-4">
+					<div class="te_add_flip_box">
+						<div class="te_add_flip_front text-center">
+							<i class="fa fa-phone fa-4x"></i>
+							<h2 class="pt-2">Call Us To Schedule</h2>
+							<p>Lorem ipsum dolor sit amet, eam et reque justo quidam, te est</p>
+						</div>
+						<div class="te_add_flip_back">
+							<h3>Call Us Today!</h3>
+							Call:
+							<t t-esc="company.phone"/>
+							<section>
+								<a href="#" class="btn btn-primary te_theme_button mt-3">Call Us Today</a>
+							</section>
+						</div>
+					</div>
+				</section>
+				<section class="col-lg-4">
+					<div class="te_add_flip_box">
+						<div class="te_add_flip_front text-center">
+							<i class="fa fa-envelope fa-4x"></i>
+							<h2 class="pt-2">Send Us An Email</h2>
+							<p>Lorem ipsum dolor sit amet, eam et reque justo quidam, te est</p>
+						</div>
+						<div class="te_add_flip_back">
+							<h3>We're Standing By!</h3>
+							Email:
+							<t t-esc="company.email"/>
+							<section>
+								<a href="#" class="btn btn-primary te_theme_button mt-3">Send An Email</a>
+							</section>
+						</div>
+					</div>
+				</section>
+			</div>
+		</address>
+		<t t-if="res_company.google_map_img()">
+			<a t-att-href="res_company.google_map_link()" target="_BLANK">
+				<img class="img-fluid" t-att-src="res_company.google_map_img()" alt="Google Maps"/>
+			</a>
+		</t>
+	</template>
+
+
+	<record id="website_form.contactus_thanks" model="website.page">
+		<field name="name">Thanks (Contact us)</field>
+		<field name="type">qweb</field>
+		<field name="url">/contactus-thank-you</field>
+		<field name="website_indexed" eval="False"/>
+		<field name="is_published">True</field>
+		<field name="key">website_form.contactus_thanks</field>
+		<field name="arch" type="xml">
+			<t name="Thanks (Contact us)" t-name="website_form.contactus_thanks">
+				<t t-call="website.layout">
+					<div id="wrap">
+						<div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_1"/>
+						<div class="container pt-3" style="padding: 53px 19% 40px 22%;text-align: center;">
+							<h1 style="font-family: DINNextLTPro-Regular;">Thanks!</h1>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="alert alert-success" role="status">
+										Your message has been sent successfully.
+										<button type="button" class="close" data-dismiss="alert">&amp;times;</button>
+									</div>
+									<p>
+										We will get back to you shortly.
+									</p>
+								</div>
+								<div class="" style="display:none;">
+									<t t-call="website.company_description"/>
+								</div>
+							</div>
+						</div>
+						<div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_2"/>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+
+
+</odoo>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="inherit_report_layout" inherit_id="web.external_layout_clean">
+		<xpath expr="//div[@class='o_clean_header']" position="replace">
+			<div class="header" style="margin-left:64px;margin-right:76px">
+			<div class="row" style="padding-top:-30px !important;">
+				<img class="col-5" style="float: left;height:60px;margin-top: 50px;" src="/techlux_reports/static/img/Logos-02.png"/>
+				<div class="col-4" style="padding-top:20px !important;color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top: 45px;margin-left:202px;float:right;">
+					<p style="line-height:0px;">TECHLUX GmbH</p>
+					<p style="line-height:0px;">Hochdorfstrasse 5</p>
+					<p style="line-height:0px;">CH-6275 Ballwil</p>
+				</div>
+				<div class="col-4" style="color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top:66px;float:right;">
+					<p style="line-height:0px;">T +41 800 533 000</p>
+					<p style="line-height:0px;">info@techlux.ch</p>
+					<p style="line-height:0px;">www.techlux.ch</p>
+				</div>
+			</div>
+		</div>
+		</xpath>
+	</template>
+
+	<template id="esr_external_layout_standard">
+		<div class="header" style="margin-left:95px;margin-right:110px">
+			<div class="row" style="padding-top:-30px !important;">
+				<img class="col-5" style="float: left;height:60px;margin-top: 50px;" src="/techlux_reports/static/img/Logos-02.png"/>
+				<div class="col-4" style="padding-top:20px !important;color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top: 45px;margin-left:202px;float:right;">
+					<p style="line-height:0px;">TECHLUX GmbH</p>
+					<p style="line-height:0px;">Hochdorfstrasse 5</p>
+					<p style="line-height:0px;">CH-6275 Ballwil</p>
+				</div>
+				<div class="col-4" style="color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top:66px;float:right;">
+					<p style="line-height:0px;">T +41 800 533 000</p>
+					<p style="line-height:0px;">info@techlux.ch</p>
+					<p style="line-height:0px;">www.techlux.ch</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="article o_report_layout_standard" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+			<t t-call="web.address_layout"/>
+			<t t-raw="0"/>
+		</div>
+
+		<div class="footer o_standard_footer">
+			<div style="border-top: 1px solid #cbcbcc;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-left:64px;margin-right:76px" class="row">
+				<div style="float:left;" class="col-6">
+					<p><strong>Smart.</strong>Simple
+					</p>
+				</div>
+				<div t-if="report_type == 'pdf'" class="col-6" style="text-align:right;">
+					Page:
+					<span class="page"/>
+					/
+					<span class="topage"/>
+				</div>
+			</div>
+		</div>
+	</template>
+
+	<template id="web.external_layout_standard">
+		<div class="header" style="margin-left:64px;margin-right:76px">
+			<div class="row" style="padding-top:-30px !important;">
+				<img class="col-5" style="float: left;height:60px;margin-top: 50px;" src="/techlux_reports/static/img/Logos-02.png"/>
+				<div class="col-4" style="padding-top:20px !important;color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top: 45px;margin-left:202px;float:right;">
+					<p style="line-height:0px;">TECHLUX GmbH</p>
+					<p style="line-height:0px;">Hochdorfstrasse 5</p>
+					<p style="line-height:0px;">CH-6275 Ballwil</p>
+				</div>
+				<div class="col-4" style="color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top:66px;float:right;">
+					<p style="line-height:0px;">T +41 800 533 000</p>
+					<p style="line-height:0px;">info@techlux.ch</p>
+					<p style="line-height:0px;">www.techlux.ch</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="article o_report_layout_standard" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+			<t t-call="web.address_layout"/>
+			<t t-raw="0"/>
+		</div>
+
+		<div class="footer o_standard_footer">
+			<div style="border-top: 1px solid #cbcbcc;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-left:64px;margin-right:76px" class="row">
+				<div style="float:left;" class="col-6">
+					<p><strong>Smart.</strong>Simple
+					</p>
+				</div>
+				<div t-if="report_type == 'pdf'" class="col-6" style="text-align:right;">
+					Page:
+					<span class="page"/>
+					/
+					<span class="topage"/>
+				</div>
+			</div>
+		</div>
+	</template>
+
+	<template id="invoice_external_layout_standard">
+		<div class="header" style="margin-left:64px;margin-right:76px">
+			<div class="row" style="padding-top:-30px !important;">
+				<img class="col-5" style="float: left;height:60px;margin-top: 50px;" src="/techlux_reports/static/img/Logos-02.png"/>
+				<div class="col-4" style="padding-top:20px !important;color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top: 45px;margin-left:202px;float:right;">
+					<p style="line-height:0px;">TECHLUX GmbH</p>
+					<p style="line-height:0px;">Hochdorfstrasse 5</p>
+					<p style="line-height:0px;">CH-6275 Ballwil</p>
+				</div>
+				<div class="col-4" style="color:#908e8e;width:20%;font-family: &quot;Montserrat&quot;;font-size:10px;font-weight: 100;margin-top:66px;float:right;">
+					<p style="line-height:0px;">T +41 800 533 000</p>
+					<p style="line-height:0px;">info@techlux.ch</p>
+					<p style="line-height:0px;">www.techlux.ch</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="article o_report_layout_standard" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+			<t t-call="web.address_layout"/>
+			<t t-raw="0"/>
+		</div>
+
+		<div class="footer o_standard_footer">
+			<div style="border-top: 1px solid #cbcbcc;font-family: &quot;Montserrat&quot;;font-size:10px;margin-left:64px;margin-right:76px" class="row">
+				<div style="float:left;font-weight: 100;" class="col-4">
+					<p><strong>Smart.</strong>Simple
+					</p>
+				</div>
+				<div class="col-4 text-left" style="line-height: 10px;">
+					<strong>Bank Account<br/></strong>
+					<span>Credit Suisse<br/></span>
+					<span>Account no. 2345433-41<br/></span>
+					<span>IBAN	      CH15 0483 5234 5433 4100 0<br/></span>
+					<span>BIC      	CRESCHZZXXX</span>
+				</div>
+				<div t-if="report_type == 'pdf'" class="col-4" style="text-align:right;font-weight: 100;">
+					Page:
+					<span class="page"/>
+					/
+					<span class="topage"/>
+				</div>
+			</div>
+		</div>
+	</template>
+
+</odoo>
