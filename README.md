@@ -1,1 +1,0 @@
-# TechLux-GmbH
