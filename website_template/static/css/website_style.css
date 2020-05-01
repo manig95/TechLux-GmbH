@@ -1500,10 +1500,11 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 }
 #product_detail #o-carousel-product .carousel-item .product-mbl-view {
   width: 400px;
-  height: 400px;
+  height: 500px;
   display: flex;
   margin: 0 auto;
   align-items: center;
+  justify:center;
 }
 
 
@@ -1557,5 +1558,54 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 .navbar { z-index: 1040 !important;}
 }
 
+@media only screen and (max-device-width: 1024px) {
+    #product_detail .row #o-carousel-product .carousel-item { height: unset !important; min-height: auto !important; }
+    #o-carousel-product .d-none { display: block !important;margin-top: 0;}
+    #o-carousel-product .carousel-outer { height: 100% !important; }
+    #product_detail #o-carousel-product .carousel-item .product-mbl-view { width: auto; justify-content: center; }
+}
+    #product_detail #o-carousel-product>.carousel-outer{width:100%;display:block;position:relative;float:none;padding-left:15px;padding-right:15px;height:unset;max-height:unset}
+    #o-carousel-product .carousel-control-prev, #o-carousel-product .carousel-control-next { height: auto; top: 0; width: 15px;}
+    #product_detail #o-carousel-product .carousel-item .product-mbl-view {width: auto; justify-content: center;}
 
-/* Oddo CSS file */
+
+.sign-up-custom{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 5px 35px;
+  font-size: 13px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}

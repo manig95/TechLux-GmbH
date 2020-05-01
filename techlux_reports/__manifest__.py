@@ -16,7 +16,8 @@
             "report/sale_report_template.xml",
             "report/picking_report.xml",
             "report/invoice_report.xml",
-            "report/invoice_with_esr.xml"
+            "report/invoice_with_esr.xml",
+            "views/invoice_view.xml",
     ],
     'demo': [],
     'installable': True,

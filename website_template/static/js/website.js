@@ -44,7 +44,35 @@ $(document).ready(function () {
   return emailReg.test( $email );
 }
 
-
+// $('input[type=password]').keyup(function() {
+//            // keyup code here
+//        }).focus(function() {
+//            $('#pswd_info').show();
+//        }).blur(function() {
+//            $('#pswd_info').hide();
+//
+//
+//        if ( pswd.match(/[A-z]/) ) {
+//            $('#letter').removeClass('invalid').addClass('valid');
+//        } else {
+//            $('#letter').removeClass('valid').addClass('invalid');
+//        }
+//
+//        //validate capital letter
+//        if ( pswd.match(/[A-Z]/) ) {
+//            $('#capital').removeClass('invalid').addClass('valid');
+//        } else {
+//            $('#capital').removeClass('valid').addClass('invalid');
+//        }
+//
+//        //validate number
+//        if ( pswd.match(/\d/) ) {
+//            $('#number').removeClass('invalid').addClass('valid');
+//        } else {
+//            $('#number').removeClass('valid').addClass('invalid');
+//        }
+//
+//    });
 //mobile menu toggle
 function openSideMenu() {
 	document.getElementById("mbl-menu-open").style.display = "block";
