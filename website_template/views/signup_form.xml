@@ -43,7 +43,7 @@
 				<label for="title">Title</label>
 				<select class="form-control" name="title" id="title" required="required" autofocus="autofocus">
 					<option value="">Please Choose</option>
-					<t t-foreach="request.env['res.partner.title'].search([])"
+					<t t-foreach="request.env['res.partner.title'].search([],order='id desc')"
 					   t-as="title">
 						<option t-att-value="title.id" t-esc="title.name"></option>
 					</t>
