@@ -1617,3 +1617,15 @@ text-transform:none !important;
 form.checkout_autoformat label.col-form-label {
 text-transform:none !important;
 }
+
+.msg-text p{
+font-size: 13px; color: #4d4d4d; padding-left: 20px; padding-top: 10px;
+}
+
+.thanks_msg{
+padding-top:30px;
+}
+.ship-txt{
+    padding-top: 4px;
+    position: absolute;
+}

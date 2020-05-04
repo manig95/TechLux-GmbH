@@ -3,7 +3,7 @@
 	<!-- Shop confirmation message backgrounf change -->
 	<template id="shop_confirmation_inherit" name="Shop confirmation Intherit" inherit_id="website_sale.payment_confirmation_status">
 		<xpath expr="//div[@class='card-header']" position="attributes">
-			<attribute name="style">background-color: #38544d;</attribute>
+			<attribute name="style">background-color: #000;</attribute>
 		</xpath>
 	</template>
 

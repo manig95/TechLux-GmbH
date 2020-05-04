@@ -15,7 +15,10 @@
         'views/aboutus_template.xml',
         'views/shop_page_template.xml',
         'views/signup_form.xml',
-        'views/checkout_form.xml'
+        'views/checkout_form.xml',
+        'views/payment_form_view.xml',
+        'views/payment_options.xml',
+        'views/website_order_confirmation.xml',
     ],
 
     'author': 'PPTS India Pvt. Ltd.',
