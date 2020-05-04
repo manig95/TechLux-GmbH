@@ -8,20 +8,25 @@
 						<div class="row">
 							<div class="form-group col-lg-2">
 								<label class="col-form-label" for="title">Title</label>
-								<select class="form-control" name="title" id="title" required="required" autofocus="autofocus">
-									<option value="">Please Choose</option>
+								<p>
 									<t t-foreach="request.env['res.partner.title'].search([])"
 									   t-as="title">
-										<option t-att-value="title.id" t-esc="title.name"></option>
+										<input type="radio" t-att-value="title.id" name="title">
+											<span style="padding: 10px;"><t t-esc="title.name"/></span>
+										</input>
 									</t>
-								</select>
+								</p>
 							</div>
-							<div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''} col-lg-5 div_name">
-								<label class="col-form-label" for="name">First Name</label>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="row">
+							<div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''} col-lg-6 div_name">
+								<label class="col-form-label" for="name">First name</label>
 								<input type="text" name="name" t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}" t-att-value="'name' in checkout and checkout['name']"/>
 							</div>
-							<div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''} col-lg-5 div_name">
-								<label class="col-form-label" for="name">Last Name</label>
+							<div t-attf-class="form-group #{error.get('name') and 'o_has_error' or ''} col-lg-6 div_name">
+								<label class="col-form-label" for="name">Last name</label>
 								<input type="text" name="lastname" t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}" t-att-value="'lastname' in checkout and checkout['lastname']"/>
 							</div>
 						</div>
@@ -34,7 +39,7 @@
 								<input type="text" name="street" t-attf-class="form-control #{error.get('street') and 'is-invalid' or ''}" t-att-value="'street' in checkout and checkout['street']"/>
 							</div>
 							<div t-attf-class="form-group #{error.get('street2') and 'o_has_error' or ''} col-lg-6 div_street2">
-								<label class="col-form-label" for="street2">Number</label>
+								<label class="col-form-label" for="street2">Nr.</label>
 								<input type="text" name="street2" t-attf-class="form-control #{error.get('street2') and 'is-invalid' or ''}" t-att-value="'street2' in checkout and checkout['street2']"/>
 							</div>
 						</div>
@@ -45,7 +50,7 @@
 							<t t-set='zip_city' t-value='country and [x for x in country.get_address_fields() if x in ["zip", "city"]] or ["city", "zip"]'/>
 							<t t-if="'zip' in zip_city and zip_city.index('zip') &gt; zip_city.index('city')">
 								<div t-attf-class="form-group #{error.get('zip') and 'o_has_error' or ''} col-lg-6 div_zip">
-									<label class="col-form-label" for="zip">Code</label>
+									<label class="col-form-label" for="zip">Zip Code</label>
 									<input type="text" name="zip" t-attf-class="form-control #{error.get('zip') and 'is-invalid' or ''}" t-att-value="'zip' in checkout and checkout['zip']"/>
 								</div>
 							</t>
@@ -60,7 +65,7 @@
 						<div class="row">
 							<t t-if="mode[1] == 'billing'">
 								<div t-attf-class="form-group #{error.get('email') and 'o_has_error' or ''} col-lg-6" id="div_email">
-									<label class="col-form-label" for="email">E-mail</label>
+									<label class="col-form-label" for="email">E-mail Address</label>
 									<input id="email" type="email" name="email" t-attf-class="form-control #{error.get('email') and 'is-invalid' or ''}" t-att-value="'email' in checkout and checkout['email']"/>
 								</div>
 							</t>

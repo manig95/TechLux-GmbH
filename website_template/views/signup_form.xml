@@ -3,7 +3,7 @@
 	<template id="techlux_signup_custom" inherit_id="auth_signup.signup" name="Sign up login Custom">
 		<xpath expr="//form[@class='oe_signup_form']" position='before'>
 			<div class="sign-up-custom">
-				<h2>Register as Private Customer</h2>
+				<h2>Register as Private customer</h2>
 			</div>
 		</xpath>
 		<xpath expr="//div[@class='text-center oe_login_buttons pt-3']" position="replace">
@@ -14,7 +14,7 @@
 					<a href="/impressum-page">General Terms and Conditions</a>
 				</label>
 			</div>
-			<div>
+			<!--<div>
 				<label style="font-size:12px;">
 					<input type="checkbox" required="required" name="checkbox" value="check" id="privacy"/>
 					Yes, I consent to the processing of all my personal data as described in the
@@ -24,7 +24,7 @@
 				<p style="font-size:12px;">This comprises the processing of all my personal data particularly for the purpose of analysing
 					customer behaviour and for direct marketing by all companies of TechLux group
 				</p>
-			</div>
+			</div>-->
 			<div class="text-center oe_login_buttons pt-3">
 				<button type="submit" class="btn btn-primary btn-block">Register</button>
 				<!--<a t-attf-href="/web/login?{{ keep_query() }}" class="btn btn-link btn-sm" role="button">Already have an account?</a>
@@ -50,11 +50,11 @@
 				</select>
 			</div>
 			<div class="form-group field-name">
-				<label for="name">First Name</label>
+				<label for="name">First name</label>
 				<input type="text" name="name" t-att-value="name" id="name" class="form-control form-control-sm" required="required"/>
 			</div>
 			<div class="form-group">
-				<label for="login">Last Name</label>
+				<label for="login">Last name</label>
 				<input type="text" name="lastname" t-att-value="lastname" id="lastname" class="form-control form-control-sm"
 					   autocapitalize="off" required="required"/>
 			</div>
@@ -79,7 +79,7 @@
 			</div>
 
 			<div class="form-group field-confirm_password">
-				<label for="confirm_password">Confirm Password</label>
+				<label for="confirm_password">Confirm password</label>
 				<input type="password" name="confirm_password" id="confirm_password" class="form-control form-control-sm" required="required"/>
 			</div>
 			<div id="message">
