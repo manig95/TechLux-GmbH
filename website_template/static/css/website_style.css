@@ -1613,3 +1613,7 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 .oe_login_form label, .oe_signup_form label, .oe_reset_password_form label {
 text-transform:none !important;
 }
+
+form.checkout_autoformat label.col-form-label {
+text-transform:none !important;
+}
