@@ -1468,8 +1468,10 @@ Date: 23-04-2020
 url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&model=ir.ui.view&view_type=form&cids=1&menu_id=4
 */
 
+.div_street2{
+    max-width:10% !important;
+}
 
-		    
 .dropdown-menu.show a { line-height: normal !important; padding: 10px !important; }
 .js_language_selector .dropdown-menu.show { height: 100px; }
 .te_user_account .dropdown-menu.dropdown-menu-right.js_usermenu.show { top: 45px; }
@@ -1523,6 +1525,10 @@ url : https://techlux-stage-867330.dev.odoo.com/web?debug=1#id=3907&action=28&mo
 .pro-mbl {margin-right: 0 !important;}
 #product_details { margin-top: 0; }
 #product_details #add_to_cart { margin-left: 0 !important; margin-right: 0 !important; }
+
+.div_street2{
+    max-width:25% !important;
+}
 
 }
 
