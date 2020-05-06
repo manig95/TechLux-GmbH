@@ -8,7 +8,7 @@
 					<t t-set="partner" t-value="o.partner_id or (o.move_lines and o.move_lines[0].partner_id) or False"/>
 					<t t-if="partner" name="partner_header">
 						<t t-set="address">
-							<div style="margin-left:20px;padding-top:60px !important;line-height:18px;" t-esc="partner"
+							<div style="margin-left:70px;padding-top:60px !important;line-height:18px;" t-esc="partner"
 								 t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True}"/>
 						</t>
 					</t>
