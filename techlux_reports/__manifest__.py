@@ -10,14 +10,15 @@
     'description': """
                 TechLux Report Customization
                     """,
-    'depends': ['web','sale','stock','delivery','account','l10n_ch'],
+    'depends': ['web', 'sale', 'stock', 'delivery', 'account', 'l10n_ch'],
     'data': [
-            "report/report_layout.xml",
-            "report/sale_report_template.xml",
-            "report/picking_report.xml",
-            "report/invoice_report.xml",
-            "report/invoice_with_esr.xml",
-            "views/invoice_view.xml",
+        "views/invoice_view.xml",
+        "report/report_layout.xml",
+        "report/sale_report_template.xml",
+        "report/picking_report.xml",
+        "report/invoice_report.xml",
+        "report/invoice_with_esr.xml",
+        "report/delivery_slip.xml",
     ],
     'demo': [],
     'installable': True,
