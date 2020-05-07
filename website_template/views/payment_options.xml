@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
+	<template id="payment_custom" name="Website Payment" inherit_id="website_sale.payment">
+		<xpath expr="//t[@t-set='submit_txt']" position="replace">
+			<t t-set="submit_txt">Buy Now</t>
+		</xpath>
+	</template>
+
 	<template id="payment_tokens_list_customer" inherit_id="payment.payment_tokens_list" name="Payment Tokens list Custom">
 		<xpath expr="//span[@class='payment_option_name']" position="after">
 			<span class="msg-text" t-if='acq.payment_notes' t-raw="acq.payment_notes"/>

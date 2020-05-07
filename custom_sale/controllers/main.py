@@ -28,15 +28,12 @@ class PaymentProcessing(http.Controller):
             pay_tx = max(payment_transaction_ids.ids)
             pay_tx = request.env['payment.transaction'].sudo().browse(pay_tx)
             order.payment_gateway_id = pay_tx.acquirer_id.id
+            order.payment_term_id = pay_tx.acquirer_id.payment_term_id.id
         if pay_tx.acquirer_id.cod_payment:
-            pay_tx.state = 'done'
+            # pay_tx.state = 'done'
             order.state = 'unpaid'
-            # template_id = self.env.ref('techlux_emails.sale_mail_template_sale_confirmation')
-            # if template_id:
-            #     template_id.with_context().send_mail(order.id, force_send=True)
+            order.unpaid_order = True
         else:
             order.state = 'paid'
-            # template_id = self.env.ref('techlux_emails.sale_mail_template_sale_confirmation')
-            # if template_id:
-            #     template_id.with_context().send_mail(order.id, force_send=True)
+            order.paid_order = True
         return request.render("payment.payment_process_page", render_ctx)

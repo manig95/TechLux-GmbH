@@ -8,12 +8,11 @@
 			<field name="arch" type="xml">
 				<xpath expr="//field[@name='payment_term_id']" position="after">
 					<field name="payment_gateway_id" options="{'no_quick_create': True, 'no_create_edit' : True}"/>
-				</xpath>
-				<xpath expr="//header" position="inside">
-					<button name="confirm_paid_order" string="Confirm" type="object" class="oe_highlight" states="unpaid"/>
+					<field name="paid_order"  invisible="1"/>
+					<field name="unpaid_order" invisible="1"/>
 				</xpath>
 				<xpath expr="//button[@name='action_confirm']" position="attributes">
-					<attribute name="attrs">{'invisible': [('state', 'not in', ['sent','paid'])]}</attribute>
+					<attribute name="attrs">{'invisible': [('state', 'not in', ['sent','paid','unpaid'])]}</attribute>
 				</xpath>
 				<xpath expr="//button[@name='action_quotation_send']" position="attributes">
 					<attribute name="attrs">{'invisible': [('state', 'not in', ['draft','paid','unpaid'])]}</attribute>
@@ -28,7 +27,7 @@
 		<field name="res_model">sale.order</field>
 		<field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
 		<field name="search_view_id" ref="sale.sale_order_view_search_inherit_quotation"/>
-		<field name="domain">[('state','=','paid')]</field>
+		<field name="domain">[('paid_order','=',True)]</field>
 		<field name="help" type="html">
 			<p class="o_view_nocontent_smiling_face">
 				Create a new quotation, the first step of a new sale!
@@ -49,7 +48,7 @@
 		<field name="res_model">sale.order</field>
 		<field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
 		<field name="search_view_id" ref="sale.sale_order_view_search_inherit_quotation"/>
-		<field name="domain">[('state','=','unpaid')]</field>
+		<field name="domain">[('unpaid_order','=',True)]</field>
 		<field name="help" type="html">
 			<p class="o_view_nocontent_smiling_face">
 				Create a new quotation, the first step of a new sale!
