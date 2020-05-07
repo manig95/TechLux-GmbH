@@ -1,143 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-          <record id="sale_mail_template_sale_confirmation" model="mail.template">
-            <field name="name">Sales Order: Custom Confirmation Email</field>
-            <field name="model_id" ref="sale.model_sale_order"/>
-            <field name="subject">Thank you for your order</field>
-            <field name="email_from">${(object.user_id.email_formatted or user.email_formatted) | safe}</field>
-            <field name="partner_to">${object.partner_id.id}</field>
-            <field name="body_html" type="html">
-                <div style="margin: 0px; padding: 0px;">
-                % if object.website_id:
-                    <p style="margin: 0px; padding: 0px; font-size: 12px;">
-                        Confirmation of your order at techlux.ch        
-                        <br/>
-                        -------------------------------------------
-                        <br/>
-                        Thank you for your order.
-                        <br/>
-                        <br/>
-                        We have received your order with the order number (${object.name}) and will process it as soon as possible.
-                        <br/>
-                        <br/>
-                        As soon as your order has been processed, you will receive an order confirmation by email.
-                        <br/>
-                        <br/>
-                        Your order number is: (${object.name})
-                        <br/>
-                        <br/>
-                        Best regards
-                        <br/>
-                        <br/>
-                        Your techlux.ch team
-                        <br/>
-                        ------------------------------------------
-                        <br/>
-                        <br/>
-                        Techlux GmbH
-                        <br/>
-                        Hochdorfstrasse 5
-                        <br/>
-                        CH-6275 Ballwil
-                        <br/>
-                        Tel: 0800 533 000
-                        <br/>
-                        E-Mail: info@techlux.ch
-                        <br/>
-                        www.techlux.ch
-                    </p>
-                % else:
-                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
-                        Dear Sir/Madam<br/>
-                        <br/>
-                        Thank you for your order from techlux.ch.<br/>
-                        <br/>
-                        You'll receive our work confirmation included.<br/>
-                        <br/>
-                        Your order left our warehouse today.
-                        <br/>
-                        <br/>    
-                        Please take the order details from the attached document.
-                        <br/>
-                        <br/>        
-                        If you have any questions or anything is unclear, please do not hesitate to contact us at info@techlux.ch.
-                        <br/>
-                        <br/>
-                        Best regards
-                        <br/>
-                        <br/>
-                        Your techlux.ch team
-                        <br/>
-                        <br/>
-                        Techlux GmbH
-                        <br/>
-                        Hochdorfstrasse 5 
-                        <br/>
-                        CH-6275 Ballwil
-                        <br/>
-                        E-Mail: info@techlux.ch
-                        <br/>
-                        Tel: 0800 533 000
-                        <br/>
-                        www.techlux.ch
-                    </p>
-                % endif
-                </div>            
-            </field>
-            <!--<field name="report_template" ref="sale.action_report_saleorder"/>
-            <field name="report_name">${(object.name or '').replace('/','_')}</field>-->
-            <field name="lang">${object.partner_id.lang}</field>
-            <field name="user_signature" eval="False"/>
-            <field name="auto_delete" eval="False"/>
-        </record>
 
-      <!--  <record id="stock_mail_template_data_delivery_confirmation" model="mail.template">
-        <field name="name">Delivery: Custom Send by Email</field>
-        <field name="model_id" ref="stock.model_stock_picking"/>
-        <field name="subject">${object.company_id.name} Delivery Order (Ref ${object.name or 'n/a' })</field>
-        <field name="partner_to">${object.partner_id.id}</field>
-        <field name="body_html" type="html">
+	<record id="email_template_edi_invoice_custom" model="mail.template">
+		<field name="name">Invoice: Send by email Custom</field>
+		<field name="model_id" ref="account.model_account_move"/>
+		<field name="email_from">${(object.invoice_user_id.email_formatted or user.email_formatted) |safe}</field>
+		<field name="partner_to">${object.partner_id.id}</field>
+		<field name="subject">[FOR FILING] Invoice for the order - ${object.invoice_origin}</field>
+		<field name="body_html" type="html">
+			<div style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 13px;">
+					Invoice for your order at techlux.ch
+					<br/>
+					------------------------------------
+					<br/>
+					<br/>
+					In the attachment you will find the invoice for your order as a PDF.
+					<br/>
+					<br/>
+					Your invoice number is: ${object.name}
+					<br/>
+					<br/>
+					We wish you a nice day.
+					<br/>
+					<br/>
+
+					Best regards
+					<br/>
+					<br/>
+					Your techlux.ch team
+					<br/>
+					<br/>
+					Techlux GmbH
+					<br/>
+					Hochdorfstrasse 5
+					<br/>
+					CH-6275 Ballwil
+					<br/>
+					E-Mail: info@techlux.ch
+					<br/>
+					Tel: 0800 533 000
+					<br/>
+					www.techlux.ch
+				</p>
+			</div>
+		</field>
+		<field name="report_template" ref="account.account_invoices"/>
+		<field name="report_name">Invoice_${(object.name or '').replace('/','_')}${object.state == 'draft' and '_draft' or ''}</field>
+		<field name="lang">${object.partner_id.lang}</field>
+		<field name="user_signature" eval="False"/>
+		<field name="auto_delete" eval="True"/>
+	</record>
+
+
+	<record id="sale_mail_template_sale_confirmation" model="mail.template">
+		<field name="name">SO Confirmation Email-</field>
+		<field name="model_id" ref="sale.model_sale_order"/>
+		<field name="subject">Thank you for your order</field>
+		<field name="email_from">${(object.user_id.email_formatted or user.email_formatted) | safe}</field>
+		<field name="partner_to">${object.partner_id.id}</field>
+		<field name="body_html" type="html">
+			<div style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 12px;">
+					Confirmation of your order at techlux.ch
+					<br/>
+					-------------------------------------------
+					<br/>
+					Thank you for your order.
+					<br/>
+					<br/>
+					We have received your order with the order number (${object.name}) and will process it as soon as possible.
+					<br/>
+					<br/>
+					As soon as your order has been processed, you will receive an order confirmation by email.
+					<br/>
+					<br/>
+					Your order number is: (${object.name})
+					<br/>
+					<br/>
+					Best regards
+					<br/>
+					<br/>
+					Your techlux.ch team
+					<br/>
+					------------------------------------------
+					<br/>
+					<br/>
+					Techlux GmbH
+					<br/>
+					Hochdorfstrasse 5
+					<br/>
+					CH-6275 Ballwil
+					<br/>
+					Tel: 0800 533 000
+					<br/>
+					E-Mail: info@techlux.ch
+					<br/>
+					www.techlux.ch
+				</p>
+			</div>
+		</field>
+		<!--<field name="report_template" ref="sale.action_report_saleorder"/>
+		<field name="report_name">${(object.name or '').replace('/','_')}</field>-->
+		<field name="lang">${object.partner_id.lang}</field>
+		<field name="user_signature" eval="False"/>
+		<field name="auto_delete" eval="False"/>
+	</record>
+
+	<record id="sale_mail_template_sale_confirmation_final" model="mail.template">
+		<field name="name">SO Confirmation Email-Final</field>
+		<field name="model_id" ref="sale.model_sale_order"/>
+		<field name="subject">[FOR FILING] Your Order at techlux.ch / Confirmation - (${object.name or 'n/a'} )</field>
+		<field name="email_from">${(object.user_id.email_formatted or user.email_formatted) | safe}</field>
+		<field name="partner_to">${object.partner_id.id}</field>
+		<field name="body_html" type="html">
+			<div style="margin: 0px; padding: 0px;">
+				<p style="margin: 0px; padding: 0px; font-size: 13px;">
+					Dear Sir/Madam
+					<br/>
+					<br/>
+					Thank you for your order from techlux.ch.
+					<br/>
+					<br/>
+					You'll receive our work confirmation included.
+					<br/>
+					<br/>
+					Your order left our warehouse today.
+					<br/>
+					<br/>
+					Please take the order details from the attached document.
+					<br/>
+					<br/>
+					If you have any questions or anything is unclear, please do not hesitate to contact us at info@techlux.ch.
+					<br/>
+					<br/>
+					Best regards
+					<br/>
+					<br/>
+					Your techlux.ch team
+					<br/>
+					<br/>
+					Techlux GmbH
+					<br/>
+					Hochdorfstrasse 5
+					<br/>
+					CH-6275 Ballwil
+					<br/>
+					E-Mail: info@techlux.ch
+					<br/>
+					Tel: 0800 533 000
+					<br/>
+					www.techlux.ch
+				</p>
+			</div>
+		</field>
+		<field name="report_template" ref="sale.action_report_saleorder"/>
+		<field name="report_name">${(object.name or '').replace('/','_')}</field>
+		<field name="lang">${object.partner_id.lang}</field>
+		<field name="user_signature" eval="False"/>
+		<field name="auto_delete" eval="False"/>
+	</record>
+
+
+	<!--  <record id="stock_mail_template_data_delivery_confirmation" model="mail.template">
+	  <field name="name">Delivery: Custom Send by Email</field>
+	  <field name="model_id" ref="stock.model_stock_picking"/>
+	  <field name="subject">${object.company_id.name} Delivery Order (Ref ${object.name or 'n/a' })</field>
+	  <field name="partner_to">${object.partner_id.id}</field>
+	  <field name="body_html" type="html">
 <div style="margin: 0px; padding: 0px;">
-    <p style="margin: 0px; padding: 0px; font-size: 13px;">
-        Dear Sir/Madam<br/>
-        <br/>
-        Thank you for your order from techlux.ch.<br/>
-        <br/>
-        You'll receive our work confirmation included.<br/>
-        <br/>
-        Your order left our warehouse today.
-        <br/>
-        <br/>    
-        Please take the order details from the attached document.
-        <br/>
-        <br/>        
-        If you have any questions or anything is unclear, please do not hesitate to contact us at info@techlux.ch.
-        <br/>
-        <br/>
-        Best regards
-        <br/>
-        <br/>
-        Your techlux.ch team
-        <br/>
-        <br/>
-        Techlux GmbH
-        <br/>
-        Hochdorfstrasse 5 
-        <br/>
-        CH-6275 Ballwil
-        <br/>
-        E-Mail: info@techlux.ch
-        <br/>
-        Tel: 0800 533 000
-        <br/>
-        www.techlux.ch
-    </p>
+  <p style="margin: 0px; padding: 0px; font-size: 13px;">
+	  Dear Sir/Madam<br/>
+	  <br/>
+	  Thank you for your order from techlux.ch.<br/>
+	  <br/>
+	  You'll receive our work confirmation included.<br/>
+	  <br/>
+	  Your order left our warehouse today.
+	  <br/>
+	  <br/>
+	  Please take the order details from the attached document.
+	  <br/>
+	  <br/>
+	  If you have any questions or anything is unclear, please do not hesitate to contact us at info@techlux.ch.
+	  <br/>
+	  <br/>
+	  Best regards
+	  <br/>
+	  <br/>
+	  Your techlux.ch team
+	  <br/>
+	  <br/>
+	  Techlux GmbH
+	  <br/>
+	  Hochdorfstrasse 5
+	  <br/>
+	  CH-6275 Ballwil
+	  <br/>
+	  E-Mail: info@techlux.ch
+	  <br/>
+	  Tel: 0800 533 000
+	  <br/>
+	  www.techlux.ch
+  </p>
 </div>
-        </field>
-        <field name="report_template" ref="stock.action_report_picking"/>
-        <field name="report_name">${(object.name or '').replace('/','_')}</field>
-        <field name="lang">${object.partner_id.lang}</field>
-        <field name="auto_delete" eval="False"/>
-        <field name="user_signature" eval="False"/>
-    </record> -->
+	  </field>
+	  <field name="report_template" ref="stock.action_report_picking"/>
+	  <field name="report_name">${(object.name or '').replace('/','_')}</field>
+	  <field name="lang">${object.partner_id.lang}</field>
+	  <field name="auto_delete" eval="False"/>
+	  <field name="user_signature" eval="False"/>
+  </record> -->
 </odoo>

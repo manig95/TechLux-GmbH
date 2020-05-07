@@ -10,7 +10,7 @@
     'description': """
                 TechLux Emails Customization
                     """,
-    'depends': ['sale','stock'],
+    'depends': ['sale','stock','account'],
     'data': [
             "data/mail_data.xml"
     ],

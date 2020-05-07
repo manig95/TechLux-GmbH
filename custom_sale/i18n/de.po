@@ -1,0 +1,70 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-07 06:58+0000\n"
+"PO-Revision-Date: 2020-05-07 06:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_sale
+#: model_terms:ir.ui.view,arch_db:custom_sale.view_sale_order_form
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#. module: custom_sale
+#: model_terms:ir.actions.act_window,help:custom_sale.action_orders_paid
+#: model_terms:ir.actions.act_window,help:custom_sale.action_orders_unpaid
+msgid "Create a new quotation, the first step of a new sale!"
+msgstr ""
+"Erstellen Sie ein neues Angebot, den ersten Schritt eines neuen Verkaufs!"
+
+#. module: custom_sale
+#: model:ir.actions.act_window,name:custom_sale.action_orders_paid
+#: model:ir.model.fields.selection,name:custom_sale.selection__sale_order__state__paid
+#: model:ir.ui.menu,name:custom_sale.sale_order_menu_paid
+msgid "Direct Orders"
+msgstr "Direkte Bestellungen"
+
+#. module: custom_sale
+#: model:ir.model.fields.selection,name:custom_sale.selection__sale_order__state__unpaid
+msgid "Indirect Order"
+msgstr "Indirekte Bestellungen"
+
+#. module: custom_sale
+#: model:ir.actions.act_window,name:custom_sale.action_orders_unpaid
+#: model:ir.ui.menu,name:custom_sale.sale_order_menu_unpaid
+msgid "Indirect Orders"
+msgstr "Indirekte Bestellungen"
+
+#. module: custom_sale
+#: model_terms:ir.actions.act_window,help:custom_sale.action_orders_paid
+#: model_terms:ir.actions.act_window,help:custom_sale.action_orders_unpaid
+msgid ""
+"Once the quotation is confirmed by the customer, it becomes a sales order.\n"
+"\t\t\t\t<br>\n"
+"\t\t\t\tYou will be able to create an invoice and collect the payment."
+msgstr ""
+
+#. module: custom_sale
+#: model:ir.model.fields,field_description:custom_sale.field_sale_order__payment_gateway_id
+msgid "Payment Method"
+msgstr "Zahlungsmöglichkeiten"
+
+#. module: custom_sale
+#: model:ir.model,name:custom_sale.model_sale_order
+msgid "Sales Order"
+msgstr "Verkaufsauftrag "
+
+#. module: custom_sale
+#: model:ir.model.fields,field_description:custom_sale.field_sale_order__state
+msgid "Status"
+msgstr ""

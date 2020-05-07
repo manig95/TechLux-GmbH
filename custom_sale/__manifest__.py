@@ -1,22 +1,22 @@
 ##############################################################################
 
 {
-    'name': "Customer Base Configurations",
+    'name': "Sale Customization",
 
     'summary': """
-         Customer Base Configurations.""",
+         Sales Customizations.""",
 
     'description': """
-        Customer Base Configurations.
+       Sales Customizations
     """,
 
     'author': "PPTS India Pvt Ltd",
     'website': "https://pptssolutions.com",
     'category': 'Base',
     'version': '0.1',
-    'depends': ['base'],
+    'depends': ['base','sale'],
 
     'data': [
-        'views/res_partner_view.xml',
+        'views/sale_view.xml',
     ],
 }

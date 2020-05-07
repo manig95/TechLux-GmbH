@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="view_sale_order_form" model="ir.ui.view">
+			<field name="name">sale.order.form</field>
+			<field name="model">sale.order</field>
+			<field name="inherit_id" ref="sale.view_order_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='payment_term_id']" position="after">
+					<field name="payment_gateway_id" options="{'no_quick_create': True, 'no_create_edit' : True}"/>
+				</xpath>
+				<xpath expr="//header" position="inside">
+					<button name="confirm_paid_order" string="Confirm" type="object" class="oe_highlight" states="unpaid"/>
+				</xpath>
+				<xpath expr="//button[@name='action_confirm']" position="attributes">
+					<attribute name="attrs">{'invisible': [('state', 'not in', ['sent','paid'])]}</attribute>
+				</xpath>
+				<xpath expr="//button[@name='action_quotation_send']" position="attributes">
+					<attribute name="attrs">{'invisible': [('state', 'not in', ['draft','paid','unpaid'])]}</attribute>
+				</xpath>
+			</field>
+		</record>
+	</data>
+
+	<record id="action_orders_paid" model="ir.actions.act_window">
+		<field name="name">Direct Orders</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">sale.order</field>
+		<field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+		<field name="search_view_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+		<field name="domain">[('state','=','paid')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create a new quotation, the first step of a new sale!
+			</p>
+			<p>
+				Once the quotation is confirmed by the customer, it becomes a sales order.
+				<br/>
+				You will be able to create an invoice and collect the payment.
+			</p>
+		</field>
+	</record>
+
+	<menuitem id="sale_order_menu_paid" action="action_orders_paid" name="Direct Orders"  parent="sale.sale_order_menu"  sequence="1"/>
+
+	<record id="action_orders_unpaid" model="ir.actions.act_window">
+		<field name="name">Indirect Orders</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">sale.order</field>
+		<field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+		<field name="search_view_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+		<field name="domain">[('state','=','unpaid')]</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create a new quotation, the first step of a new sale!
+			</p>
+			<p>
+				Once the quotation is confirmed by the customer, it becomes a sales order.
+				<br/>
+				You will be able to create an invoice and collect the payment.
+			</p>
+		</field>
+	</record>
+
+	<menuitem id="sale_order_menu_unpaid" action="action_orders_unpaid" name="Indirect Orders"  parent="sale.sale_order_menu"  sequence="1"/>
+
+
+
+</odoo>
