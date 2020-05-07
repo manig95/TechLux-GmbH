@@ -31,10 +31,3 @@ class Sale(models.Model):
                 template_id.with_context().send_mail(order.id,force_send=True)
 
         return result
-
-    def _prepare_invoice(self):
-        invoice_vals = super(Sale, self)._prepare_invoice()
-        if self.partner_id.x_1099:
-            invoice_vals['is_1099'] = True
-
-        return invoice_vals
