@@ -13,12 +13,12 @@ class Sale(models.Model):
         template_id = False
 
         if force_confirmation_template or (self.state == 'sale' and not self.env.context.get('proforma', False)):
-            template_id = int(self.env['ir.config_parameter'].sudo().get_param('techlux_emails.sale_mail_template_sale_confirmation'))
+            template_id = int(self.env['ir.config_parameter'].sudo().get_param('techlux_emails.sale_mail_template_sale_confirmation_new'))
             template_id = self.env['mail.template'].search([('id', '=', template_id)]).id
             if not template_id:
-                template_id = self.env['ir.model.data'].xmlid_to_res_id('techlux_emails.sale_mail_template_sale_confirmation', raise_if_not_found=False)
+                template_id = self.env['ir.model.data'].xmlid_to_res_id('techlux_emails.sale_mail_template_sale_confirmation_new', raise_if_not_found=False)
         if not template_id:
-            template_id = self.env['ir.model.data'].xmlid_to_res_id('techlux_emails.sale_mail_template_sale_confirmation', raise_if_not_found=False)
+            template_id = self.env['ir.model.data'].xmlid_to_res_id('techlux_emails.sale_mail_template_sale_confirmation_new', raise_if_not_found=False)
 
         return template_id
 

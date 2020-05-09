@@ -53,7 +53,7 @@
 	</record>
 
 
-	<record id="sale_mail_template_sale_confirmation" model="mail.template">
+	<record id="sale_mail_template_sale_confirmation_new" model="mail.template">
 		<field name="name">SO Confirmation Email-</field>
 		<field name="model_id" ref="sale.model_sale_order"/>
 		<field name="subject">Thank you for your order</field>
