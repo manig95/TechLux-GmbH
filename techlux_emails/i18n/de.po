@@ -21,7 +21,7 @@ msgid "${(object.name or '').replace('/','_')}"
 msgstr ""
 
 #. module: techlux_emails
-#: model:mail.template,body_html:techlux_emails.sale_mail_template_sale_confirmation
+#: model:mail.template,body_html:techlux_emails.sale_mail_template_sale_confirmation_new
 msgid ""
 "<div style=\"margin: 0px; padding: 0px;\">\n"
 "\t\t\t\t<p style=\"margin: 0px; padding: 0px; font-size: 12px;\">\n"
@@ -297,7 +297,7 @@ msgid "Send Invoice"
 msgstr ""
 
 #. module: techlux_emails
-#: model:mail.template,subject:techlux_emails.sale_mail_template_sale_confirmation
+#: model:mail.template,subject:techlux_emails.sale_mail_template_sale_confirmation_new
 msgid "Thank you for your order"
 msgstr ""
 "${object.company_id.name} ${(object.get_portal_last_transaction().state == "
