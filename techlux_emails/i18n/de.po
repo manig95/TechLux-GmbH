@@ -300,8 +300,7 @@ msgstr ""
 #: model:mail.template,subject:techlux_emails.sale_mail_template_sale_confirmation_new
 msgid "Thank you for your order"
 msgstr ""
-"${object.company_id.name} ${(object.get_portal_last_transaction().state == "
-"'pending') and 'Pending Order' or 'Order'} (Ref ${object.name or 'n/a' })"
+"Vielen Dank für Ihre Bestellung."
 
 #. module: techlux_emails
 #: model:mail.template,subject:techlux_emails.email_template_edi_invoice_custom
