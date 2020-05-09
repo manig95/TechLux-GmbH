@@ -9,18 +9,26 @@ class Sale(models.Model):
     paid_order = fields.Boolean("Paid Order")
     unpaid_order = fields.Boolean("Unpaid Orders")
 
-    def _find_mail_template(self, force_confirmation_template=False):
-        template_id = False
+    # def _find_mail_template(self, force_confirmation_template=False):
+    #     template_id = False
+    #
+    #     if force_confirmation_template or (self.state == 'sale' and not self.env.context.get('proforma', False)):
+    #         template_id = int(self.env['ir.config_parameter'].sudo().get_param('techlux_emails.sale_mail_template_sale_confirmation_new'))
+    #         template_id = self.env['mail.template'].search([('id', '=', template_id)]).id
+    #         if not template_id:
+    #             template_id = self.env['ir.model.data'].xmlid_to_res_id('techlux_emails.sale_mail_template_sale_confirmation_new', raise_if_not_found=False)
+    #     if not template_id:
+    #         template_id = self.env['ir.model.data'].xmlid_to_res_id('techlux_emails.sale_mail_template_sale_confirmation_new', raise_if_not_found=False)
+    #
+    #     return template_id
 
-        if force_confirmation_template or (self.state == 'sale' and not self.env.context.get('proforma', False)):
-            template_id = int(self.env['ir.config_parameter'].sudo().get_param('techlux_emails.sale_mail_template_sale_confirmation_new'))
-            template_id = self.env['mail.template'].search([('id', '=', template_id)]).id
-            if not template_id:
-                template_id = self.env['ir.model.data'].xmlid_to_res_id('techlux_emails.sale_mail_template_sale_confirmation_new', raise_if_not_found=False)
-        if not template_id:
-            template_id = self.env['ir.model.data'].xmlid_to_res_id('techlux_emails.sale_mail_template_sale_confirmation_new', raise_if_not_found=False)
+    def _send_order_confirmation_mail(self):
+        template_id = self.env['ir.model.data'].xmlid_to_res_id('techlux_emails.sale_mail_template_sale_confirmation_new', raise_if_not_found=False)
+        if template_id:
+            for order in self:
+                order.with_context(force_send=True).message_post_with_template(template_id, composition_mode='comment', email_layout_xmlid="mail.mail_notification_paynow")
 
-        return template_id
+
 
     def action_quotation_send(self):
         ''' Opens a wizard to compose an email, with relevant mail template loaded by default '''
