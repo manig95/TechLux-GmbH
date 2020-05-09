@@ -18,5 +18,6 @@
 
     'data': [
         'views/res_partner_view.xml',
+        'views/mail_debrand.xml',
     ],
 }
