@@ -8,6 +8,10 @@
 			<xpath expr="//field[@name='journal_id']" position="after">
 				<field name="delivery_no" />
 			</xpath>
+			<xpath expr="//button[@name='action_invoice_sent']" position="after">
+				<button name="print_invoice_isr" string="Invoice &amp; ESR" type="object" class="oe_highlight"/>
+			</xpath>
+
 		</field>
 	</record>
 </odoo>

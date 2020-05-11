@@ -7,7 +7,7 @@
             string="Invoice with ESR"
             name="techlux_reports.isr_report_main"
             file="techlux_reports.isr_report_main"
-            menu="False"
+            menu="True"
             print_report_name="'ESR-%s' % object.name"
             paperformat="l10n_ch.paperformat_euro_no_margin"/>
             />
