@@ -1,0 +1,41 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_inventory
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-11 14:18+0000\n"
+"PO-Revision-Date: 2020-05-11 14:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_inventory
+#: model:ir.model.fields,field_description:custom_inventory.field_stock_move__product_code
+msgid "Article Number/EAN Code"
+msgstr "Artikelnummer/EAN Code"
+
+#. module: custom_inventory
+#: model_terms:ir.ui.view,arch_db:custom_inventory.view_picking_form_inherit
+msgid "Delivered Quantity"
+msgstr "Gelieferte Menge"
+
+#. module: custom_inventory
+#: model_terms:ir.ui.view,arch_db:custom_inventory.view_picking_form_inherit
+msgid "Ordered Quantity"
+msgstr "Bestellte Menge"
+
+#. module: custom_inventory
+#: model:ir.model.fields,field_description:custom_inventory.field_stock_move__line_number
+msgid "Pos."
+msgstr ""
+
+#. module: custom_inventory
+#: model:ir.model,name:custom_inventory.model_stock_move
+msgid "Stock Move"
+msgstr "Lagerbuchung"

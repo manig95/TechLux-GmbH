@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-07 06:58+0000\n"
-"PO-Revision-Date: 2020-05-07 06:58+0000\n"
+"POT-Creation-Date: 2020-05-11 13:36+0000\n"
+"PO-Revision-Date: 2020-05-11 13:36+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,15 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: custom_sale
-#: model_terms:ir.ui.view,arch_db:custom_sale.view_sale_order_form
-msgid "Confirm"
-msgstr "Bestätigen"
+#: model:ir.model.fields,field_description:custom_sale.field_product_product__article_number
+#: model:ir.model.fields,field_description:custom_sale.field_product_template__article_number
+msgid "Article Number"
+msgstr "Artikelnummer"
+
+#. module: custom_sale
+#: model:ir.model.fields,field_description:custom_sale.field_sale_order_line__product_code
+msgid "Article Number/EAN Code"
+msgstr "Artikelnummer/EAN Code"
 
 #. module: custom_sale
 #: model_terms:ir.actions.act_window,help:custom_sale.action_orders_paid
@@ -55,9 +61,34 @@ msgid ""
 msgstr ""
 
 #. module: custom_sale
+#: model:ir.model.fields,field_description:custom_sale.field_sale_order__our_ref
+msgid "Our Reference"
+msgstr "Unsere Referenz"
+
+#. module: custom_sale
+#: model:ir.model.fields,field_description:custom_sale.field_sale_order__paid_order
+msgid "Paid Order"
+msgstr ""
+
+#. module: custom_sale
 #: model:ir.model.fields,field_description:custom_sale.field_sale_order__payment_gateway_id
 msgid "Payment Method"
-msgstr "Zahlungsmöglichkeiten"
+msgstr "Zahlungsmethode"
+
+#. module: custom_sale
+#: model:ir.model.fields,field_description:custom_sale.field_sale_order_line__line_number
+msgid "Pos."
+msgstr ""
+
+#. module: custom_sale
+#: model_terms:ir.ui.view,arch_db:custom_sale.view_sale_order_form
+msgid "Price excl."
+msgstr "Preis exkl."
+
+#. module: custom_sale
+#: model:ir.model,name:custom_sale.model_product_template
+msgid "Product Template"
+msgstr "Produktvorlage"
 
 #. module: custom_sale
 #: model:ir.model,name:custom_sale.model_sale_order
@@ -65,6 +96,31 @@ msgid "Sales Order"
 msgstr "Verkaufsauftrag "
 
 #. module: custom_sale
+#: model:ir.model,name:custom_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Kundenauftragszeile"
+
+#. module: custom_sale
 #: model:ir.model.fields,field_description:custom_sale.field_sale_order__state
 msgid "Status"
 msgstr ""
+
+#. module: custom_sale
+#: model_terms:ir.ui.view,arch_db:custom_sale.view_sale_order_form
+msgid "Total excl."
+msgstr "Total exkl."
+
+#. module: custom_sale
+#: model:ir.model.fields,field_description:custom_sale.field_sale_order__unpaid_order
+msgid "Unpaid Orders"
+msgstr ""
+
+#. module: custom_sale
+#: model_terms:ir.ui.view,arch_db:custom_sale.view_sale_order_form
+msgid "VAT"
+msgstr "MwSt."
+
+#. module: custom_sale
+#: model:ir.model.fields,field_description:custom_sale.field_sale_order__client_ref
+msgid "Your Reference"
+msgstr "Ihre Referenz"

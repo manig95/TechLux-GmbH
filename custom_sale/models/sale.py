@@ -1,13 +1,46 @@
-from odoo import fields, models, api, _
+from odoo import api, models, fields, _
+from odoo.http import request
+from odoo.exceptions import UserError, ValidationError
+import logging
+_logger = logging.getLogger(__name__)
+
+class SaleLine(models.Model):
+    _inherit = 'sale.order.line'
+
+    line_number = fields.Integer("Pos.",default=1)
+    product_code = fields.Char("Article Number/EAN Code")
+
+    @api.onchange('product_id')
+    def product_id_on_change(self):
+        if self.product_id:
+            if self.product_id.barcode:
+                self.product_code = self.product_id.barcode
 
 
-class Sale(models.Model):
+    def _prepare_invoice_line(self):
+        res = super(SaleLine, self)._prepare_invoice_line()  # <-- ensure_one()
+        res.update({
+                'product_code': self.product_code,
+            })
+        return res
+
+
+class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
     payment_gateway_id = fields.Many2one("payment.acquirer", string="Payment Method")
     state = fields.Selection(selection_add=[('paid', 'Direct Orders'), ('unpaid', 'Indirect Order')])
     paid_order = fields.Boolean("Paid Order")
     unpaid_order = fields.Boolean("Unpaid Orders")
+    our_ref = fields.Char("Our Reference")
+    client_ref = fields.Char("Your Reference")
+
+
+    def _website_product_id_change(self, order_id, product_id, qty=0):
+        res = super(SaleOrder, self)._website_product_id_change(order_id, product_id, qty=qty)
+        res['product_code']= self.env['product.template'].browse(product_id).article_number
+        return res
+
 
     def _find_mail_template(self, force_confirmation_template=False):
         template_id = False
@@ -62,7 +95,7 @@ class Sale(models.Model):
 
 
     def action_confirm(self):
-        result = super(Sale, self).action_confirm()
+        result = super(SaleOrder, self).action_confirm()
         template_id = self.env.ref('techlux_emails.sale_mail_template_sale_confirmation_final')
         if template_id:
             template_id.send_mail(self.id,force_send=True)
