@@ -9,6 +9,6 @@ class AccountMove(models.Model):
 
     delivery_no = fields.Char("Delivery Note No.")
 
-    def print_invoice(self):
+    def print_invoice_isr(self):
         self.ensure_one()
         return self.env.ref('techlux_reports.l10n_ch_isr_report_with_invoice').report_action(self)
