@@ -63,11 +63,14 @@
 							<t t-set="has_serial_number" t-value="o.move_line_ids.mapped('lot_id')"/>
 							<thead>
 								<tr>
+									<th name="th_line">
+										<strong>Pos.</strong>
+									</th>
 									<th name="th_sml_product">
 										<strong>Product</strong>
 									</th>
-									<th name="lot_serial" t-if="has_serial_number" groups="stock.group_lot_on_delivery_slip">
-										Lot/Serial Number
+									<th name="th_barcode">
+										Article Number/EAN Code
 									</th>
 									<th name="th_sml_quantity" class="text-center">
 										<strong>Quantity</strong>
@@ -75,7 +78,12 @@
 								</tr>
 							</thead>
 							<tbody>
+								<t t-set="i" t-value="1"/>
 								<tr t-foreach="o.move_line_ids" t-as="move_line">
+									<td name="line_number">
+										<span t-esc="i"/>
+										<t t-set="i" t-value="i+1"/>
+									</td>
 									<td>
 										<span t-field="move_line.product_id"/>
 										<p>

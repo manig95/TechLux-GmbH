@@ -7,7 +7,8 @@ _logger = logging.getLogger(__name__)
 class SaleLine(models.Model):
     _inherit = 'sale.order.line'
 
-    line_number = fields.Integer("Pos.",default=1)
+
+    # sequence_ref = fields.Integer("Pos.",compute='_sequence_ref')
     product_code = fields.Char("Article Number/EAN Code")
 
     @api.onchange('product_id')
@@ -100,4 +101,13 @@ class SaleOrder(models.Model):
         if template_id:
             template_id.send_mail(self.id,force_send=True)
 
+        stock_picking_id = self.env['stock.picking'].search([('origin', '=', self.name)], limit=1)
+        if stock_picking_id:
+            for rec in self.order_line:
+                for line in stock_picking_id.move_ids_without_package:
+                    if rec.product_id == line.product_id:
+                        line.product_code = rec.product_code
         return result
+
+
+

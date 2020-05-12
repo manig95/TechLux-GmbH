@@ -6,7 +6,7 @@ from odoo import api, fields, models, _
 class AccountMoveLine(models.Model):
     _inherit = "account.move.line"
 
-    line_number = fields.Integer("Pos.",default=1)
+    # line_number = fields.Integer("Pos.",default=1)
     product_code = fields.Char("Article Number/EAN Code")
 
 

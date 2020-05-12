@@ -4,7 +4,7 @@
 	<record id="email_template_edi_invoice_custom" model="mail.template">
 		<field name="name">Invoice: Send by email Custom</field>
 		<field name="model_id" ref="account.model_account_move"/>
-		<field name="email_from">${(object.invoice_user_id.email_formatted or user.email_formatted) |safe}</field>
+		<field name="email_from">buchhaltung@techlux.ch</field>
 		<field name="partner_to">${object.partner_id.id}</field>
 		<field name="subject">[FOR FILING] Invoice for the order - ${object.invoice_origin}</field>
 		<field name="body_html" type="html">
@@ -56,7 +56,7 @@
 	<record id="sale_mail_template_sale_confirmation_new" model="mail.template">
 		<field name="name">SO Confirmation Email-</field>
 		<field name="model_id" ref="sale.model_sale_order"/>
-		<field name="subject">Thank you for your order</field>
+		<field name="subject">Thank You for Your order.</field>
 		<field name="email_from">${(object.user_id.email_formatted or user.email_formatted) | safe}</field>
 		<field name="partner_to">${object.partner_id.id}</field>
 		<field name="body_html" type="html">
