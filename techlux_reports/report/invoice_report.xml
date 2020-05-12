@@ -223,7 +223,7 @@
 							<table class="table table-sm;">
 								<tr class="border-black o_subtotal" style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;">
 									<td name="td_amount_untaxed_label" style="padding: 0.30rem;">
-										<strong>Total</strong>
+										<strong>Total excl. VAT</strong>
 									</td>
 									<td name="td_amount_untaxed" class="text-right" style="padding: 0.30rem;">
 										<span t-esc="str('%.2f'%o.amount_untaxed).replace('.', ',')"/>
@@ -239,7 +239,7 @@
 												<span>&amp;nbsp;</span>
 											</td>
 											<td name="td_amount_by_group_3" class="text-right o_price_total" style="padding: 0.30rem;">
-												<!--<span t-esc="str(amount_by_group[3]).replace('.', ',')"/>-->
+												<span t-esc="str(amount_by_group[3]).replace('.', ',')"/>
 											</td>
 										</t>
 										<t t-else="">
@@ -247,11 +247,11 @@
 												<t t-set="vat_translate" t-value="str(amount_by_group[0]).replace('.', ',')"/>
 												<span t-esc="str(vat_translate).replace('MwSt','MwSt.')"/>
 												<span>&amp;nbsp;
-													<!-- <t t-esc="str(amount_by_group[4]).replace('.', ',')"/>-->
+													<t t-esc="str(amount_by_group[4]).replace('.', ',')"/>
 												</span>
 											</td>
 											<td name="td_amount_by_group" class="text-right o_price_total" style="padding: 0.30rem;">
-												<!--<span t-esc="str(amount_by_group[3]).replace('.', ',')"/>-->
+												<span t-esc="str(amount_by_group[3]).replace('.', ',')"/>
 											</td>
 										</t>
 									</tr>
@@ -286,8 +286,7 @@
 									</span>
 								</td>
 								<td>
-									<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.partner_id"
-										  t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+									<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
 								</td>
 							</tr>
 							<tr t-if="o.partner_shipping_id" style="margin-bottom:30px;">
@@ -297,8 +296,7 @@
 									</span>
 								</td>
 								<td>
-									<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.partner_shipping_id"
-										  t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+									<span style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 100;" t-field="o.partner_shipping_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
 								</td>
 							</tr>
 							<tr t-if="o.invoice_payment_term_id">
