@@ -19,6 +19,7 @@
         "report/invoice_report.xml",
         "report/invoice_with_esr.xml",
         "report/delivery_slip.xml",
+
     ],
     'demo': [],
     'installable': True,
