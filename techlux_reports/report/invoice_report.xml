@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<template id="l10n_ch.l10n_ch_swissqr_template">
+	<template id="l10n_ch.l10n_ch_swissqr_template" inherit_id="account.report_invoice_document">
             <!--<xpath expr="//div[@id='qrcode']" position="after">
                 <link type="text/css" rel="stylesheet" href="/l10n_ch/static/src/scss/report_swissqr.css"/>
                 <div class="swissqr_content" t-if="o.display_swiss_qr_code()">
