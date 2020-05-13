@@ -10,7 +10,7 @@
     'description': """
                 TechLux Report Customization
                     """,
-    'depends': ['web', 'sale', 'stock', 'delivery', 'account', 'l10n_ch'],
+    'depends': ['web', 'sale', 'stock', 'delivery', 'account'],
     'data': [
         "views/invoice_view.xml",
         "report/report_layout.xml",
