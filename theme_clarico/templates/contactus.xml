@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<template id="contactus_form_inherit" name="Contact Form (Opportunity)" inherit_id="website_crm.contactus_form">
+	<!--<template id="contactus_form_inherit" name="Contact Form (Opportunity)" inherit_id="website_crm.contactus_form">
 		<xpath expr="//form" position="replace">
 			<div t-ignore="true">
 				<form style="" action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32 contact-form" enctype="multipart/form-data"
@@ -34,7 +34,7 @@
 				</form>
 			</div>
 		</xpath>
-	</template>
+	</template>-->
 
 	<template id="contact_us_ept" inherit_id="website.contactus" name="Contact Us">
 		<xpath expr="//section[hasclass('s_text_block')]" position="replace">
