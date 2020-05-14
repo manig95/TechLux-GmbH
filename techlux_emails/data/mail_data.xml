@@ -2,9 +2,9 @@
 <odoo>
 
 	<record id="email_template_edi_invoice_custom" model="mail.template">
-		<field name="name">Invoice: Send by email Custom</field>
+		<field name="name">TechLux: Invoice by Email</field>
 		<field name="model_id" ref="account.model_account_move"/>
-		<field name="email_from">buchhaltung@techlux.ch</field>
+		<field name="email_from">TechLux GmbH - buchhaltung@techlux.ch</field>
 		<field name="partner_to">${object.partner_id.id}</field>
 		<field name="subject">[FOR FILING] Invoice for the order - ${object.invoice_origin}</field>
 		<field name="body_html" type="html">

@@ -148,7 +148,7 @@
 								<span>VAT</span>
 							</th>
 							<th style="font-family: &quot;Montserrat&quot;;font-size:13px;font-weight: 600;" name="th_subtotal" class="text-right">
-								<span>Total excl.</span>
+								<span>Total incl.</span>
 							</th>
 						</tr>
 					</thead>
