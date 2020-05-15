@@ -53,9 +53,9 @@
 						<li>
 							<a class="menu-lnk" href="/aboutus">ABOUT US</a>
 						</li>
-						<li>
+						<!--<li>
 							<a class="menu-lnk" href="/contactus">CONTACT US</a>
-						</li>
+						</li>-->
 					</ul>
 					<span id="mb-menu-btn" class="toggle-btn" onclick="openSideMenu()">
 						<i class="fa fa-bars"></i>
@@ -138,7 +138,7 @@
 								<a href="/">KLIXX</a>
 								<a href="/shop">SHOP</a>
 								<a href="/aboutus">ABOUT US</a>
-								<a href="/contactus">CONTACT US</a>
+								<!--<a href="/contactus">CONTACT US</a>-->
 							</div>
 						</div>
 
