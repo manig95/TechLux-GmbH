@@ -5,6 +5,7 @@
 		<field name="name">TechLux: Invoice by Email</field>
 		<field name="model_id" ref="account.model_account_move"/>
 		<field name="email_from">TechLux GmbH - buchhaltung@techlux.ch</field>
+		<field name="reply_to">buchhaltung@techlux.ch</field>
 		<field name="partner_to">${object.partner_id.id}</field>
 		<field name="subject">[FOR FILING] Invoice for the order - ${object.invoice_origin}</field>
 		<field name="body_html" type="html">
@@ -57,7 +58,8 @@
 		<field name="name">SO Confirmation Email-</field>
 		<field name="model_id" ref="sale.model_sale_order"/>
 		<field name="subject">Thank You for Your order.</field>
-		<field name="email_from">${(object.user_id.email_formatted or user.email_formatted) | safe}</field>
+		<field name="email_from">TechLux GmbH - orders@techlux.ch </field>
+		<field name="reply_to">orders@techlux.ch</field>
 		<field name="partner_to">${object.partner_id.id}</field>
 		<field name="body_html" type="html">
 			<div style="margin: 0px; padding: 0px;">
@@ -111,8 +113,9 @@
 		<field name="name">SO Confirmation Email-Final</field>
 		<field name="model_id" ref="sale.model_sale_order"/>
 		<field name="subject">[FOR FILING] Your Order at techlux.ch / Confirmation - (${object.name or 'n/a'} )</field>
-		<field name="email_from">${(object.user_id.email_formatted or user.email_formatted) | safe}</field>
+		<field name="email_from">TechLux GmbH - orders@techlux.ch</field>
 		<field name="partner_to">${object.partner_id.id}</field>
+		<field name="reply_to">orders@techlux.ch</field>
 		<field name="body_html" type="html">
 			<div style="margin: 0px; padding: 0px;">
 				<p style="margin: 0px; padding: 0px; font-size: 13px;">
