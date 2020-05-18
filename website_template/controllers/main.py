@@ -1,4 +1,4 @@
-from odoo.addons.mass_mailing.controllers.main import MassMailController
+# from odoo.addons.mass_mailing.controllers.main import MassMailController
 import random
 import logging
 from odoo import fields, http, tools, _
@@ -62,31 +62,31 @@ class WebsiteSaleForm(WebsiteForm):
         return ["name", "email","confirm_email", "street", "city", "country_id","lastname","zip"]
 
 
-class MassMailController(MassMailController):
-
-    @http.route('/website_mass_mailing/subscribe', type='json', website=True, auth="public")
-    def subscribe(self, list_id, email, **post):
-        ContactSubscription = request.env['mailing.contact.subscription'].sudo()
-        Contacts = request.env['mailing.contact'].sudo()
-        name = ''
-        if Contacts:
-            name, email = Contacts.get_name_email(email)
-
-        subscription = ContactSubscription.search([('list_id', '=', int(list_id)), ('contact_id.email', '=', email)], limit=1)
-        if not subscription:
-            # inline add_to_list as we've already called half of it
-            contact_id = Contacts.search([('email', '=', email)], limit=1)
-            if not contact_id:
-                contact_id = Contacts.create({'name': name, 'email': email})
-            ContactSubscription.create({'contact_id': contact_id.id, 'list_id': int(list_id)})
-        elif subscription.opt_out:
-            subscription.opt_out = False
-        # add email to session
-        request.session['mass_mailing_email'] = email
-        mass_mailing_list = request.env['mailing.list'].sudo().browse(list_id)
-
-        return {'toast_content': mass_mailing_list.toast_content}
-        # return True
+# class MassMailController(MassMailController):
+#
+#     @http.route('/website_mass_mailing/subscribe', type='json', website=True, auth="public")
+#     def subscribe(self, list_id, email, **post):
+#         ContactSubscription = request.env['mailing.contact.subscription'].sudo()
+#         Contacts = request.env['mailing.contact'].sudo()
+#         name = ''
+#         if Contacts:
+#             name, email = Contacts.get_name_email(email)
+#
+#         subscription = ContactSubscription.search([('list_id', '=', int(list_id)), ('contact_id.email', '=', email)], limit=1)
+#         if not subscription:
+#             # inline add_to_list as we've already called half of it
+#             contact_id = Contacts.search([('email', '=', email)], limit=1)
+#             if not contact_id:
+#                 contact_id = Contacts.create({'name': name, 'email': email})
+#             ContactSubscription.create({'contact_id': contact_id.id, 'list_id': int(list_id)})
+#         elif subscription.opt_out:
+#             subscription.opt_out = False
+#         # add email to session
+#         request.session['mass_mailing_email'] = email
+#         mass_mailing_list = request.env['mailing.list'].sudo().browse(list_id)
+#
+#         return {'toast_content': mass_mailing_list.toast_content}
+#         # return True
 
 
 class WebsiteCoupon(http.Controller):

@@ -34,7 +34,7 @@
 			</xpath>
 
 			<xpath expr="//field[@name='invoice_line_ids']//tree/field[@name='price_subtotal']" position="attributes">
-				<attribute name="string">Total excl.</attribute>
+				<attribute name="string">Total incl.</attribute>
 			</xpath>
 
 			<xpath expr="//field[@name='invoice_origin']" position="after">

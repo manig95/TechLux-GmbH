@@ -174,7 +174,7 @@
 							<div id="coupon-code-view" class="text-center pop-up-box" style="padding: 15px; text-align: center;">
 								<a href="#close" title="Close" class="close-popup">X</a>
 								<h4 class="text-uppercase font-weight-bold o_default_snippet_text" style="font-family: DINNextLTPro-Regular;">SIGN UP AND SAVE 10% ON YOUR FIRST ORDER!</h4>
-								<div class="input-group js_subscribe d-none" data-list-id="1">
+								<div class="input-group js_subscribe" data-list-id="1">
 									<input type="email" name="email" class="js_subscribe_email form-control" required="required" placeholder="ENTER YOUR EMAIL"/>
 									<span class="input-group-append">
 										<a id="view-code-btn" role="button" href="#" class="btn btn-primary o_default_snippet_text" style="background: #000;border: 1px solid #fff;">VIEW CODE</a>
