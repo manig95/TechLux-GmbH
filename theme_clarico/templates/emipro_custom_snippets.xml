@@ -4937,7 +4937,7 @@
                 </section>
                 <section>
                     <div class="te_sidenav_content">
-                        <section>
+                        <section style="display:none">
                             <p>Pellentesque mollis nec orci id tincidunt. Sed mollis risus eu nisi aliquet, sit amet
                                 fermentum justo dapibus.
                             </p>
@@ -4946,7 +4946,7 @@
                 </section>
                 <section>
                     <div class="te_content_text">
-                        <p>
+                        <p style="display:none">
                             <section>
                                 <a href="#">(+612) 2531 5600</a>
                             </section>
